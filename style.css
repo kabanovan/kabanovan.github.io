@@ -1,11 +1,18 @@
-body {font-family:Calibri, sans-serif;}
+body {
+	font-family: Calibri, sans-serif;
+	font-size: 1.2em;
+}
+
+table {
+	font-size: 1em;
+}
+
 td.img {width:32%; vertical-align:top;}
 a {text-decoration: none;} 
 a:link {color: black;}
 a:visited {color: black;}
 a:hover {text-decoration: underline; color: blue;}
-.best {border-style: solid;border-width: medium;border-collapse: collapse;
-text-align: center; padding:4px;}
+.best {border-style: solid;border-width: medium;border-collapse: collapse; text-align: center; padding:4px;}
 .area {margin-right:10px}
 table.menu {padding:5px; background-color:LightSteelBlue; width:100%}
 td.menu {width:20%}
@@ -20,3 +27,35 @@ ul.submenu {list-style: none; margin:0px; padding:0px; background-color: #fff; d
 ul.submenu > li {display: inline; float: left; padding-right:20px;}
 ul.submenu > li > a {display: inline; float: left;}
 ul.menu > li:hover > ul.submenu {display: inline;}
+
+.movie-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+.movie-poster {
+    width: 30%;
+    height: auto;
+	margin-right: 20px;
+	position: sticky;
+	top: 20px;
+	align-self: flex-start;
+}
+
+.movie-info {
+	flex: 1;
+	min-width: 300px;
+	margin-right: 20px;
+}
+
+.movie-title {    
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.original-title {
+	margin-top: 0;
+	color: #555;
+	margin-bottom: 10px;
+}
