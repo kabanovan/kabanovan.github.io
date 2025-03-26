@@ -59,3 +59,15 @@ ul.menu > li:hover > ul.submenu {display: inline;}
 	color: #555;
 	margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+	.movie-poster {
+		width: 100%; /* На мобильных постер занимает всю ширину */
+        margin-right: 0;
+        margin-bottom: 20px;
+        position: static; /* Отключаем sticky на мобильных */
+    }
+    .movie-info {
+        min-width: 100%; /* На мобильных информация занимает всю ширину */
+    }
+}
