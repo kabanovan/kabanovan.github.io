@@ -60,6 +60,84 @@ ul.menu > li:hover > ul.submenu {display: inline;}
 	margin-bottom: 10px;
 }
 
+.year-container {
+    display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 20px;
+	max-width: 1800px;
+	margin: 0 auto;
+}
+
+.year-movie-card {
+	background: white;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	transition: transform 0.3s ease;
+}
+        
+.year-movie-card:hover {
+	transform: translateY(-5px);
+}
+        
+.year-movie-poster {
+	width: 100%;
+	display: block;
+}
+        
+.year-movie-title {
+	padding: 12px;
+	text-align: center;
+	font-weight: bold;
+	<!--font-size: 14px;-->
+	color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	word-wrap: break-word;
+    overflow-wrap: break-word;
+	flex-grow: 1;	
+}
+
+.all-years-container {
+    display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	gap: 20px;
+	max-width: 1800px;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+
+@media (max-width: 1600px) {
+    .year-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+	
+	.all-years-container {
+        grid-template-columns: repeat(9, 1fr);
+    }
+}
+		
+@media (max-width: 1200px) {
+	.year-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+	.all-years-container {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+	.year-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+	.all-years-container {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+		
 @media (max-width: 768px) {
 	.movie-poster {
 		width: 100%;
@@ -69,5 +147,19 @@ ul.menu > li:hover > ul.submenu {display: inline;}
     }
     .movie-info {
         min-width: 100%;
+    }
+	
+	.all-years-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+	.year-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.all-years-container {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
