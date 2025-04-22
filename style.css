@@ -164,6 +164,10 @@ ul.menu > li:hover > ul.submenu {display: inline;}
     background-color: #f1f1f1;
 }
 
+.original {
+	color: #555;
+}
+
 @media (max-width: 1600px) {
     .year-container {
         grid-template-columns: repeat(5, 1fr);
