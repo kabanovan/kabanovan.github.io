@@ -168,7 +168,7 @@ ul.menu > li:hover > ul.submenu {display: inline;}
 	color: #555;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
     .year-container {
         grid-template-columns: repeat(5, 1fr);
     }

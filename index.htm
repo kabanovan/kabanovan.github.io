@@ -2,9 +2,239 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url='Years/years.htm'" />	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коллекция</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Bebas Neue', 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(18, 18, 18, 0.8);
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #FFD700;
+            letter-spacing: 1px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            padding: 20px;
+            position: relative;
+        }
+		
+		a {
+			text-decoration: none;
+		} 
+		
+        .choice-title {
+            font-size: 42px;
+            margin-bottom: 50px;
+            color: #FFFFFF;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .choice-button {
+            width: 320px;
+            height: 220px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .choice-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(15, 22, 33, 0.7) 0%, rgba(42, 53, 69, 0.8) 100%);
+            z-index: 1;
+            transition: all 0.4s ease;
+        }
+
+        .choice-button:hover::before {
+            background: linear-gradient(135deg, rgba(15, 22, 33, 0.5) 0%, rgba(42, 53, 69, 0.6) 100%);
+        }
+
+        .choice-button.movies {
+            background-image: url("Posters/The Dark Knight.jpg");
+        }
+
+        .choice-button.series {
+            background-image: url("Posters/Stranger Things.jpg");
+        }
+
+        .choice-button:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .choice-button:active {
+            transform: translateY(-2px) scale(0.98);
+        }
+
+        .button-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .button-icon {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+            transition: all 0.3s ease;
+        }
+
+        .button-text {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .movies .button-text {
+            color: #FFD700;
+        }
+		
+        .series .button-text {
+            color: #00CED1;
+        }
+
+        .choice-button:hover .button-icon {
+            transform: scale(1.1);
+        }
+
+        .choice-button:hover .button-text {
+            text-shadow: 0 0 10px currentColor;
+        }
+
+        @media (max-width: 768px) {
+            .buttons-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .choice-button {
+                width: 100%;
+                max-width: 320px;
+                height: 180px;
+            }
+
+            .choice-title {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>Если перенаправление не произошло, <a href="Years/years.htm">нажмите сюда</a>.</p>
+    <main class="main-content">        
+        <div class="buttons-container">
+            <!-- Кнопка "Фильмы" -->
+            <a href="Years/years.htm"><button class="choice-button movies">
+                <div class="button-content">
+                    <img class="button-icon" src="icon_movie.png">
+                    <span class="button-text">Фильмы</span>
+                </div>
+            </button></a>
+            
+            <!-- Кнопка "Сериалы" -->
+            <button class="choice-button series">
+                <div class="button-content">
+                    <img class="button-icon" src="icon_series.png">
+                    <span class="button-text">Сериалы</span>
+                </div>
+            </button>
+        </div>
+    </main>
+
+    <script>
+        // Простая анимация при загрузке
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.choice-button');
+            buttons.forEach((button, index) => {
+                setTimeout(() => {
+                    button.style.opacity = '1';
+                    button.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+
+        // Добавляем стили для анимации появления
+        const style = document.createElement('style');
+        style.textContent = `
+            .choice-button {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.6s ease, transform 0.6s ease;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </body>
 </html>
