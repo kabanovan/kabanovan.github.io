@@ -168,6 +168,20 @@ ul.menu > li:hover > ul.submenu {display: inline;}
 	color: #555;
 }
 
+.series-movie-title {
+	padding: 12px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	word-wrap: break-word;
+    overflow-wrap: break-word;
+	flex-grow: 1;	
+}
+
 @media (max-width: 1500px) {
     .year-container {
         grid-template-columns: repeat(5, 1fr);
