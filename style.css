@@ -190,6 +190,15 @@ ul.menu > li:hover > ul.submenu {display: inline;}
 	flex-grow: 1;	
 }
 
+.auto-numbered {
+    counter-reset: movie-counter;
+}
+
+.auto-numbered tr td:first-child:before {
+    counter-increment: movie-counter;
+    content: counter(movie-counter) ". ";
+}
+
 @media (max-width: 1500px) {
     .year-container {
         grid-template-columns: repeat(5, 1fr);
