@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор HTML-документов для фильмов</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .app-content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        
+        .form-section {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-right: 1px solid #eee;
+        }
+        
+        .result-section {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            background-color: white;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+        
+        input:focus, select:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+        
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .row .form-group {
+            flex: 1;
+        }
+        
+        button {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            background: linear-gradient(to right, #2980b9, #2573a7);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        .result {
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            font-size: 1.4rem;
+        }
+        
+        .code-block {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 6px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .download-btn {
+            background: linear-gradient(to right, #27ae60, #219653);
+            margin-top: 15px;
+        }
+        
+        .download-btn:hover {
+            background: linear-gradient(to right, #219653, #1e8449);
+        }
+        
+        .instructions {
+            background-color: #e8f4fc;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        .instructions h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .instructions ul {
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        
+        /* Стили для автодополнения */
+        .autocomplete {
+            position: relative;
+        }
+        
+        .autocomplete-items {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            border-bottom: none;
+            border-top: none;
+            z-index: 99;
+            top: 100%;
+            left: 0;
+            right: 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .autocomplete-items div {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            border-bottom: 1px solid #d4d4d4;
+        }
+        
+        .autocomplete-items div:hover {
+            background-color: #e9e9e9;
+        }
+        
+        .autocomplete-active {
+            background-color: #3498db !important;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .app-content {
+                flex-direction: column;
+            }
+            
+            .form-section {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Генератор HTML-документов для фильмов</h1>
+            <p class="subtitle">Создайте страницу для вашего фильма за несколько секунд</p>
+        </header>
+        
+        <div class="app-content">
+            <div class="form-section">
+                <div class="instructions">
+                    <h3>Как использовать:</h3>
+                    <ul>
+                        <li>Заполните все необходимые поля формы</li>
+                        <li>Начните вводить имя режиссера для выбора из списка</li>
+                        <li>Нажмите кнопку "Сформировать"</li>
+                        <li>Просмотрите сгенерированный код</li>
+                        <li>Скачайте готовый HTML-файл</li>
+                    </ul>
+                </div>
+                
+                <form id="movieForm">
+                    <div class="form-group">
+                        <label for="englishTitle">Английское название *</label>
+                        <input type="text" id="englishTitle" name="englishTitle" placeholder="Например: The Matrix" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="russianTitle">Русское название *</label>
+                        <input type="text" id="russianTitle" name="russianTitle" placeholder="Например: Матрица" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="premiereDate">Мировая премьера *</label>
+                        <input type="date" id="premiereDate" name="premiereDate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="slogan">Слоган</label>
+                        <input type="text" id="slogan" name="slogan" placeholder="Например: Добро пожаловать в реальный мир">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="plot">Сюжет</label>
+                        <input type="text" id="plot" name="plot" placeholder="Краткое описание сюжета">
+                    </div>
+                    
+                    <div class="form-group autocomplete">
+                        <label for="director">Режиссёр</label>
+                        <input type="text" id="director" name="director" placeholder="Начните вводить имя режиссера">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="source">В основе</label>
+                        <input type="text" id="source" name="source" placeholder="Источник сюжета">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="series">Серия</label>
+                        <input type="text" id="series" name="series" placeholder="Название серии">
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="budget">Бюджет ($ млн)</label>
+                            <input type="number" id="budget" name="budget" placeholder="100" min="0" step="0.1">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="usBoxOffice">Сборы в США ($ млн)</label>
+                            <input type="number" id="usBoxOffice" name="usBoxOffice" placeholder="150" min="0" step="0.1">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="worldBoxOffice">Сборы в мире ($ млн)</label>
+                            <input type="number" id="worldBoxOffice" name="worldBoxOffice" placeholder="400" min="0" step="0.1">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="rating">Рейтинг</label>
+                            <input type="number" id="rating" name="rating" placeholder="8.7" min="0" max="10" step="0.1">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="hours">Продолжительность (часы)</label>
+                            <input type="number" id="hours" name="hours" placeholder="2" min="0" max="10">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="minutes">Продолжительность (минуты)</label>
+                            <input type="number" id="minutes" name="minutes" placeholder="16" min="0" max="59">
+                        </div>
+                    </div>
+                    
+                    <button type="button" id="generateBtn">Сформировать HTML</button>
+                </form>
+            </div>
+            
+            <div class="result-section">
+                <h2>Результат</h2>
+                <p>Заполните форму и нажмите "Сформировать", чтобы увидеть результат здесь.</p>
+                
+                <div class="result" id="result">
+                    <div class="result-header">
+                        <h3>Сгенерированный HTML-код:</h3>
+                    </div>
+                    <div class="code-block" id="generatedCode"></div>
+                    <button class="download-btn" id="downloadBtn">Скачать HTML-файл</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+		// Список режиссеров (будет загружен из directors.htm)
+		let directors = [];
+
+		// Функция для загрузки режиссеров из directors.htm
+		async function loadDirectors() {
+			try {
+				const response = await fetch('directors.htm');
+				const html = await response.text();
+				
+				// Создаем временный DOM-элемент для парсинга
+				const parser = new DOMParser();
+				const doc = parser.parseFromString(html, 'text/html');
+				
+				// Ищем все элементы h2 с тегами a внутри
+				const directorElements = doc.querySelectorAll('h2 a[name]');
+				
+				directors = Array.from(directorElements).map(element => {
+					// Берем текстовое содержимое родительского h2, но без содержимого тега a
+					const h2Element = element.parentElement;
+					return h2Element.textContent.trim();
+				}).filter(name => name.length > 0);
+				
+				console.log('Загружено режиссеров:', directors.length);
+				
+			} catch (error) {
+				console.error('Ошибка загрузки directors.htm:', error);
+				// Fallback - базовый список на случай ошибки
+				directors = [
+					"Аарон Мурхед", "Адам Маккей", "Акива Голдсман", "Алекс Гарленд",
+					"Алексей Герман", "Алексей Учитель", "Альфред Хичкок", "Андрей Тарковский"
+				];
+			}
+		}
+		
+        // Инициализация автодополнения для режиссеров
+        function initAutocomplete() {
+			// Проверяем, что список режиссеров загружен
+			if (directors.length === 0) {
+				console.warn('Список режиссеров пуст');
+				return;
+			}
+
+			const directorInput = document.getElementById('director');
+            
+            directorInput.addEventListener('input', function() {
+                const val = this.value;
+                closeAllLists();
+                if (!val) return false;
+                
+                const list = document.createElement('div');
+                list.setAttribute('id', this.id + '-autocomplete-list');
+                list.setAttribute('class', 'autocomplete-items');
+                this.parentNode.appendChild(list);
+                
+                let count = 0;
+                for (let i = 0; i < directors.length && count < 10; i++) {
+                    if (directors[i].toLowerCase().includes(val.toLowerCase())) {
+                        const item = document.createElement('div');
+                        item.innerHTML = directors[i];
+                        item.innerHTML += `<input type='hidden' value='${directors[i]}'>`;
+                        item.addEventListener('click', function() {
+                            directorInput.value = this.getElementsByTagName('input')[0].value;
+                            closeAllLists();
+                        });
+                        list.appendChild(item);
+                        count++;
+                    }
+                }
+            });
+            
+            function closeAllLists(elmnt) {
+                const items = document.getElementsByClassName('autocomplete-items');
+                for (let i = 0; i < items.length; i++) {
+                    if (elmnt != items[i] && elmnt != directorInput) {
+                        items[i].parentNode.removeChild(items[i]);
+                    }
+                }
+            }
+            
+            document.addEventListener('click', function(e) {
+                closeAllLists(e.target);
+            });
+        }
+
+        document.getElementById('generateBtn').addEventListener('click', function() {
+            // Получаем значения из формы
+            const englishTitle = document.getElementById('englishTitle').value;
+            const russianTitle = document.getElementById('russianTitle').value;
+            const premiereDate = document.getElementById('premiereDate').value;
+            const slogan = document.getElementById('slogan').value;
+            const plot = document.getElementById('plot').value;
+            const director = document.getElementById('director').value;
+            const source = document.getElementById('source').value;
+            const series = document.getElementById('series').value;
+            const budget = document.getElementById('budget').value;
+            const usBoxOffice = document.getElementById('usBoxOffice').value;
+            const worldBoxOffice = document.getElementById('worldBoxOffice').value;
+            const hours = document.getElementById('hours').value;
+            const minutes = document.getElementById('minutes').value;
+            const rating = document.getElementById('rating').value;
+            
+            // Проверяем обязательные поля
+            if (!englishTitle || !russianTitle || !premiereDate) {
+                alert('Пожалуйста, заполните обязательные поля: английское название, русское название и дата премьеры');
+                return;
+            }
+            
+            // Генерация HTML-кода
+            const htmlCode = generateHTML(
+                englishTitle, 
+                russianTitle, 
+                formatDate(premiereDate),
+                slogan,
+                plot,
+                director,
+                source,
+                series,
+                budget,
+                usBoxOffice,
+                worldBoxOffice,
+                hours,
+                minutes,
+                rating
+            );
+            
+            // Отображение результата
+            document.getElementById('generatedCode').textContent = htmlCode;
+            document.getElementById('result').style.display = 'block';
+            
+            // Сохранение данных для скачивания
+            document.getElementById('downloadBtn').onclick = function() {
+                downloadHTML(htmlCode, englishTitle);
+            };
+        });
+        
+        // Функция для форматирования даты
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            return date.toLocaleDateString('ru-RU', options);
+        }
+        
+        // Функция для генерации HTML
+        function generateHTML(
+            englishTitle, 
+            russianTitle, 
+            premiereDate,
+            slogan = "Слоган.",
+            plot = "Описание.",
+            director = "Режиссер",
+            source = "Источник",
+            series = "Серия",
+            budget = "100",
+            usBoxOffice = "100",
+            worldBoxOffice = "200",
+            hours = "1",
+            minutes = "11",
+            rating = "1.1"
+        ) {
+            // Обработка названия для файла (замена : на –)
+            const fileName = englishTitle.replace(/:/g, ' –');
+            
+            return `<!DOCTYPE html>
+<html>
+<head>
+<title>${englishTitle}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="abs">
+\t<div class="compact-navigation">
+\t\t<a href="Previous.htm" class="nav-arrow">←</a>
+\t\t<a href="Next.htm" class="nav-arrow">→</a>
+\t\t
+\t</div>
+<a href="../list.htm">Общий список</a>
+</div>
+
+<div class="movie-container">
+\t<img src="../Posters/${fileName}.jpg" class="movie-poster">
+
+\t<div class="movie-info">
+\t\t<h1 class="movie-title">${russianTitle}</h1>
+\t\t<h2 class="original-title">${englishTitle}</h2>
+\t\t<p><b>Мировая премьера:</b> ${premiereDate}</p>
+\t\t<p><b>Слоган:</b> ${slogan}</p>
+\t\t<p align=justify><b>Сюжет:</b> ${plot}</p>
+\t\t<p><b>Режиссёр:</b> ${director}</p>
+\t\t<p align=justify><b>В основе:</b> ${source}</p>
+\t\t<p align=justify><b>Серия:</b> <a href="../Franchise/Series.htm">${series}</a></p>
+\t\t<table>
+\t\t<tr>
+\t\t\t<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
+\t\t\t<td><a href="../Actors/a.htm#A.Anderson">Актер 1</a></td>
+\t\t\t<td><i><p style="text-indent:30px">Роль 1</i></p></td>
+\t\t</tr>
+\t\t<tr>
+\t\t\t<td></td>
+\t\t\t<td><a href="../Actors/b.htm#B.Brandon">Актер 2</a></td>
+\t\t\t<td><i><p style="text-indent:30px">Роль 2</i></p></td>
+\t\t</tr>
+\t\t</table>
+\t\t<p><b>Бюджет:</b> $ ${budget} млн.</p>
+\t\t<p><b>Кассовые сборы в США:</b> $ ${usBoxOffice} млн.</p>
+\t\t<p><b>Кассовые сборы в мире:</b> $ ${worldBoxOffice} млн.</p>
+\t\t<p><b>Продолжительность:</b> ${hours} ч. ${minutes} мин.<br>
+\t\t<p><b>Рейтинг:</b> ${rating}
+\t</div>
+</div>
+</body>
+</html>`;
+        }
+        
+        // Функция для скачивания HTML
+        function downloadHTML(htmlContent, filename) {
+            // Обработка названия для файла (замена : на –)
+            const safeFilename = filename.replace(/:/g, ' –');
+            
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${safeFilename}.htm`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+        
+        // Установка текущей даты по умолчанию
+        document.getElementById('premiereDate').valueAsDate = new Date();
+        
+        // Инициализация автодополнения после загрузки DOM
+        document.addEventListener('DOMContentLoaded', function() {
+			await loadDirectors(); // Сначала загружаем режиссеров
+			initAutocomplete();    // Потом инициализируем автодополнение
+        });
+    </script>
+</body>
+</html>
