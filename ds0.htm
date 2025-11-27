@@ -364,21 +364,47 @@
 				const parser = new DOMParser();
 				const doc = parser.parseFromString(html, 'text/html');
 				
-				// Ищем все элементы h2 с тегами a внутри
-				const directorElements = doc.querySelectorAll('h2 a[name]');
+				// Более надежный способ поиска режиссеров
+				let directors = [];
 				
-				directors = Array.from(directorElements).map(element => {
-					// Берем текстовое содержимое родительского h2, но без содержимого тега a
-					const h2Element = element.parentElement;
-					return h2Element.textContent.trim();
-				}).filter(name => name.length > 0);
+				// Ищем все h2 элементы
+				const h2Elements = doc.querySelectorAll('h2');
+				
+				h2Elements.forEach(h2 => {
+					// Проверяем, содержит ли h2 anchor с name атрибутом
+					const anchor = h2.querySelector('a[name]');
+					if (anchor) {
+						// Берем текстовое содержимое всего h2
+						const text = h2.textContent.trim();
+						if (text && text.length > 0) {
+							directors.push(text);
+						}
+					}
+				});
 				
 				console.log('Загружено режиссеров:', directors.length);
+				
+				// Если ничего не нашли, используем альтернативный метод
+				if (directors.length === 0) {
+					console.log('Пробуем альтернативный метод парсинга...');
+					
+					// Ищем по регулярному выражению в исходном HTML
+					const regex = /<h2><a name="[^"]*"><\/a>([^<]*)<\/h2>/g;
+					let match;
+					while ((match = regex.exec(html)) !== null) {
+						if (match[1] && match[1].trim().length > 0) {
+							directors.push(match[1].trim());
+						}
+					}
+					console.log('Альтернативным методом найдено:', directors.length);
+				}
+				
+				return directors;
 				
 			} catch (error) {
 				console.error('Ошибка загрузки directors.htm:', error);
 				// Fallback - базовый список на случай ошибки
-				directors = [
+				return [
 					"Аарон Мурхед", "Адам Маккей", "Акива Голдсман", "Алекс Гарленд",
 					"Алексей Герман", "Алексей Учитель", "Альфред Хичкок", "Андрей Тарковский"
 				];
@@ -585,11 +611,11 @@
         // Установка текущей даты по умолчанию
         document.getElementById('premiereDate').valueAsDate = new Date();
         
-        // Инициализация автодополнения после загрузки DOM
-        document.addEventListener('DOMContentLoaded', function() {
-			await loadDirectors(); // Сначала загружаем режиссеров
-			initAutocomplete();    // Потом инициализируем автодополнение
-        });
+		// Инициализация автодополнения после загрузки DOM
+		document.addEventListener('DOMContentLoaded', async function() {
+			directors = await loadDirectors(); // Ждем загрузки и присваиваем результат
+			initAutocomplete();
+		});
     </script>
 </body>
 </html>
