@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор страницы фильмотеки</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            font-size: 1.2em;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .form-container {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .preview-container {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            height: 80vh;
+            overflow-y: auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: Calibri, sans-serif;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+        
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .number-input {
+            width: 100%;
+        }
+        
+        .duration-container {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .duration-input {
+            flex: 1;
+        }
+        
+        .actors-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            table-layout: fixed;
+        }
+        
+        .actors-table th, .actors-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        
+        .actors-table th {
+            background-color: #f5f5f5;
+        }
+        
+        .actors-table .actor-name {
+            width: 40%;
+        }
+        
+        .actors-table .actor-role {
+            width: 40%;
+        }
+        
+        .actors-table .actor-action {
+            width: 20%;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .add-actor-btn {
+            background-color: #2196F3;
+            margin-top: 10px;
+        }
+        
+        .add-actor-btn:hover {
+            background-color: #0b7dda;
+        }
+        
+        .remove-actor-btn {
+            background-color: #f44336;
+            padding: 5px 10px;
+            font-size: 0.8em;
+        }
+        
+        .remove-actor-btn:hover {
+            background-color: #d32f2f;
+        }
+        
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        /* Стили для предварительного просмотра */
+        .preview {
+            font-family: Calibri, sans-serif;
+            font-size: 1.2em;
+        }
+        
+        .preview table {
+            font-size: 1em;
+        }
+        
+        .preview td.img {width:32%; vertical-align:top;}
+        .preview a {text-decoration: none;} 
+        .preview a:link {color: black;}
+        .preview a:visited {color: black;}
+        .preview a:hover {text-decoration: underline; color: blue;}
+        .preview .best {border-style: solid;border-width: medium;border-collapse: collapse; text-align: center; padding:4px;}
+        .preview .area {margin-right:10px}
+        .preview table.menu {padding:5px; background-color:LightSteelBlue; width:100%}
+        .preview td.menu {width:20%}
+        .preview p.menu {background-color:LightSteelBlue}
+        .preview .abs {position:absolute; right:10px; top:10px; font-weight: bold}
+        
+        .preview ul.menu {list-style: none; padding:0;}
+        .preview ul.menu > li {float: left; padding-right:20px;}
+        .preview ul.menu > li > a {display: inline;}
+        .preview ul.submenu {list-style: none; margin:0px; padding:0px; background-color: #fff; display: none; position: absolute; left: 10px}
+        .preview ul.submenu > li {display: inline; float: left; padding-right:20px;}
+        .preview ul.submenu > li > a {display: inline; float: left;}
+        .preview ul.menu > li:hover > ul.submenu {display: inline;}
+        
+        .preview .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+        
+        .preview .movie-poster {
+            width: 30%;
+            height: auto;
+            margin-right: 20px;
+            position: sticky;
+            top: 20px;
+            align-self: flex-start;
+        }
+        
+        .preview .movie-info {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 20px;
+        }
+        
+        .preview .movie-title {    
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .preview .original-title {
+            margin-top: 0;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .preview .compact-navigation {
+            display: flex;
+            gap: 10px;
+            margin-left: 20px;
+        }
+        
+        .preview .nav-arrow {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #f5f5f5;
+            color: #333;
+            text-decoration: none;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            transition: all 0.2s ease;
+        }
+        
+        .preview .nav-arrow:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.1);
+            text-decoration: none;
+        }
+        
+        .preview .original {
+            color: #555;
+        }
+        
+		select {
+			width: 100%;
+			padding: 8px;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			font-family: Calibri, sans-serif;
+			font-size: 1em;
+			box-sizing: border-box;
+			margin-bottom: 5px;
+		}
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .form-container, .preview-container {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Генератор страницы фильмотеки</h1>
+    
+    <div class="container">
+        <div class="form-container">
+            <div class="form-group">
+                <label for="russianTitle">Русское название:</label>
+                <input type="text" id="russianTitle" placeholder="Название">
+            </div>
+            
+            <div class="form-group">
+                <label for="englishTitle">Английское название:</label>
+                <input type="text" id="englishTitle" placeholder="Title">
+            </div>
+            
+            <div class="form-group">
+                <label for="premiere">Мировая премьера:</label>
+                <input type="text" id="premiere" placeholder="01.01.11">
+            </div>
+            
+            <div class="form-group">
+                <label for="slogan">Слоган:</label>
+                <input type="text" id="slogan" placeholder="Слоган.">
+            </div>
+            
+            <div class="form-group">
+                <label for="plot">Сюжет:</label>
+                <textarea id="plot" placeholder="Описание."></textarea>
+            </div>
+            
+			<div class="form-group">
+				<label for="director">Режиссёр:</label>
+				<select id="directorSelect" onchange="updateDirectorField()">
+					<option value="">Выберите режиссёра</option>
+					<!-- Опции будут добавлены через JavaScript -->
+				</select>
+				<input type="text" id="director" placeholder="Режиссер" style="margin-top: 5px;">
+			</div>
+            
+            <div class="form-group">
+                <label for="source">В основе:</label>
+                <input type="text" id="source" placeholder="Источник">
+            </div>
+            
+            <div class="form-group">
+                <label for="series">Серия:</label>
+                <input type="text" id="series" placeholder="Серия">
+            </div>
+            
+            <div class="form-group">
+                <label>Актеры и роли:</label>
+                <table class="actors-table" id="actorsTable">
+                    <thead>
+                        <tr>
+                            <th class="actor-name">Актер</th>
+                            <th class="actor-role">Роль</th>
+                            <th class="actor-action">Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody id="actorsBody">
+                        <tr>
+                            <td><input type="text" class="actor-name" placeholder="Актер 1"></td>
+                            <td><input type="text" class="actor-role" placeholder="Роль 1"></td>
+                            <td><button type="button" class="remove-actor-btn">Удалить</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="add-actor-btn" id="addActorBtn">Добавить актера</button>
+            </div>
+            
+            <div class="form-group">
+                <label for="budget">Бюджет ($ млн.):</label>
+                <input type="number" id="budget" class="number-input" placeholder="100" step="0.01" min="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="usBoxOffice">Кассовые сборы в США ($ млн.):</label>
+                <input type="number" id="usBoxOffice" class="number-input" placeholder="100" step="0.01" min="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="worldBoxOffice">Кассовые сборы в мире ($ млн.):</label>
+                <input type="number" id="worldBoxOffice" class="number-input" placeholder="200" step="0.01" min="0">
+            </div>
+            
+            <div class="form-group">
+                <label>Продолжительность:</label>
+                <div class="duration-container">
+                    <input type="number" id="durationHours" class="duration-input" placeholder="Часы" min="0" max="24">
+                    <span>ч.</span>
+                    <input type="number" id="durationMinutes" class="duration-input" placeholder="Минуты" min="0" max="59">
+                    <span>мин.</span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="rating">Рейтинг:</label>
+                <input type="text" id="rating" placeholder="1.1">
+            </div>
+            
+            <div class="actions">
+                <button type="button" id="generateBtn">Сформировать HTML</button>
+                <button type="button" id="previewBtn">Предварительный просмотр</button>
+            </div>
+        </div>
+        
+        <div class="preview-container">
+            <h2>Предварительный просмотр</h2>
+            <div id="preview" class="preview">
+                <!-- Здесь будет отображаться предварительный просмотр -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+		// Загрузка списка режиссеров
+		let directorsList = [];
+
+		// Функция для загрузки directors.htm и парсинга режиссеров
+		async function loadDirectors() {
+			try {
+				const response = await fetch('directors.htm');
+				const html = await response.text();
+				const parser = new DOMParser();
+				const doc = parser.parseFromString(html, 'text/html');
+				
+				// Ищем все h2 элементы с ссылками внутри
+				const directorElements = doc.querySelectorAll('h2 a[name]');
+				
+				directorsList = Array.from(directorElements).map(element => {
+					return element.parentElement.textContent; // Получаем текст "Аарон Мурхед"
+				});
+				
+				// Заполняем выпадающий список
+				const directorSelect = document.getElementById('directorSelect');
+				directorsList.forEach(director => {
+					const option = document.createElement('option');
+					option.value = director;
+					option.textContent = director;
+					directorSelect.appendChild(option);
+				});
+				
+			} catch (error) {
+				console.error('Ошибка загрузки списка режиссеров:', error);
+			}
+		}
+
+		// Функция для обновления поля ввода при выборе из списка
+		function updateDirectorField() {
+			const select = document.getElementById('directorSelect');
+			const input = document.getElementById('director');
+			input.value = select.value;
+		}
+
+		// Вызываем загрузку режиссеров при загрузке страницы
+		loadDirectors();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const addActorBtn = document.getElementById('addActorBtn');
+            const actorsBody = document.getElementById('actorsBody');
+            const generateBtn = document.getElementById('generateBtn');
+            const previewBtn = document.getElementById('previewBtn');
+            const preview = document.getElementById('preview');
+            
+            // Добавление нового актера
+            addActorBtn.addEventListener('click', function() {
+                const newRow = document.createElement('tr');
+                newRow.innerHTML = `
+                    <td><input type="text" class="actor-name" placeholder="Актер"></td>
+                    <td><input type="text" class="actor-role" placeholder="Роль"></td>
+                    <td><button type="button" class="remove-actor-btn">Удалить</button></td>
+                `;
+                actorsBody.appendChild(newRow);
+                
+                // Добавляем обработчик для кнопки удаления
+                newRow.querySelector('.remove-actor-btn').addEventListener('click', function() {
+                    actorsBody.removeChild(newRow);
+                });
+            });
+            
+            // Обработчик для кнопки предварительного просмотра
+            previewBtn.addEventListener('click', function() {
+                updatePreview();
+            });
+            
+            // Обработчик для кнопки генерации HTML
+            generateBtn.addEventListener('click', function() {
+                generateHTML();
+            });
+            
+            // Функция обновления предварительного просмотра
+            function updatePreview() {
+                const formData = getFormData();
+                preview.innerHTML = generateHTMLContent(formData, true);
+            }
+            
+            // Функция получения данных из формы
+            function getFormData() {
+                const actors = [];
+                const actorRows = actorsBody.querySelectorAll('tr');
+                
+                actorRows.forEach(row => {
+                    const actorName = row.querySelector('.actor-name').value;
+                    const actorRole = row.querySelector('.actor-role').value;
+                    
+                    if (actorName || actorRole) {
+                        actors.push({
+                            name: actorName,
+                            role: actorRole
+                        });
+                    }
+                });
+                
+                // Форматирование даты премьеры
+                let premiereDate = document.getElementById('premiere').value;
+                if (premiereDate) {
+                    // Преобразуем формат даты из dd.mm.yy в dd месяц yyyy
+                    const parts = premiereDate.split('.');
+                    if (parts.length === 3) {
+                        const day = parts[0];
+                        const month = parts[1];
+                        const year = parts[2];
+                        
+                        const monthNames = [
+                            'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+                            'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+                        ];
+                        
+                        const monthName = monthNames[parseInt(month) - 1] || month;
+                        const fullYear = year.length === 2 ? `20${year}` : year;
+                        
+                        premiereDate = `${day} ${monthName} ${fullYear}`;
+                    }
+                }
+                
+                // Форматирование продолжительности
+                const hours = document.getElementById('durationHours').value;
+                const minutes = document.getElementById('durationMinutes').value;
+                let duration = '';
+                
+                if (hours && minutes) {
+                    duration = `${hours} ч. ${minutes} мин.`;
+                } else if (hours) {
+                    duration = `${hours} ч.`;
+                } else if (minutes) {
+                    duration = `${minutes} мин.`;
+                }
+                
+                return {
+                    russianTitle: document.getElementById('russianTitle').value,
+                    englishTitle: document.getElementById('englishTitle').value,
+                    premiere: premiereDate,
+                    slogan: document.getElementById('slogan').value,
+                    plot: document.getElementById('plot').value,
+                    director: document.getElementById('director').value,
+                    source: document.getElementById('source').value,
+                    series: document.getElementById('series').value,
+                    actors: actors,
+                    budget: document.getElementById('budget').value,
+                    usBoxOffice: document.getElementById('usBoxOffice').value,
+                    worldBoxOffice: document.getElementById('worldBoxOffice').value,
+                    duration: duration,
+                    rating: document.getElementById('rating').value
+                };
+            }
+            
+            // Функция генерации HTML-контента
+            function generateHTMLContent(data, isPreview = false) {
+                let actorsHTML = '';
+                
+                if (data.actors.length > 0) {
+                    actorsHTML = `
+                        <table>
+                        <tr>
+                            <td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
+                            <td><a href="../Actors/a.htm#A.Anderson">${data.actors[0].name}</a></td>
+                            <td><i><p style="text-indent:30px">${data.actors[0].role}</i></p></td>
+                        </tr>`;
+                    
+                    for (let i = 1; i < data.actors.length; i++) {
+                        actorsHTML += `
+                        <tr>
+                            <td></td>
+                            <td><a href="../Actors/b.htm#B.Brandon">${data.actors[i].name}</a></td>
+                            <td><i><p style="text-indent:30px">${data.actors[i].role}</i></p></td>
+                        </tr>`;
+                    }
+                    
+                    actorsHTML += `</table>`;
+                }
+                
+                const seriesLink = data.series ? `<p align=justify><b>Серия:</b> <a href="../Franchise/Series.htm">${data.series}</a></p>` : '';
+                
+                // Форматирование финансовых данных
+                const budget = data.budget ? `$ ${data.budget} млн.` : '';
+                const usBoxOffice = data.usBoxOffice ? `$ ${data.usBoxOffice} млн.` : '';
+                const worldBoxOffice = data.worldBoxOffice ? `$ ${data.worldBoxOffice} млн.` : '';
+                
+                // Генерация имени файла постера
+                let posterFileName = data.englishTitle;
+                if (posterFileName.includes(':')) {
+                    posterFileName = posterFileName.replace(':', ' –');
+                }
+                posterFileName += '.jpg';
+                
+                return `
+<html>
+<head>
+<title>${data.englishTitle}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="abs">
+    <div class="compact-navigation">
+        <a href="Previous.htm" class="nav-arrow">←</a>
+        <a href="Next.htm" class="nav-arrow">→</a>
+        
+    </div>
+<a href="../list.htm">Общий список</a>
+</div>
+
+<div class="movie-container">
+    <img src="../Posters/${posterFileName}" class="movie-poster">
+
+    <div class="movie-info">
+        <h1 class="movie-title">${data.russianTitle}</h1>
+        <h2 class="original-title">${data.englishTitle}</h2>
+        <p><b>Мировая премьера:</b> ${data.premiere}</p>
+        <p><b>Слоган:</b> ${data.slogan}</p>
+        <p align=justify><b>Сюжет:</b> ${data.plot}</p>
+        <p><b>Режиссёр:</b> ${data.director}</p>
+        <p align=justify><b>В основе:</b> ${data.source}</p>
+        ${seriesLink}
+        ${actorsHTML}
+        <p><b>Бюджет:</b> ${budget}</p>
+        <p><b>Кассовые сборы в США:</b> ${usBoxOffice}</p>
+        <p><b>Кассовые сборы в мире:</b> ${worldBoxOffice}</p>
+        <p><b>Продолжительность:</b> ${data.duration}<br>
+        <p><b>Рейтинг:</b> ${data.rating}
+    </div>
+</div>
+</body>
+</html>`;
+            }
+            
+            // Функция генерации и скачивания HTML-файла
+            function generateHTML() {
+                const formData = getFormData();
+                const htmlContent = generateHTMLContent(formData);
+                
+                // Создаем Blob с HTML-контентом
+                const blob = new Blob([htmlContent], { type: 'text/html' });
+                
+                // Создаем ссылку для скачивания
+                const downloadLink = document.createElement('a');
+                downloadLink.href = URL.createObjectURL(blob);
+                
+                // Генерация имени файла для скачивания
+                let fileName = formData.englishTitle;
+                if (fileName.includes(':')) {
+                    fileName = fileName.replace(':', ' –');
+                }
+                downloadLink.download = `${fileName}.html`;
+                
+                // Добавляем ссылку в DOM, кликаем и удаляем
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+            }
+            
+            // Добавляем обработчики для кнопок удаления актеров
+            document.querySelectorAll('.remove-actor-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const row = this.closest('tr');
+                    actorsBody.removeChild(row);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
