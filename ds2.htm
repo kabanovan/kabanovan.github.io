@@ -308,6 +308,7 @@
 					<!-- Опции будут добавлены через JavaScript -->
 				</select>
 				<input type="text" id="director" placeholder="Режиссер" style="margin-top: 5px;">
+				<input type="hidden" id="directorAnchor" value="">
 			</div>
             
             <div class="form-group">
@@ -332,12 +333,15 @@
                     </thead>
                     <tbody id="actorsBody">
                         <tr>
-                            <td><input type="text" class="actor-name" placeholder="Актер 1"></td>
+                            <td><input type="text" class="actor-name" placeholder="Актер 1" list="actorsDatalist"></td>
                             <td><input type="text" class="actor-role" placeholder="Роль 1"></td>
                             <td><button type="button" class="remove-actor-btn">Удалить</button></td>
                         </tr>
                     </tbody>
                 </table>
+				<datalist id="actorsDatalist">
+				<!-- Опции будут добавлены через JavaScript -->
+				</datalist>
                 <button type="button" class="add-actor-btn" id="addActorBtn">Добавить актера</button>
             </div>
             
@@ -386,6 +390,66 @@
     </div>
 
     <script>
+		// Загрузка списка актеров
+		let actorsList = [];
+
+		// Функция для загрузки всех файлов актеров
+		async function loadActors() {
+			try {
+				// Буквы для файлов (a.htm, b.htm, ... z.htm)
+				const letters = [
+            'a', 'b', 'c', 'ch', 'd', 'e', 'f', 'g', 'h', 'i', 'k', 'l', 'm',
+            'n', 'o', 'p', 'r', 's', 'sh', 't', 'u', 'v', 'y', 'ya', 'ye', 'yu', 'z', 'zh'];
+				actorsList = [];
+				
+				// Загружаем все файлы по очереди
+				for (const letter of letters) {
+					try {
+						const response = await fetch(`Actors/${letter}.htm`);
+						if (!response.ok) continue;
+						
+						const html = await response.text();
+						const parser = new DOMParser();
+						const doc = parser.parseFromString(html, 'text/html');
+						
+						// Ищем все h2 элементы с ссылками внутри
+						const actorElements = doc.querySelectorAll('h2 a[name]');
+						
+						Array.from(actorElements).forEach(element => {
+							actorsList.push({
+								name: element.parentElement.textContent, // "Аарон Ипале"
+								anchor: element.getAttribute('name'), // "A.Ipale"
+								file: `${letter}.htm` // "a.htm"
+							});
+						});
+					} catch (error) {
+						console.log(`Файл Actors/${letter}.htm не найден или ошибка загрузки`);
+					}
+				}
+				
+				// Заполняем datalist
+				const actorsDatalist = document.getElementById('actorsDatalist');
+				actorsList.forEach(actor => {
+					const option = document.createElement('option');
+					option.value = actor.name;
+					option.setAttribute('data-anchor', actor.anchor);
+					option.setAttribute('data-file', actor.file);
+					actorsDatalist.appendChild(option);
+				});
+				
+				console.log(`Загружено ${actorsList.length} актеров`);
+				
+			} catch (error) {
+				console.error('Ошибка загрузки списка актеров:', error);
+			}
+		}
+
+		// Функция для получения информации об актере по имени
+		function getActorInfo(actorName) {
+			const actor = actorsList.find(a => a.name === actorName);
+			return actor || null;
+		}
+
 		// Загрузка списка режиссеров
 		let directorsList = [];
 
@@ -401,15 +465,19 @@
 				const directorElements = doc.querySelectorAll('h2 a[name]');
 				
 				directorsList = Array.from(directorElements).map(element => {
-					return element.parentElement.textContent; // Получаем текст "Аарон Мурхед"
+					return {
+						name: element.parentElement.textContent, // "Аарон Мурхед"
+						anchor: element.getAttribute('name') // "A.Moorhead"
+					};
 				});
 				
 				// Заполняем выпадающий список
 				const directorSelect = document.getElementById('directorSelect');
 				directorsList.forEach(director => {
 					const option = document.createElement('option');
-					option.value = director;
-					option.textContent = director;
+					option.value = director.name;
+					option.setAttribute('data-anchor', director.anchor);
+					option.textContent = director.name;
 					directorSelect.appendChild(option);
 				});
 				
@@ -422,11 +490,18 @@
 		function updateDirectorField() {
 			const select = document.getElementById('directorSelect');
 			const input = document.getElementById('director');
+			const anchorInput = document.getElementById('directorAnchor');
+			
 			input.value = select.value;
+			
+			// Сохраняем анкор выбранного режиссера
+			const selectedOption = select.options[select.selectedIndex];
+			anchorInput.value = selectedOption.getAttribute('data-anchor') || '';
 		}
 
-		// Вызываем загрузку режиссеров при загрузке страницы
+		// Вызываем загрузку режиссеров и актеров при загрузке страницы
 		loadDirectors();
+		loadActors();
 
         document.addEventListener('DOMContentLoaded', function() {
             const addActorBtn = document.getElementById('addActorBtn');
@@ -439,10 +514,10 @@
             addActorBtn.addEventListener('click', function() {
                 const newRow = document.createElement('tr');
                 newRow.innerHTML = `
-                    <td><input type="text" class="actor-name" placeholder="Актер"></td>
-                    <td><input type="text" class="actor-role" placeholder="Роль"></td>
-                    <td><button type="button" class="remove-actor-btn">Удалить</button></td>
-                `;
+					<td><input type="text" class="actor-name" placeholder="Актер" list="actorsDatalist"></td>
+					<td><input type="text" class="actor-role" placeholder="Роль"></td>
+					<td><button type="button" class="remove-actor-btn">Удалить</button></td>
+				`;
                 actorsBody.appendChild(newRow);
                 
                 // Добавляем обработчик для кнопки удаления
@@ -473,16 +548,19 @@
                 const actorRows = actorsBody.querySelectorAll('tr');
                 
                 actorRows.forEach(row => {
-                    const actorName = row.querySelector('.actor-name').value;
-                    const actorRole = row.querySelector('.actor-role').value;
-                    
-                    if (actorName || actorRole) {
-                        actors.push({
-                            name: actorName,
-                            role: actorRole
-                        });
-                    }
-                });
+					const actorName = row.querySelector('.actor-name').value;
+					const actorRole = row.querySelector('.actor-role').value;
+					
+					if (actorName || actorRole) {
+						const actorInfo = getActorInfo(actorName);
+						actors.push({
+							name: actorName,
+							role: actorRole,
+							anchor: actorInfo ? actorInfo.anchor : '',
+							file: actorInfo ? actorInfo.file : ''
+						});
+					}
+				});
                 
                 // Форматирование даты премьеры
                 let premiereDate = document.getElementById('premiere').value;
@@ -526,6 +604,7 @@
                     slogan: document.getElementById('slogan').value,
                     plot: document.getElementById('plot').value,
                     director: document.getElementById('director').value,
+					directorAnchor: document.getElementById('directorAnchor').value,
                     source: document.getElementById('source').value,
                     series: document.getElementById('series').value,
                     actors: actors,
@@ -542,21 +621,19 @@
                 let actorsHTML = '';
                 
                 if (data.actors.length > 0) {
-                    actorsHTML = `
-                        <table>
-                        <tr>
-                            <td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-                            <td><a href="../Actors/a.htm#A.Anderson">${data.actors[0].name}</a></td>
-                            <td><i><p style="text-indent:30px">${data.actors[0].role}</i></p></td>
-                        </tr>`;
+                    actorsHTML = `<table>
+<tr>
+	<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
+	<td>${data.actors[0].anchor ? `<a href="../Actors/${data.actors[0].file}#${data.actors[0].anchor}">${data.actors[0].name}</a>` : data.actors[0].name}</td>
+	<td><i><p style="text-indent:30px">${data.actors[0].role}</i></p></td>
+</tr>`;
                     
                     for (let i = 1; i < data.actors.length; i++) {
-                        actorsHTML += `
-                        <tr>
-                            <td></td>
-                            <td><a href="../Actors/b.htm#B.Brandon">${data.actors[i].name}</a></td>
-                            <td><i><p style="text-indent:30px">${data.actors[i].role}</i></p></td>
-                        </tr>`;
+                        actorsHTML += `<tr>
+	<td></td>
+	<td>${data.actors[i].anchor ? `<a href="../Actors/${data.actors[i].file}#${data.actors[i].anchor}">${data.actors[i].name}</a>` : data.actors[i].name}</td>
+	<td><i><p style="text-indent:30px">${data.actors[i].role}</i></p></td>
+</tr>`;
                     }
                     
                     actorsHTML += `</table>`;
@@ -576,8 +653,7 @@
                 }
                 posterFileName += '.jpg';
                 
-                return `
-<html>
+                return `<html>
 <head>
 <title>${data.englishTitle}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -589,7 +665,6 @@
     <div class="compact-navigation">
         <a href="Previous.htm" class="nav-arrow">←</a>
         <a href="Next.htm" class="nav-arrow">→</a>
-        
     </div>
 <a href="../list.htm">Общий список</a>
 </div>
@@ -603,7 +678,7 @@
         <p><b>Мировая премьера:</b> ${data.premiere}</p>
         <p><b>Слоган:</b> ${data.slogan}</p>
         <p align=justify><b>Сюжет:</b> ${data.plot}</p>
-        <p><b>Режиссёр:</b> ${data.director}</p>
+        ${data.directorAnchor ? `<p><b>Режиссёр:</b> <a href="../directors.htm#${data.directorAnchor}">${data.director}</a></p>` : `<p><b>Режиссёр:</b> ${data.director}</p>`}
         <p align=justify><b>В основе:</b> ${data.source}</p>
         ${seriesLink}
         ${actorsHTML}
