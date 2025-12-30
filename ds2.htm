@@ -621,19 +621,18 @@
                 let actorsHTML = '';
                 
                 if (data.actors.length > 0) {
-                    actorsHTML = `<table>
-<tr>
-	<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-	<td>${data.actors[0].anchor ? `<a href="../Actors/${data.actors[0].file}#${data.actors[0].anchor}">${data.actors[0].name}</a>` : data.actors[0].name}</td>
-	<td><i><p style="text-indent:30px">${data.actors[0].role}</i></p></td>
-</tr>`;
+                    actorsHTML = `<table><tr>
+			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
+			<td>${data.actors[0].anchor ? `<a href="../Actors/${data.actors[0].file}#${data.actors[0].anchor}">${data.actors[0].name}</a>` : data.actors[0].name}</td>
+			<td><i><p style="text-indent:30px">${data.actors[0].role}</i></p></td>
+		</tr>`;
                     
                     for (let i = 1; i < data.actors.length; i++) {
                         actorsHTML += `<tr>
-	<td></td>
-	<td>${data.actors[i].anchor ? `<a href="../Actors/${data.actors[i].file}#${data.actors[i].anchor}">${data.actors[i].name}</a>` : data.actors[i].name}</td>
-	<td><i><p style="text-indent:30px">${data.actors[i].role}</i></p></td>
-</tr>`;
+			<td></td>
+			<td>${data.actors[i].anchor ? `<a href="../Actors/${data.actors[i].file}#${data.actors[i].anchor}">${data.actors[i].name}</a>` : data.actors[i].name}</td>
+			<td><i><p style="text-indent:30px">${data.actors[i].role}</i></p></td>
+		</tr>`;
                     }
                     
                     actorsHTML += `</table>`;
@@ -649,7 +648,7 @@
                 // Генерация имени файла постера
                 let posterFileName = data.englishTitle;
                 if (posterFileName.includes(':')) {
-                    posterFileName = posterFileName.replace(':', ' –');
+                    posterFileName = posterFileName.replace(':', ' -');
                 }
                 posterFileName += '.jpg';
                 
@@ -708,7 +707,7 @@
                 // Генерация имени файла для скачивания
                 let fileName = formData.englishTitle;
                 if (fileName.includes(':')) {
-                    fileName = fileName.replace(':', ' –');
+                    fileName = fileName.replace(':', ' -');
                 }
                 downloadLink.download = `${fileName}.html`;
                 
