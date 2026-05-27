@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../1981/Dragonslayer.htm" class="nav-arrow">←</a>
+		<a href="../Years/1982.htm" class="nav-arrow">⌂</a>
 		<a href="Poltergeist.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -26,73 +26,72 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#N.Meyer">Николас Мейер</a></p>
 		<p align=justify><b>В основе:</b> Телесериал "Звёздный Путь" (США, 1966-1969)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Star Trek.htm">Звёздный Путь</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/u.htm#W.Shatner">Уильям Шетнер</a></td>
-			<td><i><p style="text-indent:30px">Адмирал Джеймс Кёрк</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Nimoy">Леонард Нимой</a></td>
-			<td><i><p style="text-indent:30px">Капитан Спок</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Рикардо Монтальбан</td>
-			<td><i><p style="text-indent:30px">Хан Нуньен Сингх</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Kelley">ДеФорест Келли</a></td>
-			<td><i><p style="text-indent:30px">Доктор Леонард "Боунс" МакКой</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кёрсти Элли</td>
-			<td><i><p style="text-indent:30px">Лейтенант Саавик</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Koenig">Уолтер Кёниг</a></td>
-			<td><i><p style="text-indent:30px">Командир Павел Чехов</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Takei">Джордж Такей</a></td>
-			<td><i><p style="text-indent:30px">Командир Хикару Сулу</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Биби Беш</td>
-			<td><i><p style="text-indent:30px">Доктор Кэрол Маркус</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Butrick">Мерритт Бутрик</a></td>
-			<td><i><p style="text-indent:30px">Доктор Дэвид Маркус</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Winfield">Пол Уинфилд</a></td>
-			<td><i><p style="text-indent:30px">Капитан Кларк Террелл</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Doohan">Джеймс Дуэн</a></td>
-			<td><i><p style="text-indent:30px">Командир Монтгомери "Скотти" Скотт</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Nichols">Нишель Николс</a></td>
-			<td><i><p style="text-indent:30px">Командир Ниота Ухура</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Scott">Джадсон Скотт</a></td>
-			<td><i><p style="text-indent:30px">Йохим</i></p></td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/u.htm#W.Shatner">Уильям Шетнер</a>, <a href="../Actors/l.htm#L.Nimoy">Леонард Нимой</a>, Рикардо Монтальбан
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/u.htm#W.Shatner">Уильям Шетнер</a></td>
+					<td>Адмирал Джеймс Кёрк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Nimoy">Леонард Нимой</a></td>
+					<td>Капитан Спок</td>
+				</tr>
+				<tr>
+					<td>Рикардо Монтальбан</td>
+					<td>Хан Нуньен Сингх</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Kelley">ДеФорест Келли</a></td>
+					<td>Доктор Леонард "Боунс" МакКой</td>
+				</tr>
+				<tr>
+					<td>Кёрсти Элли</td>
+					<td>Лейтенант Саавик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Koenig">Уолтер Кёниг</a></td>
+					<td>Командир Павел Чехов</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Takei">Джордж Такей</a></td>
+					<td>Командир Хикару Сулу</td>
+				</tr>
+				<tr>
+					<td>Биби Беш</td>
+					<td>Доктор Кэрол Маркус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Butrick">Мерритт Бутрик</a></td>
+					<td>Доктор Дэвид Маркус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Winfield">Пол Уинфилд</a></td>
+					<td>Капитан Кларк Террелл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Doohan">Джеймс Дуэн</a></td>
+					<td>Командир Монтгомери "Скотти" Скотт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Nichols">Нишель Николс</a></td>
+					<td>Командир Ниота Ухура</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Scott">Джадсон Скотт</a></td>
+					<td>Йохим</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 11 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 80 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 80 млн.</p>
@@ -100,5 +99,7 @@
 		<p><b>Рейтинг:</b> 7.7
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

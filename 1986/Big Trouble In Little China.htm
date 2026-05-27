@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../1985/Back To The Future.htm" class="nav-arrow">←</a>
+		<a href="../Years/1986.htm" class="nav-arrow">⌂</a>
 		<a href="Aliens.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,58 +24,60 @@
 		<p align=justify><b>Слоган:</b> Некоторые люди выбирают самые ужасные места, чтобы начать драку!</p>
 		<p align=justify><b>Сюжет:</b> Однообразная жизнь крутого водителя грузовика Джека Бёртона резко меняется, когда на его глазах похищают невесту лучшего друга. Спеша ей на выручку, Джек оказывается под китайским кварталом Сан-Франциско, в мрачном призрачном мире, которым правит безжалостный колдун Ло Пэн, живущий на свете уже две тысячи лет. Обречённый на бесплотное существование, Ло Пэн может снять проклятие лишь с помощью зеленоглазой красавицы. Ради спасения девушки Джек пробивается сквозь лабиринт царства Тьмы, избавляясь от злых духов и проходя через множество испытаний.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Carpenter">Джон Карпентер</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#Ku.Russell">Курт Расселл</a></td>
-			<td><i><p style="margin-left:30px">Джек Бёртон</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Деннис Дун</td>
-			<td><i><p style="margin-left:30px">Вонг Чи</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Cattrall">Ким Кэттролл</a></td>
-			<td><i><p style="margin-left:30px">Грэйси Ло</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Hong">Джеймс Хонг</a></td>
-			<td><i><p style="margin-left:30px">Дэвид Ло Пэн</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Wong">Виктор Вонг</a></td>
-			<td><i><p style="margin-left:30px">Эгг Шен</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Li">Дональд Ли</a></td>
-			<td><i><p style="margin-left:30px">Эдди Ли</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кейт Бёртон</td>
-			<td><i><p style="margin-left:30px">Марго Литценбергер</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Картер Вонг</td>
-			<td><i><p style="margin-left:30px">Гром</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Kwong">Питер Квон</a></td>
-			<td><i><p style="margin-left:30px">Дождь</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джеймс Пак</td>
-			<td><i><p style="margin-left:30px">Молния</i></p></td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/k.htm#Ku.Russell">Курт Расселл</a>, Деннис Дун, <a href="../Actors/k.htm#K.Cattrall">Ким Кэттролл</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#Ku.Russell">Курт Расселл</a></td>
+					<td>Джек Бёртон</td>
+				</tr>
+				<tr>
+					<td>Деннис Дун</td>
+					<td>Вонг Чи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Cattrall">Ким Кэттролл</a></td>
+					<td>Грэйси Ло</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Hong">Джеймс Хонг</a></td>
+					<td>Дэвид Ло Пэн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Wong">Виктор Вонг</a></td>
+					<td>Эгг Шен</td>
+				</tr>
+				<tr>
+					<td>Кейт Бёртон</td>
+					<td>Марго Литценбергер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Li">Дональд Ли</a></td>
+					<td>Эдди Ли</td>
+				</tr>
+				<tr>
+					<td>Картер Вонг</td>
+					<td>Гром</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Kwong">Питер Квон</a></td>
+					<td>Дождь</td>
+				</tr>
+				<tr>
+					<td>Джеймс Пак</td>
+					<td>Молния</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 25 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 11 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 11 млн.</p>
@@ -83,5 +85,7 @@
 		<p><b>Рейтинг:</b> 7.2
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

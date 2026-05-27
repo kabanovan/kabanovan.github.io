@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Star Trek III - The Search For Spock.htm" class="nav-arrow">←</a>
+		<a href="../Years/1984.htm" class="nav-arrow">⌂</a>
 		<a href="The Terminator.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -21,57 +21,60 @@
 		<h1 class="movie-title">Охотники За Привидениями</h1>
 		<h2 class="original-title">Ghostbusters</h2>
 		<p><b>Мировая премьера:</b> 8 июня 1984</p>
-		<p><b>Слоган:</b> Кто-то борется с тараканами и насекомыми. Они очищают город от привидений.</p>
+		<p align=justify><b>Слоган:</b> Кто-то борется с тараканами и насекомыми. Они очищают город от привидений.</p>
 		<p align=justify><b>Сюжет:</b> Когда эксцентричные учёные Питер Венкмен, Рэй Стэнц и Игон Спенглер теряют работу в университете, они решают организовать в Нью-Йорке компанию по борьбе с призраками, используя свои передовые научные разработки. Как только они открывают свои двери, их клиенткой становится очаровательная виолончелистка Дана Барретт, которая случайно открыла врата ада... прямо в её собственном жилом доме!</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#I.Reitman">Айвен Райтман</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Ghostbusters.htm">Охотники За Привидениями</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/b.htm#B.Murray">Билл Мюррей</a></td>
-			<td><i><p style="text-indent:30px">Доктор Питер Венкмен</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Aykroyd">Дэн Эйкройд</a></td>
-			<td><i><p style="text-indent:30px">Доктор Рэй Стэнц</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Ramis">Харольд Рэмис</a></td>
-			<td><i><p style="text-indent:30px">Доктор Игон Спенглер</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a></td>
-			<td><i><p style="text-indent:30px">Дана Барретт</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Moranis">Рик Моранис</a></td>
-			<td><i><p style="text-indent:30px">Луис Тулли</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Atherton">Уильям Этертон</a></td>
-			<td><i><p style="text-indent:30px">Уолтер Пек</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Potts">Энни Поттс</a></td>
-			<td><i><p style="text-indent:30px">Джанин Мелниц</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Hudson">Эрни Хадсон</a></td>
-			<td><i><p style="text-indent:30px">Уинстон Зеддмор</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Margulies">Дэвид Маргулис</a></td>
-			<td><i><p style="text-indent:30px">Мэр</i></p></td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/b.htm#B.Murray">Билл Мюррей</a>, <a href="../Actors/d.htm#D.Aykroyd">Дэн Эйкройд</a>, <a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/b.htm#B.Murray">Билл Мюррей</a></td>
+					<td>Доктор Питер Венкмен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Aykroyd">Дэн Эйкройд</a></td>
+					<td>Доктор Рэй Стэнц</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a></td>
+					<td>Дана Барретт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Ramis">Харольд Рэмис</a></td>
+					<td>Доктор Игон Спенглер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Moranis">Рик Моранис</a></td>
+					<td>Луис Тулли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Atherton">Уильям Этертон</a></td>
+					<td>Уолтер Пек</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Potts">Энни Поттс</a></td>
+					<td>Джанин Мелниц</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Hudson">Эрни Хадсон</a></td>
+					<td>Уинстон Зеддмор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Margulies">Дэвид Маргулис</a></td>
+					<td>Мэр</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 32 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 244 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 297 млн.</p>
@@ -79,5 +82,7 @@
 		<p><b>Рейтинг:</b> 7.8
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

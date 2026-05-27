@@ -624,14 +624,14 @@
                     actorsHTML = `<table><tr>
 			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
 			<td>${data.actors[0].anchor ? `<a href="../Actors/${data.actors[0].file}#${data.actors[0].anchor}">${data.actors[0].name}</a>` : data.actors[0].name}</td>
-			<td><i><p style="text-indent:30px">${data.actors[0].role}</i></p></td>
+			<td>${data.actors[0].role}</td>
 		</tr>`;
                     
                     for (let i = 1; i < data.actors.length; i++) {
                         actorsHTML += `<tr>
 			<td></td>
 			<td>${data.actors[i].anchor ? `<a href="../Actors/${data.actors[i].file}#${data.actors[i].anchor}">${data.actors[i].name}</a>` : data.actors[i].name}</td>
-			<td><i><p style="text-indent:30px">${data.actors[i].role}</i></p></td>
+			<td>${data.actors[i].role}</td>
 		</tr>`;
                     }
                     
@@ -675,7 +675,7 @@
         <h1 class="movie-title">${data.russianTitle}</h1>
         <h2 class="original-title">${data.englishTitle}</h2>
         <p><b>Мировая премьера:</b> ${data.premiere}</p>
-        <p><b>Слоган:</b> ${data.slogan}</p>
+        <p align=justify><b>Слоган:</b> ${data.slogan}</p>
         <p align=justify><b>Сюжет:</b> ${data.plot}</p>
         ${data.directorAnchor ? `<p><b>Режиссёр:</b> <a href="../directors.htm#${data.directorAnchor}">${data.director}</a></p>` : `<p><b>Режиссёр:</b> ${data.director}</p>`}
         <p align=justify><b>В основе:</b> ${data.source}</p>

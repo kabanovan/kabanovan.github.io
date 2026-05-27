@@ -9,6 +9,7 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../1986/The Golden Child.htm" class="nav-arrow">←</a>
+		<a href="../Years/1987.htm" class="nav-arrow">⌂</a>
 		<a href="Innerspace.htm" class="nav-arrow">→</a>
 	</div>
 <a href="../list.htm">Общий список</a>
@@ -21,62 +22,64 @@
 		<h1 class="movie-title">Хищник</h1>
 		<h2 class="original-title">Predator</h2>
 		<p><b>Мировая премьера:</b> 12 июня 1987</p>
-		<p><b>Слоган:</b> Ничего подобного раньше не было на земле. Охота началась.</p>
+		<p align=justify><b>Слоган:</b> Ничего подобного раньше не было на земле. Охота началась.</p>
 		<p align=justify><b>Сюжет:</b> Элитная группа спецназа США во главе с майором Датчем была заброшена в южноамериканские джунгли для освобождения заложников, которые находятся в плену у повстанцев. Но на месте бойцы сталкиваются с силой, гораздо более мощной и смертоносной, чем любая на Земле – с невидимым инопланетным охотником, обладающим уникальными технологиями.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.McTiernan">Джон МакТирнан</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Predator.htm">Хищник</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/a.htm#A.Schwarzenegger">Арнольд Шварценеггер</a></td>
-			<td><i><p style="text-indent:30px">Майор Алан "Датч" Шефер</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Weathers">Карл Уэзерс</a></td>
-			<td><i><p style="text-indent:30px">Полковник Эл Диллон</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Duke">Билл Дьюк</a></td>
-			<td><i><p style="text-indent:30px">Сержант Мак Элиот</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ричард Чавес</td>
-			<td><i><p style="text-indent:30px">Хорхе "Пончо" Рамирез</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Carrillo">Эльпидия Каррильо</a></td>
-			<td><i><p style="text-indent:30px">Анна Гонсалвес</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Ventura">Джесси Вентура</a></td>
-			<td><i><p style="text-indent:30px">Сержант Блейн Купер</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Landham">Сонни Лэндэм</a></td>
-			<td><i><p style="text-indent:30px">Билли Соул</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Р.Дж. Армстронг</td>
-			<td><i><p style="text-indent:30px">Генерал Гомер Филлипс</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Black">Шейн Блэк</a></td>
-			<td><i><p style="text-indent:30px">Рик Хокинс</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.P.Hall">Кевин Питер Холл</a></td>
-			<td><i><p style="text-indent:30px">Пилот вертолёта / Хищник</i></p></td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/a.htm#A.Schwarzenegger">Арнольд Шварценеггер</a>, <a href="../Actors/k.htm#C.Weathers">Карл Уэзерс</a>, <a href="../Actors/b.htm#B.Duke">Билл Дьюк</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/a.htm#A.Schwarzenegger">Арнольд Шварценеггер</a></td>
+					<td>Майор Алан "Датч" Шефер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Weathers">Карл Уэзерс</a></td>
+					<td>Полковник Эл Диллон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Duke">Билл Дьюк</a></td>
+					<td>Сержант Мак Элиот</td>
+				</tr>
+				<tr>
+					<td>Ричард Чавес</td>
+					<td>Хорхе "Пончо" Рамирез</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Carrillo">Эльпидия Каррильо</a></td>
+					<td>Анна Гонсалвес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Ventura">Джесси Вентура</a></td>
+					<td>Сержант Блейн Купер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Landham">Сонни Лэндэм</a></td>
+					<td>Билли Соул</td>
+				</tr>
+				<tr>
+					<td>Р.Дж. Армстронг</td>
+					<td>Генерал Гомер Филлипс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Black">Шейн Блэк</a></td>
+					<td>Рик Хокинс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.P.Hall">Кевин Питер Холл</a></td>
+					<td>Пилот вертолёта / Хищник</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 15 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 60 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 98 млн.</p>
@@ -84,5 +87,7 @@
 		<p><b>Рейтинг:</b> 7.8
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

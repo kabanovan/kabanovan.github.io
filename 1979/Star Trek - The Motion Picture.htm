@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Alien.htm" class="nav-arrow">←</a>
+		<a href="../Years/1979.htm" class="nav-arrow">⌂</a>
 		<a href="../1980/Star Wars - The Empire Strikes Back.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -26,63 +26,64 @@
 		<p><b>Режиссёр:</b> Роберт Уайз</p>
 		<p align=justify><b>В основе:</b> Телесериал "Звёздный Путь" (США, 1966-1969)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Star Trek.htm">Звёздный Путь</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/u.htm#W.Shatner">Уильям Шетнер</a></td>
-			<td><i><p style="text-indent:30px">Адмирал Джеймс Кёрк</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Стивен Коллинз</td>
-			<td><i><p style="text-indent:30px">Капитан Уилл Декер</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Nimoy">Леонард Нимой</a></td>
-			<td><i><p style="text-indent:30px">Спок</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Персис Хамбатта</td>
-			<td><i><p style="text-indent:30px">Лейтенант Айлиа</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Kelley">ДеФорест Келли</a></td>
-			<td><i><p style="text-indent:30px">Доктор Леонард "Боунс" МакКой</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Doohan">Джеймс Дуэн</a></td>
-			<td><i><p style="text-indent:30px">Командир Монтгомери "Скотти" Скотт</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Takei">Джордж Такей</a></td>
-			<td><i><p style="text-indent:30px">Лейтенант-командир Хикару Сулу</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Koenig">Уолтер Кёниг</a></td>
-			<td><i><p style="text-indent:30px">Лейтенант Павел Чехов</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Nichols">Нишель Николс</a></td>
-			<td><i><p style="text-indent:30px">Лейтенант-командир Ниота Ухура</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Barrett">Маджел Бэрретт</a></td>
-			<td><i><p style="text-indent:30px">Доктор Кристин Чапел</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Lenard">Марк Ленард</a></td>
-			<td><i><p style="text-indent:30px">Клингонский капитан</i></p></td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/u.htm#W.Shatner">Уильям Шетнер</a>, <a href="../Actors/l.htm#L.Nimoy">Леонард Нимой</a>, Стивен Коллинз
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/u.htm#W.Shatner">Уильям Шетнер</a></td>
+					<td>Адмирал Джеймс Кёрк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Nimoy">Леонард Нимой</a></td>
+					<td>Спок</td>
+				</tr>
+				<tr>
+					<td>Стивен Коллинз</td>
+					<td>Капитан Уилл Декер</td>
+				</tr>
+				<tr>
+					<td>Персис Хамбатта</td>
+					<td>Лейтенант Айлиа</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Kelley">ДеФорест Келли</a></td>
+					<td>Доктор Леонард "Боунс" МакКой</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Doohan">Джеймс Дуэн</a></td>
+					<td>Командир Монтгомери "Скотти" Скотт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Takei">Джордж Такей</a></td>
+					<td>Лейтенант-командир Хикару Сулу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Koenig">Уолтер Кёниг</a></td>
+					<td>Лейтенант Павел Чехов</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Nichols">Нишель Николс</a></td>
+					<td>Лейтенант-командир Ниота Ухура</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Barrett">Маджел Бэрретт</a></td>
+					<td>Доктор Кристин Чапел</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Lenard">Марк Ленард</a></td>
+					<td>Клингонский капитан</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 35 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 83 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 83 млн.</p>
@@ -90,5 +91,7 @@
 		<p><b>Рейтинг:</b> 6.4
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

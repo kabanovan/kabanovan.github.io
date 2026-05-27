@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Big Trouble In Little China.htm" class="nav-arrow">←</a>
+		<a href="../Years/1986.htm" class="nav-arrow">⌂</a>
 		<a href="Star Trek IV - The Voyage Home.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -21,74 +21,76 @@
 		<h1 class="movie-title">Чужие</h1>
 		<h2 class="original-title">Aliens</h2>
 		<p><b>Мировая премьера:</b> 18 июля 1986</p>
-		<p><b>Слоган:</b> В этот раз это война...</p>
+		<p align=justify><b>Слоган:</b> В этот раз это война...</p>
 		<p align=justify><b>Сюжет:</b> Рипли – единственная выжившая после схватки с Чужим на корабле "Ностромо" – провела 57 лет в анабиозе, блуждая в космосе, пока её капсулу не обнаружили спасатели. Её рассказ о злобном монстре, который уничтожил весь экипаж, встречают скептически, тем более, что за это время планета LV-426, откуда появился Чужой, была колонизирована людьми. Но когда связь с колонистами прерывается, Рипли соглашается присоединиться к команде космического десанта, чтобы вернуться на планету, где начался её кошмар.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Cameron">Джеймс Кэмерон</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Alien.htm">Чужой</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a></td>
-			<td><i><p style="text-indent:30px">Эллен Рипли</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Biehn">Майкл Бин</a></td>
-			<td><i><p style="text-indent:30px">Капрал Дуэйн Хикс</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Paxton">Билл Пэкстон</a></td>
-			<td><i><p style="text-indent:30px">Рядовой Уильям Хадсон</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Hope">Уильям Хоуп</a></td>
-			<td><i><p style="text-indent:30px">Лейтенант Скотт Горман</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Reiser">Пол Райзер</a></td>
-			<td><i><p style="text-indent:30px">Картер Бёрк</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кэрри Хенн</td>
-			<td><i><p style="text-indent:30px">Ребекка "Ньют" Джорден</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Henriksen">Лэнс Хенриксен</a></td>
-			<td><i><p style="text-indent:30px">Бишоп</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Matthews">Эл Мэттьюс</a></td>
-			<td><i><p style="text-indent:30px">Сержант Эл Эйпон</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Goldstein">Дженетт Голдстин</a></td>
-			<td><i><p style="text-indent:30px">Рядовая Дженетт Васкес</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Ross">Рикко Росс</a></td>
-			<td><i><p style="text-indent:30px">Рядовой Рикко Фрост</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Rolston">Марк Ролстон</a></td>
-			<td><i><p style="text-indent:30px">Рядовой Марк Дрейк</i></p></td>
-		</tr>
-</table>
+		<p><b>В ролях:</b> <a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a>, <a href="../Actors/m.htm#M.Biehn">Майкл Бин</a>, <a href="../Actors/b.htm#B.Paxton">Билл Пэкстон</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a></td>
+					<td>Эллен Рипли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Biehn">Майкл Бин</a></td>
+					<td>Капрал Дуэйн Хикс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Paxton">Билл Пэкстон</a></td>
+					<td>Рядовой Уильям Хадсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Reiser">Пол Райзер</a></td>
+					<td>Картер Бёрк</td>
+				</tr>
+				<tr>
+					<td>Кэрри Хенн</td>
+					<td>Ребекка "Ньют" Джорден</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Hope">Уильям Хоуп</a></td>
+					<td>Лейтенант Скотт Горман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Henriksen">Лэнс Хенриксен</a></td>
+					<td>Бишоп</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Matthews">Эл Мэттьюс</a></td>
+					<td>Сержант Эл Эйпон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Goldstein">Дженетт Голдстин</a></td>
+					<td>Рядовая Дженетт Васкес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Ross">Рикко Росс</a></td>
+					<td>Рядовой Рикко Фрост</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Rolston">Марк Ролстон</a></td>
+					<td>Рядовой Марк Дрейк</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 19 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 85 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 131 млн.</p>
 		<p><b>Продолжительность:</b> 2 ч. 32 мин.<br>
 		<p><b>Рейтинг:</b> 8.4
-</td></tr></table>
+	</div>
 </div>
-</font>
+
+<script src="../script.js"></script>
 </body>
 </html>

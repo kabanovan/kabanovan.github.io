@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="2010 - The Year We Make Contact.htm" class="nav-arrow">←</a>
+		<a href="../Years/1984.htm" class="nav-arrow">⌂</a>
 		<a href="../1985/Lifeforce.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,28 +24,36 @@
 		<p align=justify><b>Слоган:</b> Космическая одиссея на самой жестокой из планет.</p>
 		<p align=justify><b>Сюжет:</b> Когда космический корабль пришельца с далёкой планеты сбивают над Висконсином, он находит убежище в уединённом домике молодой вдовы Дженни Хайден и принимает облик её недавно погибшего мужа. Инопланетянин убеждает потрясённую Дженни отвезти его в Аризону, объяснив, что если корабль не заберёт его в течение трёх дней, он погибнет. За ними по пятам идут правительственные агенты, намеренные схватить пришельца живым или мёртвым. В пути человек со звезды демонстрирует силу вселенской любви, а Дженни заново открывает в себе человеческое чувство страсти.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Carpenter">Джон Карпентер</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#K.Allen">Карен Аллен</a></td>
-			<td><i><p style="margin-left:30px">Дженни Хайден</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Bridges">Джефф Бриджес</a></td>
-			<td><i><p style="margin-left:30px">Скотт Хайден</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.M.Smith">Чарльз Мартин Смит</a></td>
-			<td><i><p style="margin-left:30px">Марк Шермин</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ричард Джэкел</td>
-			<td><i><p style="margin-left:30px">Директор Джордж Фокс</i></p></td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/k.htm#K.Allen">Карен Аллен</a>, <a href="../Actors/d.htm#J.Bridges">Джефф Бриджес</a>, <a href="../Actors/ch.htm#C.M.Smith">Чарльз Мартин Смит</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#K.Allen">Карен Аллен</a></td>
+					<td>Дженни Хайден</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Bridges">Джефф Бриджес</a></td>
+					<td>Скотт Хайден</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.M.Smith">Чарльз Мартин Смит</a></td>
+					<td>Марк Шермин</td>
+				</tr>
+				<tr>
+					<td>Ричард Джэкел</td>
+					<td>Директор Джордж Фокс</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 22 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 29 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 29 млн.</p>
@@ -53,5 +61,7 @@
 		<p><b>Рейтинг:</b> 7.0
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

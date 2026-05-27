@@ -8,9 +8,9 @@
 <body>
 <div class="abs">
 	<div class="compact-navigation">
+	<a href="../Years/1968.htm" class="nav-arrow">⌂</a>
 		<a href="../1976/King Kong.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -20,53 +20,57 @@
 		<h1 class="movie-title">Космическая Одиссея 2001</h1>
 		<h2 class="original-title">2001: A Space Odyssey</h2>
 		<p><b>Мировая премьера:</b> 3 апреля 1968</p>
-		<p><b>Слоган:</b> Таинственное грандиозное путешествие начинается.</p>
+		<p align=justify><b>Слоган:</b> Таинственное грандиозное путешествие начинается.</p>
 		<p align=justify><b>Сюжет:</b> Этот фильм – попытка заглянуть в будущее, путеводитель для поисков предназначения человечества, вопрос к вечности. Перед началом путешествия в будущее мы навестим наших доисторических предков, потом перепрыгнем через тысячелетия в колонизированный космос, и, под конец, увидим астронавта Боумэна, заброшенного в неизведанный район космоса, а может быть даже в вечность.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#S.Kubrick">Стэнли Кубрик</a></p>
 		<p align=justify><b>В основе:</b> Рассказы Артура Кларка "Часовой" (Великобритания, 1951) и "Встреча на заре истории" (Великобритания, 1953)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/A Space Odyssey.htm">Космическая Одиссея</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#K.Dullea">Кир Дулли</a></td>
-			<td><i><p style="text-indent:30px">Доктор Дэйв Боумэн</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Уильям Силвестер</td>
-			<td><i><p style="text-indent:30px">Доктор Хейвуд Флойд</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Гэри Локвуд</td>
-			<td><i><p style="text-indent:30px">Доктор Фрэнк Пул</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Леонард Росситер</td>
-			<td><i><p style="text-indent:30px">Доктор Андрей Смыслов</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Маргарет Тизак</td>
-			<td><i><p style="text-indent:30px">Елена</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Роберт Битти</td>
-			<td><i><p style="text-indent:30px">Доктор Ральф Хэлворсен</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Шон Салливан</td>
-			<td><i><p style="text-indent:30px">Доктор Билл Майклс</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэниэл Рихтер</td>
-			<td><i><p style="text-indent:30px">Смотрящий на Луну</i></p></td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/k.htm#K.Dullea">Кир Дулли</a>, Уильям Силвестер, Гэри Локвуд
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#K.Dullea">Кир Дулли</a></td>
+					<td>Доктор Дэйв Боумэн</td>
+				</tr>
+				<tr>
+					<td>Уильям Силвестер</td>
+					<td>Доктор Хейвуд Флойд</td>
+				</tr>
+				<tr>
+					<td>Гэри Локвуд</td>
+					<td>Доктор Фрэнк Пул</td>
+				</tr>
+				<tr>
+					<td>Леонард Росситер</td>
+					<td>Доктор Андрей Смыслов</td>
+				</tr>
+				<tr>
+					<td>Маргарет Тизак</td>
+					<td>Елена</td>
+				</tr>
+				<tr>
+					<td>Роберт Битти</td>
+					<td>Доктор Ральф Хэлворсен</td>
+				</tr>
+				<tr>
+					<td>Шон Салливан</td>
+					<td>Доктор Билл Майклс</td>
+				</tr>
+				<tr>
+					<td>Дэниэл Рихтер</td>
+					<td>Смотрящий на Луну</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 11 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 60 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 68 млн.</p>
@@ -74,5 +78,7 @@
 		<p><b>Рейтинг:</b> 8.3
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

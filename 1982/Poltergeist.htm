@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Star Trek II - The Wrath Of Khan.htm" class="nav-arrow">←</a>
+		<a href="../Years/1982.htm" class="nav-arrow">⌂</a>
 		<a href="E.T. - The Extra-Terrestrial.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -21,51 +21,55 @@
 		<h1 class="movie-title">Полтергейст</h1>
 		<h2 class="original-title">Poltergeist</h2>
 		<p><b>Мировая премьера:</b> 4 июня 1982</p>
-		<p><b>Слоган:</b> Он знает, как тебя напугать.</p>
+		<p align=justify><b>Слоган:</b> Он знает, как тебя напугать.</p>
 		<p align=justify><b>Сюжет:</b> Жизнь обычной калифорнийской семьи Фрилингов проходит весьма безмятежно... до тех пор, пока в их тихий пригородный дом не вторгаются потусторонние силы. Всё начинается с пары странных происшествий, но вскоре дом превращается в настоящий водоворот сверхъестественных явлений. Эти силы явно не настроены дружелюбно – и если несчастная семья не уберётся оттуда вовремя, всех их затянет в кошмарный хаос!</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#T.Hooper">Тоб Хупер</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>ДжоБет Уильямс</td>
-			<td><i><p style="text-indent:30px">Диана Фрилинг</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Крэйг Т. Нельсон</td>
-			<td><i><p style="text-indent:30px">Стив Фрилинг</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Оливер Робинс</td>
-			<td><i><p style="text-indent:30px">Робби Фрилинг</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Беатрис Стрэйт</td>
-			<td><i><p style="text-indent:30px">Доктор Леш</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Хезер О'Рурк</td>
-			<td><i><p style="text-indent:30px">Кэрол Энн Фрилинг</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Зельда Рубинштейн</td>
-			<td><i><p style="text-indent:30px">Танжина Бэрронс</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Доминик Данн</td>
-			<td><i><p style="text-indent:30px">Дэна Фрилинг</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ричард Лоусон</td>
-			<td><i><p style="text-indent:30px">Райан</i></p></td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> ДжоБет Уильямс, Крэйг Т. Нельсон, Оливер Робинс
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>ДжоБет Уильямс</td>
+					<td>Диана Фрилинг</td>
+				</tr>
+				<tr>
+					<td>Крэйг Т. Нельсон</td>
+					<td>Стив Фрилинг</td>
+				</tr>
+				<tr>
+					<td>Оливер Робинс</td>
+					<td>Робби Фрилинг</td>
+				</tr>
+				<tr>
+					<td>Беатрис Стрэйт</td>
+					<td>Доктор Леш</td>
+				</tr>
+				<tr>
+					<td>Хезер О'Рурк</td>
+					<td>Кэрол Энн Фрилинг</td>
+				</tr>
+				<tr>
+					<td>Зельда Рубинштейн</td>
+					<td>Танжина Бэрронс</td>
+				</tr>
+				<tr>
+					<td>Доминик Данн</td>
+					<td>Дэна Фрилинг</td>
+				</tr>
+				<tr>
+					<td>Ричард Лоусон</td>
+					<td>Райан</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 11 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 77 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 77 млн.</p>
@@ -73,5 +77,7 @@
 		<p><b>Рейтинг:</b> 7.3
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

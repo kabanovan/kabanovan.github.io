@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Star Wars - The Empire Strikes Back.htm" class="nav-arrow">←</a>
+		<a href="../Years/1980.htm" class="nav-arrow">⌂</a>
 		<a href="../1981/Indiana Jones And The Raiders Of The Lost Ark.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -21,57 +21,60 @@
 		<h1 class="movie-title">Сияние</h1>
 		<h2 class="original-title">The Shining</h2>
 		<p><b>Мировая премьера:</b> 23 мая 1980</p>
-		<p><b>Слоган:</b> Величайший хоррор всех времён.</p>
+		<p align=justify><b>Слоган:</b> Величайший хоррор всех времён.</p>
 		<p align=justify><b>Сюжет:</b> Джек Торренс приехал в шикарный уединённый отель "Оверлук", чтобы поработать смотрителем во время мёртвого сезона вместе со своей женой и сыном. Торренс здесь раньше никогда не бывал. Или это не совсем так? Ответ лежит во мраке, сотканном из дикого кошмара...</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#S.Kubrick">Стэнли Кубрик</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/The Shining.htm">Сияние</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>Джек Николсон</td>
-			<td><i><p style="text-indent:30px">Джек Торренс</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Шелли Дюваль</td>
-			<td><i><p style="text-indent:30px">Венди Торренс</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Lloyd">Дэнни Ллойд</a></td>
-			<td><i><p style="text-indent:30px">Дэнни Торренс</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Скэтмэн Крозерс</td>
-			<td><i><p style="text-indent:30px">Дик Халлоранн</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Барри Нельсон</td>
-			<td><i><p style="text-indent:30px">Стюарт Ульман</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#P.Stone">Филип Стоун</a></td>
-			<td><i><p style="text-indent:30px">Делберт Грэди</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Turkel">Джо Тёркел</a></td>
-			<td><i><p style="text-indent:30px">Ллойд</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Энн Джексон</td>
-			<td><i><p style="text-indent:30px">Доктор</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Тони Бёртон</td>
-			<td><i><p style="text-indent:30px">Лэрри Даркин</i></p></td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> Джек Николсон, Шелли Дюваль, <a href="../Actors/d.htm#D.Lloyd">Дэнни Ллойд</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>Джек Николсон</td>
+					<td>Джек Торренс</td>
+				</tr>
+				<tr>
+					<td>Шелли Дюваль</td>
+					<td>Венди Торренс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Lloyd">Дэнни Ллойд</a></td>
+					<td>Дэнни Торренс</td>
+				</tr>
+				<tr>
+					<td>Скэтмэн Крозерс</td>
+					<td>Дик Халлоранн</td>
+				</tr>
+				<tr>
+					<td>Барри Нельсон</td>
+					<td>Стюарт Ульман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#P.Stone">Филип Стоун</a></td>
+					<td>Делберт Грэди</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Turkel">Джо Тёркел</a></td>
+					<td>Ллойд</td>
+				</tr>
+				<tr>
+					<td>Энн Джексон</td>
+					<td>Доктор</td>
+				</tr>
+				<tr>
+					<td>Тони Бёртон</td>
+					<td>Лэрри Даркин</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 19 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 46 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 48 млн.</p>
@@ -79,5 +82,7 @@
 		<p><b>Рейтинг:</b> 8.4
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

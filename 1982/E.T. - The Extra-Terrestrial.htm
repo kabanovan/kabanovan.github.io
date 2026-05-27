@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Poltergeist.htm" class="nav-arrow">←</a>
+		<a href="../Years/1982.htm" class="nav-arrow">⌂</a>
 		<a href="Blade Runner.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -21,36 +21,43 @@
 		<h1 class="movie-title">Инопланетянин</h1>
 		<h2 class="original-title">E.T.: The Extra-Terrestrial</h2>
 		<p><b>Мировая премьера:</b> 11 июня 1982</p>
-		<p><b>Слоган:</b> Он напуган. Он совсем один. Он за 3 миллиона световых лет от дома.</p>
+		<p align=justify><b>Слоган:</b> Он напуган. Он совсем один. Он за 3 миллиона световых лет от дома.</p>
 		<p align=justify><b>Сюжет:</b> Когда одинокий 10-летний мальчик Эллиотт встречает маленького потерявшегося инопланетянина, который всего лишь хочет найти дорогу домой, жизни обоих меняются навсегда. Пока инопланетянин узнаёт, что такое жизнь на Земле, Эллиотт понимает, что настоящая дружба не знает границ.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#S.Spielberg">Стивен Спилберг</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>Генри Томас</td>
-			<td><i><p style="text-indent:30px">Эллиотт</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Wallace">Ди Уоллес</a></td>
-			<td><i><p style="text-indent:30px">Мэри</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Роберт МакНотон</td>
-			<td><i><p style="text-indent:30px">Майкл</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Barrymore">Дрю Бэрримор</a></td>
-			<td><i><p style="text-indent:30px">Герти</i></p></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Питер Койот</td>
-			<td><i><p style="text-indent:30px">Человек с ключами</i></p></td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> Генри Томас, <a href="../Actors/d.htm#D.Wallace">Ди Уоллес</a>, Роберт МакНотон
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>Генри Томас</td>
+					<td>Эллиотт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Wallace">Ди Уоллес</a></td>
+					<td>Мэри</td>
+				</tr>
+				<tr>
+					<td>Роберт МакНотон</td>
+					<td>Майкл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Barrymore">Дрю Бэрримор</a></td>
+					<td>Герти</td>
+				</tr>
+				<tr>
+					<td>Питер Койот</td>
+					<td>Человек с ключами</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 11 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 439 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 797 млн.</p>
@@ -58,5 +65,7 @@
 		<p><b>Рейтинг:</b> 7.9
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

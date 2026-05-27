@@ -52,6 +52,7 @@ ul.menu > li:hover > ul.submenu {display: inline;}
 .movie-title {    
 	margin-top: 0;
 	margin-bottom: 10px;
+	padding-right: 120px;
 }
 
 .original-title {
@@ -199,6 +200,112 @@ ul.menu > li:hover > ul.submenu {display: inline;}
     content: counter(movie-counter) ". ";
 }
 
+.cast-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.cast-popup.show {
+    display: block;
+}
+
+.cast-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.cast-popup-header h3 {
+    margin: 0;
+}
+
+.close-popup-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s;
+}
+
+.close-popup-btn:hover {
+    color: #333;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+.popup-overlay.show {
+    display: block;
+}
+
+.cast-full-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cast-full-list td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+.cast-full-list tr:hover {
+    background-color: #f9f9f9;
+}
+
+.show-cast-btn {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 0.9em;
+    cursor: pointer;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.show-cast-btn:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.cast-full-list td:last-child {
+    color: #666;
+    font-style: italic;
+}
+
+/* Адаптация под мобильные */
+@media (max-width: 600px) {
+    .cast-popup {
+        width: 95%;
+        padding: 15px;
+    }
+}
+<!--
 .cast-section {
 	margin-bottom: 10px;
 }
@@ -231,6 +338,7 @@ ul.menu > li:hover > ul.submenu {display: inline;}
 	background-color: #d0e0f0;
 	border-color: #a0c0e0;
 }
+-->
 
 /* Скрытый элемент */
 .hidden {
