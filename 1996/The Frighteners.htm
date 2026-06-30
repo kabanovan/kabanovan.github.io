@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Independence Day.htm" class="nav-arrow">←</a>
+		<a href="../Years/1996.htm" class="nav-arrow">⌂</a>
 		<a href="../1997/Dante's Peak.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,78 +22,73 @@
 		<h2 class="original-title">The Frighteners</h2>
 		<p><b>Мировая премьера:</b> 19 июля 1996</p>
 		<p align=justify><b>Слоган:</b> И на том свете нет убийце покоя.</p>
-		<p align=justify><b>Сюжет:</b> Экстрасенс Фрэнк Бэннистер, зарабатывающий на жизнь тем, что за скромное вознаграждение
-успешно избавляет дома от полтергейста, который сам предварительно наслал, сталкивается со страшным противником –
-вернувшимся с того света, а вернее, задержавшемся на этом после казни, маньяком-убийцей. Вместе с женщиной-врачом, муж
-которой был убит этим олицетворением зла, Фрэнк пытается низвергнуть демона в ад.</p>
+		<p align=justify><b>Сюжет:</b> Для Фрэнка Бэннистера смерть давно стала способом зарабатывать на жизнь: он избавляет дома от назойливых привидений. Вот только есть один секрет – на самом деле он действует заодно с теми самыми духами, которых обещает изгнать. Эта безупречная афера работает до тех пор, пока в городе не начинают происходить загадочные убийства, совершённые демоническим призраком. Подозрение падает именно на Фрэнка, и теперь ему предстоит разобраться с собственным прошлым, чтобы найти настоящего убийцу.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#P.Jackson">Питер Джексон</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#M.J.Fox">Майкл Дж. Фокс</a></td>
-			<td>Фрэнк Бэннистер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Трини Альварадо</td>
-			<td>Доктор Люси Лински</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джеффри Комбс</td>
-			<td>Специальный агент Милтон Даммерз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Питер Добсон</td>
-			<td>Рэй Лински</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Wallace">Ди Уоллес Стоун</a></td>
-			<td>Патрисия Брэдли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Busey">Джейк Бьюзи</a></td>
-			<td>Джон Бартлетт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.McBride">Чи МакБрайд</a></td>
-			<td>Сайрус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Evans">Трой Эванс</a></td>
-			<td>Шериф Уолт Перри</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джон Эстин</td>
-			<td>Судья</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Fyfe">Джим Файф</a></td>
-			<td>Стюарт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Ju.McCarthy">Джулианна МакКарти</a></td>
-			<td>Старая леди Брэдли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.L.Ermey">Р. Ли Эрми</a></td>
-			<td>Сержант Хайлс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Hawthorne">Элизабет Хоторн</a></td>
-			<td>Магда Рис-Джонс</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/m.htm#M.J.Fox">Майкл Дж. Фокс</a>, Трини Альварадо, Питер Добсон
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/m.htm#M.J.Fox">Майкл Дж. Фокс</a></td>
+					<td>Фрэнк Бэннистер</td>
+				</tr>
+				<tr>
+					<td>Трини Альварадо</td>
+					<td>Доктор Люси Лински</td>
+				</tr>
+				<tr>
+					<td>Питер Добсон</td>
+					<td>Рэй Лински</td>
+				</tr>
+				<tr>
+					<td>Джеффри Комбс</td>
+					<td>Специальный агент Милтон Даммерз</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Wallace">Ди Уоллес Стоун</a></td>
+					<td>Патрисия Брэдли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Busey">Джейк Бьюзи</a></td>
+					<td>Джон Бартлетт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.McBride">Чи МакБрайд</a></td>
+					<td>Сайрус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Evans">Трой Эванс</a></td>
+					<td>Шериф Уолт Перри</td>
+				</tr>
+				<tr>
+					<td>Джон Эстин</td>
+					<td>Судья</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Fyfe">Джим Файф</a></td>
+					<td>Стюарт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Ju.McCarthy">Джулианна МакКарти</a></td>
+					<td>Старая леди Брэдли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.L.Ermey">Р. Ли Эрми</a></td>
+					<td>Сержант Хайлс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Hawthorne">Элизабет Хоторн</a></td>
+					<td>Магда Рис-Джонс</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 30 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 17 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 29 млн.</p>
@@ -101,5 +96,7 @@
 		<p><b>Рейтинг:</b> 7.1
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

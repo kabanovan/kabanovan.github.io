@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../1993/RoboCop 3.htm" class="nav-arrow">←</a>
+		<a href="../Years/1994.htm" class="nav-arrow">⌂</a>
 		<a href="The Shadow.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,90 +22,83 @@
 		<h2 class="original-title">The Crow</h2>
 		<p><b>Мировая премьера:</b> 11 мая 1994</p>
 		<p align=justify><b>Слоган:</b> Восставший из мёртвых, он несёт с собой смерть.</p>
-		<p align=justify><b>Сюжет:</b> Это была мрачная и страшная ночь. Ночь жуткого праздника
-Хэллоуин. Банда насильников и убийц, ворвавшись в дом молодой пары, жестоко
-расправилась с рок-музыкантом Эриком и его невестой Шелли. Спустя год Эрик Дрэйвен
-выбирается из могилы и отправляется на поиски убийц. Человек ли он? Ангел-истребитель?
-Или ворон, жаждущий возмездия?..</p>
+		<p align=justify><b>Сюжет:</b> В ночь накануне Хэллоуина банда насильников и убийц жестоко расправилась с молодым рок-музыкантом Эриком Дрэйвеном и его невестой. Спустя год после трагедии Эрик восстаёт из мёртвых, ведомый таинственным вороном, и отправляется на поиски своих убийц, чтобы заставить их ответить за совершённые преступления.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#A.Proyas">Алекс Пройас</a></p>
-		<p align=justify><b>В основе:</b> Комиксы о Вороне (США, выходят с 1989, автор – Джеймс О'Бар)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>Брэндон Ли</td>
-			<td>Эрик Дрэйвен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Hudson">Эрни Хадсон</a></td>
-			<td>Сержант Альбрехт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Wincott">Майкл Уинкотт</td>
-			<td>Топ Доллар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэвид Патрик Келли</td>
-			<td>Ти-Берд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Polito">Джон Полито</a></td>
-			<td>Гидеон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Рошелль Дэвис</td>
-			<td>Сара</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Энджел Дэвид</td>
-			<td>Сканк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лоуренс Мэйсон</td>
-			<td>Тин Тин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Massee">Майкл Масси</a></td>
-			<td>Фанбой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Todd">Тони Тодд</a></td>
-			<td>Грандж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#Ma.Rodriguez">Марко Родригес</a></td>
-			<td>Детектив Торрес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Ling">Бай Лин</a></td>
-			<td>Мика</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Анна Томсон</td>
-			<td>Дарла</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>София Шинас</td>
-			<td>Шелли Уэбстер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Билл Рэймонд</td>
-			<td>Микки</td>
-		</tr>
-		</table>
+		<p align=justify><b>В основе:</b> Комиксы о Вороне (США, выходят с 1989, издательство "Кэлибер Пресс")</p>
+		<p><b>В ролях:</b> Брэндон Ли, <a href="../Actors/e.htm#E.Hudson">Эрни Хадсон</a>, <a href="../Actors/m.htm#M.Wincott">Майкл Уинкотт</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>Брэндон Ли</td>
+					<td>Эрик Дрэйвен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Hudson">Эрни Хадсон</a></td>
+					<td>Сержант Альбрехт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Wincott">Майкл Уинкотт</a></td>
+					<td>Топ Доллар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Polito">Джон Полито</a></td>
+					<td>Гидеон</td>
+				</tr>
+				<tr>
+					<td>Дэвид Патрик Келли</td>
+					<td>Ти-Берд</td>
+				</tr>
+				<tr>
+					<td>Рошелль Дэвис</td>
+					<td>Сара</td>
+				</tr>
+				<tr>
+					<td>Энджел Дэвид</td>
+					<td>Сканк</td>
+				</tr>
+				<tr>
+					<td>Лоуренс Мэйсон</td>
+					<td>Тин Тин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Massee">Майкл Масси</a></td>
+					<td>Фанбой</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Todd">Тони Тодд</a></td>
+					<td>Грандж</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#Ma.Rodriguez">Марко Родригес</a></td>
+					<td>Детектив Торрес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Ling">Бай Лин</a></td>
+					<td>Мика</td>
+				</tr>
+				<tr>
+					<td>Анна Томсон</td>
+					<td>Дарла</td>
+				</tr>
+				<tr>
+					<td>София Шинас</td>
+					<td>Шелли Уэбстер</td>
+				</tr>
+				<tr>
+					<td>Билл Рэймонд</td>
+					<td>Микки</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 15 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 51 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 51 млн.</p>
@@ -113,5 +106,7 @@
 		<p><b>Рейтинг:</b> 7.5
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

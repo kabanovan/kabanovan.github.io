@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Judge Dredd.htm" class="nav-arrow">←</a>
+		<a href="../Years/1995.htm" class="nav-arrow">⌂</a>
 		<a href="Jumanji.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,101 +22,89 @@
 		<h2 class="original-title">Waterworld</h2>
 		<p><b>Мировая премьера:</b> 28 июля 1995</p>
 		<p align=justify><b>Слоган:</b> Тайна новой жизни скрыта за горизонтом.</p>
-		<p align=justify><b>Сюжет:</b> В результате ядерной катастрофы ледники растаяли, и почти
-вся суша погрузилась под воду. Осталось лишь несколько плавучих городов, жители которых
-никогда не видели землю. Единственной и абсолютной ценностью на бескрайних океанических
-просторах становится пригодная для выращивания пищи почва. Мореход, зарабатывающий на
-жизнь поисками земли, узнаёт о том, что легенда о существовании некой загадочной суши
-вполне реальна. Но карта, указывающая путь к заветной цели, оказывается объектом
-притязаний морских пиратов.</p>
+		<p align=justify><b>Сюжет:</b> В далёком будущем Земля оказалась полностью покрыта водой, а остатки человечества борются за выживание на ветхих лодках и плавучих поселениях – атоллах. Ходят легенды о том, что где-то ещё остался клочок пригодной для жизни суши. В поисках ключа к её местонахождению безжалостный Дьякон нападает на атолл, где живут юная Энола и её приёмная мать Хелен. Когда в их судьбу оказывается втянут загадочный странник по прозвищу Мореход, он невольно становится участником ожесточённой войны посреди бескрайнего океана. Со временем Мореход узнаёт удивительную тайну Энолы, которая может навсегда изменить судьбу всего человечества.</p>
 		<p><b>Режиссёр:</b> Кевин Рейнольдс</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#K.Costner">Кевин Костнер</a></td>
-			<td>Мореход</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Деннис Хоппер</td>
-			<td>Дьякон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джинн Трипплхорн</td>
-			<td>Хелен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Тина Мажорино</td>
-			<td>Энола</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Jeter">Майкл Джетер</a></td>
-			<td>Грегор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Murphy">Джерард Мёрфи</a></td>
-			<td>Норд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Coates">Ким Коутс</a></td>
-			<td>Торговец</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Р.Д. Колл</td>
-			<td>Миротворец</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джон Флек</td>
-			<td>Доктор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Зитто Казанн</td>
-			<td>Старейшина</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Joy">Роберт Джой</a></td>
-			<td>Счетовод</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Black">Джек Блэк</a></td>
-			<td>Пилот</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Закес Мокае</td>
-			<td>Приам</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Shimono">Саб Симоно</a></td>
-			<td>Старейшина</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Kehler">Джек Келер</a></td>
-			<td>Банкир</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Aviles">Рик Авилес</a></td>
-			<td>Привратник</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джон Тоулс-Бей</td>
-			<td>Пулемётчик на самолёте</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/k.htm#K.Costner">Кевин Костнер</a>, Деннис Хоппер, Джинн Трипплхорн
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#K.Costner">Кевин Костнер</a></td>
+					<td>Мореход</td>
+				</tr>
+				<tr>
+					<td>Деннис Хоппер</td>
+					<td>Дьякон</td>
+				</tr>
+				<tr>
+					<td>Джинн Трипплхорн</td>
+					<td>Хелен</td>
+				</tr>
+				<tr>
+					<td>Тина Мажорино</td>
+					<td>Энола</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Jeter">Майкл Джетер</a></td>
+					<td>Грегор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Murphy">Джерард Мёрфи</a></td>
+					<td>Норд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Coates">Ким Коутс</a></td>
+					<td>Торговец</td>
+				</tr>
+				<tr>
+					<td>Р.Д. Колл</td>
+					<td>Миротворец</td>
+				</tr>
+				<tr>
+					<td>Джон Флек</td>
+					<td>Доктор</td>
+				</tr>
+				<tr>
+					<td>Зитто Казанн</td>
+					<td>Старейшина</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Joy">Роберт Джой</a></td>
+					<td>Счетовод</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Black">Джек Блэк</a></td>
+					<td>Пилот</td>
+				</tr>
+				<tr>
+					<td>Закес Мокае</td>
+					<td>Приам</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Shimono">Саб Симоно</a></td>
+					<td>Старейшина</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Kehler">Джек Келер</a></td>
+					<td>Банкир</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Aviles">Рик Авилес</a></td>
+					<td>Привратник</td>
+				</tr>
+				<tr>
+					<td>Джон Тоулс-Бей</td>
+					<td>Пулемётчик на самолёте</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 175 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 88 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 264 млн.</p>
@@ -124,5 +112,7 @@
 		<p><b>Рейтинг:</b> 6.3
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

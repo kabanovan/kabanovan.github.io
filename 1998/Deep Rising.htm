@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../1997/Titanic.htm" class="nav-arrow">←</a>
+		<a href="../Years/1998.htm" class="nav-arrow">⌂</a>
 		<a href="Lost In Space.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,75 +22,69 @@
 		<h2 class="original-title">Deep Rising</h2>
 		<p><b>Мировая премьера:</b> 30 января 1998</p>
 		<p align=justify><b>Слоган:</b> Самое страшное ещё впереди.</p>
-		<p align=justify><b>Сюжет:</b> Банда наёмников отправляется на перехват океанского
-пассажирского лайнера с целью захвата драгоценностей и денег. Вооруженные до зубов, они
-рассчитывают на успех этой тщательно спланированной операции. Но боевая уверенность
-захватчиков сменяется ужасом перед небывалыми чудовищами, устроившими пир на корабле! У
-этих монстров здесь не было противников! И кровь тысяч людей не смогла утолить их 
-жажду!</p>
+		<p align=justify><b>Сюжет:</b> Когда банда безжалостных наёмников захватывает роскошный пассажирский лайнер, их ждёт неожиданное открытие: все пассажиры таинственным образом исчезли! Но это вовсе не означает, что корабль пуст. В тени палуб и коридоров скрывается нечто ужасающее – смертоносная сила из неизведанных глубин океана. Один за другим захватчики начинают бесследно исчезать, становясь добычей неизвестного существа. Теперь немногим выжившим предстоит объединиться и попытаться выбраться с обречённого корабля.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#S.Sommers">Стивен Соммерс</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Williams">Трит Уильямс</a></td>
-			<td>Джон Финнеган</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.J.O'Connor">Кевин Дж. О'Коннор</a></td>
-			<td>Джои Пантуччи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#F.Janssen">Фамке Янссен</a></td>
-			<td>Триллиан Сент-Джеймс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Heald">Энтони Хилд</a></td>
-			<td>Саймон Кантон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Studi">Уэс Стьюди</a></td>
-			<td>Гановер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Flemyng">Джейсон Флеминг</a></td>
-			<td>Маллиган</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.O'Connor">Деррик О'Коннор</a></td>
-			<td>Капитан Атертон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Curtis">Клифф Кёртис</a></td>
-			<td>Мамули</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Клифтон Пауэлл</td>
-			<td>Мейсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Goddard">Тревор Годдар</a></td>
-			<td>Ти Рэй</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#U.Damon">Уна Дэймон</a></td>
-			<td>Лейла</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
-			<td>Виво</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/t.htm#T.Williams">Трит Уильямс</a>, <a href="../Actors/k.htm#K.J.O'Connor">Кевин Дж. О'Коннор</a>, <a href="../Actors/f.htm#F.Janssen">Фамке Янссен</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Williams">Трит Уильямс</a></td>
+					<td>Джон Финнеган</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.J.O'Connor">Кевин Дж. О'Коннор</a></td>
+					<td>Джои Пантуччи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#F.Janssen">Фамке Янссен</a></td>
+					<td>Триллиан Сент-Джеймс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Heald">Энтони Хилд</a></td>
+					<td>Саймон Кантон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Studi">Уэс Стьюди</a></td>
+					<td>Гановер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Flemyng">Джейсон Флеминг</a></td>
+					<td>Маллиган</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.O'Connor">Деррик О'Коннор</a></td>
+					<td>Капитан Атертон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Curtis">Клифф Кёртис</a></td>
+					<td>Мамули</td>
+				</tr>
+				<tr>
+					<td>Клифтон Пауэлл</td>
+					<td>Мейсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Goddard">Тревор Годдар</a></td>
+					<td>Ти Рэй</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
+					<td>Виво</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#U.Damon">Уна Дэймон</a></td>
+					<td>Лейла</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 45 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 11 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 11 млн.</p>
@@ -98,5 +92,7 @@
 		<p><b>Рейтинг:</b> 6.1
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

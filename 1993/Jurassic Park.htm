@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../1992/Death Becomes Her.htm" class="nav-arrow">←</a>
+		<a href="../Years/1993.htm" class="nav-arrow">⌂</a>
 		<a href="Last Action Hero.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,73 +22,68 @@
 		<h2 class="original-title">Jurassic Park</h2>
 		<p><b>Мировая премьера:</b> 11 июня 1993</p>
 		<p align=justify><b>Слоган:</b> Путешествие на 65 миллионов лет назад.</p>
-		<p align=justify><b>Сюжет:</b> Экспансивный богач уговаривает пару учёных-палеонтологов
-приехать на остров у побережья Коста-Рики, где он устроил реликтовый парк. В парке этом
-водятся древние зверушки-динозавры, которые по его идее и должны стать гвоздём программы
-нового аттракциона. До открытия остаётся несколько дней, но один из работников, пытаясь
-продать "рассаду" налево, нарушает систему охраны, что в комплексе с грозовым ливнем
-приводит к тому, что доисторические животные оказываются на воле, где действуют в
-соответствии со своими инстинктами.</p>
+		<p align=justify><b>Сюжет:</b> На уединённом острове экспансивный богач втайне создаёт тематический парк, населённый живыми динозаврами, воссозданными из древней ДНК. Прежде чем открыть его для посетителей, он приглашает на остров пару учёных-палеонтологов и своих любознательных внуков, чтобы они первыми оценили парк и помогли развеять опасения инвесторов. Однако экскурсия оказывается совсем не такой спокойной, как ожидалось: когда система охраны даёт сбой, доисторические животные оказываются на воле.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#S.Spielberg">Стивен Спилберг</a></p>
 		<p align=justify><b>В основе:</b> Роман Майкла Крайтона "Парк Юрского периода" (США, 1990)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#JurassicPark">Парк Юрского Периода</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/s.htm#S.Neill">Сэм Нилл</a></td>
-			<td>Доктор Алан Грант</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Attenborough">Ричард Эттенборо</a></td>
-			<td>Джон Хаммонд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Dern">Лора Дёрн</a></td>
-			<td>Доктор Элли Сеттлер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Goldblum">Джефф Голдблюм</a></td>
-			<td>Доктор Йен Малкольм</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Mazzello">Джозеф Маццелло</a></td>
-			<td>Тим Мёрфи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Richards">Ариана Ричардс</a></td>
-			<td>Лекс Мёрфи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Уэйн Найт</td>
-			<td>Деннис Недри</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Боб Пек</td>
-			<td>Роберт Малдун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мартин Ферреро</td>
-			<td>Дональд Дженнаро</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
-			<td>Рэй Арнольд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.D.Wong">Б. Д. Вонг</a></td>
-			<td>Доктор Генри Ву</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/Jurassic Park.htm">Парк Юрского Периода</a></p>
+		<p><b>В ролях:</b> <a href="../Actors/s.htm#S.Neill">Сэм Нилл</a>, <a href="../Actors/l.htm#L.Dern">Лора Дёрн</a>, <a href="../Actors/r.htm#R.Attenborough">Ричард Эттенборо</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/s.htm#S.Neill">Сэм Нилл</a></td>
+					<td>Доктор Алан Грант</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Dern">Лора Дёрн</a></td>
+					<td>Доктор Элли Сеттлер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Attenborough">Ричард Эттенборо</a></td>
+					<td>Джон Хаммонд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Goldblum">Джефф Голдблюм</a></td>
+					<td>Доктор Йен Малкольм</td>
+				</tr>
+				<tr>
+					<td>Уэйн Найт</td>
+					<td>Деннис Недри</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Mazzello">Джозеф Маццелло</a></td>
+					<td>Тим Мёрфи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Richards">Ариана Ричардс</a></td>
+					<td>Лекс Мёрфи</td>
+				</tr>
+				<tr>
+					<td>Боб Пек</td>
+					<td>Роберт Малдун</td>
+				</tr>
+				<tr>
+					<td>Мартин Ферреро</td>
+					<td>Дональд Дженнаро</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
+					<td>Рэй Арнольд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.D.Wong">Б. Д. Вонг</a></td>
+					<td>Доктор Генри Ву</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 63 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 404 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 1 104 млн.</p>
@@ -96,5 +91,7 @@
 		<p><b>Рейтинг:</b> 8.2
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

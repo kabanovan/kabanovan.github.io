@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Shadow.htm" class="nav-arrow">←</a>
+		<a href="../Years/1994.htm" class="nav-arrow">⌂</a>
 		<a href="The Mask.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -21,66 +21,60 @@
 		<h1 class="movie-title">Правдивая Ложь</h1>
 		<h2 class="original-title">True Lies</h2>
 		<p><b>Мировая премьера:</b> 15 июля 1994</p>
-		<p align=justify><b>Слоган:</b> Когда он сказал, что сделает, он никогда не говорил, что сделал.</p>
-		<p align=justify><b>Сюжет:</b> Для своей семьи Гарри Таскер – любящий муж и отец,
-человек скромный и рассеяный, обыкновенный продавец компьютеров, не вылезающий с работы
-ни днем, ни ночью. Но лишь немногие знают, что на самом деле Гарри – специальный агент
-тайной правительственной службы, специализирующийся на особо опасных заданиях,
-владеющий кучей языков, всеми видами оружия и всеми возможными способами "отправки"
-злодеев на тот свет. Агент Таскер и дальше продолжал бы вести двойную жизнь, если бы
-зловещие арабские террористы не похитили Гарри, а вместе с ним и его ничего не
-подозревающую жену Хелен. Но бандиты, к своему несчастью, даже не подозревали с кем
-связались. И Хелен узнала, что муж её совсем не компьютерщик, и что она пятнадцать лет
-прожила с человеком, рядом с которым мускулистый Рэмбо выглядит ребёнком...</p>
+		<p align=justify><b>Слоган:</b> Когда он сказал "люблю", он не сказал, что именно.</p>
+		<p align=justify><b>Сюжет:</b> Спецагент Гарри Таскер – супер-шпион сверхсекретной правительственной службы, хотя в глазах своей скучающей жены Хелен он всего лишь занудный продавец компьютеров. Но двойная жизнь Гарри неожиданно заканчивается, когда он и Хелен оказываются в руках международных террористов. Теперь им придётся спасать не только свой брак, но и весь мир!</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Cameron">Джеймс Кэмерон</a></p>
 		<p align=justify><b>В основе:</b> Художественный фильм "Тотальная Слежка" (Франция, 1991)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/a.htm#A.Schwarzenegger">Арнольд Шварценеггер</a></td>
-			<td>Гарри Таскер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Том Арнольд</td>
-			<td>Альберт Гибсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.L.Curtis">Джейми Ли Кёртис</a></td>
-			<td>Хелен Таскер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Paxton">Билл Пэкстон</a></td>
-			<td>Саймон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Malik">Арт Малик</a></td>
-			<td>Салим Абу Азиз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Тиа Каррере</td>
-			<td>Джуно Скиннер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Элиза Душку</td>
-			<td>Дана Таскер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Heslov">Грант Хеслов</a></td>
-			<td>Файзел</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Heston">Чарлтон Хестон</a></td>
-			<td>Спенсер Трилби</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/a.htm#A.Schwarzenegger">Арнольд Шварценеггер</a>, <a href="../Actors/d.htm#J.L.Curtis">Джейми Ли Кёртис</a>, Том Арнольд
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/a.htm#A.Schwarzenegger">Арнольд Шварценеггер</a></td>
+					<td>Гарри Таскер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.L.Curtis">Джейми Ли Кёртис</a></td>
+					<td>Хелен Таскер</td>
+				</tr>
+				<tr>
+					<td>Том Арнольд</td>
+					<td>Альберт Гибсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Paxton">Билл Пэкстон</a></td>
+					<td>Саймон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Malik">Арт Малик</a></td>
+					<td>Салим Абу Азиз</td>
+				</tr>
+				<tr>
+					<td>Тиа Каррере</td>
+					<td>Джуно Скиннер</td>
+				</tr>
+				<tr>
+					<td>Элиза Душку</td>
+					<td>Дана Таскер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Heslov">Грант Хеслов</a></td>
+					<td>Файзел</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Heston">Чарлтон Хестон</a></td>
+					<td>Спенсер Трилби</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 115 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 146 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 379 млн.</p>
@@ -88,5 +82,7 @@
 		<p><b>Рейтинг:</b> 7.3
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Waterworld.htm" class="nav-arrow">←</a>
+		<a href="../Years/1995.htm" class="nav-arrow">⌂</a>
 		<a href="../1996/Twister.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,73 +22,67 @@
 		<h2 class="original-title">Jumanji</h2>
 		<p><b>Мировая премьера:</b> 15 декабря 1995</p>
 		<p align=justify><b>Слоган:</b> Эта игра заставит вас поверить в чудеса.</p>
-		<p align=justify><b>Сюжет:</b> Случайно обнаружив настольную игру со странным названием
-"Джуманджи", Алан Пэрриш, не зная о её сверхъестественных свойствах, на глазах изумлённой
-подружки переносится в джунгли. Долгие годы он находится в потустороннем мире, до тех
-пор, пока два ни о чём не подозревающих подростка не находят игру и не снимают волшебные
-чары, освобождая Алана из многолетнего плена. Теперь им предстоит решить нелёгкую задачу
-– победить могущественную силу игры, пройти немыслимые препятствия и одержать победу над
-силами Магии!</p>
+		<p align=justify><b>Сюжет:</b> Случайно обнаружив настольную игру со странным названием "Джуманджи", Алан Пэрриш, не зная о её сверхъестественных свойствах, на глазах изумлённой подружки Сары переносится в джунгли. Долгие годы он находится в потустороннем мире, до тех пор, пока Джуди и Питер, два ни о чём не подозревающих подростка, не находят игру и не снимают волшебные чары, освобождая его из 26-летнего плена. Повзрослевший Алан вновь встречается с Сарой, и теперь им всем вместе предстоит решить нелёгкую задачу – победить могущественную силу игры!</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Johnston">Джо Джонстон</a></p>
 		<p align=justify><b>В основе:</b> Рассказ Криса ван Олсбурга "Джуманджи" (США, 1981)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#Jumanji">Джуманджи</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/r.htm#R.Williams">Робин Уильямс</a></td>
-			<td>Алан Пэрриш</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Dunst">Кирстен Данст</a></td>
-			<td>Джуди Шеперд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Бонни Хант</td>
-			<td>Сара Уиттл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Hyde">Джонатан Хайд</a></td>
-			<td>Сэм Пэрриш / Ван Пелт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэвид Алан Грир</td>
-			<td>Карл Бентли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Адам Хэнн-Бёрд</td>
-			<td>Юный Алан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Брэдли Пирс</td>
-			<td>Питер Шеперд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Neuwirth">Биби Ньювирт</a></td>
-			<td>Нора Шеперд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лора Белл Банди</td>
-			<td>Юная Сара</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Handy">Джеймс Хэнди</a></td>
-			<td>Дезинсектор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Clarkson">Патришия Кларксон</a></td>
-			<td>Кэрол Пэрриш</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/Jumanji.htm">Джуманджи</a></p>
+		<p><b>В ролях:</b> <a href="../Actors/r.htm#R.Williams">Робин Уильямс</a>, <a href="../Actors/k.htm#K.Dunst">Кирстен Данст</a>, Бонни Хант
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/r.htm#R.Williams">Робин Уильямс</a></td>
+					<td>Алан Пэрриш</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Dunst">Кирстен Данст</a></td>
+					<td>Джуди Шеперд</td>
+				</tr>
+				<tr>
+					<td>Бонни Хант</td>
+					<td>Сара Уиттл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Hyde">Джонатан Хайд</a></td>
+					<td>Сэм Пэрриш / Ван Пелт</td>
+				</tr>
+				<tr>
+					<td>Дэвид Алан Грир</td>
+					<td>Карл Бентли</td>
+				</tr>
+				<tr>
+					<td>Адам Хэнн-Бёрд</td>
+					<td>Юный Алан</td>
+				</tr>
+				<tr>
+					<td>Брэдли Пирс</td>
+					<td>Питер Шеперд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Neuwirth">Биби Ньювирт</a></td>
+					<td>Нора Шеперд</td>
+				</tr>
+				<tr>
+					<td>Лора Белл Банди</td>
+					<td>Юная Сара</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Handy">Джеймс Хэнди</a></td>
+					<td>Дезинсектор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Clarkson">Патришия Кларксон</a></td>
+					<td>Кэрол Пэрриш</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 50 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 100 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 263 млн.</p>
@@ -96,5 +90,7 @@
 		<p><b>Рейтинг:</b> 7.1
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

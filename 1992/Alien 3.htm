@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Memoirs Of An Invisible Man.htm" class="nav-arrow">←</a>
+		<a href="../Years/1992.htm" class="nav-arrow">⌂</a>
 		<a href="Death Becomes Her.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,78 +22,71 @@
 		<h2 class="original-title">Alien 3</h2>
 		<p><b>Мировая премьера:</b> 22 мая 1992</p>
 		<p align=justify><b>Слоган:</b> Тварь вернулась.</p>
-		<p align=justify><b>Сюжет:</b> После бегства с планеты Чужих космический корабль Рипли
-терпит катастрофу вблизи так называемой планеты-тюрьмы, места, где отсиживают свой срок
-убийцы, насильники и прочие отбросы общества. Вместе с Рипли на эту планету попадает
-зародыш Чужого, который и был причиной гибели корабля. Довольно быстро он превращается в
-гигантскую зубастую тварь и начинает своё тёмное дело. Его жертвами становятся десятки
-безоружных заключенных. Кровь брызжет фонтаном, куски человеческого мяса разлетаются во
-все стороны. И кажется, что остановить эту машину смерти не сможет никто, никто кроме
-отважной, но увы не бессмертной девушки по имени Рипли.</p>
+		<p align=justify><b>Сюжет:</b> Лейтенант Рипли оказывается единственной выжившей, когда её повреждённая спасательная капсула терпит крушение на Фьорине-161 — полузаброшенной планете, населённой заключёнными тюрьмы строгого режима. Её опасения о том, что на борту находился Чужой, подтверждаются, когда начинают находить изуродованные тела обитателей планеты. Не имея ни оружия, ни современных технологий, Рипли вынуждена возглавить отчаянную борьбу против смертоносной твари.</p>
 		<p><b>Режиссёр:</b> Дэвид Финчер</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Alien.htm">Чужой</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a></td>
-			<td>Лейтенант Эллен Рипли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.S.Dutton">Чарльз С. Даттон</a></td>
-			<td>Леонард Диллон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Dance">Чарльз Дэнс</a></td>
-			<td>Джонатан Клеменс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Брайан Гловер</td>
-			<td>Суперинтендант Гарольд Эндрюс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Brown">Ральф Браун</a></td>
-			<td>Фрэнсис Аарон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэнни Уэбб</td>
-			<td>Роберт Морс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Henriksen">Лэнс Хенриксен</a></td>
-			<td>Бишоп</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Пол МакГэнн</td>
-			<td>Уолтер Голик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Postlethwaite">Пит Постлетуэйт</a></td>
-			<td>Дэвид Постлетуэйт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.J.Fields">Кристофер Джон Филдс</a></td>
-			<td>Дэниэл Райнс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Fairbank">Крис Фэйрбэнк</a></td>
-			<td>Томас Мёрфи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.McCallany">Холт МакКэллани</a></td>
-			<td>Джуниор</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a>, <a href="../Actors/ch.htm#C.S.Dutton">Чарльз С. Даттон</a>, <a href="../Actors/ch.htm#C.Dance">Чарльз Дэнс</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a></td>
+					<td>Лейтенант Эллен Рипли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.S.Dutton">Чарльз С. Даттон</a></td>
+					<td>Леонард Диллон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Dance">Чарльз Дэнс</a></td>
+					<td>Джонатан Клеменс</td>
+				</tr>
+				<tr>
+					<td>Брайан Гловер</td>
+					<td>Суперинтендант Гарольд Эндрюс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Brown">Ральф Браун</a></td>
+					<td>Фрэнсис Аарон</td>
+				</tr>
+				<tr>
+					<td>Дэнни Уэбб</td>
+					<td>Роберт Морс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Henriksen">Лэнс Хенриксен</a></td>
+					<td>Бишоп</td>
+				</tr>
+				<tr>
+					<td>Пол МакГэнн</td>
+					<td>Уолтер Голик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Postlethwaite">Пит Постлетуэйт</a></td>
+					<td>Дэвид Постлетуэйт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.J.Fields">Кристофер Джон Филдс</a></td>
+					<td>Дэниэл Райнс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Fairbank">Крис Фэйрбэнк</a></td>
+					<td>Томас Мёрфи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.McCallany">Холт МакКэллани</a></td>
+					<td>Джуниор</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 63 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 55 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 160 млн.</p>
@@ -101,5 +94,7 @@
 		<p><b>Рейтинг:</b> 6.4
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Star Trek V - The Final Frontier.htm" class="nav-arrow">←</a>
+		<a href="../Years/1989.htm" class="nav-arrow">⌂</a>
 		<a href="The Abyss.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,78 +25,72 @@
 		<p align=justify><b>Сюжет:</b> Через пять лет после триумфального спасения Нью-Йорка все забыли о знаменитых охотниках за привидениями. Всё меняется, когда древний тиран, стремящийся вернуться в мир людей через портрет в манхэттенском Музее искусств, избирает сына Даны Бэрретт новым вместилищем для своей души. С помощью одержимого куратора музея он намерен превратить Нью-Йорк в поистине адское место! Теперь спасти город могут только охотники за привидениями!</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#I.Reitman">Айвен Райтман</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Ghostbusters.htm">Охотники За Привидениями</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/b.htm#B.Murray">Билл Мюррей</a></td>
-			<td>Доктор Питер Венкман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Aykroyd">Дэн Эйкройд</a></td>
-			<td>Доктор Рэй Стэнц</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a></td>
-			<td>Дана Бэрретт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Ramis">Харольд Рэмис</a></td>
-			<td>Доктор Игон Спенглер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Hudson">Эрни Хадсон</a></td>
-			<td>Уинстон Зеддмор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Moranis">Рик Моранис</a></td>
-			<td>Луис Тулли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.MacNicol">Питер МакНикол</a></td>
-			<td>Доктор Янош Поха</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Potts">Энни Поттс</a></td>
-			<td>Джанин Мелниц</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Харрис Юлин</td>
-			<td>Судья Стивен Векслер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Курт Фуллер</td>
-			<td>Джек Хардемайер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Margulies">Дэвид Маргулис</a></td>
-			<td>Мэр</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джанет Марголин</td>
-			<td>Прокурор</td>
-</tr>
-<!--<tr>
-  <td></td>
-			<td><a href="../Actors/v.htm#W.v.Homburg">Вильгельм фон Хомбург</a></td>
-			<td>Виго</td>
-</tr>-->
-<tr>
-  <td></td>
-			<td><a href="../Actors/k.htm#K.Dunn">Кевин Данн</a></td>
-			<td>Милтон Энгланд</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/b.htm#B.Murray">Билл Мюррей</a>, <a href="../Actors/d.htm#D.Aykroyd">Дэн Эйкройд</a>, <a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/b.htm#B.Murray">Билл Мюррей</a></td>
+					<td>Доктор Питер Венкман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Aykroyd">Дэн Эйкройд</a></td>
+					<td>Доктор Рэй Стэнц</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a></td>
+					<td>Дана Бэрретт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Ramis">Харольд Рэмис</a></td>
+					<td>Доктор Игон Спенглер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Moranis">Рик Моранис</a></td>
+					<td>Луис Тулли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Hudson">Эрни Хадсон</a></td>
+					<td>Уинстон Зеддмор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.MacNicol">Питер МакНикол</a></td>
+					<td>Доктор Янош Поха</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Potts">Энни Поттс</a></td>
+					<td>Джанин Мелниц</td>
+				</tr>
+				<tr>
+					<td>Харрис Юлин</td>
+					<td>Судья Стивен Векслер</td>
+				</tr>
+				<tr>
+					<td>Курт Фуллер</td>
+					<td>Джек Хардемайер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Margulies">Дэвид Маргулис</a></td>
+					<td>Мэр</td>
+				</tr>
+				<tr>
+					<td>Джанет Марголин</td>
+					<td>Прокурор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Dunn">Кевин Данн</a></td>
+					<td>Милтон Энгланд</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 37 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 112 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 215 млн.</p>
@@ -104,5 +98,7 @@
 		<p><b>Рейтинг:</b> 6.6
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

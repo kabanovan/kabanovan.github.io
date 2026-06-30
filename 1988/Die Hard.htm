@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Who Framed Roger Rabbit.htm" class="nav-arrow">←</a>
+		<a href="../Years/1988.htm" class="nav-arrow">⌂</a>
 		<a href="../1989/Indiana Jones And The Last Crusade.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -26,78 +26,76 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.McTiernan">Джон МакТирнан</a></p>
 		<p align=justify><b>В основе:</b> Роман Родерика Торпа "Крепкий орешек" (США, 1979)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Die Hard.htm">Крепкий Орешек</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/b.htm#B.Willis">Брюс Уиллис</a></td>
-			<td>Лейтенант Джон МакКлейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Rickman">Алан Рикман</a></td>
-			<td>Ганс Грубер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.VelJohnson">Реджинальд ВелДжонсон</a></td>
-			<td>Сержант Эл Пауэлл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Bedelia">Бонни Беделиа</a></td>
-			<td>Холли Дженнеро МакКлейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Пол Глисон</td>
-			<td>Дуэйн Робинсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Bochner">Харт Бокнер</a></td>
-			<td>Гарри Эллис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кларенс Гильярд мл.</td>
-			<td>Тео</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Александр Годунов</td>
-			<td>Карл Врески</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Atherton">Уильям Этертон</a></td>
-			<td>Ричард Торнбёрг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Де'воро Уайт</td>
-			<td>Аргайл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джеймс Шигета</td>
-			<td>Джо Такаги</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Davi">Роберт Дави</a></td>
-			<td>Специальный агент Джонсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Wisniewski">Андреас Висневски</a></td>
-			<td>Тони Врески</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Бруно Дойон</td>
-			<td>Франко</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/b.htm#B.Willis">Брюс Уиллис</a>, <a href="../Actors/a.htm#A.Rickman">Алан Рикман</a>, <a href="../Actors/r.htm#R.VelJohnson">Реджинальд ВелДжонсон</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/b.htm#B.Willis">Брюс Уиллис</a></td>
+					<td>Лейтенант Джон МакКлейн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Rickman">Алан Рикман</a></td>
+					<td>Ганс Грубер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.VelJohnson">Реджинальд ВелДжонсон</a></td>
+					<td>Сержант Эл Пауэлл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Bedelia">Бонни Беделиа</a></td>
+					<td>Холли Дженнеро МакКлейн</td>
+				</tr>
+				<tr>
+					<td>Пол Глисон</td>
+					<td>Дуэйн Робинсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Bochner">Харт Бокнер</a></td>
+					<td>Гарри Эллис</td>
+				</tr>
+				<tr>
+					<td>Кларенс Гильярд мл.</td>
+					<td>Тео</td>
+				</tr>
+				<tr>
+					<td>Александр Годунов</td>
+					<td>Карл Врески</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Atherton">Уильям Этертон</a></td>
+					<td>Ричард Торнбёрг</td>
+				</tr>
+				<tr>
+					<td>Джеймс Шигета</td>
+					<td>Джо Такаги</td>
+				</tr>
+				<tr>
+					<td>Де'воро Уайт</td>
+					<td>Аргайл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Davi">Роберт Дави</a></td>
+					<td>Специальный агент Джонсон</td>
+				</tr>
+				<tr>
+					<td>Бруно Дойон</td>
+					<td>Франко</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Wisniewski">Андреас Висневски</a></td>
+					<td>Тони Врески</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 28 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 84 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 144 млн.</p>
@@ -105,5 +103,7 @@
 		<p><b>Рейтинг:</b> 8.2
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

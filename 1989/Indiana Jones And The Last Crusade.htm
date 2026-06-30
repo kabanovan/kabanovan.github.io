@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../1988/Die Hard.htm" class="nav-arrow">←</a>
+		<a href="../Years/1989.htm" class="nav-arrow">⌂</a>
 		<a href="Star Trek V - The Final Frontier.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,53 +25,56 @@
 		<p align=justify><b>Сюжет:</b> Враги Индианы – нацисты – снова заявили о себе и похитили его отца, профессора Генри Джонса-старшего, чтобы вынудить того помочь в поисках Святого Грааля. Идя по следу, ведущему из Америки в Венецию и далее – в пустыню Святой земли, Индиана должен спасти своего отца, Святой Грааль и весь мир.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#S.Spielberg">Стивен Спилберг</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Indiana Jones.htm">Индиана Джонс</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
-			<td>Доктор Генри "Индиана" Джонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Connery">Шон Коннери</a></td>
-			<td>Профессор Генри Джонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Элисон Дуди</td>
-			<td>Доктор Эльза Шнайдер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Ju.Glover">Джулиан Гловер</a></td>
-			<td>Вальтер Донован</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Elliott">Денхолм Эллиотт</a></td>
-			<td>Доктор Маркус Броуди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Byrne">Майкл Бирн</a></td>
-			<td>Штандартенфюрер Эрнст Фогель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Rhys-Davies">Джон Рис-Дэвис</a></td>
-			<td>Саллах</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ривер Феникс</td>
-			<td>Юный Инди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Malikyan">Кеворк Маликян</a></td>
-			<td>Казим</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/h.htm#H.Ford">Харрисон Форд</a>, <a href="../Actors/sh.htm#S.Connery">Шон Коннери</a>, <a href="../Actors/d.htm#D.Elliott">Денхолм Эллиотт</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
+					<td>Доктор Генри "Индиана" Джонс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Connery">Шон Коннери</a></td>
+					<td>Профессор Генри Джонс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Elliott">Денхолм Эллиотт</a></td>
+					<td>Доктор Маркус Броуди</td>
+				</tr>
+				<tr>
+					<td>Элисон Дуди</td>
+					<td>Доктор Эльза Шнайдер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Ju.Glover">Джулиан Гловер</a></td>
+					<td>Вальтер Донован</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Byrne">Майкл Бирн</a></td>
+					<td>Штандартенфюрер Эрнст Фогель</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Rhys-Davies">Джон Рис-Дэвис</a></td>
+					<td>Саллах</td>
+				</tr>
+				<tr>
+					<td>Ривер Феникс</td>
+					<td>Юный Инди</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Malikyan">Кеворк Маликян</a></td>
+					<td>Казим</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 48 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 197 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 474 млн.</p>
@@ -79,5 +82,7 @@
 		<p><b>Рейтинг:</b> 8.2
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

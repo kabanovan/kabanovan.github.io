@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Die Hard 2.htm" class="nav-arrow">←</a>
+		<a href="../Years/1990.htm" class="nav-arrow">⌂</a>
 		<a href="Darkman.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,43 +24,48 @@
 		<p align=justify><b>Слоган:</b> Когда любовь настолько сильна, ничто не может её оборвать... Даже убийство.</p>
 		<p align=justify><b>Сюжет:</b> Сэм погибает в схватке с грабителем, но его призрак остаётся в мире живых. Отчаянно пытаясь связаться со своей возлюбленной Молли, он узнаёт, что его смерть не была случайной. Чтобы узнать правду о своём убийстве и спасти Молли от той же участи, он прибегает к помощи медиума, которая и сама не верит в свои способности.</p>
 		<p><b>Режиссёр:</b> Джерри Цукер</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>Патрик Суэйзи</td>
-			<td>Сэм Вит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#W.Goldberg">Вупи Голдберг</a></td>
-			<td>Ода Мэй Браун</td>
-		</tr>
-		<tr>
-			<td></td>                                         
-			<td><a href="../Actors/d.htm#D.Moore">Деми Мур</a></td>
-			<td>Молли Дженсен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Goldwyn">Тони Голдуин</a></td>
-			<td>Карл Брунер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Винсент Скьявелли</td>
-			<td>Призрак в метро</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Брюс Чаркоу</td>
-			<td>Лайл Фергюсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Aviles">Рик Авилес</a></td>
-			<td>Вилли Лопес</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> Патрик Суэйзи, <a href="../Actors/d.htm#D.Moore">Деми Мур</a>, <a href="../Actors/v.htm#W.Goldberg">Вупи Голдберг</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>Патрик Суэйзи</td>
+					<td>Сэм Вит</td>
+				</tr>
+				<tr>                                      
+					<td><a href="../Actors/d.htm#D.Moore">Деми Мур</a></td>
+					<td>Молли Дженсен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#W.Goldberg">Вупи Голдберг</a></td>
+					<td>Ода Мэй Браун</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Goldwyn">Тони Голдуин</a></td>
+					<td>Карл Брунер</td>
+				</tr>
+				<tr>
+					<td>Винсент Скьявелли</td>
+					<td>Призрак в метро</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Aviles">Рик Авилес</a></td>
+					<td>Вилли Лопес</td>
+				</tr>
+				<tr>
+					<td>Брюс Чаркоу</td>
+					<td>Лайл Фергюсон</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 22 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 218 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 506 млн.</p>
@@ -68,5 +73,7 @@
 		<p><b>Рейтинг:</b> 7.1
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

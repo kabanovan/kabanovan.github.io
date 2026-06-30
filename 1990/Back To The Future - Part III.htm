@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../1989/Back To The Future - Part II.htm" class="nav-arrow">←</a>
+		<a href="../Years/1990.htm" class="nav-arrow">⌂</a>
 		<a href="Total Recall.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -21,93 +21,88 @@
 		<h1 class="movie-title">Назад В Будущее: Часть III</h1>
 		<h2 class="original-title">Back To The Future: Part III</h2>
 		<p><b>Мировая премьера:</b> 25 мая 1990</p>
-		<p align=justify><b>Слоган:</b> Лучшее путешествие они оставили напоследок... Но в этот раз они зашли
-слишком далеко.</p>
+		<p align=justify><b>Слоган:</b> Лучшее путешествие они оставили напоследок... Но в этот раз они зашли слишком далеко.</p>
 		<p align=justify><b>Сюжет:</b> Застряв в 1955 году из-за удара молнии, Марти Макфлай узнаёт, что ему предстоит отправиться в 1885 год, чтобы спасти Дока Брауна от преждевременной гибели. Но есть одна проблема: Док без памяти влюбился в школьную учительницу Клару Клейтон и, похоже, совсем потерял голову. Теперь Марти должен уберечь Дока от неприятностей, починить "Делориан" и вернуть прошлое, настоящее и будущее на свои места, чтобы все оказались там и тогда, где им положено быть.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#R.Zemekis">Роберт Земекис</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Back To The Future.htm">Назад В Будущее</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#M.J.Fox">Майкл Дж. Фокс</a></td>
-			<td>Марти МакФлай / Шеймус МакФлай</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Lloyd">Кристофер Ллойд</a></td>
-			<td>Доктор Эммет "Док" Браун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.F.Wilson">Томас Ф. Уилсон</a></td>
-			<td>Бьюфорд "Бешенный Пёс" Таннен / Бифф Таннен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мэри Стинберген</td>
-			<td>Клара Клейтон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Thompson">Ли Томпсон</a></td>
-			<td>Мэгги МакФлай / Лоррейн МакФлай</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мэтт Кларк</td>
-			<td>Бармен Честер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Shue">Элизабет Шу</a></td>
-			<td>Дженнифер Паркер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ричард Дайсарт</td>
-			<td>Торговец колючей проволокой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Buttram">Пэт Баттрем</a></td>
-			<td>Джеб</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Хэрри Кэри мл.</td>
-			<td>Зик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Даб Тейлор</td>
-			<td>Леви</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Tolkan">Джеймс Толкан</a></td>
-			<td>Маршал Джеймс Стрикленд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.McClure">Марк МакКлюр</a></td>
-			<td>Дейв МакФлай</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.J.Sperber">Уэнди Джо Спербер</a></td>
-			<td>Линда МакФлай</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#Flea">Фли</a></td>
-			<td>Дуглас Нидлс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Weissman">Джеффри Вайсман</a></td>
-			<td>Джордж МакФлай</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/m.htm#M.J.Fox">Майкл Дж. Фокс</a>, <a href="../Actors/k.htm#C.Lloyd">Кристофер Ллойд</a>, Мэри Стинберген
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/m.htm#M.J.Fox">Майкл Дж. Фокс</a></td>
+					<td>Марти МакФлай / Шеймус МакФлай</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Lloyd">Кристофер Ллойд</a></td>
+					<td>Доктор Эммет "Док" Браун</td>
+				</tr>
+				<tr>
+					<td>Мэри Стинберген</td>
+					<td>Клара Клейтон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.F.Wilson">Томас Ф. Уилсон</a></td>
+					<td>Бьюфорд "Бешенный Пёс" Таннен / Бифф Таннен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Thompson">Ли Томпсон</a></td>
+					<td>Мэгги МакФлай / Лоррейн МакФлай</td>
+				</tr>
+				<tr>
+					<td>Мэтт Кларк</td>
+					<td>Бармен Честер</td>
+				</tr>
+				<tr>
+					<td>Ричард Дайсарт</td>
+					<td>Торговец колючей проволокой</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Buttram">Пэт Баттрем</a></td>
+					<td>Джеб</td>
+				</tr>
+				<tr>
+					<td>Хэрри Кэри мл.</td>
+					<td>Зик</td>
+				</tr>
+				<tr>
+					<td>Даб Тейлор</td>
+					<td>Леви</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Tolkan">Джеймс Толкан</a></td>
+					<td>Маршал Джеймс Стрикленд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Shue">Элизабет Шу</a></td>
+					<td>Дженнифер Паркер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.McClure">Марк МакКлюр</a></td>
+					<td>Дейв МакФлай</td>
+				</tr>
+				<tr>
+					<td style="white-space:nowrap"><a href="../Actors/u.htm#W.J.Sperber">Уэнди Джо Спербер</a></td>
+					<td>Линда МакФлай</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#Flea">Фли</a></td>
+					<td>Дуглас Нидлс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Weissman">Джеффри Вайсман</a></td>
+					<td>Джордж МакФлай</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 40 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 88 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 245 млн.</p>
@@ -115,5 +110,7 @@
 		<p><b>Рейтинг:</b> 7.5
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

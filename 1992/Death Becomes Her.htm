@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Alien 3.htm" class="nav-arrow">←</a>
+		<a href="../Years/1992.htm" class="nav-arrow">⌂</a>
 		<a href="../1993/Jurassic Park.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -21,77 +21,71 @@
 		<h1 class="movie-title">Смерть Ей К Лицу</h1>
 		<h2 class="original-title">Death Becomes Her</h2>
 		<p><b>Мировая премьера:</b> 31 июля 1992</p>
-		<p align=justify><b>Слоган:</b> В одном маленьком сосуде... Источник юности. Секрет
-вечной жизни. Сила древнего эликсира. Иногда всё идет гладко... иногда нет.</p>
-		<p align=justify><b>Сюжет:</b> Легкомысленная актриса Мадлен отбивает у своей подруги
-Хелен жениха – знаменитого пластического хирурга. Через несколько лет Хелен,
-располневшая и совершенно опустившаяся, попадает в сумасшедший дом, где, наконец,
-приходит в себя и решает отомстить. Но когда им обеим в руки попадает чудодейственный
-эликсир, дающий молодоcть, красоту и бессмертие, бывшие подруги пытаются расправиться
-друг с другом.</p>
+		<p align=justify><b>Слоган:</b> В одном маленьком сосуде... Источник юности. Секрет вечной жизни. Сила древнего эликсира. Иногда всё идет гладко... иногда нет.</p>
+		<p align=justify><b>Сюжет:</b> Актриса Мадлен Аштон всё чаще замечает новые морщины, а хороших ролей в её жизни становится всё меньше. Её бывшая подруга Хелен Шарп, у которой Мадлен отбила жениха, сильно располнела после этого. А муж Мадлен, знаменитый пластический хирург Эрнест, коротает вечера за выпивкой, проклиная день их знакомства. Когда две тщеславные соперницы встречают загадочную и невероятно красивую женщину, та предлагает им необычный подарок – эликсир вечной молодости. Однако когда выясняется, что вместе с красотой они получают гораздо больше, чем ожидали, их самолюбие и взаимная ненависть вспыхивают с новой силой.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#R.Zemekis">Роберт Земекис</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#M.Streep">Мерил Стрип</a></td>
-			<td>Мадлен Аштон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Willis">Брюс Уиллис</a></td>
-			<td>Доктор Эрнест Менвилл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Голди Хоун</td>
-			<td>Хелен Шарп</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Изабелла Росселлини</td>
-			<td>Лизель Фон Руман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Йэн Огилви</td>
-			<td>Шагалл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Адам Сторк</td>
-			<td>Дакота Уильямс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Fish">Нэнси Фиш</a></td>
-			<td>Роза</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Алайна Рид Холл</td>
-			<td>Психиатр</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мишель Джонсон</td>
-			<td>Анна Джонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.E.Trainor">Мэри Эллен Трейнор</a></td>
-			<td><i><p style="margin-left:30px">Вивиан Адамс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Frankfather">Уильям Фрэнкфазер</a></td>
-			<td>Рой Франклин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Ingle">Джон Ингл</a></td>
-			<td>Священник</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> Голди Хоун, <a href="../Actors/b.htm#B.Willis">Брюс Уиллис</a>, <a href="../Actors/m.htm#M.Streep">Мерил Стрип</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>Голди Хоун</td>
+					<td>Хелен Шарп</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Willis">Брюс Уиллис</a></td>
+					<td>Доктор Эрнест Менвилл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Streep">Мерил Стрип</a></td>
+					<td>Мадлен Аштон</td>
+				</tr>
+				<tr>
+					<td>Изабелла Росселлини</td>
+					<td>Лизель Фон Руман</td>
+				</tr>
+				<tr>
+					<td>Йэн Огилви</td>
+					<td>Шагалл</td>
+				</tr>
+				<tr>
+					<td>Адам Сторк</td>
+					<td>Дакота Уильямс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Fish">Нэнси Фиш</a></td>
+					<td>Роза</td>
+				</tr>
+				<tr>
+					<td>Алайна Рид Холл</td>
+					<td>Психиатр</td>
+				</tr>
+				<tr>
+					<td>Мишель Джонсон</td>
+					<td>Анна Джонс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.E.Trainor">Мэри Эллен Трейнор</a></td>
+					<td>Вивиан Адамс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Frankfather">Уильям Фрэнкфазер</a></td>
+					<td>Рой Франклин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Ingle">Джон Ингл</a></td>
+					<td>Священник</td>
+				</tr>
+			</table>
+		</div>
+		
 		<p><b>Бюджет:</b> $ 55 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 58 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 149 млн.</p>
@@ -99,5 +93,7 @@
 		<p><b>Рейтинг:</b> 6.7
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

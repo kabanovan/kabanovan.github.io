@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Volcano.htm" class="nav-arrow">←</a>
+		<a href="../Years/1997.htm" class="nav-arrow">⌂</a>
 		<a href="The Lost World - Jurassic Park.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,78 +22,73 @@
 		<h2 class="original-title">The Fifth Element</h2>
 		<p><b>Мировая премьера:</b> 9 мая 1997</p>
 		<p align=justify><b>Слоган:</b> Он должен быть найден.</p>
-		<p align=justify><b>Сюжет:</b> Каждые пять тысяч лет открываются двери между измерениями,
-и тёмные силы стремятся нарушить существующую гармонию. Каждые пять тысяч лет Вселенной
-нужен герой, способный противостоять этому злу... XXIII век. Нью-йоркский таксист Корбен
-Даллас должен решить глобальную задачу – спасение всего рода человеческого.</p>
+		<p align=justify><b>Сюжет:</b> Нью-Йорк, XXIII век. К Земле стремительно несётся гигантский огненный шар, грозящий уничтожить всё живое. Старый монах Корнелиус знает, как предотвратить катастрофу: необходимо собрать воедино четыре элемента – воздух, воду, огонь и землю, объединив их вокруг пятого элемента – высшего существа, единственно способного остановить абсолютное Зло. На помощь Корнелиусу приходят таксист Корбен Даллас и инопланетянка Лилу, принявшая облик прекрасной рыжеволосой девушки. Только вместе они могут спасти человечество.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#L.Besson">Люк Бессон</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/b.htm#B.Willis">Брюс Уиллис</a></td>
-			<td>Корбен Даллас</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.Holm">Иэн Холм</a></td>
-			<td>Преподобный Вито Корнелиус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Крис Такер</td>
-			<td>Руби Род</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Jovovich">Милла Йовович</a></td>
-			<td>Лилу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Oldman">Гэри Олдман</a></td>
-			<td>Жан-Батист Эмануэль Зорг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.James">Брайон Джеймс</a></td>
-			<td>Генерал Манро</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.T.Lister">Томми "Тайни" Листер мл.</td>
-			<td>Президент Линдберг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Чарли Крид Майлз</td>
-			<td>Дэвид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Люк Перри</td>
-			<td>Билли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Майвенн Ле Беско</td>
-			<td>Дива Плавалагуна</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Fairbank">Кристофер Фэйрбэнк</a></td>
-			<td>Профессор Мактилберг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джон Блютал</td>
-			<td>Профессор Паколи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Jo.Bennett">Джон Беннетт</a></td>
-			<td>Жрец</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/b.htm#B.Willis">Брюс Уиллис</a>, <a href="../Actors/i.htm#I.Holm">Иэн Холм</a>, Крис Такер
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/b.htm#B.Willis">Брюс Уиллис</a></td>
+					<td>Корбен Даллас</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.Holm">Иэн Холм</a></td>
+					<td>Преподобный Вито Корнелиус</td>
+				</tr>
+				<tr>
+					<td>Крис Такер</td>
+					<td>Руби Род</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Jovovich">Милла Йовович</a></td>
+					<td>Лилу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Oldman">Гэри Олдман</a></td>
+					<td>Жан-Батист Эмануэль Зорг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.James">Брайон Джеймс</a></td>
+					<td>Генерал Манро</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.T.Lister">Томми "Тайни" Листер мл.</td>
+					<td>Президент Линдберг</td>
+				</tr>
+				<tr>
+					<td>Чарли Крид Майлз</td>
+					<td>Дэвид</td>
+				</tr>
+				<tr>
+					<td>Люк Перри</td>
+					<td>Билли</td>
+				</tr>
+				<tr>
+					<td>Майвенн Ле Беско</td>
+					<td>Дива Плавалагуна</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Fairbank">Кристофер Фэйрбэнк</a></td>
+					<td>Профессор Мактилберг</td>
+				</tr>
+				<tr>
+					<td>Джон Блютал</td>
+					<td>Профессор Паколи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Jo.Bennett">Джон Беннетт</a></td>
+					<td>Жрец</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 90 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 64 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 264 млн.</p>
@@ -101,5 +96,7 @@
 		<p><b>Рейтинг:</b> 7.6
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>
