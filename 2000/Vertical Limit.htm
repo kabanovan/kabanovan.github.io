@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The 6th Day.htm" class="nav-arrow">←</a>
+		<a href="../Years/2000.htm" class="nav-arrow">⌂</a>
 		<a href="Cast Away.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,85 +22,64 @@
 		<h2 class="original-title">Vertical Limit</h2>
 		<p><b>Мировая премьера:</b> 8 декабря 2000</p>
 		<p align=justify><b>Слоган:</b> В горах не умирают. Там просто не живут.</p>
-		<p align=justify><b>Сюжет:</b> Группа альпинистов оказалась погребённой заживо в
-расщелине у вершины К-2, второй после Эвереста горы мира. На такой высоте им остаётся
-жить считанные часы. Шестеро отчаянных смельчаков решают подняться на роковую отметку,
-чтобы вызволить несчастных из ледяной могилы. Но для этого им придётся обогнать свою
-главную соперницу, которая уже спускается по склонам удушающим холодом и неожиданными
-лавинами – саму смерть.</p>
+		<p align=justify><b>Сюжет:</b> После смертельной лавины группа альпинистов оказывается погребённой заживо в расщелине у вершины К2, второй после Эвереста горы мира. Среди них – сестра бывшего профессионального скалолаза Питера Гэррета, с которой он давно потерял связь. Чтобы вызволить её и остальных участников экспедиции, Питер возглавляет отчаянную спасательную операцию. В гонке со временем ему предстоит преодолеть предел человеческих возможностей и бросить вызов беспощадной стихии.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#M.Campbell">Мартин Кэмпбелл</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>Крис О'Доннелл</td>
-			<td>Питер Гэрретт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Paxton">Билл Пэкстон</a></td>
-			<td>Эллиот Вон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Tunney">Робин Танни</a></td>
-			<td>Энни Гэрретт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Скотт Гленн</td>
-			<td>Монтгомери Вик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Изабелла Скорупко</td>
-			<td>Моник Обертин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Николас Ли</td>
-			<td>Том МакЛарен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#Ro.Taylor">Роберт Тейлор</a></td>
-			<td>Скип Тейлор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Morrison">Темуэра Моррисон</a></td>
-			<td>Майор Расул</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Стюарт Уилсон</td>
-			<td>Ройс Гэрретт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Mendelsohn">Бен Мендельсон</a></td>
-			<td>Малькольм Бенч</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Стив Ле Маркванд</td>
-			<td>Сирил Бенч</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Siddig">Александр Сиддиг</a></td>
-			<td>Карим Назир</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Seth">Рошан Сет</a></td>
-			<td>Полковник Амир Салим</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Hayman">Дэвид Хейман</a></td>
-			<td>Фрэнк Уильямс</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> Крис О'Доннелл, <a href="../Actors/b.htm#B.Paxton">Билл Пэкстон</a>, <a href="../Actors/r.htm#R.Tunney">Робин Танни</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>Крис О'Доннелл</td>
+					<td>Питер Гэрретт</td>
+				</tr>
+				<tr>					<td><a href="../Actors/b.htm#B.Paxton">Билл Пэкстон</a></td>
+					<td>Эллиот Вон</td>
+				</tr>
+				<tr>					<td><a href="../Actors/r.htm#R.Tunney">Робин Танни</a></td>
+					<td>Энни Гэрретт</td>
+				</tr>
+				<tr>					<td>Скотт Гленн</td>
+					<td>Монтгомери Вик</td>
+				</tr>
+				<tr>					<td>Изабелла Скорупко</td>
+					<td>Моник Обертин</td>
+				</tr>
+				<tr>					<td>Николас Ли</td>
+					<td>Том МакЛарен</td>
+				</tr>
+				<tr>					<td><a href="../Actors/r.htm#Ro.Taylor">Роберт Тейлор</a></td>
+					<td>Скип Тейлор</td>
+				</tr>
+				<tr>					<td><a href="../Actors/t.htm#T.Morrison">Темуэра Моррисон</a></td>
+					<td>Майор Расул</td>
+				</tr>
+				<tr>					<td>Стюарт Уилсон</td>
+					<td>Ройс Гэрретт</td>
+				</tr>
+				<tr>					<td><a href="../Actors/b.htm#B.Mendelsohn">Бен Мендельсон</a></td>
+					<td>Малькольм Бенч</td>
+				</tr>
+				<tr>					<td>Стив Ле Маркванд</td>
+					<td>Сирил Бенч</td>
+				</tr>
+				<tr>					<td><a href="../Actors/a.htm#A.Siddig">Александр Сиддиг</a></td>
+					<td>Карим Назир</td>
+				</tr>
+				<tr>					<td><a href="../Actors/r.htm#R.Seth">Рошан Сет</a></td>
+					<td>Полковник Амир Салим</td>
+				</tr>
+				<tr>					<td><a href="../Actors/d.htm#D.Hayman">Дэвид Хейман</a></td>
+					<td>Фрэнк Уильямс</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 75 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 69 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 216 млн.</p>
@@ -108,5 +87,7 @@
 		<p><b>Рейтинг:</b> 6.0
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

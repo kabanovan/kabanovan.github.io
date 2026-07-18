@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Star Wars - Attack Of The Clones.htm" class="nav-arrow">←</a>
+		<a href="../Years/2002.htm" class="nav-arrow">⌂</a>
 		<a href="Men In Black II.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,105 +22,77 @@
 		<h2 class="original-title">Minority Report</h2>
 		<p><b>Мировая премьера:</b> 21 июня 2002</p>
 		<p align=justify><b>Слоган:</b> Спасение – в бегстве.</p>
-		<p align=justify><b>Сюжет:</b> В Вашингтоне 2054 года не существует убийств благодаря
-новейшей революционной технологии, которая определяет убийц ещё до того, как они
-совершат преступление. Глава специального отдела профилактики преступлений Джон
-Эндертон свято верил в систему, пока сам не оказался обвинённым в убийстве, которого он
-ещё не совершил...</p>
+		<p align=justify><b>Сюжет:</b> В Вашингтоне 2054 года уже шесть лет не существует убийств благодаря новейшей революционной технологии, которая определяет убийц ещё до того, как они совершат преступление. Но однажды глава отдела профилактики преступлений Джон Эндертон сам оказывается обвинённым в убийстве, которого ещё не совершил. Теперь он вынужден скрываться от собственных коллег, чтобы выяснить, кто его подставил, и не стать жертвой "безупречной" системы, которую он сам помог создать.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#S.Spielberg">Стивен Спилберг</a></p>
 		<p align=justify><b>В основе:</b> Рассказ Филипа К. Дика "Особое мнение" (США, 1956)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Cruise">Том Круз</a></td>
-			<td>Капитан Джон Эндертон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.v.Sydow">Макс фон Зюдов</a></td>
-			<td>Ламар Бёрджес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Farrell">Колин Фаррелл</td>
-			<td>Дэнни Витвер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Morton">Саманта Мортон</a></td>
-			<td>Агата</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Smith">Лоис Смит</a></td>
-			<td>Доктор Айрис Хинеман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Stormare">Петер Стормаре</a></td>
-			<td>Доктор Соломон Эдди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.McDonough">Нил МакДонаф</a></td>
-			<td>Гордон Флетчер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.B.Nelson">Тим Блейк Нельсон</a></td>
-			<td>Гидеон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Стив Харрис</td>
-			<td>Джед</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кэтрин Моррис</td>
-			<td>Лара Кларк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Майк Байндер</td>
-			<td>Лио Кроу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэниэл Лондон</td>
-			<td>Уолли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джейсон Антун</td>
-			<td>Руфус Райли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Kilpatrick">Патрик Килпатрик</a></td>
-			<td>Нотт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джессика Кэпшоу</td>
-			<td>Иванна</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эшли Кроу</td>
-			<td>Сара Маркс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ари Гросс</td>
-			<td>Ховард Маркс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джессика Харпер</td>
-			<td>Энн Лайвли</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/t.htm#T.Cruise">Том Круз</a>, <a href="../Actors/m.htm#M.v.Sydow">Макс фон Зюдов</a>, <a href="../Actors/k.htm#C.Farrell">Колин Фаррелл</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Cruise">Том Круз</a></td>
+					<td>Капитан Джон Эндертон</td>
+				</tr>
+				<tr>					<td><a href="../Actors/m.htm#M.v.Sydow">Макс фон Зюдов</a></td>
+					<td>Ламар Бёрджес</td>
+				</tr>
+				<tr>					<td><a href="../Actors/k.htm#C.Farrell">Колин Фаррелл</a></td>
+					<td>Дэнни Витвер</td>
+				</tr>
+				<tr>					<td><a href="../Actors/s.htm#S.Morton">Саманта Мортон</a></td>
+					<td>Агата</td>
+				</tr>
+				<tr>					<td><a href="../Actors/l.htm#L.Smith">Лоис Смит</a></td>
+					<td>Доктор Айрис Хинеман</td>
+				</tr>
+				<tr>					<td><a href="../Actors/p.htm#P.Stormare">Петер Стормаре</a></td>
+					<td>Доктор Соломон Эдди</td>
+				</tr>
+				<tr>					<td><a href="../Actors/n.htm#N.McDonough">Нил МакДонаф</a></td>
+					<td>Гордон Флетчер</td>
+				</tr>
+				<tr>					<td><a href="../Actors/t.htm#T.B.Nelson">Тим Блейк Нельсон</a></td>
+					<td>Гидеон</td>
+				</tr>
+				<tr>					<td>Стив Харрис</td>
+					<td>Джед</td>
+				</tr>
+				<tr>					<td>Кэтрин Моррис</td>
+					<td>Лара Кларк</td>
+				</tr>
+				<tr>					<td>Майк Байндер</td>
+					<td>Лио Кроу</td>
+				</tr>
+				<tr>					<td>Дэниэл Лондон</td>
+					<td>Уолли</td>
+				</tr>
+				<tr>					<td><a href="../Actors/p.htm#P.Kilpatrick">Патрик Килпатрик</a></td>
+					<td>Нотт</td>
+				</tr>
+				<tr>					<td>Джейсон Антун</td>
+					<td>Руфус Райли</td>
+				</tr>
+				<tr>					<td>Джессика Кэпшоу</td>
+					<td>Иванна</td>
+				</tr>
+				<tr>					<td>Эшли Кроу</td>
+					<td>Сара Маркс</td>
+				</tr>
+				<tr>					<td>Ари Гросс</td>
+					<td>Ховард Маркс</td>
+				</tr>
+				<tr>					<td>Джессика Харпер</td>
+					<td>Энн Лайвли</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 102 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 132 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 358 млн.</p>
@@ -128,5 +100,7 @@
 		<p><b>Рейтинг:</b> 7.6
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

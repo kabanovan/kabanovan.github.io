@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Time Machine.htm" class="nav-arrow">←</a>
+		<a href="../Years/2002.htm" class="nav-arrow">⌂</a>
 		<a href="The Scorpion King.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,75 +22,60 @@
 		<h2 class="original-title">Blade II</h2>
 		<p><b>Мировая премьера:</b> 22 марта 2002</p>
 		<p align=justify><b>Слоган:</b> Быстрее. Острее. Смертельнее.</p>
-		<p align=justify><b>Сюжет:</b> Мир вампиров в ужасе от появления новой расы
-супер-кровососов! Именно благодаря этому легендарный Блэйд и его учитель Уистлер
-вынуждены объединиться со своими кровными врагами – элитным отрядом вампиров-воинов.
-Новая раса беспощадных вампиров должна быть уничтожена, во что бы то ни стало!</p>
+		<p align=justify><b>Сюжет:</b> Когда миру начинает угрожать новая, ещё более смертоносная раса супер-кровососов, легендарный Блэйд и его учитель Уистлер вынуждены объединиться со своими заклятыми врагами – элитным отрядом вампиров-воинов. Новая раса беспощадных чудовищ должна быть уничтожена, во что бы то ни стало!</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#G.D.Toro">Гильермо Дель Торо</a></p>
-		<p align=justify><b>В основе:</b> Комиксы о Блэйде (США, выходят с 1973, авторы – Марв Вулфман и Джин Колан)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#Blade">Блэйд</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/u.htm#W.Snipes">Уэсли Снайпс</a></td>
-			<td>Блэйд / Эрик Брукс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Kristofferson">Крис Кристофферсон</a></td>
-			<td>Абрахам Уистлер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Норман Ридус</td>
-			<td>Джош "Скад"</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Varela">Леонор Варела</a></td>
-			<td>Нисса Дамаскинос</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Perlman">Рон Пёрлман</a></td>
-			<td>Райнхардт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Kretschmann">Томас Кречманн</a></td>
-			<td>Илай Дамаскинос</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Goss">Люк Госс</a></td>
-			<td>Джаред Номак</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Schulze">Мэттью Шульц</a></td>
-			<td>Чупа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэнни Джон Джулс</td>
-			<td>Асад</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Roden">Карел Роден</a></td>
-			<td>Карл Кунен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Yen">Донни Йен</a></td>
-			<td>Снеговик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Curran">Тони Карран</a></a></td>
-			<td>Жрец</td>
-		</tr>
-		</table>
+		<p align=justify><b>В основе:</b> Комиксы о Блэйде (США, выходят с 1973, издательство "Марвел Комикс")</p>
+		<p align=justify><b>Серия:</b> <a href="../franchise/Blade.htm">Блэйд</a></p>
+		<p><b>В ролях:</b> <a href="../Actors/u.htm#W.Snipes">Уэсли Снайпс</a>, <a href="../Actors/k.htm#K.Kristofferson">Крис Кристофферсон</a>, <a href="../Actors/l.htm#L.Varela">Леонор Варела</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/u.htm#W.Snipes">Уэсли Снайпс</a></td>
+					<td>Блэйд / Эрик Брукс</td>
+				</tr>
+				<tr>					<td><a href="../Actors/k.htm#K.Kristofferson">Крис Кристофферсон</a></td>
+					<td>Абрахам Уистлер</td>
+				</tr>
+				<tr>					<td><a href="../Actors/l.htm#L.Varela">Леонор Варела</a></td>
+					<td>Нисса Дамаскинос</td>
+				</tr>
+				<tr>					<td>Норман Ридус</td>
+					<td>Джош "Скад"</td>
+				</tr>
+				<tr>					<td><a href="../Actors/r.htm#R.Perlman">Рон Пёрлман</a></td>
+					<td>Райнхардт</td>
+				</tr>
+				<tr>					<td><a href="../Actors/t.htm#T.Kretschmann">Томас Кречманн</a></td>
+					<td>Илай Дамаскинос</td>
+				</tr>
+				<tr>					<td><a href="../Actors/l.htm#L.Goss">Люк Госс</a></td>
+					<td>Джаред Номак</td>
+				</tr>
+				<tr>					<td><a href="../Actors/m.htm#M.Schulze">Мэттью Шульц</a></td>
+					<td>Чупа</td>
+				</tr>
+				<tr>					<td>Дэнни Джон Джулс</td>
+					<td>Асад</td>
+				</tr>
+				<tr>					<td><a href="../Actors/k.htm#K.Roden">Карел Роден</a></td>
+					<td>Карл Кунен</td>
+				</tr>
+				<tr>					<td><a href="../Actors/d.htm#D.Yen">Донни Йен</a></td>
+					<td>Снеговик</td>
+				</tr>
+				<tr>					<td><a href="../Actors/t.htm#T.Curran">Тони Карран</a></a></td>
+					<td>Жрец</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 54 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 82 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 155 млн.</p>
@@ -98,5 +83,7 @@
 		<p><b>Рейтинг:</b> 6.7
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

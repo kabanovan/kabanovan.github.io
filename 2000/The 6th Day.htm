@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Charlie's Angels.htm" class="nav-arrow">←</a>
+		<a href="../Years/2000.htm" class="nav-arrow">⌂</a>
 		<a href="Vertical Limit.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,86 +22,64 @@
 		<h2 class="original-title">The 6th Day</h2>
 		<p><b>Мировая премьера:</b> 17 ноября 2000</p>
 		<p align=justify><b>Слоган:</b> Личность аннулирована.</p>
-		<p align=justify><b>Сюжет:</b> В начале третьего тысячелетия самым суровым законом стал
-"закон Шестого дня". Он запрещал клонирование людей и создание искусственных копий
-человека. Но огромная подпольная империя вопреки запрету выращивает человечество нового
-будущего, сонмы управляемых теней. Налаженная машина преступления не давала сбоев, пока в
-её совершенный механизм не вмешалась случайность: пилот вертолёта Эдам Гибсон неожиданно
-приоткрыл непроницаемую завесу заговора. Теперь он – последний рубеж обороны, отделяющий
-цивилизацию от общества зомби.</p>
+		<p align=justify><b>Сюжет:</b> В недалёком будущем клонирование животных и человеческих органов стало привычной частью жизни. Но одна могущественная корпорация вопреки запрету начинает в тайне создавать искусственные копии человека. Однажды вечером примерный семьянин и первоклассный пилот Эдам Гибсон возвращается домой и обнаруживает, что его место уже занял его собственный клон. В одночасье он оказывается втянут в опасный мир убийств, коррупции и заговоров. Пока безжалостные наёмники пытаются устранить его, чтобы скрыть следы преступления, Эдам готов пойти на всё, чтобы вернуть свою семью и свою жизнь.</p>
 		<p><b>Режиссёр:</b> Роджер Споттисвуд</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/a.htm#A.Schwarzenegger">Арнольд Шварценеггер</a></td>
-			<td>Эдам Гибсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Goldwyn">Тони Голдуин</a></td>
-			<td>Майкл Дракер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Duvall">Роберт Дювалл</a></td>
-			<td>Доктор Гриффин Вир</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Rapaport">Майкл Рапапорт</a></td>
-			<td>Хэнк Морган</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Rooker">Майкл Рукер</a></td>
-			<td>Роберт Маршалл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Сара Уайнтер</td>
-			<td>Талия Элсворт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#W.Crewson">Венди Крюсон</a></td>
-			<td>Натали Гибсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Тейлор Энн Рейд</td>
-			<td>Клара Гибсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Cunningham">Колин Каннингэм</a></td>
-			<td>Трипп</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Род Роулэнд</td>
-			<td>Вайли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ванда Кэннон</td>
-			<td>Кэтрин Вир</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Crews">Терри Крюс</a></td>
-			<td>Винсент Бэнсворт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кен Поуг</td>
-			<td>Спикер Дэй</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.McManus">Дон МакМанус</a></td>
-			<td>Продавец в "ДубльДруге"</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/a.htm#A.Schwarzenegger">Арнольд Шварценеггер</a>, <a href="../Actors/t.htm#T.Goldwyn">Тони Голдуин</a>, <a href="../Actors/r.htm#R.Duvall">Роберт Дювалл</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/a.htm#A.Schwarzenegger">Арнольд Шварценеггер</a></td>
+					<td>Эдам Гибсон</td>
+				</tr>
+				<tr>					<td><a href="../Actors/t.htm#T.Goldwyn">Тони Голдуин</a></td>
+					<td>Майкл Дракер</td>
+				</tr>
+				<tr>					<td><a href="../Actors/r.htm#R.Duvall">Роберт Дювалл</a></td>
+					<td>Доктор Гриффин Вир</td>
+				</tr>
+				<tr>					<td><a href="../Actors/m.htm#M.Rapaport">Майкл Рапапорт</a></td>
+					<td>Хэнк Морган</td>
+				</tr>
+				<tr>					<td><a href="../Actors/m.htm#M.Rooker">Майкл Рукер</a></td>
+					<td>Роберт Маршалл</td>
+				</tr>
+				<tr>					<td>Сара Уайнтер</td>
+					<td>Талия Элсворт</td>
+				</tr>
+				<tr>					<td><a href="../Actors/v.htm#W.Crewson">Венди Крюсон</a></td>
+					<td>Натали Гибсон</td>
+				</tr>
+				<tr>					<td><a href="../Actors/k.htm#C.Cunningham">Колин Каннингэм</a></td>
+					<td>Трипп</td>
+				</tr>
+				<tr>					<td>Тейлор Энн Рейд</td>
+					<td>Клара Гибсон</td>
+				</tr>
+				<tr>					<td>Ванда Кэннон</td>
+					<td>Кэтрин Вир</td>
+				</tr>
+				<tr>					<td>Род Роулэнд</td>
+					<td>Вайли</td>
+				</tr>
+				<tr>					<td><a href="../Actors/t.htm#T.Crews">Терри Крюс</a></td>
+					<td>Винсент Бэнсворт</td>
+				</tr>
+				<tr>					<td>Кен Поуг</td>
+					<td>Спикер Дэй</td>
+				</tr>
+				<tr>					<td><a href="../Actors/d.htm#D.McManus">Дон МакМанус</a></td>
+					<td>Продавец в "ДубльДруге"</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 82 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 35 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 96 млн.</p>
@@ -109,5 +87,7 @@
 		<p><b>Рейтинг:</b> 5.9
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

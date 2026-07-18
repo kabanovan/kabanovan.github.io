@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Pitch Black.htm" class="nav-arrow">←</a>
+		<a href="../Years/2000.htm" class="nav-arrow">⌂</a>
 		<a href="Gladiator.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,70 +22,65 @@
 		<h2 class="original-title">Mission To Mars</h2>
 		<p><b>Мировая премьера:</b> 10 марта 2000</p>
 		<p align=justify><b>Слоган:</b> Встреча двух цивилизаций.</p>
-		<p align=justify><b>Сюжет:</b> Космический экипаж "Марс 1" погибает при загадочных
-обстоятельствах после приземления на красную планету. Гибель всего командного состава не
-вызывает сомнений. Однако, несмотря на угрожающую опасность не вернуться, снаряжается
-повторная экспедиция "Марс 2". Её миссия – разгадать тайну гибели своих предшественников
-и вернуться живыми. Но ни один центр подготовки космонавтов в мире не смог бы подготовить
-экипаж к тому, что им придётся испытать.</p>
+		<p align=justify><b>Сюжет:</b> 2020 год. Первая пилотируемая экспедиция на Марс под командованием Люка Грэма благополучно приземляется на красную планету. Но марсианская поверхность скрывает невероятную тайну, которая приводит к загадочной катастрофе, почти полностью уничтожившей экипаж. Получив странное последнее послание Грэма, НАСА отправляет на Марс спасательную экспедицию, чтобы выяснить, что произошло, и, возможно, вернуть уцелевших. Преодолевая смертельные опасности, участникам миссии предстоит достичь красной планеты, где их ждёт открытие, способное навсегда изменить представления человечества о Вселенной.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#B.D.Palma">Брайан Де Пальма</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/g.htm#G.Sinise">Гэри Синиз</a></td>
-			<td>Джим МакКоннелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Robbins">Тим Роббинс</a></td>
-			<td>Вуди Блейк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Cheadle">Дон Чидл</a></td>
-			<td>Люк Грэм</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Nielsen">Конни Нильсен</a></td>
-			<td>Терри Фишер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джерри О'Коннелл</td>
-			<td>Фил Олмайер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Mueller-Stahl">Армин Мюллер-Шталь</a></td>
-			<td>Рэй Бек</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ким Делани</td>
-			<td>Мэгги МакКоннелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Neal">Элиз Нил</a></td>
-			<td>Дебра Грэм</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Питер Аутербридж</td>
-			<td>Сергей Киров</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Teed">Джилл Тид</a></td>
-			<td>Рене Коте</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Каван Смит</td>
-			<td>Ник Уиллис</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/g.htm#G.Sinise">Гэри Синиз</a>, <a href="../Actors/t.htm#T.Robbins">Тим Роббинс</a>, <a href="../Actors/d.htm#D.Cheadle">Дон Чидл</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/g.htm#G.Sinise">Гэри Синиз</a></td>
+					<td>Джим МакКоннелл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Robbins">Тим Роббинс</a></td>
+					<td>Вуди Блейк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Cheadle">Дон Чидл</a></td>
+					<td>Люк Грэм</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Nielsen">Конни Нильсен</a></td>
+					<td>Терри Фишер</td>
+				</tr>
+				<tr>
+					<td>Джерри О'Коннелл</td>
+					<td>Фил Олмайер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Mueller-Stahl">Армин Мюллер-Шталь</a></td>
+					<td>Рэй Бек</td>
+				</tr>
+				<tr>
+					<td>Ким Делани</td>
+					<td>Мэгги МакКоннелл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Neal">Элиз Нил</a></td>
+					<td>Дебра Грэм</td>
+				</tr>
+				<tr>
+					<td>Питер Аутербридж</td>
+					<td>Сергей Киров</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Teed">Джилл Тид</a></td>
+					<td>Рене Коте</td>
+				</tr>
+				<tr>
+					<td>Каван Смит</td>
+					<td>Ник Уиллис</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 90 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 61 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 111 млн.</p>
@@ -93,5 +88,7 @@
 		<p><b>Рейтинг:</b> 5.7
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

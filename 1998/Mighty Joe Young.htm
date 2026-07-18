@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="What Dreams May Come.htm" class="nav-arrow">←</a>
+		<a href="../Years/1998.htm" class="nav-arrow">⌂</a>
 		<a href="../1999/The Matrix.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,77 +22,70 @@
 		<h2 class="original-title">Mighty Joe Young</h2>
 		<p><b>Мировая премьера:</b> 25 декабря 1998</p>
 		<p align=justify><b>Слоган:</b> Легенда джунглей в плену у цивилизации.</p>
-		<p align=justify><b>Сюжет:</b> В далёкой Африке браконьеры убивают учёную по фамилии Янг,
-когда та пытается защитить детёныша гориллы. Погибает и мать-горилла. Перед смертью
-женщина просит свою маленькую дочь, Джилл, позаботиться о животном. Проходит 12 лет. Джо
-— так назвали детёныша гориллы — за эти годы вырос в гигантскую гориллу, сохранив
-наивность и добродушие ребёнка. Джилл из девочки превратилась в юную красавицу. Зоолог
-Грегг понимает, что чудовищу грозит опасность, так как люди, узнав о его существовании,
-не оставят зверя в покое, и уговаривает Джилл увезти Джо в заповедник.</p>
+		<p align=justify><b>Сюжет:</b> Добродушная четырёхметровая горилла по имени Джо с детства растёт бок о бок со своей лучшей подругой Джилл Янг в горах Центральной Африки. Но их спокойная жизнь рушится, когда на Джо начинают охотиться браконьеры. Чтобы спасти своего необычного друга, Джилл вместе с зоологом Греггом О'Харой перевозит его в Калифорнийский заповедник. Однако безопасная жизнь оказывается недолгой. Став всемирно известным, Джо привлекает внимание безжалостного охотника из своего прошлого, который готов на всё, чтобы поймать могучую гориллу.</p>
 		<p><b>Режиссёр:</b> Рон Андервуд</p>
 		<p align=justify><b>В основе:</b> Художественный фильм "Могучий Джо Янг" (США, 1949)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/sh.htm#C.Theron">Шарлиз Терон</a></td>
-			<td>Джилл Янг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Paxton">Билл Пэкстон</a></td>
-			<td>Грегг О'Хара</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Serbedzija">Раде Шербеджия</a></td>
-			<td>Андре Штрассер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэвид Пэймер</td>
-			<td>Доктор Гэрри Рубен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Реджина Кинг</td>
-			<td>Доктор Сесили Бэнкс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Навин Эндрюс</td>
-			<td>Пэнди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Firth">Питер Фёрт</a></td>
-			<td>Гарт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Wisdom">Роберт Уиздом</a></td>
-			<td>Квели</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лоуренс Прессман</td>
-			<td>Доктор Эллиотт Бейкер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Линда Перл</td>
-			<td>Доктор Рут Янг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Clemenson">Кристиан Клеменсон</a></td>
-			<td>Джек</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Blake">Джеффри Блейк</a></td>
-			<td>Верн</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/b.htm#B.Paxton">Билл Пэкстон</a>, <a href="../Actors/sh.htm#C.Theron">Шарлиз Терон</a>, <a href="../Actors/r.htm#R.Serbedzija">Раде Шербеджия</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/b.htm#B.Paxton">Билл Пэкстон</a></td>
+					<td>Грегг О'Хара</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#C.Theron">Шарлиз Терон</a></td>
+					<td>Джилл Янг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Serbedzija">Раде Шербеджия</a></td>
+					<td>Андре Штрассер</td>
+				</tr>
+				<tr>
+					<td>Дэвид Пэймер</td>
+					<td>Доктор Гэрри Рубен</td>
+				</tr>
+				<tr>
+					<td>Реджина Кинг</td>
+					<td>Доктор Сесили Бэнкс</td>
+				</tr>
+				<tr>
+					<td>Навин Эндрюс</td>
+					<td>Пэнди</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Firth">Питер Фёрт</a></td>
+					<td>Гарт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Wisdom">Роберт Уиздом</a></td>
+					<td>Квели</td>
+				</tr>
+				<tr>
+					<td>Лоуренс Прессман</td>
+					<td>Доктор Эллиотт Бейкер</td>
+				</tr>
+				<tr>
+					<td>Линда Перл</td>
+					<td>Доктор Рут Янг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Clemenson">Кристиан Клеменсон</a></td>
+					<td>Джек</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Blake">Джеффри Блейк</a></td>
+					<td>Верн</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 90 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 51 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 51 млн.</p>
@@ -100,5 +93,7 @@
 		<p><b>Рейтинг:</b> 5.7
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

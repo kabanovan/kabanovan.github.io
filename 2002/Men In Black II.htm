@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Minority Report.htm" class="nav-arrow">←</a>
+		<a href="../Years/2002.htm" class="nav-arrow">⌂</a>
 		<a href="Harry Potter And The Chamber Of Secrets.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,63 +22,52 @@
 		<h2 class="original-title">Men In Black II</h2>
 		<p><b>Мировая премьера:</b> 3 июля 2002</p>
 		<p align=justify><b>Слоган:</b> Хорошие парни носят чёрное.</p>
-		<p align=justify><b>Сюжет:</b> Агенты сверхзасекреченной спецслужбы, регулирующей
-деятельность инопланетян на Земле, Джей и Кей снова встают грудью на защиту родной
-планеты от отбросов вселенной. На повестке дня "Людей в Чёрном" – спасение мира!
-Космическая злодейка Серлина нелегально прилетает на Землю захватить некий "светоч
-Зарты", способный погубить нашу планету. Кто первым доберётся до "светоча" – вопрос жизни
-и смерти. А значит, судьба Земли опять в руках Джея и Кея, легендарной парочки, уже
-однажды спасшей мир. Всё, как в старые добрые времена!..</p>
+		<p align=justify><b>Сюжет:</b> Кей и Джей, агенты сверхзасекреченной спецслужбы, регулирующей деятельность инопланетян на Земле, снова встают грудью на защиту родной планеты от отбросов вселенной. На повестке дня "Людей в Чёрном" – спасение мира от межгалактической катастрофы! Космическая злодейка с планеты Килот, скрывающаяся под обликом фотомодели, угрожает погубить нашу планету. Когда штаб-квартира "Людей в Чёрном" оказывается в осаде, Кей и Джей объединяются с говорящим мопсом Фрэнком и компанией неунывающих червей, чтобы остановить инопланетную соблазнительницу.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#B.Sonnenfeld">Барри Зонненфельд</a></p>
-		<p align=justify><b>В основе:</b> Комиксы "Люди в чёрном" (США, 1990, авторы – Лоуэлл Каннингем и Сэнди Каррутерс)</p>
+		<p align=justify><b>В основе:</b> Комиксы "Люди в чёрном" (США, 1990, издательство "Эйрсел Комикс")</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Men In Black.htm">Люди В Чёрном</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/u.htm#W.Smith">Уилл Смит</a></td>
-			<td>Джеймс Эдвардс / Агент Джей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.L.Jones">Томми Ли Джонс</a></td>
-			<td>Кевин Браун / Агент Кей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лара Флинн Бойл</td>
-			<td>Серлина</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Dawson">Розарио Доусон</a></td>
-			<td>Лора Васкес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Torn">Рип Торн</a></td>
-			<td>Агент Зед</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Knoxville">Джонни Ноксвилл</a></td>
-			<td>Скрэд / Чарли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Shalhoub">Тони Шэлуб</a></td>
-			<td>Джек Джибс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Патрик Варбертон</td>
-			<td>Агент Ти</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Kehler">Джек Келер</a></td>
-			<td>Бен</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/u.htm#W.Smith">Уилл Смит</a>, <a href="../Actors/t.htm#T.L.Jones">Томми Ли Джонс</a>, <a href="../Actors/r.htm#R.Torn">Рип Торн</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/u.htm#W.Smith">Уилл Смит</a></td>
+					<td>Джеймс Эдвардс / Агент Джей</td>
+				</tr>
+				<tr>					<td><a href="../Actors/t.htm#T.L.Jones">Томми Ли Джонс</a></td>
+					<td>Кевин Браун / Агент Кей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Torn">Рип Торн</a></td>
+					<td>Агент Зед</td>
+				</tr>
+				<tr>					<td>Лара Флинн Бойл</td>
+					<td>Серлина</td>
+				</tr>
+				<tr>					<td><a href="../Actors/r.htm#R.Dawson">Розарио Доусон</a></td>
+					<td>Лора Васкес</td>
+				</tr>
+				<tr>					<td><a href="../Actors/d.htm#J.Knoxville">Джонни Ноксвилл</a></td>
+					<td>Скрэд / Чарли</td>
+				</tr>
+				<tr>					<td><a href="../Actors/t.htm#T.Shalhoub">Тони Шэлуб</a></td>
+					<td>Джек Джибс</td>
+				</tr>
+				<tr>					<td>Патрик Варбертон</td>
+					<td>Агент Ти</td>
+				</tr>
+				<tr>					<td><a href="../Actors/d.htm#J.Kehler">Джек Келер</a></td>
+					<td>Бен</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 140 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 194 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 445 млн.</p>
@@ -86,5 +75,7 @@
 		<p><b>Рейтинг:</b> 6.2
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>

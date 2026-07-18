@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Star Wars - The Phantom Menace.htm" class="nav-arrow">←</a>
+		<a href="../Years/1999.htm" class="nav-arrow">⌂</a>
 		<a href="Lake Placid.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,76 +22,70 @@
 		<h2 class="original-title">Wild Wild West</h2>
 		<p><b>Мировая премьера:</b> 30 июня 1999</p>
 		<p align=justify><b>Слоган:</b> Это абсолютно новый Вест.</p>
-		<p align=justify><b>Сюжет:</b> События картины разворачиваются на Диком Западе в 1869
-году. Спецагенту Джеймсу Весту поручено найти и обезвредить злого гения-изобретателя
-Арлисса Лавлесса. Когда-то он стал жертвой своего собственного неудачного эксперимента и
-лишился нижней половины тела. В этом он винит президента Соединённых Штатов и весь мир.
-Месть становится смыслом его жизни. Спасти президента – нелёгкая задача. На помощь
-отважному Весту приходит спецагент Артемус Гордон. Вдвоём им под силу невозможное.</p>
+		<p align=justify><b>Сюжет:</b> События картины разворачиваются на Диком Западе в 1869 году. Федеральный агент Джеймс Вест вместе со своим напарником и изобретателем Артемусом Гордоном отправляется на выполнение дерзкого задания – пресечь дьявольский замысел безногого доктора Арлисса Лавлесса по разъединению Соединённых Штатов Америки.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#B.Sonnenfeld">Барри Зонненфельд</a></p>
 		<p align=justify><b>В основе:</b> Телесериал "Дикий, Дикий Запад" (США, 1965-1969)</p>
-<table>
-<tr>
-  <td style="white-space:nowrap"><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/u.htm#W.Smith">Уилл Смит</a></td>
-			<td>Капитан Джеймс Вест</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Kline">Кевин Кляйн</a></td>
-			<td><i><p style="margin-left:30px">Маршал Артемус Гордон / Президент Улисс Грант</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Branagh">Кеннет Брана</a></td>
-			<td>Доктор Арлисс Лавлесс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Hayek">Сальма Хайек</a></td>
-			<td>Рита Эскобар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Levine">Тед Левайн</a></td>
-			<td>Генерал "Кровавый" МакГрат</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.E.Walsh">М. Эммет Уолш</a></td>
-			<td>Коулман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Ling">Бай Лин</a></td>
-			<td>Мэй Ли Ист</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Родни А. Грант</td>
-			<td>Хадсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Beauvais">Гарсель Бове</a></td>
-			<td>Бель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мусетта Вандер</td>
-			<td>Муниция</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>София Энг</td>
-			<td>Мисс Липпенридер</td>
-		</tr>
-		<tr>
-			<td></td>
-  <td style="white-space:nowrap">Фредерик ван дер Вал</td>
-			<td>Амазония</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/u.htm#W.Smith">Уилл Смит</a>, <a href="../Actors/k.htm#K.Kline">Кевин Кляйн</a>, <a href="../Actors/k.htm#K.Branagh">Кеннет Брана</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/u.htm#W.Smith">Уилл Смит</a></td>
+					<td>Капитан Джеймс Вест</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Kline">Кевин Кляйн</a></td>
+					<td>Маршал Артемус Гордон / Президент Улисс Грант</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Branagh">Кеннет Брана</a></td>
+					<td>Доктор Арлисс Лавлесс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Hayek">Сальма Хайек</a></td>
+					<td>Рита Эскобар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Levine">Тед Левайн</a></td>
+					<td>Генерал "Кровавый" МакГрат</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.E.Walsh">М. Эммет Уолш</a></td>
+					<td>Коулман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Ling">Бай Лин</a></td>
+					<td>Мэй Ли Ист</td>
+				</tr>
+				<tr>
+					<td>Родни А. Грант</td>
+					<td>Хадсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Beauvais">Гарсель Бове</a></td>
+					<td>Бель</td>
+				</tr>
+				<tr>
+					<td>Мусетта Вандер</td>
+					<td>Муниция</td>
+				</tr>
+				<tr>
+					<td>София Энг</td>
+					<td>Мисс Липпенридер</td>
+				</tr>
+				<tr>
+					<td style="white-space:nowrap">Фредерик ван дер Вал</td>
+					<td>Амазония</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 170 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 114 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 222 млн.</p>
@@ -99,5 +93,7 @@
 		<p><b>Рейтинг:</b> 4.9
 	</div>
 </div>
+
+<script src="../script.js"></script>
 </body>
 </html>
