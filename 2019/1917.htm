@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Star Wars - The Rise Of Skywalker.htm" class="nav-arrow">←</a>
+		<a href="../Years/2019.htm" class="nav-arrow">⌂</a>
 		<a href="../2020/Underwater.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -23,103 +23,95 @@
 		<p align=justify><b>Слоган:</b> Время – наш главный враг.</p>
 		<p align=justify><b>Сюжет:</b> В разгар Первой мировой войны юному капралу Блейку и его сослуживцу Скофилду поручают смертельно опасную миссию. Они должны пересечь вражескую территорию и доставить приказ об отмене наступления, иначе сотни солдат попадут в ловушку противника, в том числе и родной брат Блейка.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#S.Mendes">Сэм Мендес</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>Джордж МакКэй</td>
-			<td><i><p style="margin-left:30px">Младший капрал Уилл Скофилд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Chapman">Дин-Чарльз Чепмен</a></td>
-			<td><i><p style="margin-left:30px">Младший капрал Том Блейк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Cumberbatch">Бенедикт Камбербэтч</a></td>
-			<td><i><p style="margin-left:30px">Полковник Макензи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Firth">Колин Фёрт</a></td>
-			<td><i><p style="margin-left:30px">Генерал Эринмор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Strong">Марк Стронг</a></td>
-			<td><i><p style="margin-left:30px">Капитан Смит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Scott">Эндрю Скотт</a></td>
-			<td><i><p style="margin-left:30px">Лейтенант Лесли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Madden">Ричард Мэдден</a></td>
-			<td><i><p style="margin-left:30px">Лейтенант Джозеф Блейк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Клэр Дюбюрк</td>
-			<td><i><p style="margin-left:30px">Лори</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Mays">Дэниэл Мейс</a></td>
-			<td><i><p style="margin-left:30px">Сержант Сандерс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эдриан Скарборо</td>
-			<td><i><p style="margin-left:30px">Майор Хепберн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джейми Паркер</td>
-			<td><i><p style="margin-left:30px">Лейтенант Ричардс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Carter">Пип Картер</a></td>
-			<td><i><p style="margin-left:30px">Лейтенант Гордон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Jibson">Майкл Джибсон</a></td>
-			<td><i><p style="margin-left:30px">Лейтенант Хаттон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.McCabe">Ричард МакКейб</a></td>
-			<td><i><p style="margin-left:30px">Полковник Коллинз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Набхан Ризван</td>
-			<td><i><p style="margin-left:30px">Сипай Джондалар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Boon">Энсон Бун</a></td>
-			<td><i><p style="margin-left:30px">Рядовой Кук</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Томми Френч</td>
-			<td><i><p style="margin-left:30px">Рядовой Батлер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кенни Фуллвуд</td>
-			<td><i><p style="margin-left:30px">Рядовой Росси</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Edwards">Джастин Эдвардс</a></td>
-			<td><i><p style="margin-left:30px">Капитан Айвинс</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>Джордж МакКэй</td>
+					<td>Младший капрал Уилл Скофилд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Chapman">Дин-Чарльз Чепмен</a></td>
+					<td>Младший капрал Том Блейк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Cumberbatch">Бенедикт Камбербэтч</a></td>
+					<td>Полковник Макензи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Firth">Колин Фёрт</a></td>
+					<td>Генерал Эринмор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Strong">Марк Стронг</a></td>
+					<td>Капитан Смит</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Scott">Эндрю Скотт</a></td>
+					<td>Лейтенант Лесли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Madden">Ричард Мэдден</a></td>
+					<td>Лейтенант Джозеф Блейк</td>
+				</tr>
+				<tr>
+					<td>Клэр Дюбюрк</td>
+					<td>Лори</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Mays">Дэниэл Мейс</a></td>
+					<td>Сержант Сандерс</td>
+				</tr>
+				<tr>
+					<td>Эдриан Скарборо</td>
+					<td>Майор Хепберн</td>
+				</tr>
+				<tr>
+					<td>Джейми Паркер</td>
+					<td>Лейтенант Ричардс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Carter">Пип Картер</a></td>
+					<td>Лейтенант Гордон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Jibson">Майкл Джибсон</a></td>
+					<td>Лейтенант Хаттон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.McCabe">Ричард МакКейб</a></td>
+					<td>Полковник Коллинз</td>
+				</tr>
+				<tr>
+					<td>Набхан Ризван</td>
+					<td>Сипай Джондалар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Boon">Энсон Бун</a></td>
+					<td>Рядовой Кук</td>
+				</tr>
+				<tr>
+					<td>Томми Френч</td>
+					<td>Рядовой Батлер</td>
+				</tr>
+				<tr>
+					<td>Кенни Фуллвуд</td>
+					<td>Рядовой Росси</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Edwards">Джастин Эдвардс</a></td>
+					<td>Капитан Айвинс</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 95 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 159 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 446 млн.</p>

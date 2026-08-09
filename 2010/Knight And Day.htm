@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The A-Team.htm" class="nav-arrow">←</a>
+		<a href="../Years/2010.htm" class="nav-arrow">⌂</a>
 		<a href="The Twilight Saga - Eclipse.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -28,68 +28,67 @@
 Джун должна выяснить, является ли её "рыцарь в сияющих доспехах" коварным предателем или всё-таки любовью всей её
 жизни.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Mangold">Джеймс Мэнголд</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Cruise">Том Круз</a></td>
-			<td>Рой Миллер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Diaz">Кэмерон Диас</a></td>
-			<td>Джун Хэвенс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Sarsgaard">Питер Сарсгард</a></td>
-			<td>Джон Фитцджеральд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Марк Блукас</td>
-			<td>Родни Беррис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Davis">Виола Дэвис</a></td>
-			<td>Изабель Джордж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#J.Molla">Хорди Молья</a></td>
-			<td>Антонио Кинтана</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Dano">Пол Дано</a></td>
-			<td>Саймон Фек</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#F.Hentschel">Фальк Хеншел</a></td>
-			<td>Бернхард</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Grace">Мэгги Грэйс</a></td>
-			<td>Эйприл Хэвенс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#C.Weston">Селия Уэстон</a></td>
-			<td>Молли Найт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Loftin">Ленни Лофтин</a></td>
-			<td>Брэйсис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Gadot">Галь Гадот</a></td>
-			<td>Наоми</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Cruise">Том Круз</a></td>
+					<td>Рой Миллер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Diaz">Кэмерон Диас</a></td>
+					<td>Джун Хэвенс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Sarsgaard">Питер Сарсгард</a></td>
+					<td>Джон Фитцджеральд</td>
+				</tr>
+				<tr>
+					<td>Марк Блукас</td>
+					<td>Родни Беррис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Davis">Виола Дэвис</a></td>
+					<td>Изабель Джордж</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#J.Molla">Хорди Молья</a></td>
+					<td>Антонио Кинтана</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Dano">Пол Дано</a></td>
+					<td>Саймон Фек</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#F.Hentschel">Фальк Хеншел</a></td>
+					<td>Бернхард</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Grace">Мэгги Грэйс</a></td>
+					<td>Эйприл Хэвенс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#C.Weston">Селия Уэстон</a></td>
+					<td>Молли Найт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Loftin">Ленни Лофтин</a></td>
+					<td>Брэйсис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Gadot">Галь Гадот</a></td>
+					<td>Наоми</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 117 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 76 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 262 млн.</p>

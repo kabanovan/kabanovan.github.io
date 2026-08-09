@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Chappie.htm" class="nav-arrow">←</a>
+		<a href="../Years/2015.htm" class="nav-arrow">⌂</a>
 		<a href="Furious 7.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -34,108 +34,99 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#R.Schwentke">Роберт Швентке</a></p>
 		<p align=justify><b>В основе:</b> Роман Вероники Рот "Мятежная" (США, 2012)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#TheDivergentSeries">Дивергент</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/sh.htm#S.Woodley">Шейлин Вудли</a></td>
-			<td>Трис Прайор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.James">Тео Джеймс</a></td>
-			<td>Тобиас "Фор" Итон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Winslet">Кейт Уинслет</a></td>
-			<td>Джанин Мэтьюс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Watts">Наоми Уоттс</a></td>
-			<td>Эвелин Джонсон-Итон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Teller">Майлз Теллер</a></td>
-			<td>Питер Хэйес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Elgort">Энсел Эльгорт</a></td>
-			<td>Калеб Прайор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.D.Kim">Дэниэл Дэ Ким</a></td>
-			<td>Джек Кан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Spencer">Октавия Спенсер</a></td>
-			<td>Джоанна Рейес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Courtney">Джай Кортни</a></td>
-			<td>Эрик Коултер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/z.htm#Z.Kravitz">Зои Кравиц</a></td>
-			<td>Кристина</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Weston">Джонни Уэстон</a></td>
-			<td>Эдгар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Stevenson">Рэй Стивенсон</a></td>
-			<td>Маркус Итон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Q">Мэгги Кью</a></td>
-			<td>Тори Ву</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Phifer">Мекай Файфер</a></td>
-			<td>Макс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.McTeer">Джанет МакТир</a></td>
-			<td>Эдит Прайор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Lonsdale">Кейнан Лонсдейл</a></td>
-			<td>Юрай Педрад</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эмджей Энтони</td>
-			<td>Гектор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Salazar">Роза Салазар</a></td>
-			<td>Линн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Waterhouse">Сьюки Уотерхаус</a></td>
-			<td>Марлен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Judd">Эшли Джадд</a></td>
-			<td>Натали Прайор</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Woodley">Шейлин Вудли</a></td>
+					<td>Трис Прайор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.James">Тео Джеймс</a></td>
+					<td>Тобиас "Фор" Итон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Winslet">Кейт Уинслет</a></td>
+					<td>Джанин Мэтьюс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Watts">Наоми Уоттс</a></td>
+					<td>Эвелин Джонсон-Итон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Teller">Майлз Теллер</a></td>
+					<td>Питер Хэйес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Elgort">Энсел Эльгорт</a></td>
+					<td>Калеб Прайор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.D.Kim">Дэниэл Дэ Ким</a></td>
+					<td>Джек Кан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Spencer">Октавия Спенсер</a></td>
+					<td>Джоанна Рейес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Courtney">Джай Кортни</a></td>
+					<td>Эрик Коултер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/z.htm#Z.Kravitz">Зои Кравиц</a></td>
+					<td>Кристина</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Weston">Джонни Уэстон</a></td>
+					<td>Эдгар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Stevenson">Рэй Стивенсон</a></td>
+					<td>Маркус Итон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Q">Мэгги Кью</a></td>
+					<td>Тори Ву</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Phifer">Мекай Файфер</a></td>
+					<td>Макс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.McTeer">Джанет МакТир</a></td>
+					<td>Эдит Прайор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Lonsdale">Кейнан Лонсдейл</a></td>
+					<td>Юрай Педрад</td>
+				</tr>
+				<tr>
+					<td>Эмджей Энтони</td>
+					<td>Гектор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Salazar">Роза Салазар</a></td>
+					<td>Линн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Waterhouse">Сьюки Уотерхаус</a></td>
+					<td>Марлен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Judd">Эшли Джадд</a></td>
+					<td>Натали Прайор</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 110 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 130 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 297 млн.</p>

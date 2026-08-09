@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Prey.htm" class="nav-arrow">←</a>
+		<a href="../Years/2022.htm" class="nav-arrow">⌂</a>
 		<a href="Beast.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,68 +24,67 @@
 		<p align=justify><b>Сюжет:</b> У охотника на вампиров из Лос-Анджелеса всего неделя, чтобы найти деньги на оплату
 обучения и брекетов ребёнка. В попытках заработать на жизнь как бы её не лишиться!</p>
 		<p><b>Режиссёр:</b> Джей Джей Перри</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#J.Foxx">Джейми Фокс</a></td>
-			<td><i><p style="margin-left:30px">Бад Джаблонски</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Franco">Дэйв Франко</a></td>
-			<td><i><p style="margin-left:30px">Сет</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Good">Миган Гуд</a></td>
-			<td><i><p style="margin-left:30px">Джослин Джаблонски</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Карла Соуса</td>
-			<td><i><p style="margin-left:30px">Одри Сан Фернандо</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Lange">Эрик Ланж</a></td>
-			<td><i><p style="margin-left:30px">Ральф Сигер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Снуп Догг</td>
-			<td><i><p style="margin-left:30px">Джон "Большой Джон" Элиотт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.L.Bordizzo">Наташа Лю Бордиццо</a></td>
-			<td><i><p style="margin-left:30px">Хэзер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Stormare">Петер Стормаре</a></td>
-			<td><i><p style="margin-left:30px">Трой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Зион Броднакс</td>
-			<td><i><p style="margin-left:30px">Пейдж Джаблонски</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Стив Хоуи</td>
-			<td><i><p style="margin-left:30px">Майк Назарян</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Adkins">Скотт Эдкинс</a></td>
-			<td><i><p style="margin-left:30px">Диран Назарян</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Masucci">Оливер Мазуччи</a></td>
-			<td><i><p style="margin-left:30px">Клаус</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#J.Foxx">Джейми Фокс</a></td>
+					<td>Бад Джаблонски</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Franco">Дэйв Франко</a></td>
+					<td>Сет</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Good">Миган Гуд</a></td>
+					<td>Джослин Джаблонски</td>
+				</tr>
+				<tr>
+					<td>Карла Соуса</td>
+					<td>Одри Сан Фернандо</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Lange">Эрик Ланж</a></td>
+					<td>Ральф Сигер</td>
+				</tr>
+				<tr>
+					<td>Снуп Догг</td>
+					<td>Джон "Большой Джон" Элиотт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.L.Bordizzo">Наташа Лю Бордиццо</a></td>
+					<td>Хэзер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Stormare">Петер Стормаре</a></td>
+					<td>Трой</td>
+				</tr>
+				<tr>
+					<td>Зион Броднакс</td>
+					<td>Пейдж Джаблонски</td>
+				</tr>
+				<tr>
+					<td>Стив Хоуи</td>
+					<td>Майк Назарян</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Adkins">Скотт Эдкинс</a></td>
+					<td>Диран Назарян</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Masucci">Оливер Мазуччи</a></td>
+					<td>Клаус</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 100 млн.</p>
 		<p><b>Продолжительность:</b> 1 ч. 44 мин.<br>
 		<p><b>Рейтинг:</b> 6.1

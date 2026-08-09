@@ -268,9 +268,10 @@ ul.menu > li:hover > ul.submenu {display: inline;}
 }
 
 .cast-full-list td {
-    padding: 8px;
+    padding: 8px 38px 8px 8px;
     border-bottom: 1px solid #eee;
     vertical-align: top;
+	white-space: nowrap;
 }
 
 .cast-full-list tr:hover {

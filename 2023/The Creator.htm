@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Blue Beetle.htm" class="nav-arrow">←</a>
+		<a href="../Years/2023.htm" class="nav-arrow">⌂</a>
 		<a href="The Marvels.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -23,68 +23,67 @@
 		<p align=justify><b>Слоган:</b> Спасая её, мы спасём всех нас.</p>
 		<p align=justify><b>Сюжет:</b> На фоне войны будущего между человечеством и силами искусственного интеллекта Джошуа, закалённый в боях бывший оперативный агент, переживает исчезновение жены, и теперь ему предстоит найти и уничтожить Создателя – неуловимого архитектора продвинутого искусственного интеллекта, который разработал таинственное оружие, способное положить конец войне... и всему людскому роду. Джошуа и его команда элитных оперативников отправляются в тёмное сердце территорий, оккупированных ИИ, только для того, чтобы обнаружить, что оружие конца света, которое ему было поручено уничтожить, – это ИИ в форме маленького ребёнка.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#G.Edwards">Гарет Эдвардс</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#J.D.Washington">Джон Дэвид Вашингтон</a></td>
-			<td><i><p style="margin-left:30px">Сержант Джошуа Тейлор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мэделин Юна Войлс</td>
-			<td><i><p style="margin-left:30px">Альфи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Janney">Эллисон Дженни</a></td>
-			<td><i><p style="margin-left:30px">Полковник Хауэлл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Chan">Джемма Чан</a></td>
-			<td><i><p style="margin-left:30px">Майя Фей-Тейлор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Watanabe">Кен Ватанабе</a></td>
-			<td><i><p style="margin-left:30px">Харун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Стёрджилл Симпсон</td>
-			<td><i><p style="margin-left:30px">Дрю</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Ineson">Ральф Айнесон</a></td>
-			<td><i><p style="margin-left:30px">Генерал Эндрюс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Марк Менчака</td>
-			<td><i><p style="margin-left:30px">МакБрайд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Chadha-Patel">Амер Чадха-Пател</a></td>
-			<td><i><p style="margin-left:30px">Омни / СЕК-ОН / Сержант Буи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Ngo">Вероника Нго</a></td>
-			<td><i><p style="margin-left:30px">Ками</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Майкл Эспер</td>
-			<td><i><p style="margin-left:30px">Капитан Коттон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Робби Танн</td>
-			<td><i><p style="margin-left:30px">Шипли</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#J.D.Washington">Джон Дэвид Вашингтон</a></td>
+					<td>Сержант Джошуа Тейлор</td>
+				</tr>
+				<tr>
+					<td>Мэделин Юна Войлс</td>
+					<td>Альфи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Janney">Эллисон Дженни</a></td>
+					<td>Полковник Хауэлл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Chan">Джемма Чан</a></td>
+					<td>Майя Фей-Тейлор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Watanabe">Кен Ватанабе</a></td>
+					<td>Харун</td>
+				</tr>
+				<tr>
+					<td>Стёрджилл Симпсон</td>
+					<td>Дрю</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Ineson">Ральф Айнесон</a></td>
+					<td>Генерал Эндрюс</td>
+				</tr>
+				<tr>
+					<td>Марк Менчака</td>
+					<td>МакБрайд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Chadha-Patel">Амер Чадха-Пател</a></td>
+					<td>Омни / СЕК-ОН / Сержант Буи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Ngo">Вероника Нго</a></td>
+					<td>Ками</td>
+				</tr>
+				<tr>
+					<td>Майкл Эспер</td>
+					<td>Капитан Коттон</td>
+				</tr>
+				<tr>
+					<td>Робби Танн</td>
+					<td>Шипли</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 80 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 41 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 104 млн.</p>

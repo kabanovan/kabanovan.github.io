@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Thunderbolts.htm" class="nav-arrow">←</a>
+		<a href="../Years/2025.htm" class="nav-arrow">⌂</a>
 		<a href="Fountain Of Youth.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,113 +25,103 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#C.McQuarrie">Кристофер МакКуорри</a></p>
 		<p align=justify><b>В основе:</b> Телесериал "Миссия: Невыполнима" (США, 1966-1973)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Mission Impossible.htm">Миссия Невыполнима</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Cruise">Том Круз</a></td>
-			<td>Агент Итан Хант</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Atwell">Хейли Этвелл</a></td>
-			<td>Грейс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Pegg">Саймон Пегг</a></td>
-			<td>Бенджи Данн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Morales">Эсай Моралес</a></td>
-			<td>Гейбриэл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Saxon">Рольф Саксон</a></td>
-			<td>Уильям Данлоу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Bassett">Анджела Бассетт</a></td>
-			<td>Президент Эрика Слоун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Rhames">Винг Рэймс</a></td>
-			<td>Лютер Стикелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#H.Czerny">Генри Черни</a></td>
-			<td>Директор Юджин Киттридж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Трэмелл Тиллман</td>
-			<td>Капитан Джек Бледсоу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Klementieff">Пом Клементьефф</a></td>
-			<td><i><p style="margin-left:30px">Пэрис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.McCallany">Холт МакКэллани</a></td>
-			<td>Серлинг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Offerman">Ник Офферман</a></td>
-			<td><i><p style="margin-left:30px">Генерал Сидни</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ханна Уоддингэм</td>
-			<td>Контр-адмирал Нили</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Whigham">Ши Уигхэм</a></td>
-			<td>Джаспер Бриггс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.T.Davis">Грег Тарзан Дэвис</a></td>
-			<td>Тео Дега</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Люси Тулугарджук</td>
-			<td>Таписа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.McTeer">Джанет МакТир</a></td>
-			<td>Уолтерс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Parnell">Чарльз Парнелл</a></td>
-			<td>Директор Ричардс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Gatiss">Марк Гатисс</a></td>
-			<td>Директор Ангстром</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Lychnikoff">Паша Лычникофф</a></td>
-			<td>Капитан Кольцов</td>
-		</tr>		
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.O'Brian">Кэти О'Брайан</a></td>
-			<td>Кодиак</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Cruise">Том Круз</a></td>
+					<td>Агент Итан Хант</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Atwell">Хейли Этвелл</a></td>
+					<td>Грейс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Pegg">Саймон Пегг</a></td>
+					<td>Бенджи Данн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Morales">Эсай Моралес</a></td>
+					<td>Гейбриэл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Saxon">Рольф Саксон</a></td>
+					<td>Уильям Данлоу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Bassett">Анджела Бассетт</a></td>
+					<td>Президент Эрика Слоун</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Rhames">Винг Рэймс</a></td>
+					<td>Лютер Стикелл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#H.Czerny">Генри Черни</a></td>
+					<td>Директор Юджин Киттридж</td>
+				</tr>
+				<tr>
+					<td>Трэмелл Тиллман</td>
+					<td>Капитан Джек Бледсоу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Klementieff">Пом Клементьефф</a></td>
+					<td>Пэрис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.McCallany">Холт МакКэллани</a></td>
+					<td>Серлинг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Offerman">Ник Офферман</a></td>
+					<td>Генерал Сидни</td>
+				</tr>
+				<tr>
+					<td>Ханна Уоддингэм</td>
+					<td>Контр-адмирал Нили</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Whigham">Ши Уигхэм</a></td>
+					<td>Джаспер Бриггс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.T.Davis">Грег Тарзан Дэвис</a></td>
+					<td>Тео Дега</td>
+				</tr>
+				<tr>
+					<td>Люси Тулугарджук</td>
+					<td>Таписа</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.McTeer">Джанет МакТир</a></td>
+					<td>Уолтерс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Parnell">Чарльз Парнелл</a></td>
+					<td>Директор Ричардс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Gatiss">Марк Гатисс</a></td>
+					<td>Директор Ангстром</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Lychnikoff">Паша Лычникофф</a></td>
+					<td>Капитан Кольцов</td>
+				</tr>		
+				<tr>
+					<td><a href="../Actors/k.htm#K.O'Brian">Кэти О'Брайан</a></td>
+					<td>Кодиак</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 400 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 197 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 599 млн.</p>

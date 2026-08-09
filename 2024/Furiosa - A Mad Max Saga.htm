@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Atlas.htm" class="nav-arrow">←</a>
+		<a href="../Years/2024.htm" class="nav-arrow">⌂</a>
 		<a href="A Quiet Place - Day One.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,88 +25,83 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#G.Miller">Джордж Миллер</a></p>
 		<p align=justify><b>В основе:</b> Серия фильмов о Безумном Максе (Австралия, 1979-1985)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#AMadMaxSaga">Хроники Безумного Макса</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/a.htm#A.Taylor-Joy">Аня Тейлор-Джой</a></td>
-			<td>Фуриоса</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Hemsworth">Крис Хемсворт</a></td>
-			<td>Дементус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Hulme">Лейчи Халм</a></td>
-			<td>Несмертный Джо / Ризздейл Пелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Том Бёрк</td>
-			<td>Преторианец Джек</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Алила Браун</td>
-			<td>Юная Фуриоса</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Helman">Джош Хелман</a></td>
-			<td>Скротус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джордж Шевцов</td>
-			<td>Историк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Joh.Howard">Джон Ховард</a></td>
-			<td>Людоед</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Sampson">Энгус Сэмпсон</a></td>
-			<td>Органомеханик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Чарли Фрейзер</td>
-			<td>Мэри Джабасса</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Jones">Натан Джонс</a></td>
-			<td>Риктус Эректус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Field">Дэвид Филд</a></td>
-			<td>Натоптыш</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Pataky">Эльза Патаки</a></td>
-			<td>Генерал вувалини / Мистер Нортон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Рахель Роман</td>
-			<td>Стервятник</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэвид Коллинз</td>
-			<td>Смег</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Kleut">Горан Д. Клюе</a></td>
-			<td>Октобосс</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/a.htm#A.Taylor-Joy">Аня Тейлор-Джой</a></td>
+					<td>Фуриоса</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Hemsworth">Крис Хемсворт</a></td>
+					<td>Дементус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Hulme">Лейчи Халм</a></td>
+					<td>Несмертный Джо / Ризздейл Пелл</td>
+				</tr>
+				<tr>
+					<td>Том Бёрк</td>
+					<td>Преторианец Джек</td>
+				</tr>
+				<tr>
+					<td>Алила Браун</td>
+					<td>Юная Фуриоса</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Helman">Джош Хелман</a></td>
+					<td>Скротус</td>
+				</tr>
+				<tr>
+					<td>Джордж Шевцов</td>
+					<td>Историк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Joh.Howard">Джон Ховард</a></td>
+					<td>Людоед</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Sampson">Энгус Сэмпсон</a></td>
+					<td>Органомеханик</td>
+				</tr>
+				<tr>
+					<td>Чарли Фрейзер</td>
+					<td>Мэри Джабасса</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Jones">Натан Джонс</a></td>
+					<td>Риктус Эректус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Field">Дэвид Филд</a></td>
+					<td>Натоптыш</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Pataky">Эльза Патаки</a></td>
+					<td>Генерал вувалини / Мистер Нортон</td>
+				</tr>
+				<tr>
+					<td>Рахель Роман</td>
+					<td>Стервятник</td>
+				</tr>
+				<tr>
+					<td>Дэвид Коллинз</td>
+					<td>Смег</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Kleut">Горан Д. Клюе</a></td>
+					<td>Октобосс</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 168 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 67 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 174 млн.</p>

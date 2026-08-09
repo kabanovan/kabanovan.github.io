@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="John Carter.htm" class="nav-arrow">←</a>
+		<a href="../Years/2012.htm" class="nav-arrow">⌂</a>
 		<a href="Wrath Of The Titans.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -32,88 +32,83 @@
 		<p><b>Режиссёр:</b> Гэри Росс</p>
 		<p align=justify><b>В основе:</b> Роман Сьюзен Коллинз "Голодные игры" (США, 2008)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#TheHungerGames">Голодные Игры</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#J.Lawrence">Дженнифер Лоуренс</a></td>
-			<td>Китнисс Эвердин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Hutcherson">Джош Хатчерсон</a></td>
-			<td>Пит Мелларк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#W.Harrelson">Вуди Харрельсон</a></td>
-			<td>Хеймитч Эбернети</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Tucci">Стэнли Туччи</a></td>
-			<td>Цезарь Фликерман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Banks">Элизабет Бэнкс</a></td>
-			<td>Эффи Тринкет</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Sutherland">Дональд Сазерленд</a></td>
-			<td>Президент Кориолан Сноу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Hemsworth">Лиам Хемсворт</a></td>
-			<td>Гейл Хоторн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Kravitz">Ленни Кравиц</a></td>
-			<td>Цинна</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Bentley">Уэс Бентли</a></td>
-			<td>Сенека Крейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Ludwig">Александр Людвиг</a></td>
-			<td>Катон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Stenberg">Амандла Стенберг</a></td>
-			<td>Рута</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Shields">Уиллоу Шилдс</a></td>
-			<td>Примроуз Эвердин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Jones">Тоби Джонс</a></td>
-			<td>Клавдий Темплсмит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Изабелль Фюрман</td>
-			<td>Клевер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Okeniyi">Дайо Окенайи</a></td>
-			<td>Цеп</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Quaid">Джек Куэйд</a></td>
-			<td><i><p style="margin-left:30px">Марвел</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#J.Lawrence">Дженнифер Лоуренс</a></td>
+					<td>Китнисс Эвердин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Hutcherson">Джош Хатчерсон</a></td>
+					<td>Пит Мелларк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#W.Harrelson">Вуди Харрельсон</a></td>
+					<td>Хеймитч Эбернети</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Tucci">Стэнли Туччи</a></td>
+					<td>Цезарь Фликерман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Banks">Элизабет Бэнкс</a></td>
+					<td>Эффи Тринкет</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Sutherland">Дональд Сазерленд</a></td>
+					<td>Президент Кориолан Сноу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Hemsworth">Лиам Хемсворт</a></td>
+					<td>Гейл Хоторн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Kravitz">Ленни Кравиц</a></td>
+					<td>Цинна</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Bentley">Уэс Бентли</a></td>
+					<td>Сенека Крейн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Ludwig">Александр Людвиг</a></td>
+					<td>Катон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Stenberg">Амандла Стенберг</a></td>
+					<td>Рута</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Shields">Уиллоу Шилдс</a></td>
+					<td>Примроуз Эвердин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Jones">Тоби Джонс</a></td>
+					<td>Клавдий Темплсмит</td>
+				</tr>
+				<tr>
+					<td>Изабелль Фюрман</td>
+					<td>Клевер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Okeniyi">Дайо Окенайи</a></td>
+					<td>Цеп</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Quaid">Джек Куэйд</a></td>
+					<td>Марвел</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 78 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 408 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 695 млн.</p>

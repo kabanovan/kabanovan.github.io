@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Shazam!.htm" class="nav-arrow">←</a>
+		<a href="../Years/2019.htm" class="nav-arrow">⌂</a>
 		<a href="Avengers - Endgame.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,73 +24,71 @@
 		<p align=justify><b>Сюжет:</b> Легендарного героя-полудемона Хеллбоя вызывают в английскую глубинку, чтобы он сразился с тремя свирепыми великанами. Там он встречает Кровавую Королеву – Нимуэ, древнюю колдунью, восставшую из мёртвых и жаждущую отомстить всему человечеству за века в заточении. Оказавшись в эпицентре столкновения мира людей и монстров, Хеллбою придётся пройти через ад, чтобы остановить Нимуэ и предотвратить надвигающийся апокалипсис.</p>
 		<p><b>Режиссёр:</b> Нил Маршалл</p>
 		<p align=justify><b>В основе:</b> Комиксы о Хеллбое (США, выходят с 1993, автор – Майк Миньола)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.Harbour">Дэвид Харбор</a></td>
-			<td><i><p style="margin-left:30px">Хеллбой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Jovovich">Милла Йовович</a></td>
-			<td><i><p style="margin-left:30px">Вивьен Нимуэ / Кровавая Королева</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Lane">Саша Лэйн</a></td>
-			<td><i><p style="margin-left:30px">Элис Монагэн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/y.htm#I.McShane">Йен МакШейн</a></td>
-			<td><i><p style="margin-left:30px">Профессор Тревор "Брум" Бруттенхольм</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.D.Kim">Дэниэл Дэ Ким</a></td>
-			<td><i><p style="margin-left:30px">Майор Бен Дэймио</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Petrie">Алистэр Петри</a></td>
-			<td><i><p style="margin-left:30px">Лорд Адам Глэрен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#Bri.Gleeson">Брайан Глисон</a></td>
-			<td><i><p style="margin-left:30px">Мерлин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Трой Джеймс</td>
-			<td><i><p style="margin-left:30px">Баба Яга</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Okonedo">Софи Оконедо</a></td>
-			<td><i><p style="margin-left:30px">Леди Элизабет Хэттон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.H.Church">Томас Хейден Чёрч</a></td>
-			<td><i><p style="margin-left:30px">Лобстер Джонсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Марио де ла Роса</td>
-			<td><i><p style="margin-left:30px">Агент Эстебан Руиз / Камазотц</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Пенелопа Митчелл</td>
-			<td><i><p style="margin-left:30px">Ганейда</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Stanley">Марк Стэнли</a></td>
-			<td><i><p style="margin-left:30px">Король Артур</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.Harbour">Дэвид Харбор</a></td>
+					<td>Хеллбой</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Jovovich">Милла Йовович</a></td>
+					<td>Вивьен Нимуэ / Кровавая Королева</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Lane">Саша Лэйн</a></td>
+					<td>Элис Монагэн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/y.htm#I.McShane">Йен МакШейн</a></td>
+					<td>Профессор Тревор "Брум" Бруттенхольм</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.D.Kim">Дэниэл Дэ Ким</a></td>
+					<td>Майор Бен Дэймио</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Petrie">Алистэр Петри</a></td>
+					<td>Лорд Адам Глэрен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#Bri.Gleeson">Брайан Глисон</a></td>
+					<td>Мерлин</td>
+				</tr>
+				<tr>
+					<td>Трой Джеймс</td>
+					<td>Баба Яга</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Okonedo">Софи Оконедо</a></td>
+					<td>Леди Элизабет Хэттон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.H.Church">Томас Хейден Чёрч</a></td>
+					<td>Лобстер Джонсон</td>
+				</tr>
+				<tr>
+					<td>Марио де ла Роса</td>
+					<td>Агент Эстебан Руиз / Камазотц</td>
+				</tr>
+				<tr>
+					<td>Пенелопа Митчелл</td>
+					<td>Ганейда</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Stanley">Марк Стэнли</a></td>
+					<td>Король Артур</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 50 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 22 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 55 млн.</p>

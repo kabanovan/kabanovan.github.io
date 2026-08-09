@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="I Am Number Four.htm" class="nav-arrow">←</a>
+		<a href="../Years/2011.htm" class="nav-arrow">⌂</a>
 		<a href="Source Code.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,113 +30,103 @@
 самое важное в их жизни задание и освободить осаждённый Город ангелов от таинственных и
 смертоносных тварей поручено старшему сержанту Нанцу и его отряду морских пехотинцев.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Liebesman">Джонатан Либесман</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/a.htm#A.Eckhart">Аарон Экхарт</a></td>
-			<td>Штаб-сержант Майкл Нанц</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Rodriguez">Рамон Родригес</a></td>
-			<td>Младший лейтенант Уильям Мартинес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Уилл Ротхаар</td>
-			<td>Капрал Ли Имлей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#Mi.Rodriguez">Мишель Родригес</a></td>
-			<td>Техсержант Элена Сантос</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Не-Йо</td>
-			<td>Капрал Кевин Харрис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Hardrict">Кори Хардрикт</a></td>
-			<td>Капрал Джейсон Локетт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Parrack">Джим Пэррак</a></td>
-			<td>Младший капрал Питер Кернс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Pena">Майкл Пенья</a></td>
-			<td>Джо Ринкон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Moynahan">Бриджет Мойнахан</a></td>
-			<td>Мишель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.M'Cormack">Адетокумбо М'Кормак</a></td>
-			<td>Санитар Джибрил Адукву</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Fisher">Ноэль Фишер</a></td>
-			<td>Рядовой Шон Ленихан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джино Энтони Песи</td>
-			<td>Капрал Ник Ставру</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.H.Liao">Джеймс Хироюки Лиао</a></td>
-			<td>Младший капрал Стивен Моттола</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Blackwell">Рас Блэквелл</a></td>
-			<td>Подполковник К.Н. Ритчи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Brown">Нил Браун мл.</a></td>
-			<td>Младший капрал Ричард Герреро</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Chrest">Джо Крест</a></td>
-			<td>Старший сержант Джон Рой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Till">Лукас Тилл</a></td>
-			<td>Капрал Скотт Грейстон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Тэйлор Хэндли</td>
-			<td>Младший капрал Кори Симмонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Брайс Касс</td>
-			<td>Гектор Ринкон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Jo.King">Джои Кинг</a></td>
-			<td>Кирстен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Gould">Джадин Гулд</a></td>
-			<td>Эми</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/a.htm#A.Eckhart">Аарон Экхарт</a></td>
+					<td>Штаб-сержант Майкл Нанц</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Rodriguez">Рамон Родригес</a></td>
+					<td>Младший лейтенант Уильям Мартинес</td>
+				</tr>
+				<tr>
+					<td>Уилл Ротхаар</td>
+					<td>Капрал Ли Имлей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#Mi.Rodriguez">Мишель Родригес</a></td>
+					<td>Техсержант Элена Сантос</td>
+				</tr>
+				<tr>
+					<td>Не-Йо</td>
+					<td>Капрал Кевин Харрис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Hardrict">Кори Хардрикт</a></td>
+					<td>Капрал Джейсон Локетт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Parrack">Джим Пэррак</a></td>
+					<td>Младший капрал Питер Кернс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Pena">Майкл Пенья</a></td>
+					<td>Джо Ринкон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Moynahan">Бриджет Мойнахан</a></td>
+					<td>Мишель</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.M'Cormack">Адетокумбо М'Кормак</a></td>
+					<td>Санитар Джибрил Адукву</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Fisher">Ноэль Фишер</a></td>
+					<td>Рядовой Шон Ленихан</td>
+				</tr>
+				<tr>
+					<td>Джино Энтони Песи</td>
+					<td>Капрал Ник Ставру</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.H.Liao">Джеймс Хироюки Лиао</a></td>
+					<td>Младший капрал Стивен Моттола</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Blackwell">Рас Блэквелл</a></td>
+					<td>Подполковник К.Н. Ритчи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Brown">Нил Браун мл.</a></td>
+					<td>Младший капрал Ричард Герреро</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Chrest">Джо Крест</a></td>
+					<td>Старший сержант Джон Рой</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Till">Лукас Тилл</a></td>
+					<td>Капрал Скотт Грейстон</td>
+				</tr>
+				<tr>
+					<td>Тэйлор Хэндли</td>
+					<td>Младший капрал Кори Симмонс</td>
+				</tr>
+				<tr>
+					<td>Брайс Касс</td>
+					<td>Гектор Ринкон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Jo.King">Джои Кинг</a></td>
+					<td>Кирстен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Gould">Джадин Гулд</a></td>
+					<td>Эми</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 70 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 84 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 212 млн.</p>

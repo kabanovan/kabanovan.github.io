@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Underwater.htm" class="nav-arrow">←</a>
+		<a href="../Years/2020.htm" class="nav-arrow">⌂</a>
 		<a href="The Call Of The Wild.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,73 +25,71 @@
 		<p><b>Режиссёр:</b> Кэти Янь</p>
 		<p align=justify><b>В основе:</b> Комиксы о Хищных Птицах (США, выходят с 1996, авторы – Джордан Б. Горфинкель и Чак Диксон)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#DCEU">Расширенная вселенная DC</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#M.Robbie">Марго Робби</a></td>
-			<td>Доктор Харлин Квинзель / Харли Квинн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/yu.htm#E.McGregor">Юэн МакГрегор</a></td>
-			<td><i><p style="margin-left:30px">Роман Сайонис / Чёрная Маска</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джерни Смоллетт-Белл</td>
-			<td><i><p style="margin-left:30px">Дайна Лэнс / Чёрная Канарейка</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Рози Перес</td>
-			<td><i><p style="margin-left:30px">Детектив Рене Монтойя</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Элла Джей Баско</td>
-			<td><i><p style="margin-left:30px">Кассандра Кейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.E.Winstead">Мэри Элизабет Уинстед</a></td>
-			<td><i><p style="margin-left:30px">Хелена Бертинелли / Охотница</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Крис Мессина</td>
-			<td><i><p style="margin-left:30px">Виктор Заз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Али Вонг</td>
-			<td><i><p style="margin-left:30px">Эллен Ши</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэна Ли</td>
-			<td><i><p style="margin-left:30px">Док</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Williams">Стивен Уильямс</a></td>
-			<td><i><p style="margin-left:30px">Капитан Патрик Эриксон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Франсуа Чау</td>
-			<td><i><p style="margin-left:30px">Мистер Кио</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мэттью Уиллиг</td>
-			<td><i><p style="margin-left:30px">Улыбака</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дерек Уилсон</td>
-			<td><i><p style="margin-left:30px">Детектив Тим Монро</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/m.htm#M.Robbie">Марго Робби</a></td>
+					<td>Доктор Харлин Квинзель / Харли Квинн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/yu.htm#E.McGregor">Юэн МакГрегор</a></td>
+					<td>Роман Сайонис / Чёрная Маска</td>
+				</tr>
+				<tr>
+					<td>Джерни Смоллетт-Белл</td>
+					<td>Дайна Лэнс / Чёрная Канарейка</td>
+				</tr>
+				<tr>
+					<td>Рози Перес</td>
+					<td>Детектив Рене Монтойя</td>
+				</tr>
+				<tr>
+					<td>Элла Джей Баско</td>
+					<td>Кассандра Кейн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.E.Winstead">Мэри Элизабет Уинстед</a></td>
+					<td>Хелена Бертинелли / Охотница</td>
+				</tr>
+				<tr>
+					<td>Крис Мессина</td>
+					<td>Виктор Заз</td>
+				</tr>
+				<tr>
+					<td>Али Вонг</td>
+					<td>Эллен Ши</td>
+				</tr>
+				<tr>
+					<td>Дэна Ли</td>
+					<td>Док</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Williams">Стивен Уильямс</a></td>
+					<td>Капитан Патрик Эриксон</td>
+				</tr>
+				<tr>
+					<td>Франсуа Чау</td>
+					<td>Мистер Кио</td>
+				</tr>
+				<tr>
+					<td>Мэттью Уиллиг</td>
+					<td>Улыбака</td>
+				</tr>
+				<tr>
+					<td>Дерек Уилсон</td>
+					<td>Детектив Тим Монро</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 85 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 84 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 206 млн.</p>

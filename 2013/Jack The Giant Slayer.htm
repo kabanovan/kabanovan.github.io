@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="A Good Day To Die Hard.htm" class="nav-arrow">←</a>
+		<a href="../Years/2013.htm" class="nav-arrow">⌂</a>
 		<a href="Oz The Great And Powerful.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -34,78 +34,75 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#B.Singer">Брайан Сингер</a></p>
 		<p align=justify><b>В основе:</b> Английские народные сказки "Джек – победитель великанов" (1711) и "Джек и бобовый
 стебель" (1807)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/n.htm#N.Hoult">Николас Холт</a></td>
-			<td>Джек</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/yu.htm#E.McGregor">Юэн МакГрегор</a></td>
-			<td>Элмонт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Tomlinson">Элинор Томлинсон</a></td>
-			<td>Принцесса Изабель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Tucci">Стэнли Туччи</a></td>
-			<td>Лорд Родерик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/y.htm#I.McShane">Йен МакШейн</a></td>
-			<td>Король Брамвелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Nighy">Билл Най</a></td>
-			<td>Генерал Фаллон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Marsan">Эдди Марсан</a></td>
-			<td>Кроув</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Fairbank">Кристофер Фэйрбэнк</a></td>
-			<td>Дядя Джека</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/yu.htm#Е.Bremner">Юэн Бремнер</a></td>
-			<td>Вик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Brown">Ральф Браун</a></td>
-			<td>Генерал Энтин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Daniels">Бен Дэниелс</a></td>
-			<td>Фамм</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джон Кассир</td>
-			<td>Маленькая голова генерала Фаллона</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Davis">Уорвик Дэвис</a></td>
-			<td>Старый Хэмм</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Dixon">Ричард Диксон</a></td>
-			<td><i><p style="margin-left:30px">Художник короля</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/n.htm#N.Hoult">Николас Холт</a></td>
+					<td>Джек</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/yu.htm#E.McGregor">Юэн МакГрегор</a></td>
+					<td>Элмонт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Tomlinson">Элинор Томлинсон</a></td>
+					<td>Принцесса Изабель</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Tucci">Стэнли Туччи</a></td>
+					<td>Лорд Родерик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/y.htm#I.McShane">Йен МакШейн</a></td>
+					<td>Король Брамвелл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Nighy">Билл Най</a></td>
+					<td>Генерал Фаллон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Marsan">Эдди Марсан</a></td>
+					<td>Кроув</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Fairbank">Кристофер Фэйрбэнк</a></td>
+					<td>Дядя Джека</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/yu.htm#Е.Bremner">Юэн Бремнер</a></td>
+					<td>Вик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Brown">Ральф Браун</a></td>
+					<td>Генерал Энтин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Daniels">Бен Дэниелс</a></td>
+					<td>Фамм</td>
+				</tr>
+				<tr>
+					<td>Джон Кассир</td>
+					<td>Маленькая голова генерала Фаллона</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Davis">Уорвик Дэвис</a></td>
+					<td>Старый Хэмм</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Dixon">Ричард Диксон</a></td>
+					<td>Художник короля</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 195 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 65 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 198 млн.</p>

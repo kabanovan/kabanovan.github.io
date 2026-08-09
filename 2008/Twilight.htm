@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Quantum Of Solace.htm" class="nav-arrow">←</a>
+		<a href="../Years/2008.htm" class="nav-arrow">⌂</a>
 		<a href="The Day The Earth Stood Still.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,108 +30,99 @@
 		<p><b>Режиссёр:</b> Кэтрин Хардвик</p>
 		<p align=justify><b>В основе:</b> Роман Стефани Майер "Сумерки" (США, 2005)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#TheTwilightSaga">Сумерки. Сага</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#K.Stewart">Кристен Стюарт</a></td>
-			<td>Белла Свон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Pattinson">Роберт Паттинсон</a></td>
-			<td>Эдвард Каллен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Burke">Билли Бёрк</a></td>
-			<td>Чарли Свон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Facinelli">Питер Фачинелли</a></td>
-			<td>Доктор Карлайл Каллен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Kendrick">Анна Кендрик</a></td>
-			<td>Джессика Стэнли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Lautner">Тэйлор Лотнер</a></td>
-			<td>Джейкоб Блэк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Gigandet">Кэм Жиганде</a></td>
-			<td>Джеймс Визердейл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Greene">Эшли Грин</a></td>
-			<td>Элис Каллен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Welch">Майкл Уэлч</a></td>
-			<td>Майк Ньютон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Serratos">Кристиан Серратос</a></td>
-			<td>Энжела Вебер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Clarke">Сара Кларк</a></td>
-			<td>Рене Дуаер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Chon">Джастин Чон</a></td>
-			<td>Эрик Йорки</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Gathegi">Эди Гатеги</a></td>
-			<td>Лоран де Ревин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Reaser">Элизабет Ризер</a></td>
-			<td>Эсме Каллен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Reed">Никки Рид</a></td>
-			<td>Розали Хейл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Lutz">Келлан Латс</a></td>
-			<td>Эммет Каллен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Rathbone">Джексон Рэтбоун</a></td>
-			<td>Джаспер Хейл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Birmingham">Джил Бирмингем</a></td>
-			<td>Билли Блэк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#J.Zuniga">Хосе Суньига</a></td>
-			<td>Мистер Молина</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Lefevre">Рашель Лефевр</a></td>
-			<td>Виктория Сазерленд</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#K.Stewart">Кристен Стюарт</a></td>
+					<td>Белла Свон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Pattinson">Роберт Паттинсон</a></td>
+					<td>Эдвард Каллен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Burke">Билли Бёрк</a></td>
+					<td>Чарли Свон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Facinelli">Питер Фачинелли</a></td>
+					<td>Доктор Карлайл Каллен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Kendrick">Анна Кендрик</a></td>
+					<td>Джессика Стэнли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Lautner">Тэйлор Лотнер</a></td>
+					<td>Джейкоб Блэк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Gigandet">Кэм Жиганде</a></td>
+					<td>Джеймс Визердейл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Greene">Эшли Грин</a></td>
+					<td>Элис Каллен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Welch">Майкл Уэлч</a></td>
+					<td>Майк Ньютон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Serratos">Кристиан Серратос</a></td>
+					<td>Энжела Вебер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Clarke">Сара Кларк</a></td>
+					<td>Рене Дуаер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Chon">Джастин Чон</a></td>
+					<td>Эрик Йорки</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Gathegi">Эди Гатеги</a></td>
+					<td>Лоран де Ревин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Reaser">Элизабет Ризер</a></td>
+					<td>Эсме Каллен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Reed">Никки Рид</a></td>
+					<td>Розали Хейл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Lutz">Келлан Латс</a></td>
+					<td>Эммет Каллен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Rathbone">Джексон Рэтбоун</a></td>
+					<td>Джаспер Хейл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Birmingham">Джил Бирмингем</a></td>
+					<td>Билли Блэк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#J.Zuniga">Хосе Суньига</a></td>
+					<td>Мистер Молина</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Lefevre">Рашель Лефевр</a></td>
+					<td>Виктория Сазерленд</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 37 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 194 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 411 млн.</p>

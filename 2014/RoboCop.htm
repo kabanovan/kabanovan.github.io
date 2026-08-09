@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="I, Frankenstein.htm" class="nav-arrow">←</a>
+		<a href="../Years/2014.htm" class="nav-arrow">⌂</a>
 		<a href="300 - Rise Of An Empire.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -33,83 +33,79 @@
 обернуться настоящей катастрофой.</p>
 		<p><b>Режиссёр:</b> Хосе Падилья</p>
 		<p align=justify><b>В основе:</b> Художественный фильм "<a href="../1987/Robocop.htm">Робокоп</a>" (США, 1987)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/yu.htm#J.Kinnaman">Юэль Киннаман</a></td>
-			<td>Детектив Алекс Мёрфи / РобоКоп</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Oldman">Гэри Олдман</a></td>
-			<td>Доктор Деннетт Нортон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Keaton">Майкл Китон</a></td>
-			<td>Реймонд Селларс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
-			<td>Пэт Новак</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Cornish">Эбби Корниш</a></td>
-			<td>Клара Мёрфи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.E.Haley">Джеки Эрл Хейли</a></td>
-			<td>Рик Мэттокс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.K.Williams">Майкл К. Уильямс</a></td>
-			<td>Сержант Джек Льюис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дженнифер Эль</td>
-			<td>Лиз Клайн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Baruchel">Джей Барушель</a></td>
-			<td>Том Поуп</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эйми Гарсиа</td>
-			<td>Чже Ким</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Марианн Жан-Батист</td>
-			<td>Шеф Карен Дин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Патрик Гэрроу</td>
-			<td>Антуан Вэллон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/z.htm#Z.Grenier">Зак Гренье</a></td>
-			<td>Сенатор Хьюберт Дрейфусс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джордан Джонсон-Хиндс</td>
-			<td>Джерри Уайт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дуглас Урбански</td>
-			<td>Мэр Дюран</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/yu.htm#J.Kinnaman">Юэль Киннаман</a></td>
+					<td>Детектив Алекс Мёрфи / РобоКоп</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Oldman">Гэри Олдман</a></td>
+					<td>Доктор Деннетт Нортон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Keaton">Майкл Китон</a></td>
+					<td>Реймонд Селларс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
+					<td>Пэт Новак</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Cornish">Эбби Корниш</a></td>
+					<td>Клара Мёрфи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.E.Haley">Джеки Эрл Хейли</a></td>
+					<td>Рик Мэттокс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.K.Williams">Майкл К. Уильямс</a></td>
+					<td>Сержант Джек Льюис</td>
+				</tr>
+				<tr>
+					<td>Дженнифер Эль</td>
+					<td>Лиз Клайн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Baruchel">Джей Барушель</a></td>
+					<td>Том Поуп</td>
+				</tr>
+				<tr>
+					<td>Эйми Гарсиа</td>
+					<td>Чже Ким</td>
+				</tr>
+				<tr>
+					<td>Марианн Жан-Батист</td>
+					<td>Шеф Карен Дин</td>
+				</tr>
+				<tr>
+					<td>Патрик Гэрроу</td>
+					<td>Антуан Вэллон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/z.htm#Z.Grenier">Зак Гренье</a></td>
+					<td>Сенатор Хьюберт Дрейфусс</td>
+				</tr>
+				<tr>
+					<td>Джордан Джонсон-Хиндс</td>
+					<td>Джерри Уайт</td>
+				</tr>
+				<tr>
+					<td>Дуглас Урбански</td>
+					<td>Мэр Дюран</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 100 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 59 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 243 млн.</p>

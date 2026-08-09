@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../2015/The Revenant.htm" class="nav-arrow">←</a>
+		<a href="../Years/2016.htm" class="nav-arrow">⌂</a>
 		<a href="Deadpool.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -38,98 +38,91 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#C.Gillespie">Крейг Гиллеспи</a></p>
 		<p align=justify><b>В основе:</b> Документальная книга Майкла Дж. Тоджайса и Кейси
 Шермана "Самоотверженные часы" (США, 2010)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#C.Pine">Крис Пайн</a></td>
-			<td>Берни Уэббер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Affleck">Кейси Аффлек</a></td>
-			<td>Рэй Сиберт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Холлидей Грейнджер</td>
-			<td>Мириам Пентинен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Bana">Эрик Бана</a></td>
-			<td>Дэниэл Клафф</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Foster">Бен Фостер</a></td>
-			<td>Ричи Ливси</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кайл Галлнер</td>
-			<td>Энди "Фитц" Фитцджеральд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Майкл Рэймонд-Джеймс</td>
-			<td>Д.А. Браун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Knapp">Бо Напп</a></td>
-			<td>Мел "Гас" Гэтроу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Ortiz">Джон Ортис</a></td>
-			<td>Уоллес Квири</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.McTavish">Грэм МакТавиш</a></td>
-			<td>Фрэнк "Борода" Фото</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Magaro">Джон Магаро</a></td>
-			<td>Эрвин Мэски</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Benrubi">Абрахам Бенруби</a></td>
-			<td>Джордж "Тайни" Майерс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Brosnahan">Рэйчел Броснахэн</a></td>
-			<td>Беа Хансен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Бен Колдайк</td>
-			<td>Старшина Дональд Бэнгс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Александр Кук</td>
-			<td>Джон Стелло</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Stewart">Джош Стюарт</a></td>
-			<td>Чуда Сазерленд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Maher">Мэттью Мехер</a></td>
-			<td>Карл Никерсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Lonsdale">Кейнан Лонсдейл</a></td>
-			<td>Элдон Ханан</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#C.Pine">Крис Пайн</a></td>
+					<td>Берни Уэббер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Affleck">Кейси Аффлек</a></td>
+					<td>Рэй Сиберт</td>
+				</tr>
+				<tr>
+					<td>Холлидей Грейнджер</td>
+					<td>Мириам Пентинен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Bana">Эрик Бана</a></td>
+					<td>Дэниэл Клафф</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Foster">Бен Фостер</a></td>
+					<td>Ричи Ливси</td>
+				</tr>
+				<tr>
+					<td>Кайл Галлнер</td>
+					<td>Энди "Фитц" Фитцджеральд</td>
+				</tr>
+				<tr>
+					<td>Майкл Рэймонд-Джеймс</td>
+					<td>Д.А. Браун</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Knapp">Бо Напп</a></td>
+					<td>Мел "Гас" Гэтроу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Ortiz">Джон Ортис</a></td>
+					<td>Уоллес Квири</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.McTavish">Грэм МакТавиш</a></td>
+					<td>Фрэнк "Борода" Фото</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Magaro">Джон Магаро</a></td>
+					<td>Эрвин Мэски</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Benrubi">Абрахам Бенруби</a></td>
+					<td>Джордж "Тайни" Майерс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Brosnahan">Рэйчел Броснахэн</a></td>
+					<td>Беа Хансен</td>
+				</tr>
+				<tr>
+					<td>Бен Колдайк</td>
+					<td>Старшина Дональд Бэнгс</td>
+				</tr>
+				<tr>
+					<td>Александр Кук</td>
+					<td>Джон Стелло</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Stewart">Джош Стюарт</a></td>
+					<td>Чуда Сазерленд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Maher">Мэттью Мехер</a></td>
+					<td>Карл Никерсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Lonsdale">Кейнан Лонсдейл</a></td>
+					<td>Элдон Ханан</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 80 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 28 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 52 млн.</p>

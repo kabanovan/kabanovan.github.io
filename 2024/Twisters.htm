@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="A Quiet Place - Day One.htm" class="nav-arrow">←</a>
+		<a href="../Years/2024.htm" class="nav-arrow">⌂</a>
 		<a href="Deadpool & Wolverine.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,78 +24,75 @@
 		<p align=justify><b>Сюжет:</b> Кейт Картер – бывшая охотница за штормами, которую до сих пор преследует ужасающая встреча с торнадо во время учёбы в колледже. Теперь она изучает погоду в безопасной обстановке на экране, в Нью-Йорке. Однако друг Хави уговаривает её вернуться на открытые равнины, чтобы протестировать принципиально новую систему отслеживания ураганов. Там она встречается с Тайлером Оуэнсом, обаятельным и бесшабашным суперзвездой соцсетей, который живёт тем, что выкладывает репортажи о своих приключениях в погоне за торнадо вместе со своей шумной командой, и чем они опаснее, тем лучше. По мере приближения сезона штормов начинают происходить невиданные ранее ужасающие природные явления. Кейт, Тайлер и их конкурирующие команды оказываются непосредственно на пути нескольких штормов, сходящихся над центральной Оклахомой, и вынуждены бороться за свою жизнь.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#L.I.Chung">Ли Айзек Чун</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Twister.htm">Смерч</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>Дэйзи Эдгар-Джонс</td>
-			<td><i><p style="margin-left:30px">Кейт Картер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Powell">Глен Пауэлл</a></td>
-			<td><i><p style="margin-left:30px">Тайлер Оуэнс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Ramos">Энтони Рамос</a></td>
-			<td><i><p style="margin-left:30px">Хави Ривера</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Брэндон Переа</td>
-			<td><i><p style="margin-left:30px">Бун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Corenswet">Дэвид Коренсвет</a></td>
-			<td><i><p style="margin-left:30px">Скотт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мора Тирни</td>
-			<td><i><p style="margin-left:30px">Кэти Картер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Lane">Саша Лэйн</a></td>
-			<td><i><p style="margin-left:30px">Лили</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Гарри Хадден-Патон</td>
-			<td><i><p style="margin-left:30px">Бен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэрил МакКормак</td>
-			<td><i><p style="margin-left:30px">Джеб</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Adebimpe">Тунде Адебимпе</a></td>
-			<td><i><p style="margin-left:30px">Декстер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.O'Brian">Кэти О'Брайан</a></td>
-			<td><i><p style="margin-left:30px">Дэни</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ник Додани</td>
-			<td><i><p style="margin-left:30px">Правин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кирнан Шипка</td>
-			<td><i><p style="margin-left:30px">Эдди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Пол Шир</td>
-			<td><i><p style="margin-left:30px">Полицейский в аэропорту</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>Дэйзи Эдгар-Джонс</td>
+					<td>Кейт Картер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Powell">Глен Пауэлл</a></td>
+					<td>Тайлер Оуэнс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Ramos">Энтони Рамос</a></td>
+					<td>Хави Ривера</td>
+				</tr>
+				<tr>
+					<td>Брэндон Переа</td>
+					<td>Бун</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Corenswet">Дэвид Коренсвет</a></td>
+					<td>Скотт</td>
+				</tr>
+				<tr>
+					<td>Мора Тирни</td>
+					<td>Кэти Картер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Lane">Саша Лэйн</a></td>
+					<td>Лили</td>
+				</tr>
+				<tr>
+					<td>Гарри Хадден-Патон</td>
+					<td>Бен</td>
+				</tr>
+				<tr>
+					<td>Дэрил МакКормак</td>
+					<td>Джеб</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Adebimpe">Тунде Адебимпе</a></td>
+					<td>Декстер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.O'Brian">Кэти О'Брайан</a></td>
+					<td>Дэни</td>
+				</tr>
+				<tr>
+					<td>Ник Додани</td>
+					<td>Правин</td>
+				</tr>
+				<tr>
+					<td>Кирнан Шипка</td>
+					<td>Эдди</td>
+				</tr>
+				<tr>
+					<td>Пол Шир</td>
+					<td>Полицейский в аэропорту</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 155 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 268 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 372 млн.</p>

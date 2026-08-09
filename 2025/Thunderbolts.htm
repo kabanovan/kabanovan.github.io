@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Electric State.htm" class="nav-arrow">←</a>
+		<a href="../Years/2025.htm" class="nav-arrow">⌂</a>
 		<a href="Mission Impossible - The Final Reckoning.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,69 +24,68 @@
 		<p align=justify><b>Сюжет:</b> Попав в смертельную ловушку Валентины Аллегры де Фонтейн, разношёрстная команда антигероев (Елена Белова, Баки Барнс, Красный Страж, Призрак, Таскмастер и Джон Уокер) вынуждена отправиться на опасное задание, во время которого им предстоит заглянуть в самые тёмные уголки своего прошлого. Сумеет ли эта несовместимая группа разочарованных изгоев преодолеть разногласия, обрести искупление и стать чем-то большим, пока ещё не слишком поздно?</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Schreier">Джейк Шрейер</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Громовержцах (США, выходят с 1997, авторы – Курт Бьюсик и Марк Багли)</p></p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#MCU">Кинематографическая Вселенная Марвел</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/f.htm#F.Pugh">Флоренс Пью</a></td>
-			<td><i><p style="margin-left:30px">Елена Белова</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Louis-Dreyfus">Джулия Луи-Дрейфус</a></td>
-			<td><i><p style="margin-left:30px">Директор Валентина Аллегра де Фонтейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Russell">Уайатт Расселл</a></td>
-			<td><i><p style="margin-left:30px">Джон Уокер / Агент США</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Harbour">Дэвид Харбор</a></td>
-			<td><i><p style="margin-left:30px">Алексей Шостаков / Красный Страж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Льюис Пуллман</td>
-			<td><i><p style="margin-left:30px">Боб Рейнольдс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.John-Kamen">Ханна Джон-Кэймен</a></td>
-			<td>Эйва Стар / Призрак</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Stan">Себастьян Стэн</a></td>
-			<td>Конгрессмен Джеймс "Баки" Барнс / Зимний Солдат</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джеральдин Вишванатан</td>
-			<td><i><p style="margin-left:30px">Мел</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Pierce">Уэнделл Пирс</a></td>
-			<td><i><p style="margin-left:30px">Конгрессмен Гэри</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Kurylenko">Ольга Куриленко</a></td>
-			<td><i><p style="margin-left:30px">Антония Дрейкова / Таскмастер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Bauer">Крис Бауэр</a></td>
-			<td>Холт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.McGraw">Вайолет МакГроу</a></td>
-			<td><i><p style="margin-left:30px">Юная Елена</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/MCU.htm">Кинематографическая Вселенная Марвел</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/f.htm#F.Pugh">Флоренс Пью</a></td>
+					<td>Елена Белова</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Louis-Dreyfus">Джулия Луи-Дрейфус</a></td>
+					<td>Директор Валентина Аллегра де Фонтейн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Russell">Уайатт Расселл</a></td>
+					<td>Джон Уокер / Агент США</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Harbour">Дэвид Харбор</a></td>
+					<td>Алексей Шостаков / Красный Страж</td>
+				</tr>
+				<tr>
+					<td>Льюис Пуллман</td>
+					<td>Боб Рейнольдс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.John-Kamen">Ханна Джон-Кэймен</a></td>
+					<td>Эйва Стар / Призрак</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Stan">Себастьян Стэн</a></td>
+					<td>Конгрессмен Джеймс "Баки" Барнс / Зимний Солдат</td>
+				</tr>
+				<tr>
+					<td>Джеральдин Вишванатан</td>
+					<td>Мел</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Pierce">Уэнделл Пирс</a></td>
+					<td>Конгрессмен Гэри</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Kurylenko">Ольга Куриленко</a></td>
+					<td>Антония Дрейкова / Таскмастер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Bauer">Крис Бауэр</a></td>
+					<td>Холт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.McGraw">Вайолет МакГроу</a></td>
+					<td>Юная Елена</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 180 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 190 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 382 млн.</p>

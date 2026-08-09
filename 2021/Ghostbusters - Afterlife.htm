@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Red Notice.htm" class="nav-arrow">←</a>
+		<a href="../Years/2021.htm" class="nav-arrow">⌂</a>
 		<a href="Spider-Man - No Way Home.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,73 +24,71 @@
 		<p align=justify><b>Сюжет:</b> Новая глава в истории знаменитых охотников за приведениями. Мать-одиночка с двумя детьми приезжает в небольшой городок, где они обнаруживают свою связь с первыми охотниками за приведениями и тайное наследство, оставленное дедом.</p>
 		<p><b>Режиссёр:</b> Джейсон Райтман</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Ghostbusters.htm">Охотники За Привидениями</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#Mc.Grace">Маккенна Грейс</a></td>
-			<td><i><p style="margin-left:30px">Фиби</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Coon">Кэрри Кун</a></td>
-			<td><i><p style="margin-left:30px">Кэлли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#F.Wolfhard">Финн Вулфхард</a></td>
-			<td><i><p style="margin-left:30px">Тревор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Rudd">Пол Радд</a></td>
-			<td><i><p style="margin-left:30px">Гэри Груберсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Kim">Логан Ким</a></td>
-			<td><i><p style="margin-left:30px">Подкаст</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#C.O'Connor">Селеста О'Коннор</a></td>
-			<td><i><p style="margin-left:30px">Лаки Доминго</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Murray">Билл Мюррей</a></td>
-			<td>Доктор Питер Венкман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Aykroyd">Дэн Эйкройд</a></td>
-			<td>Доктор Рэй Стэнц</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Hudson">Эрни Хадсон</a></td>
-			<td>Уинстон Зеддмор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Potts">Энни Поттс</a></td>
-			<td>Джанин Мельниц</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Woodbine">Букем Вудбайн</a></td>
-			<td><i><p style="margin-left:30px">Шериф Шерман Доминго</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.K.Simmons">Дж.К. Симмонс</a></td>
-			<td><i><p style="margin-left:30px">Иво Шандор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Wild">Оливия Уайлд</a></td>
-			<td><i><p style="margin-left:30px">Гозер</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/m.htm#Mc.Grace">Маккенна Грейс</a></td>
+					<td>Фиби</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Coon">Кэрри Кун</a></td>
+					<td>Кэлли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#F.Wolfhard">Финн Вулфхард</a></td>
+					<td>Тревор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Rudd">Пол Радд</a></td>
+					<td>Гэри Груберсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Kim">Логан Ким</a></td>
+					<td>Подкаст</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#C.O'Connor">Селеста О'Коннор</a></td>
+					<td>Лаки Доминго</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Murray">Билл Мюррей</a></td>
+					<td>Доктор Питер Венкман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Aykroyd">Дэн Эйкройд</a></td>
+					<td>Доктор Рэй Стэнц</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Hudson">Эрни Хадсон</a></td>
+					<td>Уинстон Зеддмор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Potts">Энни Поттс</a></td>
+					<td>Джанин Мельниц</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Woodbine">Букем Вудбайн</a></td>
+					<td>Шериф Шерман Доминго</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.K.Simmons">Дж.К. Симмонс</a></td>
+					<td>Иво Шандор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Wild">Оливия Уайлд</a></td>
+					<td>Гозер</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 75 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 129 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 204 млн.</p>

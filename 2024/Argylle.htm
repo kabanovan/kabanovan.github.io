@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../2023/Aquaman And The Lost Kingdom.htm" class="nav-arrow">←</a>
+		<a href="../Years/2024.htm" class="nav-arrow">⌂</a>
 		<a href="Madame Web.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -23,78 +23,75 @@
 		<p align=justify><b>Слоган:</b> Чем лучше шпион, тем больше лжёт он.</p>
 		<p align=justify><b>Сюжет:</b> Когда сюжеты её книг начинают всё больше напоминать действия зловещего подпольного синдиката, замкнутая писательница шпионских романов Элли Конвэй и её кот оказываются втянуты в мир шпионажа, в котором всё не так, как кажется.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#M.Vaughn">Мэттью Вон</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/b.htm#B.D.Howard">Брайс Даллас Ховард</a></td>
-			<td><i><p style="margin-left:30px">Элли Конвэй</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Rockwell">Сэм Рокуэлл</a></td>
-			<td><i><p style="margin-left:30px">Эйдан Уайлд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Cranston">Брайан Крэнстон</a></td>
-			<td><i><p style="margin-left:30px">Директор Риттер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кэтрин О'Хара</td>
-			<td><i><p style="margin-left:30px">Рут Конвэй</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#H.Cavill">Генри Кавилл</a></td>
-			<td><i><p style="margin-left:30px">Агент Обри Аргайл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
-			<td><i><p style="margin-left:30px">Альфи Соломон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Cena">Джон Сина</a></td>
-			<td><i><p style="margin-left:30px">Агент Уайатт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Boutella">София Бутелла</a></td>
-			<td><i><p style="margin-left:30px">Саба Аль-Бадр</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Томас Паредес</td>
-			<td><i><p style="margin-left:30px">Карлос Вальдес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дуа Липа</td>
-			<td><i><p style="margin-left:30px">Легранж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.DeBose">Ариана ДеБос</a></td>
-			<td><i><p style="margin-left:30px">Кира</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Delaney">Роб Делани</a></td>
-			<td><i><p style="margin-left:30px">Заместитель Пауэлл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.E.Grant">Ричард Э. Грант</a></td>
-			<td><i><p style="margin-left:30px">Директор Фаулер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/c.htm#J.Lusi">Цзин Люси</a></td>
-			<td><i><p style="margin-left:30px">Ли На</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/b.htm#B.D.Howard">Брайс Даллас Ховард</a></td>
+					<td>Элли Конвэй</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Rockwell">Сэм Рокуэлл</a></td>
+					<td>Эйдан Уайлд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Cranston">Брайан Крэнстон</a></td>
+					<td>Директор Риттер</td>
+				</tr>
+				<tr>
+					<td>Кэтрин О'Хара</td>
+					<td>Рут Конвэй</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#H.Cavill">Генри Кавилл</a></td>
+					<td>Агент Обри Аргайл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
+					<td>Альфи Соломон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Cena">Джон Сина</a></td>
+					<td>Агент Уайатт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Boutella">София Бутелла</a></td>
+					<td>Саба Аль-Бадр</td>
+				</tr>
+				<tr>
+					<td>Томас Паредес</td>
+					<td>Карлос Вальдес</td>
+				</tr>
+				<tr>
+					<td>Дуа Липа</td>
+					<td>Легранж</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.DeBose">Ариана ДеБос</a></td>
+					<td>Кира</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Delaney">Роб Делани</a></td>
+					<td>Заместитель Пауэлл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.E.Grant">Ричард Э. Грант</a></td>
+					<td>Директор Фаулер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/c.htm#J.Lusi">Цзин Люси</a></td>
+					<td>Ли На</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 200 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 45 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 96 млн.</p>

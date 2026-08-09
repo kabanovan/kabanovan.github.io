@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Wolfman.htm" class="nav-arrow">←</a>
+		<a href="../Years/2010.htm" class="nav-arrow">⌂</a>
 		<a href="Clash Of The Titans.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -31,73 +31,71 @@
 		<p align=justify><b>В основе:</b> Романы Льюиса Кэрролла "Алиса в Стране чудес" (Великобритания, 1865)
 и "Алиса в Зазеркалье" (Великобритания, 1871)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#AliceInWonderland">Алиса В Стране Чудес</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#M.Wasikowska">Миа Васиковска</a></td>
-			<td>Алиса Кингсли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Depp">Джонни Депп</a></td>
-			<td>Таррент Цилиндр / Безумный Шляпник</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.B.Carter">Хелена Бонем Картер</a></td>
-			<td>Ирацибета фон Кримс / Красная Королева</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Hathaway">Энн Хэтауэй</a></td>
-			<td>Мирана фон Мрамория / Белая Королева</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Glover">Криспин Гловер</a></td>
-			<td>Илосович Стейн / Валет</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Lucas">Мэтт Лукас</a></td>
-			<td>Траляля / Труляля</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Duncan">Линдси Дункан</a></td>
-			<td>Хелен Кингсли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.James">Джеральдин Джеймс</a></td>
-			<td>Леди Аскот</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Pigott-Smith">Тим Пиготт-Смит</a></td>
-			<td>Лорд Аскот</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Csokas">Мартон Чокаш</a></td>
-			<td>Чарльз Кингсли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Bill">Лео Билл</a></td>
-			<td>Хэмиш Аскот</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#F.d.l.Tour">Фрэнсис де ла Тур</a></td>
-			<td>Тётя Имогена</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Tomlinson">Элинор Томлинсон</a></td>
-			<td>Фиона Чаттавэй</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/m.htm#M.Wasikowska">Миа Васиковска</a></td>
+					<td>Алиса Кингсли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Depp">Джонни Депп</a></td>
+					<td>Таррент Цилиндр / Безумный Шляпник</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.B.Carter">Хелена Бонем Картер</a></td>
+					<td>Ирацибета фон Кримс / Красная Королева</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Hathaway">Энн Хэтауэй</a></td>
+					<td>Мирана фон Мрамория / Белая Королева</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Glover">Криспин Гловер</a></td>
+					<td>Илосович Стейн / Валет</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Lucas">Мэтт Лукас</a></td>
+					<td>Траляля / Труляля</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Duncan">Линдси Дункан</a></td>
+					<td>Хелен Кингсли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.James">Джеральдин Джеймс</a></td>
+					<td>Леди Аскот</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Pigott-Smith">Тим Пиготт-Смит</a></td>
+					<td>Лорд Аскот</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Csokas">Мартон Чокаш</a></td>
+					<td>Чарльз Кингсли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Bill">Лео Билл</a></td>
+					<td>Хэмиш Аскот</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#F.d.l.Tour">Фрэнсис де ла Тур</a></td>
+					<td>Тётя Имогена</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Tomlinson">Элинор Томлинсон</a></td>
+					<td>Фиона Чаттавэй</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 200 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 334 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 1 025 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Transformers - Rise Of The Beasts.htm" class="nav-arrow">←</a>
+		<a href="../Years/2023.htm" class="nav-arrow">⌂</a>
 		<a href="Extraction 2.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,88 +25,83 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#A.Muschietti">Энди Мускетти</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Флэше (США, выходят с 1956, автор – Роберт Канигер)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#DCEU">Расширенная вселенная DC</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/e.htm#E.Miller">Эзра Миллер</a></td>
-			<td><i><p style="margin-left:30px">Барри Аллен / Флэш</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Keaton">Майкл Китон</a></td>
-			<td><i><p style="margin-left:30px">Брюс Уэйн / Бэтмен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Саша Калле</td>
-			<td><i><p style="margin-left:30px">Кара Зор-Эл / Супергёрл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Рон Ливингстон</td>
-			<td><i><p style="margin-left:30px">Генри Аллен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Марибель Верду</td>
-			<td><i><p style="margin-left:30px">Нора Аллен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Clemons">Кирси Клемонс</a></td>
-			<td><i><p style="margin-left:30px">Айрис Уэст</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Shannon">Майкл Шэннон</a></td>
-			<td>Генерал Зод</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Affleck">Бен Аффлек</a></td>
-			<td><i><p style="margin-left:30px">Брюс Уэйн / Бэтмен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Сирша-Моника Джексон</td>
-			<td><i><p style="margin-left:30px">Пэтти Сивот</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Руди Манкузо</td>
-			<td><i><p style="margin-left:30px">Альберт Десмонд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Irons">Джереми Айронс</a></td>
-			<td><i><p style="margin-left:30px">Альфред Пенниворт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Traue">Антье Трауэ</a></td>
-			<td>Фаора-Ул</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эд Уэйд</td>
-			<td><i><p style="margin-left:30px">Репортёр в суде</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Morrison">Темуэра Моррисон</a></td>
-			<td><i><p style="margin-left:30px">Том Карри</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Gadot">Галь Гадот</a></td>
-			<td><i><p style="margin-left:30px">Диана Принс / Чудо-Женщина</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Clooney">Джордж Клуни</a></td>
-			<td><i><p style="margin-left:30px">Брюс Уэйн</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/e.htm#E.Miller">Эзра Миллер</a></td>
+					<td>Барри Аллен / Флэш</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Keaton">Майкл Китон</a></td>
+					<td>Брюс Уэйн / Бэтмен</td>
+				</tr>
+				<tr>
+					<td>Саша Калле</td>
+					<td>Кара Зор-Эл / Супергёрл</td>
+				</tr>
+				<tr>
+					<td>Рон Ливингстон</td>
+					<td>Генри Аллен</td>
+				</tr>
+				<tr>
+					<td>Марибель Верду</td>
+					<td>Нора Аллен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Clemons">Кирси Клемонс</a></td>
+					<td>Айрис Уэст</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Shannon">Майкл Шэннон</a></td>
+					<td>Генерал Зод</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Affleck">Бен Аффлек</a></td>
+					<td>Брюс Уэйн / Бэтмен</td>
+				</tr>
+				<tr>
+					<td>Сирша-Моника Джексон</td>
+					<td>Пэтти Сивот</td>
+				</tr>
+				<tr>
+					<td>Руди Манкузо</td>
+					<td>Альберт Десмонд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Irons">Джереми Айронс</a></td>
+					<td>Альфред Пенниворт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Traue">Антье Трауэ</a></td>
+					<td>Фаора-Ул</td>
+				</tr>
+				<tr>
+					<td>Эд Уэйд</td>
+					<td>Репортёр в суде</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Morrison">Темуэра Моррисон</a></td>
+					<td>Том Карри</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Gadot">Галь Гадот</a></td>
+					<td>Диана Принс / Чудо-Женщина</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Clooney">Джордж Клуни</a></td>
+					<td>Брюс Уэйн</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 200 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 108 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 271 млн.</p>

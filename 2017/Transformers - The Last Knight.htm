@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Mummy.htm" class="nav-arrow">←</a>
+		<a href="../Years/2017.htm" class="nav-arrow">⌂</a>
 		<a href="Spider-Man - Homecoming.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -29,74 +29,72 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#M.Bay">Майкл Бэй</a></p>
 		<p align=justify><b>В основе:</b> Линия игрушечных фигурок компании "Хасбро" (США, выпускаются с
 1984)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#Transformers">Трансформеры</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#M.Wahlberg">Марк Уолберг</a></td>
-			<td>Кейд Йегер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Hopkins">Энтони Хопкинс</a></td>
-			<td>Граф Эдмунд Бёртон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Haddock">Лора Хэддок</a></td>
-			<td>Доктор Вивиан Уэмбли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Duhamel">Джош Дюамель</a></td>
-			<td>Полковник Уильям Леннокс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.Merced">Изабела Монер</a></td>
-			<td>Изабелла</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джеррод Кармайкл</td>
-			<td>Джимми Джей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Сантьяго Кабрера</td>
-			<td>Сантос</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Turturro">Джон Туртурро</a></td>
-			<td>Сеймур Симмонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Morshower">Гленн Моршауэр</a></td>
-			<td>Генерал Моршауер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Тони Хейл</td>
-			<td>Инженер ЛРД</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Tucci">Стэнли Туччи</a></td>
-			<td>Мерлин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Birmingham">Джил Бирмингем</a></td>
-			<td>Вождь Шерман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Bean">Энди Бин</a></td>
-			<td>Адвокат</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/Transformers.htm">Трансформеры</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/m.htm#M.Wahlberg">Марк Уолберг</a></td>
+					<td>Кейд Йегер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Hopkins">Энтони Хопкинс</a></td>
+					<td>Граф Эдмунд Бёртон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Haddock">Лора Хэддок</a></td>
+					<td>Доктор Вивиан Уэмбли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Duhamel">Джош Дюамель</a></td>
+					<td>Полковник Уильям Леннокс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.Merced">Изабела Монер</a></td>
+					<td>Изабелла</td>
+				</tr>
+				<tr>
+					<td>Джеррод Кармайкл</td>
+					<td>Джимми Джей</td>
+				</tr>
+				<tr>
+					<td>Сантьяго Кабрера</td>
+					<td>Сантос</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Turturro">Джон Туртурро</a></td>
+					<td>Сеймур Симмонс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Morshower">Гленн Моршауэр</a></td>
+					<td>Генерал Моршауер</td>
+				</tr>
+				<tr>
+					<td>Тони Хейл</td>
+					<td>Инженер ЛРД</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Tucci">Стэнли Туччи</a></td>
+					<td>Мерлин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Birmingham">Джил Бирмингем</a></td>
+					<td>Вождь Шерман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Bean">Энди Бин</a></td>
+					<td>Адвокат</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 217 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 130 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 605 млн.</p>

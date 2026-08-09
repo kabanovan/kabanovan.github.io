@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Pirates Of The Caribbean - Dead Men Tell No Tales.htm" class="nav-arrow">←</a>
+		<a href="../Years/2017.htm" class="nav-arrow">⌂</a>
 		<a href="The Mummy.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -33,78 +33,75 @@
 		<p align=justify><b>В основе:</b> Комиксы о Чудо-Женщине (США, выходят с 1941, авторы
 – Чарльз Моултон и Гарри Г. Питер)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#DCEU">Расширенная вселенная DC</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/g.htm#G.Gadot">Галь Гадот</a></td>
-			<td><i><p style="margin-left:30px">Принцесса Диана / Диана Принс / Чудо-Женщина</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Pine">Крис Пайн</a></td>
-			<td><i><p style="margin-left:30px">Капитан Стив Тревор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Thewlis">Дэвид Тьюлис</a></td>
-			<td><i><p style="margin-left:30px">Сэр Патрик Морган</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Taghmaoui">Саид Тагмауи</a></td>
-			<td><i><p style="margin-left:30px">Самир</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Nielsen">Конни Нильсен</a></td>
-			<td><i><p style="margin-left:30px">Царица Ипполита</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Wright">Робин Райт</a></td>
-			<td><i><p style="margin-left:30px">Генерал Антиопа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Huston">Дэнни Хьюстон</a></td>
-			<td><i><p style="margin-left:30px">Генерал Эрих Людендорфф</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/yu.htm#Е.Bremner">Юэн Бремнер</a></td>
-			<td><i><p style="margin-left:30px">Чарли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Люси Дэвис</td>
-			<td><i><p style="margin-left:30px">Этта Кэнди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ye.htm#Е.Anaya">Елена Анайя</a></td>
-			<td><i><p style="margin-left:30px">Доктор Изабель Мару / Доктор Яд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Юджин Храбрый Камень</td>
-			<td><i><p style="margin-left:30px">Вождь Напи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.L.Kongsli">Лиза Ловен Конгсли</a></td>
-			<td><i><p style="margin-left:30px">Меналиппа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Aspell">Лилли Аспелл</a></td>
-			<td><i><p style="margin-left:30px">8-летняя Диана</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Cosmo">Джеймс Космо</a></td>
-			<td><i><p style="margin-left:30px">Маршал Хейг</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/g.htm#G.Gadot">Галь Гадот</a></td>
+					<td>Принцесса Диана / Диана Принс / Чудо-Женщина</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Pine">Крис Пайн</a></td>
+					<td>Капитан Стив Тревор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Thewlis">Дэвид Тьюлис</a></td>
+					<td>Сэр Патрик Морган</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Taghmaoui">Саид Тагмауи</a></td>
+					<td>Самир</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Nielsen">Конни Нильсен</a></td>
+					<td>Царица Ипполита</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Wright">Робин Райт</a></td>
+					<td>Генерал Антиопа</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Huston">Дэнни Хьюстон</a></td>
+					<td>Генерал Эрих Людендорфф</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/yu.htm#Е.Bremner">Юэн Бремнер</a></td>
+					<td>Чарли</td>
+				</tr>
+				<tr>
+					<td>Люси Дэвис</td>
+					<td>Этта Кэнди</td>
+				</tr>
+				<tr>
+					<td>Елена Анайя</td>
+					<td>Доктор Изабель Мару / Доктор Яд</td>
+				</tr>
+				<tr>
+					<td>Юджин Храбрый Камень</td>
+					<td>Вождь Напи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.L.Kongsli">Лиза Ловен Конгсли</a></td>
+					<td>Меналиппа</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Aspell">Лилли Аспелл</a></td>
+					<td>8-летняя Диана</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Cosmo">Джеймс Космо</a></td>
+					<td>Маршал Хейг</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 149 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 412 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 824 млн.</p>

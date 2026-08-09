@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="White House Down.htm" class="nav-arrow">←</a>
+		<a href="../Years/2013.htm" class="nav-arrow">⌂</a>
 		<a href="Pacific Rim.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -31,103 +31,95 @@
 могуществе в мире.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#G.Verbinski">Гор Вербински</a></p>
 		<p align=justify><b>В основе:</b> Радиопостановка "Одинокий рейнджер" (США, 1933-1954)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>Арми Хаммер</td>
-			<td>Джон Рид / Одинокий Рейнджер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Depp">Джонни Депп</a></td>
-			<td>Тонто</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Wilkinson">Том Уилкинсон</a></td>
-			<td>Лэйтем Коул</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Fichtner">Уильям Фихтнер</a></td>
-			<td>Бутч Кавендиш</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Рут Уилсон</td>
-			<td>Ребекка Рид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.B.Carter">Хелена Бонем Картер</a></td>
-			<td>Рэд Харрингтон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Pepper">Барри Пеппер</a></td>
-			<td>Капитан Фуллер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.B.Dale">Джеймс Бэдж Дэйл</a></td>
-			<td>Дэн Рид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Гарри Тредэвэй</td>
-			<td>Фрэнк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мэйсон Кук</td>
-			<td>Уилл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Rippy">Леон Риппи</a></td>
-			<td>Коллинз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Root">Стивен Рут</a></td>
-			<td>Луис Хабберман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.O'Leary">Мэтт О'Лири</a></td>
-			<td><i><p style="margin-left:30px">Скинни</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джеймс Фрейн</td>
-			<td>Баррет</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#J.Cosio">Хоакин Косио</a></td>
-			<td>Хесус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Herriman">Дэймон Херриман</a></td>
-			<td>Рэй</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Birmingham">Джил Бирмингем</a></td>
-			<td>Красное Колено</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#Ro.Baker">Роберт Бейкер</a></td>
-			<td>Наварро</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лью Темпл</td>
-			<td>Холлис</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>Арми Хаммер</td>
+					<td>Джон Рид / Одинокий Рейнджер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Depp">Джонни Депп</a></td>
+					<td>Тонто</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Wilkinson">Том Уилкинсон</a></td>
+					<td>Лэйтем Коул</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Fichtner">Уильям Фихтнер</a></td>
+					<td>Бутч Кавендиш</td>
+				</tr>
+				<tr>
+					<td>Рут Уилсон</td>
+					<td>Ребекка Рид</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.B.Carter">Хелена Бонем Картер</a></td>
+					<td>Рэд Харрингтон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Pepper">Барри Пеппер</a></td>
+					<td>Капитан Фуллер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.B.Dale">Джеймс Бэдж Дэйл</a></td>
+					<td>Дэн Рид</td>
+				</tr>
+				<tr>
+					<td>Гарри Тредэвэй</td>
+					<td>Фрэнк</td>
+				</tr>
+				<tr>
+					<td>Мэйсон Кук</td>
+					<td>Уилл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Rippy">Леон Риппи</a></td>
+					<td>Коллинз</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Root">Стивен Рут</a></td>
+					<td>Луис Хабберман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.O'Leary">Мэтт О'Лири</a></td>
+					<td>Скинни</td>
+				</tr>
+				<tr>
+					<td>Джеймс Фрейн</td>
+					<td>Баррет</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#J.Cosio">Хоакин Косио</a></td>
+					<td>Хесус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Herriman">Дэймон Херриман</a></td>
+					<td>Рэй</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Birmingham">Джил Бирмингем</a></td>
+					<td>Красное Колено</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#Ro.Baker">Роберт Бейкер</a></td>
+					<td>Наварро</td>
+				</tr>
+				<tr>
+					<td>Лью Темпл</td>
+					<td>Холлис</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 215 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 89 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 261 млн.</p>

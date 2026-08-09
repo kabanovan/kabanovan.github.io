@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Man Of Steel.htm" class="nav-arrow">←</a>
+		<a href="../Years/2013.htm" class="nav-arrow">⌂</a>
 		<a href="White House Down.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -27,83 +27,79 @@
 политические системы разных стран и грозит уничтожить всё человечество.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#M.Forster">Марк Форстер</a></p>
 		<p align=justify><b>В основе:</b> Роман Макса Брукса "Мировая война Z" (США, 2006)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/b.htm#B.Pitt">Брэд Питт</a></td>
-			<td>Джерри Лейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мирей Инос</td>
-			<td>Карен Лейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.B.Dale">Джеймс Бэдж Дэйл</a></td>
-			<td>Капитан Спик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Фана Мокоэна</td>
-			<td>Тьерри Уматони</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Morse">Дэвид Морс</a></td>
-			<td>Бывший агент ЦРУ</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Люди Букен</td>
-			<td>Юрген Вормбранн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Даниэла Картес</td>
-			<td>Сеген</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Favino">Пьерфранческо Фавино</a></td>
-			<td>Хавьер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Стерлинг Джеринс</td>
-			<td>Конни Лейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эбигейл Харгров</td>
-			<td>Рейчел Лейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Capaldi">Питер Капальди</a></td>
-			<td>Доктор В.О.З.</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Negga">Рут Негга</a></td>
-			<td>Доктор В.О.З.</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Andrews">Дэвид Эндрюс</a></td>
-			<td>Капитан Мулленаро</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Fitoussi">Грегори Фетусси</a></td>
-			<td>Пилот С-130</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Huisman">Михил Хёйсман</a></td>
-			<td><i><p style="margin-left:30px">Эллис</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/b.htm#B.Pitt">Брэд Питт</a></td>
+					<td>Джерри Лейн</td>
+				</tr>
+				<tr>
+					<td>Мирей Инос</td>
+					<td>Карен Лейн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.B.Dale">Джеймс Бэдж Дэйл</a></td>
+					<td>Капитан Спик</td>
+				</tr>
+				<tr>
+					<td>Фана Мокоэна</td>
+					<td>Тьерри Уматони</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Morse">Дэвид Морс</a></td>
+					<td>Бывший агент ЦРУ</td>
+				</tr>
+				<tr>
+					<td>Люди Букен</td>
+					<td>Юрген Вормбранн</td>
+				</tr>
+				<tr>
+					<td>Даниэла Картес</td>
+					<td>Сеген</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Favino">Пьерфранческо Фавино</a></td>
+					<td>Хавьер</td>
+				</tr>
+				<tr>
+					<td>Стерлинг Джеринс</td>
+					<td>Конни Лейн</td>
+				</tr>
+				<tr>
+					<td>Эбигейл Харгров</td>
+					<td>Рейчел Лейн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Capaldi">Питер Капальди</a></td>
+					<td>Доктор В.О.З.</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Negga">Рут Негга</a></td>
+					<td>Доктор В.О.З.</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Andrews">Дэвид Эндрюс</a></td>
+					<td>Капитан Мулленаро</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Fitoussi">Грегори Фетусси</a></td>
+					<td>Пилот С-130</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Huisman">Михил Хёйсман</a></td>
+					<td>Эллис</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 190 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 202 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 540 млн.</p>

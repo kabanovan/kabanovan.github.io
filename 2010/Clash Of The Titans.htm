@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Alice In Wonderland.htm" class="nav-arrow">←</a>
+		<a href="../Years/2010.htm" class="nav-arrow">⌂</a>
 		<a href="Kick-Ass.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -35,118 +35,107 @@
 		<p align=justify><b>В основе:</b> Мифология Древней Греции и художественный фильм "Битва Титанов"
 (США, 1981)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#Titans">Титаны</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/s.htm#S.Worthington">Сэм Уортингтон</a></td>
-			<td>Персей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Mikkelsen">Мадс Миккелсен</a></td>
-			<td>Драко</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Fiennes">Рэйф Файнс</a></td>
-			<td>Аид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Neeson">Лиам Нисон</a></td>
-			<td>Зевс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Arterton">Джемма Артертон</a></td>
-			<td>Ио</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Postlethwaite">Пит Постлетуэйт</a></td>
-			<td>Спирос</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Davalos">Алекса Давалос</a></td>
-			<td>Андромеда</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Flemyng">Джейсон Флеминг</a></td>
-			<td>Акрисий / Калибос</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Hoult">Николас Холт</a></td>
-			<td>Эвсебий</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Cunningham">Лиам Каннингэм</a></td>
-			<td>Солон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Matheson">Ханс Мэтисон</a></td>
-			<td>Иксас</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Regan">Винсент Риган</a></td>
-			<td>Кефей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Люк Тредэвэй</td>
-			<td>Прокопион</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#Po.Walker">Полли Уокер</a></td>
-			<td>Кассиопея</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Barhom">Ашраф Бархом</a></td>
-			<td>Озал</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.McGovern">Элизабет МакГоверн</a></td>
-			<td>Мармара</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Siddig">Александр Сиддиг</a></td>
-			<td>Гермес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мулуд Ачур</td>
-			<td>Кусук</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Huston">Дэнни Хьюстон</a></td>
-			<td>Посейдон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Evans">Люк Эванс</a></td>
-			<td>Аполлон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.McCann">Рори МакКанн</a></td>
-			<td>Бело</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Scodelario">Кая Скоделарио</a></td>
-			<td>Пешет</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/s.htm#S.Worthington">Сэм Уортингтон</a></td>
+					<td>Персей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Mikkelsen">Мадс Миккелсен</a></td>
+					<td>Драко</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Fiennes">Рэйф Файнс</a></td>
+					<td>Аид</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Neeson">Лиам Нисон</a></td>
+					<td>Зевс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Arterton">Джемма Артертон</a></td>
+					<td>Ио</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Postlethwaite">Пит Постлетуэйт</a></td>
+					<td>Спирос</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Davalos">Алекса Давалос</a></td>
+					<td>Андромеда</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Flemyng">Джейсон Флеминг</a></td>
+					<td>Акрисий / Калибос</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Hoult">Николас Холт</a></td>
+					<td>Эвсебий</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Cunningham">Лиам Каннингэм</a></td>
+					<td>Солон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Matheson">Ханс Мэтисон</a></td>
+					<td>Иксас</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Regan">Винсент Риган</a></td>
+					<td>Кефей</td>
+				</tr>
+				<tr>
+					<td>Люк Тредэвэй</td>
+					<td>Прокопион</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#Po.Walker">Полли Уокер</a></td>
+					<td>Кассиопея</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Barhom">Ашраф Бархом</a></td>
+					<td>Озал</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.McGovern">Элизабет МакГоверн</a></td>
+					<td>Мармара</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Siddig">Александр Сиддиг</a></td>
+					<td>Гермес</td>
+				</tr>
+				<tr>
+					<td>Мулуд Ачур</td>
+					<td>Кусук</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Huston">Дэнни Хьюстон</a></td>
+					<td>Посейдон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Evans">Люк Эванс</a></td>
+					<td>Аполлон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.McCann">Рори МакКанн</a></td>
+					<td>Бело</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Scodelario">Кая Скоделарио</a></td>
+					<td>Пешет</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 125 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 163 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 493 млн.</p>

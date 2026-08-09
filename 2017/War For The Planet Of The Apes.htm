@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Spider-Man - Homecoming.htm" class="nav-arrow">←</a>
+		<a href="../Years/2017.htm" class="nav-arrow">⌂</a>
 		<a href="Dunkirk.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -31,78 +31,75 @@
 		<p align=justify><b>В основе:</b> Роман Пьера Буля "Планета обезьян" (Франция, 1963) и
 художественный фильм "Битва За Планету Обезьян" (США, 1973)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#PlanetOfTheApes">Планета Обезьян</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/e.htm#A.Serkis">Энди Сёркис</a></td>
-			<td><i><p style="margin-left:30px">Цезарь</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#W.Harrelson">Вуди Харрельсон</a></td>
-			<td><i><p style="margin-left:30px">Полковник МакКаллоу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Стив Зан</td>
-			<td><i><p style="margin-left:30px">Плохая Обезьяна</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Konoval">Карин Коновал</a></td>
-			<td><i><p style="margin-left:30px">Морис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Notary">Терри Нотари</a></td>
-			<td><i><p style="margin-left:30px">Ракета</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Амайя Миллер</td>
-			<td><i><p style="margin-left:30px">Нова</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Kebbell">Тоби Кеббелл</a></td>
-			<td><i><p style="margin-left:30px">Коба</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Гэбриел Чаварриа</td>
-			<td><i><p style="margin-left:30px">Причер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Adamthwaite">Майкл Адамтуэйт</a></td>
-			<td><i><p style="margin-left:30px">Лука</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Paunovic">Алекс Паунович</a></td>
-			<td><i><p style="margin-left:30px">Зима</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Greer">Джуди Грир</a></td>
-			<td><i><p style="margin-left:30px">Корнелия</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Olsson">Тай Олссон</a></td>
-			<td><i><p style="margin-left:30px">Красный</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Девин Далтон</td>
-			<td><i><p style="margin-left:30px">Корнелий</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Сара Каннинг</td>
-			<td><i><p style="margin-left:30px">Озеро</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/e.htm#A.Serkis">Энди Сёркис</a></td>
+					<td>Цезарь</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#W.Harrelson">Вуди Харрельсон</a></td>
+					<td>Полковник МакКаллоу</td>
+				</tr>
+				<tr>
+					<td>Стив Зан</td>
+					<td>Плохая Обезьяна</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Konoval">Карин Коновал</a></td>
+					<td>Морис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Notary">Терри Нотари</a></td>
+					<td>Ракета</td>
+				</tr>
+				<tr>
+					<td>Амайя Миллер</td>
+					<td>Нова</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Kebbell">Тоби Кеббелл</a></td>
+					<td>Коба</td>
+				</tr>
+				<tr>
+					<td>Гэбриел Чаварриа</td>
+					<td>Причер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Adamthwaite">Майкл Адамтуэйт</a></td>
+					<td>Лука</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Paunovic">Алекс Паунович</a></td>
+					<td>Зима</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Greer">Джуди Грир</a></td>
+					<td>Корнелия</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Olsson">Тай Олссон</a></td>
+					<td>Красный</td>
+				</tr>
+				<tr>
+					<td>Девин Далтон</td>
+					<td>Корнелий</td>
+				</tr>
+				<tr>
+					<td>Сара Каннинг</td>
+					<td>Озеро</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 150 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 147 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 491 млн.</p>

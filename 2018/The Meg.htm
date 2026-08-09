@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Mission Impossible - Fallout.htm" class="nav-arrow">←</a>
+		<a href="../Years/2018.htm" class="nav-arrow">⌂</a>
 		<a href="Alpha.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,68 +25,67 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Turteltaub">Джон Тёртелтауб</a></p>
 		<p align=justify><b>В основе:</b> Роман Стива Алтена "Мег" (США, 1997)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#TheMeg">Мег</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#J.Statham">Джейсон Стэтхем</a></td>
-			<td><i><p style="margin-left:30px">Джонас Тейлор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Li">Ли Бинбин</a></td>
-			<td><i><p style="margin-left:30px">Суинь Чжан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Wilson">Рэйнн Уилсон</a></td>
-			<td><i><p style="margin-left:30px">Джек Моррис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Curtis">Клифф Кёртис</a></td>
-			<td><i><p style="margin-left:30px">Джеймс "Мак" Макрейдес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Уинстон Чао</td>
-			<td><i><p style="margin-left:30px">Доктор Минвей Чжан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Пейдж Кеннеди</td>
-			<td><i><p style="margin-left:30px">Ди Джей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Руби Роуз</td>
-			<td><i><p style="margin-left:30px">Джакс Хёрд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.McNamee">Джессика МакНэми</a></td>
-			<td><i><p style="margin-left:30px">Лори Тейлор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.D.Olafsson">Олафур Дарри Олафссон</a></td>
-			<td><i><p style="margin-left:30px">Уолл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#Ro.Taylor">Роберт Тейлор</a></td>
-			<td><i><p style="margin-left:30px">Доктор Хеллер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Cai">София Цай</a></td>
-			<td><i><p style="margin-left:30px">Мэйин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Oka">Маси Ока</a></td>
-			<td><i><p style="margin-left:30px">Тоши</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#J.Statham">Джейсон Стэтхем</a></td>
+					<td>Джонас Тейлор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Li">Ли Бинбин</a></td>
+					<td>Суинь Чжан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Wilson">Рэйнн Уилсон</a></td>
+					<td>Джек Моррис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Curtis">Клифф Кёртис</a></td>
+					<td>Джеймс "Мак" Макрейдес</td>
+				</tr>
+				<tr>
+					<td>Уинстон Чао</td>
+					<td>Доктор Минвей Чжан</td>
+				</tr>
+				<tr>
+					<td>Пейдж Кеннеди</td>
+					<td>Ди Джей</td>
+				</tr>
+				<tr>
+					<td>Руби Роуз</td>
+					<td>Джакс Хёрд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.McNamee">Джессика МакНэми</a></td>
+					<td>Лори Тейлор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.D.Olafsson">Олафур Дарри Олафссон</a></td>
+					<td>Уолл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#Ro.Taylor">Роберт Тейлор</a></td>
+					<td>Доктор Хеллер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Cai">София Цай</a></td>
+					<td>Мэйин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Oka">Маси Ока</a></td>
+					<td>Тоши</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 130 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 146 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 529 млн.</p>

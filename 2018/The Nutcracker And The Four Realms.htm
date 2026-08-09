@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Venom.htm" class="nav-arrow">←</a>
+		<a href="../Years/2018.htm" class="nav-arrow">⌂</a>
 		<a href="Overlord.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,83 +24,79 @@
 		<p align=justify><b>Сюжет:</b> Получив необычный подарок на Рождество, юная Клара отправляется в захватывающее путешествие по загадочным местам: Стране Снегов, Стране Цветов и Стране Сладостей. Но девушке нужно попасть в четвёртое королевство, где ей придётся столкнуться с целой армией мышей во главе с невероятно опасным Мышиным Королём.</p> 
 		<p><b>Режиссёры:</b> Лассе Халльстрём, <a href="../directors.htm#J.Johnston">Джо Джонстон</a></p>
 		<p align=justify><b>В основе:</b> Повесть Э.Т.А. Гофмана "Щелкунчик и мышиный король" (Пруссия, 1816); балет Петра Чайковского "Щелкунчик" (Россия, 1892)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#M.Foy">Маккензи Фой</a></td>
-			<td><i><p style="margin-left:30px">Клара Штальбаум</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Knightley">Кира Найтли</a></td>
-			<td><i><p style="margin-left:30px">Сахарная Слива</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Fowora-Knight">Джейден Фовора-Найт</a></td>
-			<td><i><p style="margin-left:30px">Капитан Филлип Гоффман / Щелкунчик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#Mo.Freeman">Морган Фриман</a></td>
-			<td><i><p style="margin-left:30px">Магистр Дроссельмейер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Mirren">Хелен Миррен</a></td>
-			<td><i><p style="margin-left:30px">Матушка Имбирь</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Macfadyen">Мэттью Макфейден</a></td>
-			<td><i><p style="margin-left:30px">Бенджамин Штальбаум</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Derbez">Эухенио Дербес</a></td>
-			<td><i><p style="margin-left:30px">Боярышник</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.E.Grant">Ричард Э. Грант</a></td>
-			<td><i><p style="margin-left:30px">Озноб</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Элли Бамбер</td>
-			<td><i><p style="margin-left:30px">Луиза Штальбаум</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Djalili">Омид Джалили</a></td>
-			<td><i><p style="margin-left:30px">Кавалер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Whitehall">Джек Уайтхолл</a></td>
-			<td><i><p style="margin-left:30px">Арлекин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Том Свит</td>
-			<td><i><p style="margin-left:30px">Фриц Штальбаум</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мисти Коуплэнд</td>
-			<td><i><p style="margin-left:30px">Балерина-принцесса</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Сергей Полунин</td>
-			<td><i><p style="margin-left:30px">Кавалер Сладостей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Syal">Мира Сайал</a></td>
-			<td><i><p style="margin-left:30px">Кухарка</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/m.htm#M.Foy">Маккензи Фой</a></td>
+					<td>Клара Штальбаум</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Knightley">Кира Найтли</a></td>
+					<td>Сахарная Слива</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Fowora-Knight">Джейден Фовора-Найт</a></td>
+					<td>Капитан Филлип Гоффман / Щелкунчик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#Mo.Freeman">Морган Фриман</a></td>
+					<td>Магистр Дроссельмейер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Mirren">Хелен Миррен</a></td>
+					<td>Матушка Имбирь</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Macfadyen">Мэттью Макфейден</a></td>
+					<td>Бенджамин Штальбаум</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Derbez">Эухенио Дербес</a></td>
+					<td>Боярышник</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.E.Grant">Ричард Э. Грант</a></td>
+					<td>Озноб</td>
+				</tr>
+				<tr>
+					<td>Элли Бамбер</td>
+					<td>Луиза Штальбаум</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Djalili">Омид Джалили</a></td>
+					<td>Кавалер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Whitehall">Джек Уайтхолл</a></td>
+					<td>Арлекин</td>
+				</tr>
+				<tr>
+					<td>Том Свит</td>
+					<td>Фриц Штальбаум</td>
+				</tr>
+				<tr>
+					<td>Мисти Коуплэнд</td>
+					<td>Балерина-принцесса</td>
+				</tr>
+				<tr>
+					<td>Сергей Полунин</td>
+					<td>Кавалер Сладостей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Syal">Мира Сайал</a></td>
+					<td>Кухарка</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 120 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 55 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 174 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Avengers - Endgame.htm" class="nav-arrow">←</a>
+		<a href="../Years/2019.htm" class="nav-arrow">⌂</a>
 		<a href="Aladdin.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,63 +24,63 @@
 		<p align=justify><b>Сюжет:</b> Когда первоклассный детектив Гарри Гудман вдруг пропадает без вести при невыясненных обстоятельствах, его сын Тим отправляется в путешествие, чтобы узнать, что же произошло с его отцом. В расследовании Тиму поможет бывший напарник Гарри, покемон Пикачу – безумно остроумный и милый суперсыщик. Оказывается, что они с Тимом прекрасно подходят друг другу, ведь юноша – единственный человек, который может говорить с Пикачу. Вместе они отправляются в захватывающее приключение, чтобы раскрыть запутанную тайну исчезновения отца Тима. Отправившись по следу из улик по залитым неоном улицам Райм-Сити – огромного современного мегаполиса, где люди и покемоны живут рука об руку, – отважная парочка обнаруживает коварный заговор, который способен уничтожить сложившийся в городе мирный союз и всю вселенную покемонов.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#R.Letterman">Роб Леттерман</a></p>
 		<p align=justify><b>В основе:</b> Компьютерная игра "Детектив Пикачу" (Япония, 2016)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#Ju.Smith">Джастис Смит</td>
-			<td><i><p style="margin-left:30px">Тим Гудман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Newton">Кэтрин Ньютон</a></td>
-			<td><i><p style="margin-left:30px">Люси Стивенс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Nighy">Билл Най</a></td>
-			<td><i><p style="margin-left:30px">Говард Клиффорд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Watanabe">Кен Ватанабе</a></td>
-			<td><i><p style="margin-left:30px">Лейтенант Хиде Йосида</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Омар Чапарро</td>
-			<td><i><p style="margin-left:30px">Себастьян</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Geere">Крис Гир</a></td>
-			<td><i><p style="margin-left:30px">Роджер Клиффорд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Soni">Каран Сони</a></td>
-			<td><i><p style="margin-left:30px">Джек</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Reynolds">Райан Рейнольдс</a></td>
-			<td><i><p style="margin-left:30px">Детектив Гарри Гудман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Ora">Рита Ора</a></td>
-			<td><i><p style="margin-left:30px">Доктор Энн Лоран</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Waterhouse">Сьюки Уотерхаус</a></td>
-			<td><i><p style="margin-left:30px">Мисс Норман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Simon">Джозетт Саймон</a></td>
-			<td><i><p style="margin-left:30px">Бабушка</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#Ju.Smith">Джастис Смит</td>
+					<td>Тим Гудман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Newton">Кэтрин Ньютон</a></td>
+					<td>Люси Стивенс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Nighy">Билл Най</a></td>
+					<td>Говард Клиффорд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Watanabe">Кен Ватанабе</a></td>
+					<td>Лейтенант Хиде Йосида</td>
+				</tr>
+				<tr>
+					<td>Омар Чапарро</td>
+					<td>Себастьян</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Geere">Крис Гир</a></td>
+					<td>Роджер Клиффорд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Soni">Каран Сони</a></td>
+					<td>Джек</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Reynolds">Райан Рейнольдс</a></td>
+					<td>Детектив Гарри Гудман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Ora">Рита Ора</a></td>
+					<td>Доктор Энн Лоран</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Waterhouse">Сьюки Уотерхаус</a></td>
+					<td>Мисс Норман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Simon">Джозетт Саймон</a></td>
+					<td>Бабушка</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 150 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 144 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 450 млн.</p>

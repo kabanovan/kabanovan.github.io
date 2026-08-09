@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../2018/Bumblebee.htm" class="nav-arrow">←</a>
+		<a href="../Years/2019.htm" class="nav-arrow">⌂</a>
 		<a href="Captain Marvel.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,83 +24,79 @@
 		<p align=justify><b>Сюжет:</b> Алита пробуждается в мире будущего, который ей незнаком, совершенно не помня, кто она. Её берёт под свою опеку милосердный доктор Идо – он понимает, что в заброшенной оболочке киборга есть сердце и душа девушки с необыкновенной историей. Пока Алита учится жить в новых условиях и осваивается на опасных улицах Железного Города, Идо пытается оградить её от её же таинственного прошлого. Но её новый друг Хьюго, уличный парень с живым умом, предлагает девушке помощь в возвращении её воспоминаний. Всё меняется, когда за Алитой начинают охотиться могущественные и безжалостные силы, управляющие городом – именно тогда она обнаруживает, что у неё есть экстраординарные боевые способности и те, кто у власти, готовы на всё, чтобы заполучить её. Но если Алите удастся выскользнуть из их цепких лап, она сможет не только спасти своих друзей и семью, но и изменить мир, который она успела полюбить.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#R.Rodriguez">Роберт Родригес</a></p>
 		<p align=justify><b>В основе:</b> Комиксы Юкито Кисиро "Боевой Ангел Алита" (Япония, 1990-1995)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/r.htm#R.Salazar">Роза Салазар</a></td>
-			<td><i><p style="margin-left:30px">Алита</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Waltz">Кристоф Вальц</a></td>
-			<td><i><p style="margin-left:30px">Доктор Дайсон Идо</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Johnson">Киан Джонсон</a></td>
-			<td><i><p style="margin-left:30px">Хьюго</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Ali">Махершала Али</a></td>
-			<td><i><p style="margin-left:30px">Вектор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Connelly">Дженнифер Коннелли</a></td>
-			<td><i><p style="margin-left:30px">Доктор Кирен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Skrein">Эд Скрейн</a></td>
-			<td><i><p style="margin-left:30px">Запан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.E.Haley">Джеки Эрл Хейли</a></td>
-			<td><i><p style="margin-left:30px">Гревиш</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#J.Lendeborg">Хорхе Лендеборг мл.</a></td>
-			<td><i><p style="margin-left:30px">Танджи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Condor">Лана Кондор</a></td>
-			<td><i><p style="margin-left:30px">Койоми</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Gonzalez">Эйса Гонсалес</a></td>
-			<td><i><p style="margin-left:30px">Ниссиана</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джефф Фэйи</td>
-			<td><i><p style="margin-left:30px">МакТиг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Идара Виктор</td>
-			<td><i><p style="margin-left:30px">Сестра Герхад</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Yune">Рик Юн</a></td>
-			<td><i><p style="margin-left:30px">Мастер Клайв Ли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#Mi.Rodriguez">Мишель Родригес</a></td>
-			<td><i><p style="margin-left:30px">Гелда</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Courtney">Джай Кортни</a></td>
-			<td><i><p style="margin-left:30px">Джашуган</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/r.htm#R.Salazar">Роза Салазар</a></td>
+					<td>Алита</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Waltz">Кристоф Вальц</a></td>
+					<td>Доктор Дайсон Идо</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Johnson">Киан Джонсон</a></td>
+					<td>Хьюго</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Ali">Махершала Али</a></td>
+					<td>Вектор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Connelly">Дженнифер Коннелли</a></td>
+					<td>Доктор Кирен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Skrein">Эд Скрейн</a></td>
+					<td>Запан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.E.Haley">Джеки Эрл Хейли</a></td>
+					<td>Гревиш</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#J.Lendeborg">Хорхе Лендеборг мл.</a></td>
+					<td>Танджи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Condor">Лана Кондор</a></td>
+					<td>Койоми</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Gonzalez">Эйса Гонсалес</a></td>
+					<td>Ниссиана</td>
+				</tr>
+				<tr>
+					<td>Джефф Фэйи</td>
+					<td>МакТиг</td>
+				</tr>
+				<tr>
+					<td>Идара Виктор</td>
+					<td>Сестра Герхад</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Yune">Рик Юн</a></td>
+					<td>Мастер Клайв Ли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#Mi.Rodriguez">Мишель Родригес</a></td>
+					<td>Гелда</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Courtney">Джай Кортни</a></td>
+					<td>Джашуган</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 170 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 86 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 405 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Passengers.htm" class="nav-arrow">←</a>
+		<a href="../Years/2016.htm" class="nav-arrow">⌂</a>
 		<a href="../2017/The Great Wall.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,83 +30,79 @@
 дни.</p>
 		<p><b>Режиссёр:</b> Джастин Курзель</p>
 		<p align=justify><b>В основе:</b> Серия компьютерных игр "Кредо ассасина" (Канада, выходят с 2007)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#M.Fassbender">Майкл Фассбендер</a></td>
-			<td>Кэллум "Кэл" Линч / Агилар де Нерха</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Cotillard">Марион Котийар</a></td>
-			<td>Доктор София Райлин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Irons">Джереми Айронс</a></td>
-			<td>Доктор Алан Райлин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#Bre.Gleeson">Брендан Глисон</a></td>
-			<td>Джозеф Линч</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#C.Rampling">Шарлотта Рэмплинг</a></td>
-			<td>Эллен Кайе</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.K.Williams">Майкл К. Уильямс</a></td>
-			<td>Мусса</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Menochet">Дени Меноше</a></td>
-			<td>МакГоуэн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ариана Лабед</td>
-			<td>Мария</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Хавьер Гутьеррес</td>
-			<td>Отец Томас де Торквемада</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#K.Abdalla">Халид Абдалла</a></td>
-			<td>Эмир Мухаммед XII</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Davis">Эсси Дэвис</a></td>
-			<td>Мэри Линч</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Матиас Варела</td>
-			<td>Эмир</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Turner">Каллум Тёрнер</a></td>
-			<td>Нэйтан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Карлос Бардем</td>
-			<td>Бенедикто</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ховик Кеучкерян</td>
-			<td>Охеда</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/m.htm#M.Fassbender">Майкл Фассбендер</a></td>
+					<td>Кэллум "Кэл" Линч / Агилар де Нерха</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Cotillard">Марион Котийар</a></td>
+					<td>Доктор София Райлин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Irons">Джереми Айронс</a></td>
+					<td>Доктор Алан Райлин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#Bre.Gleeson">Брендан Глисон</a></td>
+					<td>Джозеф Линч</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#C.Rampling">Шарлотта Рэмплинг</a></td>
+					<td>Эллен Кайе</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.K.Williams">Майкл К. Уильямс</a></td>
+					<td>Мусса</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Menochet">Дени Меноше</a></td>
+					<td>МакГоуэн</td>
+				</tr>
+				<tr>
+					<td>Ариана Лабед</td>
+					<td>Мария</td>
+				</tr>
+				<tr>
+					<td>Хавьер Гутьеррес</td>
+					<td>Отец Томас де Торквемада</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#K.Abdalla">Халид Абдалла</a></td>
+					<td>Эмир Мухаммед XII</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Davis">Эсси Дэвис</a></td>
+					<td>Мэри Линч</td>
+				</tr>
+				<tr>
+					<td>Матиас Варела</td>
+					<td>Эмир</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Turner">Каллум Тёрнер</a></td>
+					<td>Нэйтан</td>
+				</tr>
+				<tr>
+					<td>Карлос Бардем</td>
+					<td>Бенедикто</td>
+				</tr>
+				<tr>
+					<td>Ховик Кеучкерян</td>
+					<td>Охеда</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 125 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 55 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 241 млн.</p>

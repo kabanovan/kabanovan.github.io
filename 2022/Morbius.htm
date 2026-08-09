@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Adam Project.htm" class="nav-arrow">←</a>
+		<a href="../Years/2022.htm" class="nav-arrow">⌂</a>
 		<a href="Fantastic Beasts - The Secrets Of Dumbledore.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,43 +25,47 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#D.Espinosa">Даниэль Эспиноса</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Морбиусе (США, выходят с 1971, авторы – Рой Томас и Гил Кейн)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#SPU">Вселенная Человека-Паука</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#J.Leto">Джаред Лето</a></td>
-			<td><i><p style="margin-left:30px">Доктор Майкл Морбиус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#Mat.Smith">Мэтт Смит</a></td>
-			<td><i><p style="margin-left:30px">Майло</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Arjona">Адриа Архона</a></td>
-			<td><i><p style="margin-left:30px">Доктор Мартина Бэнкрофт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Jar.Harris">Джаред Харрис</a></td>
-			<td><i><p style="margin-left:30px">Доктор Эмиль Николас</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Gibson">Тайриз Гибсон</a></td>
-			<td><i><p style="margin-left:30px">Агент Саймон Страуд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Аль Мадригал</td>
-			<td><i><p style="margin-left:30px">Агент Альберто Родригес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Renaux">Арчи Рено</a></td>
-			<td><i><p style="margin-left:30px">Бобби</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#J.Leto">Джаред Лето</a></td>
+					<td>Доктор Майкл Морбиус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#Mat.Smith">Мэтт Смит</a></td>
+					<td>Майло</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Arjona">Адриа Архона</a></td>
+					<td>Доктор Мартина Бэнкрофт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Jar.Harris">Джаред Харрис</a></td>
+					<td>Доктор Эмиль Николас</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Gibson">Тайриз Гибсон</a></td>
+					<td>Агент Саймон Страуд</td>
+				</tr>
+				<tr>
+					<td>Аль Мадригал</td>
+					<td>Агент Альберто Родригес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Renaux">Арчи Рено</a></td>
+					<td>Бобби</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 75 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 74 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 167 млн.</p>

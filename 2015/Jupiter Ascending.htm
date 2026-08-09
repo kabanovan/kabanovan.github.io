@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../2014/The Hobbit - The Battle Of The Five Armies.htm" class="nav-arrow">←</a>
+		<a href="../Years/2015.htm" class="nav-arrow">⌂</a>
 		<a href="Seventh Son.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -31,103 +31,95 @@
 говорит, что она – наследница уникального рода, способная изменить само космическое
 равновесие.</p>
 		<p><b>Режиссёры:</b> <a href="../directors.htm#Wachowski">Вачовски</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#M.Kunis">Мила Кунис</a></td>
-			<td>Юпитер Джонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Tatum">Ченнинг Татум</a></td>
-			<td>Кейн Уайз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Booth">Дуглас Бут</a></td>
-			<td>Тит Абрасакс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Bean">Шон Бин</a></td>
-			<td>Стингер Апини</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Redmayne">Эдди Редмэйн</a></td>
-			<td>Балем Абрасакс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Таппенс Мидлтон</td>
-			<td>Калик Абрасакс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эдвард Хогг</td>
-			<td>Чикэнери Найт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мария Дойл Кеннеди</td>
-			<td>Алекс Болотникова</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Никки Амука-Бёрд</td>
-			<td>Диомика Цинг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джереми Свифт</td>
-			<td>Василий Болотников</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Gurry">Кик Гарри</a></td>
-			<td>Владик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Kirby">Ванесса Кирби</a></td>
-			<td>Кэтрин Данливи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Cole">Кристина Коул</a></td>
-			<td>Джемма Чэттерджи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.D'Arcy">Джеймс Д'Арси</a></td>
-			<td>Максимилиан Джонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Mbatha-Raw">Гугу Мбата-Роу</a></td>
-			<td>Фемюлюс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Рамон Тикарам</td>
-			<td>Фило Перкадиум</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Bae">Дуна Пэ</a></td>
-			<td>Разо</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Pigott-Smith">Тим Пиготт-Смит</a></td>
-			<td>Малидиктес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Bakare">Эрион Бакаре</a></td>
-			<td><i><p style="margin-left:30px">Григан</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/m.htm#M.Kunis">Мила Кунис</a></td>
+					<td>Юпитер Джонс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Tatum">Ченнинг Татум</a></td>
+					<td>Кейн Уайз</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Booth">Дуглас Бут</a></td>
+					<td>Тит Абрасакс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Bean">Шон Бин</a></td>
+					<td>Стингер Апини</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Redmayne">Эдди Редмэйн</a></td>
+					<td>Балем Абрасакс</td>
+				</tr>
+				<tr>
+					<td>Таппенс Мидлтон</td>
+					<td>Калик Абрасакс</td>
+				</tr>
+				<tr>
+					<td>Эдвард Хогг</td>
+					<td>Чикэнери Найт</td>
+				</tr>
+				<tr>
+					<td>Мария Дойл Кеннеди</td>
+					<td>Алекс Болотникова</td>
+				</tr>
+				<tr>
+					<td>Никки Амука-Бёрд</td>
+					<td>Диомика Цинг</td>
+				</tr>
+				<tr>
+					<td>Джереми Свифт</td>
+					<td>Василий Болотников</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Gurry">Кик Гарри</a></td>
+					<td>Владик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Kirby">Ванесса Кирби</a></td>
+					<td>Кэтрин Данливи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Cole">Кристина Коул</a></td>
+					<td>Джемма Чэттерджи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.D'Arcy">Джеймс Д'Арси</a></td>
+					<td>Максимилиан Джонс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Mbatha-Raw">Гугу Мбата-Роу</a></td>
+					<td>Фемюлюс</td>
+				</tr>
+				<tr>
+					<td>Рамон Тикарам</td>
+					<td>Фило Перкадиум</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Bae">Дуна Пэ</a></td>
+					<td>Разо</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Pigott-Smith">Тим Пиготт-Смит</a></td>
+					<td>Малидиктес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Bakare">Эрион Бакаре</a></td>
+					<td>Григан</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 176 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 47 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 184 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Rebel Moon. Part One - A Child Of Fire.htm" class="nav-arrow">←</a>
+		<a href="../Years/2023.htm" class="nav-arrow">⌂</a>
 		<a href="../2024/Argylle.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,68 +25,67 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Wan">Джеймс Ван</a></p>
 		<p align=justify><b>В основе:</b> Комиксы об Аквамене (США, выходят с 1941, авторы – Морт Вайзингер и Пол Норрис)</p></p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#DCEU">Расширенная вселенная DC</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#J.Momoa">Джейсон Момоа</a></td>
-			<td><i><p style="margin-left:30px">Царь Артур Карри / Аквамен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#Pa.Wilson">Патрик Уилсон</a></td>
-			<td><i><p style="margin-left:30px">Орм Мариус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#Ran.Park">Рэндолл Парк</a></td>
-			<td><i><p style="margin-left:30px">Доктор Стивен Шин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Kidman">Николь Кидман</a></td>
-			<td><i><p style="margin-left:30px">Атланна</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ya.htm#Y.Abdul-Mateen">Яхья Абдул-Матин II</a></td>
-			<td><i><p style="margin-left:30px">Дэвид Кейн / Чёрная Манта</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Lundgren">Дольф Лундгрен</a></td>
-			<td><i><p style="margin-left:30px">Царь Нерей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Heard">Эмбер Хёрд</a></td>
-			<td><i><p style="margin-left:30px">Царица Мера</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Morrison">Темуэра Моррисон</a></td>
-			<td><i><p style="margin-left:30px">Том Карри</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Asbaek">Пилу Асбек</a></td>
-			<td><i><p style="margin-left:30px">Кордакс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Индия Мур</td>
-			<td><i><p style="margin-left:30px">Леди Каршон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Яни Чжао</td>
-			<td><i><p style="margin-left:30px">Стингрэй</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Regan">Винсент Риган</a></td>
-			<td><i><p style="margin-left:30px">Царь Атлан</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#J.Momoa">Джейсон Момоа</a></td>
+					<td>Царь Артур Карри / Аквамен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#Pa.Wilson">Патрик Уилсон</a></td>
+					<td>Орм Мариус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#Ran.Park">Рэндолл Парк</a></td>
+					<td>Доктор Стивен Шин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Kidman">Николь Кидман</a></td>
+					<td>Атланна</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ya.htm#Y.Abdul-Mateen">Яхья Абдул-Матин II</a></td>
+					<td>Дэвид Кейн / Чёрная Манта</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Lundgren">Дольф Лундгрен</a></td>
+					<td>Царь Нерей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Heard">Эмбер Хёрд</a></td>
+					<td>Царица Мера</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Morrison">Темуэра Моррисон</a></td>
+					<td>Том Карри</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Asbaek">Пилу Асбек</a></td>
+					<td>Кордакс</td>
+				</tr>
+				<tr>
+					<td>Индия Мур</td>
+					<td>Леди Каршон</td>
+				</tr>
+				<tr>
+					<td>Яни Чжао</td>
+					<td>Стингрэй</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Regan">Винсент Риган</a></td>
+					<td>Царь Атлан</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 205 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 124 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 440 млн.</p>

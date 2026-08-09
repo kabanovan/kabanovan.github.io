@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Battleship.htm" class="nav-arrow">←</a>
+		<a href="../Years/2012.htm" class="nav-arrow">⌂</a>
 		<a href="Snow White & The Huntsman.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -33,80 +33,77 @@
 помощью молодого Кея вернуть планете шанс на счастливое будущее – чего бы
 ему это ни стоило.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#B.Sonnenfeld">Барри Зонненфельд</a></p>
-		<p align=justify><b>В основе:</b> Комиксы "Люди в чёрном" (США, 1990, издательство "Эйрсел Комикс")</p>
+		<p align=justify><b>В основе:</b> Комиксы "Люди в чёрном" (США, 1990-1997, автор – Лоуэлл Каннингем)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Men In Black.htm">Люди В Чёрном</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/u.htm#W.Smith">Уилл Смит</a></td>
-			<td>Агент Джей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Brolin">Джош Бролин</a></td>
-			<td>Юный агент Кей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Stuhlbarg">Майкл Стулбарг</a></td>
-			<td>Гриффин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.L.Jones">Томми Ли Джонс</a></td>
-			<td>Агент Кей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Clement">Джемейн Клемент</a></td>
-			<td>Борис Животное</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Thompson">Эмма Томпсон</a></td>
-			<td>Агент О</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Chernus">Майкл Чернус</a></td>
-			<td>Джеффри Прайс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Hader">Билл Хэйдер</a></td>
-			<td>Энди Ворхол</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Eve">Элис Ив</a></td>
-			<td>Юная агент О</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Майк Колтер</td>
-			<td>Полковник</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэвид Раш</td>
-			<td>Агент Экс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Venito">Ленни Венито</a></td>
-			<td>Тони</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Arnett">Уилл Арнетт</a></td>
-			<td>Агент Дабл-Эй</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Barnett">Чарли Барнетт</a></td>
-			<td>Капрал военной полиции</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/u.htm#W.Smith">Уилл Смит</a></td>
+					<td>Агент Джей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Brolin">Джош Бролин</a></td>
+					<td>Юный агент Кей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Stuhlbarg">Майкл Стулбарг</a></td>
+					<td>Гриффин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.L.Jones">Томми Ли Джонс</a></td>
+					<td>Агент Кей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Clement">Джемейн Клемент</a></td>
+					<td>Борис Животное</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Thompson">Эмма Томпсон</a></td>
+					<td>Агент О</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Chernus">Майкл Чернус</a></td>
+					<td>Джеффри Прайс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Hader">Билл Хэйдер</a></td>
+					<td>Энди Ворхол</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Eve">Элис Ив</a></td>
+					<td>Юная агент О</td>
+				</tr>
+				<tr>
+					<td>Майк Колтер</td>
+					<td>Полковник</td>
+				</tr>
+				<tr>
+					<td>Дэвид Раш</td>
+					<td>Агент Экс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Venito">Ленни Венито</a></td>
+					<td>Тони</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Arnett">Уилл Арнетт</a></td>
+					<td>Агент Дабл-Эй</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Barnett">Чарли Барнетт</a></td>
+					<td>Капрал военной полиции</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 225 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 179 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 654 млн.</p>

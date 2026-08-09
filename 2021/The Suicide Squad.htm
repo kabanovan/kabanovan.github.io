@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Jungle Cruise.htm" class="nav-arrow">←</a>
+		<a href="../Years/2021.htm" class="nav-arrow">⌂</a>
 		<a href="Free Guy.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,103 +25,95 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Gunn">Джеймс Ганн</a></p>
 		<p align=justify><b>В основе:</b> Комиксы об Отряде Самоубийц (США, выходят с 1987, автор – Джон Острандер)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#DCEU">Расширенная вселенная DC</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/i.htm#I.Elba">Идрис Эльба</a></td>
-			<td>Роберт ДюБуа / Бладспорт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Robbie">Марго Робби</a></td>
-			<td>Доктор Харлин Квинзель / Харли Квинн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Davis">Виола Дэвис</a></td>
-			<td>Аманда Уоллер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Cena">Джон Сина</a></td>
-			<td>Кристофер Смит / Миротворец</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/yu.htm#J.Kinnaman">Юэль Киннаман</a></td>
-			<td>Полковник Рик Флаг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Melchior">Даниэла Мелшиор</a></td>
-			<td>Клео Каза / Крысолов 2</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Dastmalchian">Давид Дастмалчян</a></td>
-			<td>Абнер Крилл / Человек В Горошек</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Capaldi">Питер Капальди</a></td>
-			<td>Гай Гривс / Мыслитель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Хуан Диего Ботто</td>
-			<td>Генерал-президенте Сильвио Луна</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#J.Cosio">Хоакин Косио</a></td>
-			<td>Генерал-майор Матео Суарес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Braga">Алиси Брага</a></td>
-			<td>Сол Сория</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Agee">Стив Эйджи</a></td>
-			<td>Джон Экономос</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Rooker">Майкл Рукер</a></td>
-			<td><i><p style="margin-left:30px">Брайан Дурлин / Савант</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Courtney">Джай Кортни</a></td>
-			<td>Джордж "Диггер" Харкнесс / Капитан Бумеранг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Davidson">Пит Дэвидсон</a></td>
-			<td>Ричард Хертц / Блэкгард</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Reid">Сторм Рейд</a></td>
-			<td>Тайла ДюБуа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Fillion">Натан Филлион</a></td>
-			<td>Кори Питцнер / Ч.Р.Ч.</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Waititi">Тайка Вайтити</a></td>
-			<td>Крысолов</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Gunn">Шон Ганн</a></td>
-			<td><i><p style="margin-left:30px">Ласка / Календарный Человек</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/i.htm#I.Elba">Идрис Эльба</a></td>
+					<td>Роберт ДюБуа / Бладспорт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Robbie">Марго Робби</a></td>
+					<td>Доктор Харлин Квинзель / Харли Квинн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Davis">Виола Дэвис</a></td>
+					<td>Аманда Уоллер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Cena">Джон Сина</a></td>
+					<td>Кристофер Смит / Миротворец</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/yu.htm#J.Kinnaman">Юэль Киннаман</a></td>
+					<td>Полковник Рик Флаг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Melchior">Даниэла Мелшиор</a></td>
+					<td>Клео Каза / Крысолов 2</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Dastmalchian">Давид Дастмалчян</a></td>
+					<td>Абнер Крилл / Человек В Горошек</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Capaldi">Питер Капальди</a></td>
+					<td>Гай Гривс / Мыслитель</td>
+				</tr>
+				<tr>
+					<td>Хуан Диего Ботто</td>
+					<td>Генерал-президенте Сильвио Луна</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#J.Cosio">Хоакин Косио</a></td>
+					<td>Генерал-майор Матео Суарес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Braga">Алиси Брага</a></td>
+					<td>Сол Сория</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Agee">Стив Эйджи</a></td>
+					<td>Джон Экономос</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Rooker">Майкл Рукер</a></td>
+					<td>Брайан Дурлин / Савант</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Courtney">Джай Кортни</a></td>
+					<td>Джордж "Диггер" Харкнесс / Капитан Бумеранг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Davidson">Пит Дэвидсон</a></td>
+					<td>Ричард Хертц / Блэкгард</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Reid">Сторм Рейд</a></td>
+					<td>Тайла ДюБуа</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Fillion">Натан Филлион</a></td>
+					<td>Кори Питцнер / Ч.Р.Ч.</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Waititi">Тайка Вайтити</a></td>
+					<td>Крысолов</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Gunn">Шон Ганн</a></td>
+					<td>Ласка / Календарный Человек</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 185 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 56 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 169 млн.</p>

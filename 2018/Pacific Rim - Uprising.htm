@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Tomb Raider.htm" class="nav-arrow">←</a>
+		<a href="../Years/2018.htm" class="nav-arrow">⌂</a>
 		<a href="Ready Player One.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,93 +24,87 @@
 		<p align=justify><b>Сюжет:</b> Великая битва за Тихоокеанский рубеж ознаменовала новую главу в истории человечества. С тех пор прошло десять лет. Джейк Пентекост – сын героя прошлой войны Стекера Пентекоста, отдавшего жизнь в сражении с монстрами-кайдзю, разыскивает и продает на чёрном рынке обломки роботов-егерей. Но теперь миру угрожает ещё большая опасность. Джейку, его бывшему напарнику Ламберту и 15-летней хакерше Амаре, умудрившейся собрать действующего егеря из подручных материалов, выпал шанс остановить апокалипсис и изменить историю.</p>
 		<p><b>Режиссёр:</b> Стивен С. ДеНайт</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#PacificRim">Тихоокеанский Рубеж</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#J.Boyega">Джон Бойега</a></td>
-			<td>Джейк Пентекост</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Spaeny">Кэйли Спэни</a></td>
-			<td>Амара Намани</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Eastwood">Скотт Иствуд</a></td>
-			<td>Рейнджер Нейт Ламберт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Day">Чарли Дэй</a></td>
-			<td>Доктор Ньютон Гейсзлер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Gorman">Бёрн Горман</a></td>
-			<td>Доктор Германн Готтлиб</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/c.htm#J.Tian">Цзин Тянь</a></td>
-			<td>Лювень Шао</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Макс Чжан</td>
-			<td>Маршал Цюань</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Kikuchi">Ринко Кикучи</td>
-			<td>Генеральный секретарь Мако Мори</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Arjona">Адриа Архона</a></td>
-			<td>Джулс Рейс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Уэсли Вон</td>
-			<td>Кадет О-Ян Дзинхай</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Каран Брэр</td>
-			<td>Кадет Суреш Хурана</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.Sakhno">Иванна Сахно</a></td>
-			<td>Кадет Виктория Маликова</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Макеню</td>
-			<td>Кадет Риойти</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ширли Родригес</td>
-			<td>Кадет Рената</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Meaden">Леви Миден</a></td>
-			<td>Кадет Илья</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Ji">Лили Цзи</a></td>
-			<td>Кадет Мейлин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Рахарт Адамс</td>
-			<td>Кадет Тахима</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#J.Boyega">Джон Бойега</a></td>
+					<td>Джейк Пентекост</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Spaeny">Кэйли Спэни</a></td>
+					<td>Амара Намани</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Eastwood">Скотт Иствуд</a></td>
+					<td>Рейнджер Нейт Ламберт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Day">Чарли Дэй</a></td>
+					<td>Доктор Ньютон Гейсзлер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Gorman">Бёрн Горман</a></td>
+					<td>Доктор Германн Готтлиб</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/c.htm#J.Tian">Цзин Тянь</a></td>
+					<td>Лювень Шао</td>
+				</tr>
+				<tr>
+					<td>Макс Чжан</td>
+					<td>Маршал Цюань</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Kikuchi">Ринко Кикучи</td>
+					<td>Генеральный секретарь Мако Мори</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Arjona">Адриа Архона</a></td>
+					<td>Джулс Рейс</td>
+				</tr>
+				<tr>
+					<td>Уэсли Вон</td>
+					<td>Кадет О-Ян Дзинхай</td>
+				</tr>
+				<tr>
+					<td>Каран Брэр</td>
+					<td>Кадет Суреш Хурана</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.Sakhno">Иванна Сахно</a></td>
+					<td>Кадет Виктория Маликова</td>
+				</tr>
+				<tr>
+					<td>Макеню</td>
+					<td>Кадет Риойти</td>
+				</tr>
+				<tr>
+					<td>Ширли Родригес</td>
+					<td>Кадет Рената</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Meaden">Леви Миден</a></td>
+					<td>Кадет Илья</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Ji">Лили Цзи</a></td>
+					<td>Кадет Мейлин</td>
+				</tr>
+				<tr>
+					<td>Рахарт Адамс</td>
+					<td>Кадет Тахима</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 150 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 60 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 291 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Transformers - Age Of Extinction.htm" class="nav-arrow">←</a>
+		<a href="../Years/2014.htm" class="nav-arrow">⌂</a>
 		<a href="Lucy.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -31,93 +31,87 @@
 		<p align=justify><b>В основе:</b> Роман Пьера Буля "Планета обезьян" (Франция, 1963) и
 художественный фильм "Битва За Планету Обезьян" (США, 1973)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#PlanetOfTheApes">Планета Обезьян</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#J.Clarke">Джейсон Кларк</a></td>
-			<td>Малкольм</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Serkis">Энди Сёркис</a></td>
-			<td>Цезарь</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Oldman">Гэри Олдман</a></td>
-			<td>Дрейфус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#Ke.Russell">Кери Расселл</a></td>
-			<td>Элли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Kebbell">Тоби Кеббелл</a></td>
-			<td>Коба</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кирк Асеведо</td>
-			<td>Карвер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Smit-McPhee">Коди Смит-МакФи</a></td>
-			<td>Александр</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ник Тёрстон</td>
-			<td>Синие Глаза</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Eyez">Джон Эйз</a></td>
-			<td>Фостер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Konoval">Карин Коновал</a></td>
-			<td>Морис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Rankin">Кевин Ранкин</a></td>
-			<td>МакВи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Greer">Джуди Грир</a></td>
-			<td>Корнелия</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Notary">Терри Нотари</a></td>
-			<td>Ракета</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Murciano">Энрике Мурсиано</a></td>
-			<td>Кемп</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кир О'Доннелл</td>
-			<td>Финни</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джоко Симс</td>
-			<td>Вернер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Franco">Джеймс Франко</a></td>
-			<td>Уилл Родман</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#J.Clarke">Джейсон Кларк</a></td>
+					<td>Малкольм</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Serkis">Энди Сёркис</a></td>
+					<td>Цезарь</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Oldman">Гэри Олдман</a></td>
+					<td>Дрейфус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#Ke.Russell">Кери Расселл</a></td>
+					<td>Элли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Kebbell">Тоби Кеббелл</a></td>
+					<td>Коба</td>
+				</tr>
+				<tr>
+					<td>Кирк Асеведо</td>
+					<td>Карвер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Smit-McPhee">Коди Смит-МакФи</a></td>
+					<td>Александр</td>
+				</tr>
+				<tr>
+					<td>Ник Тёрстон</td>
+					<td>Синие Глаза</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Eyez">Джон Эйз</a></td>
+					<td>Фостер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Konoval">Карин Коновал</a></td>
+					<td>Морис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Rankin">Кевин Ранкин</a></td>
+					<td>МакВи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Greer">Джуди Грир</a></td>
+					<td>Корнелия</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Notary">Терри Нотари</a></td>
+					<td>Ракета</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Murciano">Энрике Мурсиано</a></td>
+					<td>Кемп</td>
+				</tr>
+				<tr>
+					<td>Кир О'Доннелл</td>
+					<td>Финни</td>
+				</tr>
+				<tr>
+					<td>Джоко Симс</td>
+					<td>Вернер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Franco">Джеймс Франко</a></td>
+					<td>Уилл Родман</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 170 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 209 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 711 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Kingdom Of Heaven.htm" class="nav-arrow">←</a>
+		<a href="../Years/2005.htm" class="nav-arrow">⌂</a>
 		<a href="Batman Begins.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,73 +22,74 @@
 		<h2 class="original-title">Star Wars: Episode III – Revenge Of The Sith</h2>
 		<p><b>Мировая премьера:</b> 19 мая 2005</p>
 		<p align=justify><b>Слоган:</b> Сага завершена.</p>
-		<p align=justify><b>Сюжет:</b> После трёх долгих лет жестоких сражений Клоническая Война
-близка к завершению. Совет джедаев даёт Оби-Вану Кеноби задание доставить генерала
-Гривуса, сурового командующего сепаратистской армии дроидов, в руки правосудия. Тем
-временем на Корусанте усиливается власть Канцлера Палпатина. Его стремительные
-политические реформы начинают преобразовывать ослабленную войной Республику в
-могущественную Галактическую Империю. В надежде привлечь Энакина Скайуокера, своего
-ближайшего соратника, на тёмную сторону, Палпатин открывает ему истинную сущность
-могущества и секреты Великой Силы.</p>
+		<p align=justify><b>Сюжет:</b> После трёх долгих лет жестоких сражений Клоническая Война близка к завершению. Но коварный владыка-ситх захватывает власть над Республикой и надеется привлечь Энакина Скайуокера на тёмную сторону Силы, превратив его в своего ученика. Терзаемый выбором между преданностью своему наставнику Оби-Вану Кеноби и соблазном владения силой ситхов, Энакин оказывается перед судьбоносным решением.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#G.Lucas">Джордж Лукас</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Star Wars.htm">Звёздные Войны</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/h.htm#H.Christensen">Хейден Кристенсен</a></td>
-			<td>Энакин Скайуокер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/yu.htm#E.McGregor">Юэн МакГрегор</a></td>
-			<td>Генерал Оби-Ван Кеноби</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.McDiarmid">Иэн МакДайармид</a></td>
-			<td>Верховный Канцлер Шив Палпатин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Portman">Натали Портман</a></td>
-			<td>Сенатор Падме Амидала</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
-			<td>Магистр Мэйс Винду</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Smits">Джимми Смитс</a></td>
-			<td>Сенатор Бэйл Органа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Lee">Кристофер Ли</a></td>
-			<td>Граф Дуку / Дарт Тиранус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Morrison">Темуэра Моррисон</a></td>
-			<td>Командир Коуди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Daniels">Энтони Дэниелс</a></td>
-			<td>C-3PO / Даннл Фэйтонни</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Carson">Сайлас Карсон</a></td>
-			<td>Магистр Ки-Ади-Мунди / Вице-король Нут Ганрэй</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Mayhew">Питер Мейхью</a></td>
-			<td>Чубакка</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/yu.htm#E.McGregor">Юэн МакГрегор</a>, <a href="../Actors/h.htm#H.Christensen">Хейден Кристенсен</a>, <a href="../Actors/i.htm#I.McDiarmid">Иэн МакДайармид</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/yu.htm#E.McGregor">Юэн МакГрегор</a></td>
+					<td>Генерал Оби-Ван Кеноби</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Christensen">Хейден Кристенсен</a></td>
+					<td>Энакин Скайуокер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.McDiarmid">Иэн МакДайармид</a></td>
+					<td>Верховный Канцлер Шив Палпатин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Portman">Натали Портман</a></td>
+					<td>Сенатор Падме Амидала</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
+					<td>Магистр Мэйс Винду</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Smits">Джимми Смитс</a></td>
+					<td>Сенатор Бэйл Органа</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Lee">Кристофер Ли</a></td>
+					<td>Граф Дуку / Дарт Тиранус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Morrison">Темуэра Моррисон</a></td>
+					<td>Командир Коуди</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Daniels">Энтони Дэниелс</a></td>
+					<td>C-3PO / Даннл Фэйтонни</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Carson">Сайлас Карсон</a></td>
+					<td>Магистр Ки-Ади-Мунди / Вице-король Нут Ганрэй</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Mayhew">Питер Мейхью</a></td>
+					<td>Чубакка</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Best">Ахмед Бест</a></td>
+					<td>Джа Джа Бинкс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.F.Davies">Оливер Форд Дэвис</a></td>
+					<td>Губернатор Сио Биббл</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 113 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 380 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 906 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Finest Hours.htm" class="nav-arrow">←</a>
+		<a href="../Years/2016.htm" class="nav-arrow">⌂</a>
 		<a href="Gods Of Egypt.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,68 +30,67 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#T.Miller">Тим Миллер</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Дэдпуле (США, выходят с 1991, авторы – Роб Лайфелд и Фабиан Нициезе)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/X-Men.htm">Люди Икс</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/r.htm#R.Reynolds">Райан Рейнольдс</a></td>
-			<td>Уэйд Уилсон / Дэдпул</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Baccarin">Морена Баккарин</a></td>
-			<td>Ванесса Карлайл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Skrein">Эд Скрейн</a></td>
-			<td>Фрэнсис Фриман / Аякс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.J.Miller">Ти Джей Миллер</a></td>
-			<td>Джек Хаммер / Хорь</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Грег ЛаСалль</td>
-			<td>Пётр Распутин / Колосс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Uggams">Лесли Уггэмс</a></td>
-			<td>Слепая Ал</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Soni">Каран Сони</a></td>
-			<td>Допиндер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Carano">Джина Карано</a></td>
-			<td>Ангельская Пыль</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Hildebrand">Брианна Хилдебранд</a></td>
-			<td>Элли Фимистер / Сверхзвуковая Боеголовка</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Rees">Джед Рис</a></td>
-			<td>Рекрутер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Reeder">Рендал Ридер</a></td>
-			<td>Бак</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#I.C.Singleton">Айзек С. Синглтон мл.</a></td>
-			<td>Бут</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/r.htm#R.Reynolds">Райан Рейнольдс</a></td>
+					<td>Уэйд Уилсон / Дэдпул</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Baccarin">Морена Баккарин</a></td>
+					<td>Ванесса Карлайл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Skrein">Эд Скрейн</a></td>
+					<td>Фрэнсис Фриман / Аякс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.J.Miller">Ти Джей Миллер</a></td>
+					<td>Джек Хаммер / Хорь</td>
+				</tr>
+				<tr>
+					<td>Грег ЛаСалль</td>
+					<td>Пётр Распутин / Колосс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Uggams">Лесли Уггэмс</a></td>
+					<td>Слепая Ал</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Soni">Каран Сони</a></td>
+					<td>Допиндер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Carano">Джина Карано</a></td>
+					<td>Ангельская Пыль</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Hildebrand">Брианна Хилдебранд</a></td>
+					<td>Элли Фимистер / Сверхзвуковая Боеголовка</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Rees">Джед Рис</a></td>
+					<td>Рекрутер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Reeder">Рендал Ридер</a></td>
+					<td>Бак</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#I.C.Singleton">Айзек С. Синглтон мл.</a></td>
+					<td>Бут</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 58 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 363 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 783 млн.</p>

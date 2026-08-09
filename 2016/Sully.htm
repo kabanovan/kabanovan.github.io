@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Ben-Hur.htm" class="nav-arrow">←</a>
+		<a href="../Years/2016.htm" class="nav-arrow">⌂</a>
 		<a href="Miss Peregrine's Home For Peculiar Children.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -32,88 +32,83 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#C.Eastwood">Клинт Иствуд</a></p>
 		<p align=justify><b>В основе:</b> Документальная книга Чесли Б. "Салли" Салленбергера и
 Джеффри Заслоу "Чудо на Гудзоне" (США, 2009)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Hanks">Том Хэнкс</a></td>
-			<td>Командир Чесли "Салли" Салленбергер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Eckhart">Аарон Экхарт</a></td>
-			<td>Второй пилот Джефф Скайлс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.O'Malley">Майк О'Мэлли</a></td>
-			<td>Чарльз Портер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Linney">Лора Линни</a></td>
-			<td>Лорри Салленбергер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Патч Дарра</td>
-			<td>Патрик Хартен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Анна Ганн</td>
-			<td>Элизабет Дэвис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джейми Шеридан</td>
-			<td>Бен Эдвардс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Huntington">Сэм Хантингтон</a></td>
-			<td>Джефф Колоджей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Rice">Бретт Райс</a></td>
-			<td>Карл Кларк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Энн Кьюсак</td>
-			<td>Донна Дент</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джейн Габберт</td>
-			<td>Шила Дейл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Молли Хэйгэн</td>
-			<td>Дорин Уэлш</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.McCallany">Холт МакКэллани</a></td>
-			<td>Майк Клири</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Bauer">Крис Бауэр</a></td>
-			<td>Ларри Руни</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Treveiler">Роберт Тревилер</a></td>
-			<td>Генри</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Rapaport">Майкл Рапапорт</a></td>
-			<td>Пит</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Hanks">Том Хэнкс</a></td>
+					<td>Командир Чесли "Салли" Салленбергер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Eckhart">Аарон Экхарт</a></td>
+					<td>Второй пилот Джефф Скайлс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.O'Malley">Майк О'Мэлли</a></td>
+					<td>Чарльз Портер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Linney">Лора Линни</a></td>
+					<td>Лорри Салленбергер</td>
+				</tr>
+				<tr>
+					<td>Патч Дарра</td>
+					<td>Патрик Хартен</td>
+				</tr>
+				<tr>
+					<td>Анна Ганн</td>
+					<td>Элизабет Дэвис</td>
+				</tr>
+				<tr>
+					<td>Джейми Шеридан</td>
+					<td>Бен Эдвардс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Huntington">Сэм Хантингтон</a></td>
+					<td>Джефф Колоджей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Rice">Бретт Райс</a></td>
+					<td>Карл Кларк</td>
+				</tr>
+				<tr>
+					<td>Энн Кьюсак</td>
+					<td>Донна Дент</td>
+				</tr>
+				<tr>
+					<td>Джейн Габберт</td>
+					<td>Шила Дейл</td>
+				</tr>
+				<tr>
+					<td>Молли Хэйгэн</td>
+					<td>Дорин Уэлш</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.McCallany">Холт МакКэллани</a></td>
+					<td>Майк Клири</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Bauer">Крис Бауэр</a></td>
+					<td>Ларри Руни</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Treveiler">Роберт Тревилер</a></td>
+					<td>Генри</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Rapaport">Майкл Рапапорт</a></td>
+					<td>Пит</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 60 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 125 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 244 млн.</p>

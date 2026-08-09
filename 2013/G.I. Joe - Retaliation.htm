@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Oz The Great And Powerful.htm" class="nav-arrow">←</a>
+		<a href="../Years/2013.htm" class="nav-arrow">⌂</a>
 		<a href="Oblivion.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -33,98 +33,91 @@
 		<p align=justify><b>В основе:</b> Линия игрушечных фигурок компании "Хасбро" (США,
 выпускаются с 1964)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#G.I.Joe">G.I. Joe</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
-			<td>Сержант Марвин Хинтон / Роадблок</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Pryce">Джонатан Прайс</a></td>
-			<td>Президент США</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Palicki">Эдрианн Палики</a></td>
-			<td>Лейтенант Джей Бернетт / Леди Джей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Tatum">Ченнинг Татум</a></td>
-			<td>Капитан Конрад Хаузер / Дьюк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Willis">Брюс Уиллис</a></td>
-			<td>Генерал Джо Колтон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.J.Cotrona">Ди Джей Котрона</a></td>
-			<td>Сержант Дэшил Файрборн / Флинт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Goggins">Уолтон Гоггинс</a></td>
-			<td>Найджел Джеймс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B-H.Lee">Бён-Хон Ли</a></td>
-			<td>Томас Арашикаги / Сторм Шэдоу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Stevenson">Рэй Стивенсон</a></td>
-			<td>Файрфлай</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Yung">Элоди Юнг</a></td>
-			<td>Ким Арашикаги / Джинкс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ризза</td>
-			<td>Слепой учитель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Люк Брейси</td>
-			<td><i><p style="margin-left:30px">Командир Кобры</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>ДеРэй Дэвис</td>
-			<td>Ступ</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Mazzello">Джо Маццелло</a></td>
-			<td>Тим Гейнс / Маус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Gerald">Мэтт Джеральд</a></td>
-			<td>Зандар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Chrest">Джо Крест</a></td>
-			<td>Глава администрации</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#RayPark">Рэй Парк</a></td>
-			<td>Снейк Айз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Vosloo">Арнольд Вослу</a></td>
-			<td>Зартан</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
+					<td>Сержант Марвин Хинтон / Роадблок</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Pryce">Джонатан Прайс</a></td>
+					<td>Президент США</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Palicki">Эдрианн Палики</a></td>
+					<td>Лейтенант Джей Бернетт / Леди Джей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Tatum">Ченнинг Татум</a></td>
+					<td>Капитан Конрад Хаузер / Дьюк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Willis">Брюс Уиллис</a></td>
+					<td>Генерал Джо Колтон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.J.Cotrona">Ди Джей Котрона</a></td>
+					<td>Сержант Дэшил Файрборн / Флинт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Goggins">Уолтон Гоггинс</a></td>
+					<td>Найджел Джеймс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B-H.Lee">Бён-Хон Ли</a></td>
+					<td>Томас Арашикаги / Сторм Шэдоу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Stevenson">Рэй Стивенсон</a></td>
+					<td>Файрфлай</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Yung">Элоди Юнг</a></td>
+					<td>Ким Арашикаги / Джинкс</td>
+				</tr>
+				<tr>
+					<td>Ризза</td>
+					<td>Слепой учитель</td>
+				</tr>
+				<tr>
+					<td>Люк Брейси</td>
+					<td>Командир Кобры</td>
+				</tr>
+				<tr>
+					<td>ДеРэй Дэвис</td>
+					<td>Ступ</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Mazzello">Джо Маццелло</a></td>
+					<td>Тим Гейнс / Маус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Gerald">Мэтт Джеральд</a></td>
+					<td>Зандар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Chrest">Джо Крест</a></td>
+					<td>Глава администрации</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#RayPark">Рэй Парк</a></td>
+					<td>Снейк Айз</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Vosloo">Арнольд Вослу</a></td>
+					<td>Зартан</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 130 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 123 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 376 млн.</p>

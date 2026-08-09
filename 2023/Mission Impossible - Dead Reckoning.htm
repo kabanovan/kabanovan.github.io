@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Indiana Jones And The Dial Of Destiny.htm" class="nav-arrow">←</a>
+		<a href="../Years/2023.htm" class="nav-arrow">⌂</a>
 		<a href="Haunted Mansion.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,98 +25,91 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#C.McQuarrie">Кристофер МакКуорри</a></p>
 		<p align=justify><b>В основе:</b> Телесериал "Миссия: Невыполнима" (США, 1966-1973)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Mission Impossible.htm">Миссия Невыполнима</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Cruise">Том Круз</a></td>
-			<td>Агент Итан Хант</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Atwell">Хейли Этвелл</a></td>
-			<td>Грейс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Pegg">Саймон Пегг</a></td>
-			<td>Бенджи Данн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Rhames">Винг Рэймс</a></td>
-			<td>Лютер Стикелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#H.Czerny">Генри Черни</a></td>
-			<td>Директор Юджин Киттридж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Morales">Эсай Моралес</a></td>
-			<td>Гейбриэл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Kirby">Ванесса Кирби</a></td>
-			<td>Аланна Митсополис / Белая Вдова</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Whigham">Ши Уигхэм</a></td>
-			<td>Джаспер Бриггс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Elwes">Кэри Элвес</a></td>
-			<td>Директор Денлингер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Ferguson">Ребекка Фергюсон</a></td>
-			<td>Ильза Фауст</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Марцин Дороциньский</td>
-			<td>Капитан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Klementieff">Пом Клементьефф</a></td>
-			<td><i><p style="margin-left:30px">Пэрис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.T.Davis">Грег Тарзан Дэвис</a></td>
-			<td>Тео Дега</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#F.Schmidt">Фредерик Шмидт</a></td>
-			<td>Зола Митсополис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Parnell">Чарльз Парнелл</a></td>
-			<td>Директор Ричардс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Gatiss">Марк Гатисс</a></td>
-			<td>Директор Ангстром</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Delaney">Роб Делани</a></td>
-			<td><i><p style="margin-left:30px">Директор СКСО</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мариэла Гаррига</td>
-			<td>Мари</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Cruise">Том Круз</a></td>
+					<td>Агент Итан Хант</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Atwell">Хейли Этвелл</a></td>
+					<td>Грейс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Pegg">Саймон Пегг</a></td>
+					<td>Бенджи Данн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Rhames">Винг Рэймс</a></td>
+					<td>Лютер Стикелл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#H.Czerny">Генри Черни</a></td>
+					<td>Директор Юджин Киттридж</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Morales">Эсай Моралес</a></td>
+					<td>Гейбриэл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Kirby">Ванесса Кирби</a></td>
+					<td>Аланна Митсополис / Белая Вдова</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Whigham">Ши Уигхэм</a></td>
+					<td>Джаспер Бриггс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Elwes">Кэри Элвес</a></td>
+					<td>Директор Денлингер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Ferguson">Ребекка Фергюсон</a></td>
+					<td>Ильза Фауст</td>
+				</tr>
+				<tr>
+					<td>Марцин Дороциньский</td>
+					<td>Капитан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Klementieff">Пом Клементьефф</a></td>
+					<td>Пэрис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.T.Davis">Грег Тарзан Дэвис</a></td>
+					<td>Тео Дега</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#F.Schmidt">Фредерик Шмидт</a></td>
+					<td>Зола Митсополис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Parnell">Чарльз Парнелл</a></td>
+					<td>Директор Ричардс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Gatiss">Марк Гатисс</a></td>
+					<td>Директор Ангстром</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Delaney">Роб Делани</a></td>
+					<td>Директор СКСО</td>
+				</tr>
+				<tr>
+					<td>Мариэла Гаррига</td>
+					<td>Мари</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 290 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 172 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 571 млн.</p>

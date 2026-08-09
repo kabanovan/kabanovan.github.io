@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Avengers - Age Of Ultron.htm" class="nav-arrow">←</a>
+		<a href="../Years/2015.htm" class="nav-arrow">⌂</a>
 		<a href="Tomorrowland.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -32,98 +32,91 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#G.Miller">Джордж Миллер</a></p>
 		<p align=justify><b>В основе:</b> Серия фильмов о Безумном Максе (Австралия, 1979-1985)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#AMadMaxSaga">Хроники Безумного Макса</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Hardy">Том Харди</a></td>
-			<td>Макс Рокатански</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#C.Theron">Шарлиз Терон</a></td>
-			<td>Военачальница Фуриоса</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Hoult">Николас Холт</a></td>
-			<td>Накс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Хью Кияс-Бёрн</td>
-			<td>Несмертный Джо</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Helman">Джош Хелман</a></td>
-			<td>Слит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/z.htm#Z.Kravitz">Зои Кравиц</a></td>
-			<td>Тост Мудрая</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Huntington-Whiteley">Рози Хантингтон-Уайтли</a></td>
-			<td>Прелесть Ангхарад</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Райли Кио</td>
-			<td>Способная</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Lee">Эбби Ли</a></td>
-			<td>Неуклюжая</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Eaton">Кортни Итон</a></td>
-			<td>Чидо Ранимая</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Jones">Натан Джонс</a></td>
-			<td>Риктус Эректус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Joh.Howard">Джон Ховард</a></td>
-			<td>Людоед</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ричард Картер</td>
-			<td>Главный Оружейник</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Sampson">Энгус Сэмпсон</a></td>
-			<td>Лекарь</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дженнифер Хэйгэн</td>
-			<td>Мисс Гидди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Меган Гэйл</td>
-			<td>Валькирия</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мелисса Яффер</td>
-			<td>Хранительница Семян</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>йОТА</td>
-			<td>Слепой гитарист</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Hardy">Том Харди</a></td>
+					<td>Макс Рокатански</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#C.Theron">Шарлиз Терон</a></td>
+					<td>Военачальница Фуриоса</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Hoult">Николас Холт</a></td>
+					<td>Накс</td>
+				</tr>
+				<tr>
+					<td>Хью Кияс-Бёрн</td>
+					<td>Несмертный Джо</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Helman">Джош Хелман</a></td>
+					<td>Слит</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/z.htm#Z.Kravitz">Зои Кравиц</a></td>
+					<td>Тост Мудрая</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Huntington-Whiteley">Рози Хантингтон-Уайтли</a></td>
+					<td>Прелесть Ангхарад</td>
+				</tr>
+				<tr>
+					<td>Райли Кио</td>
+					<td>Способная</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Lee">Эбби Ли</a></td>
+					<td>Неуклюжая</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Eaton">Кортни Итон</a></td>
+					<td>Чидо Ранимая</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Jones">Натан Джонс</a></td>
+					<td>Риктус Эректус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Joh.Howard">Джон Ховард</a></td>
+					<td>Людоед</td>
+				</tr>
+				<tr>
+					<td>Ричард Картер</td>
+					<td>Главный Оружейник</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Sampson">Энгус Сэмпсон</a></td>
+					<td>Лекарь</td>
+				</tr>
+				<tr>
+					<td>Дженнифер Хэйгэн</td>
+					<td>Мисс Гидди</td>
+				</tr>
+				<tr>
+					<td>Меган Гэйл</td>
+					<td>Валькирия</td>
+				</tr>
+				<tr>
+					<td>Мелисса Яффер</td>
+					<td>Хранительница Семян</td>
+				</tr>
+				<tr>
+					<td>йОТА</td>
+					<td>Слепой гитарист</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 100 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 154 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 380 млн.</p>

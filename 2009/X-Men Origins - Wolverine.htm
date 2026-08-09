@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Fast & Furious.htm" class="nav-arrow">←</a>
+		<a href="../Years/2009.htm" class="nav-arrow">⌂</a>
 		<a href="Star Trek.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -31,73 +31,73 @@
 		<p align=justify><b>В основе:</b> Комиксы о Росомахе (США, выходят с 1974 г., авторы
 – Рой Томас, Лен Вайн и Джон Ромита ст.)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/X-Men.htm">Люди Икс</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/h.htm#H.Jackman">Хью Джекман</a></td>
-			<td>Джеймс Хоулетт / Логан / Росомаха</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Huston">Дэнни Хьюстон</a></td>
-			<td>Полковник Уильям Страйкер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лив Шрайбер</td>
-			<td>Виктор Крид / Саблезубый</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Collins">Линн Коллинз</a></td>
-			<td>Кайла Силверфокс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Уилл.Ай.Эм</td>
-			<td>Джон Рэйт / Кестрел</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Kitsch">Тейлор Китч</a></td>
-			<td>Реми ЛеБо / Гамбит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Reynolds">Райан Рейнольдс</a></td>
-			<td>Вейд Уилсон / Дэдпул</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Durand">Кевин Дюран</a></td>
-			<td>Фред Дьюк / Пузырь</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Макс Каллен</td>
-			<td>Трэвис Хадсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Monaghan">Доминик Монаган</a></td>
-			<td>Крис Брэдли / Болт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэниэл Хенни</td>
-			<td>Дэвид Норт / Агент Зеро</td>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/h.htm#H.Jackman">Хью Джекман</a></td>
+					<td>Джеймс Хоулетт / Логан / Росомаха</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Huston">Дэнни Хьюстон</a></td>
+					<td>Полковник Уильям Страйкер</td>
+				</tr>
+				<tr>
+					<td>Лив Шрайбер</td>
+					<td>Виктор Крид / Саблезубый</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Collins">Линн Коллинз</a></td>
+					<td>Кайла Силверфокс</td>
+				</tr>
+				<tr>
+					<td>Уилл.Ай.Эм</td>
+					<td>Джон Рэйт / Кестрел</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Kitsch">Тейлор Китч</a></td>
+					<td>Реми ЛеБо / Гамбит</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Reynolds">Райан Рейнольдс</a></td>
+					<td>Вейд Уилсон / Дэдпул</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Durand">Кевин Дюран</a></td>
+					<td>Фред Дьюк / Пузырь</td>
+				</tr>
+				<tr>
+					<td>Макс Каллен</td>
+					<td>Трэвис Хадсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Monaghan">Доминик Монаган</a></td>
+					<td>Крис Брэдли / Болт</td>
+				</tr>
+				<tr>
+					<td>Дэниэл Хенни</td>
+					<td>Дэвид Норт / Агент Зеро</td>
 </tr>
 <!--<tr>
   <td></td>
-			<td>Тим Покок</td>
-			<td>Скотт Саммерс / Циклоп</td>
+					<td>Тим Покок</td>
+					<td>Скотт Саммерс / Циклоп</td>
 </tr>-->
 <tr>
   <td></td>
-			<td><a href="../Actors/p.htm#P.Stewart">Патрик Стюарт</a></td>
-			<td>Профессор Чарльз Завьер / Профессор Икс</td>
-		</tr>
-		</table>
+					<td><a href="../Actors/p.htm#P.Stewart">Патрик Стюарт</a></td>
+					<td>Профессор Чарльз Завьер / Профессор Икс</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 150 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 180 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 373 млн.</p>

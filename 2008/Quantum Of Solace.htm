@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Mummy - Tomb Of The Dragon Emperor.htm" class="nav-arrow">←</a>
+		<a href="../Years/2008.htm" class="nav-arrow">⌂</a>
 		<a href="Twilight.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,79 +30,76 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#M.Forster">Марк Форстер</a></p>
 		<p align=justify><b>В основе:</b> Серия романов и рассказов Яна Флеминга о Джеймсе Бонде
 (Великобритания, 1953-1966)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#JamesBond">Джеймс Бонд</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.Craig">Дэниэл Крэйг</a></td>
-			<td>Коммандер Джеймс Бонд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Матьё Амальрик</td>
-			<td>Доминик Грин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Dench">Джуди Денч</a></td>
-			<td>М</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Kurylenko">Ольга Куриленко</a></td>
-			<td>Камилла Монтес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Giannini">Джанкарло Джаннини</a></td>
-			<td>Рене Матис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Wright">Джеффри Райт</a></td>
-			<td>Феликс Ляйтер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#J.Cosio">Хоакин Косио</a></td>
-			<td>Генерал Медрано</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Arterton">Джемма Артертон</a></td>
-			<td>Строберри Филдс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Harbour">Дэвид Харбор</a></td>
-			<td>Грегори Бим</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Kinnear">Рори Киннир</a></td>
-			<td>Билл Тэннер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Pigott-Smith">Тим Пиготт-Смит</a></td>
-			<td>Министр иностранных дел</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Taubman">Анатоль Таубман</a></td>
-			<td>Элвис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Christensen">Джеспер Кристенсен</a></td>
-			<td>Мистер Уайт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Kassianides">Саймон Кассианидис</a></td>
-			<td>Юсуф Кабира</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/James Bond.htm">Джеймс Бонд</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.Craig">Дэниэл Крэйг</a></td>
+					<td>Коммандер Джеймс Бонд</td>
+				</tr>
+				<tr>
+					<td>Матьё Амальрик</td>
+					<td>Доминик Грин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Dench">Джуди Денч</a></td>
+					<td>М</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Kurylenko">Ольга Куриленко</a></td>
+					<td>Камилла Монтес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Giannini">Джанкарло Джаннини</a></td>
+					<td>Рене Матис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Wright">Джеффри Райт</a></td>
+					<td>Феликс Ляйтер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#J.Cosio">Хоакин Косио</a></td>
+					<td>Генерал Медрано</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Arterton">Джемма Артертон</a></td>
+					<td>Строберри Филдс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Harbour">Дэвид Харбор</a></td>
+					<td>Грегори Бим</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Kinnear">Рори Киннир</a></td>
+					<td>Билл Тэннер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Pigott-Smith">Тим Пиготт-Смит</a></td>
+					<td>Министр иностранных дел</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Taubman">Анатоль Таубман</a></td>
+					<td>Элвис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Christensen">Джеспер Кристенсен</a></td>
+					<td>Мистер Уайт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Kassianides">Саймон Кассианидис</a></td>
+					<td>Юсуф Кабира</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 200 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 168 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 590 млн.</p>

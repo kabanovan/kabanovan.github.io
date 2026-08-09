@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Avengers.htm" class="nav-arrow">←</a>
+		<a href="../Years/2012.htm" class="nav-arrow">⌂</a>
 		<a href="Men In Black 3.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -27,78 +27,75 @@
 много раз инопланетной силой.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#P.Berg">Питер Берг</a></p>
 		<p align=justify><b>В основе:</b> Настольная игра "Морской бой" (выпускается с 1931)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Kitsch">Тейлор Китч</a></td>
-			<td>Лейтенант Алекс Хоппер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Skarsgard">Александр Скарсгард</a></td>
-			<td>Коммандер Стоун Хоппер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#Rihanna">Рианна</a></td>
-			<td>Старшина Кора Рейкс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Бруклин Декер</td>
-			<td>Сэм Шейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Asano">Таданобу Асано</a></td>
-			<td>Капитан Юги Нагата</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Neeson">Лиам Нисон</a></td>
-			<td>Адмирал Терренс Шейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Linklater">Хамиш Линклэйтер</a></td>
-			<td>Кэл Запата</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Plemons">Джесси Племонс</a></td>
-			<td>Боцман Джимми "Орди" Орд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Грегори Д. Гэдсон</td>
-			<td>Подполковник Мик Каналес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Tui">Джон Туи</a></td>
-			<td>Старшина Уолтер "Зверь" Линч</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Godley">Адам Годли</a></td>
-			<td>Доктор Ногрэди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.MacNicol">Питер МакНикол</a></td>
-			<td>Министр обороны</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Ferrara">Джерри Феррара</a></td>
-			<td>Вахтенный офицер Строделл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Malek">Рами Малек</a></td>
-			<td>Вахтенный офицер</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Kitsch">Тейлор Китч</a></td>
+					<td>Лейтенант Алекс Хоппер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Skarsgard">Александр Скарсгард</a></td>
+					<td>Коммандер Стоун Хоппер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#Rihanna">Рианна</a></td>
+					<td>Старшина Кора Рейкс</td>
+				</tr>
+				<tr>
+					<td>Бруклин Декер</td>
+					<td>Сэм Шейн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Asano">Таданобу Асано</a></td>
+					<td>Капитан Юги Нагата</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Neeson">Лиам Нисон</a></td>
+					<td>Адмирал Терренс Шейн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Linklater">Хамиш Линклэйтер</a></td>
+					<td>Кэл Запата</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Plemons">Джесси Племонс</a></td>
+					<td>Боцман Джимми "Орди" Орд</td>
+				</tr>
+				<tr>
+					<td>Грегори Д. Гэдсон</td>
+					<td>Подполковник Мик Каналес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Tui">Джон Туи</a></td>
+					<td>Старшина Уолтер "Зверь" Линч</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Godley">Адам Годли</a></td>
+					<td>Доктор Ногрэди</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.MacNicol">Питер МакНикол</a></td>
+					<td>Министр обороны</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Ferrara">Джерри Феррара</a></td>
+					<td>Вахтенный офицер Строделл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Malek">Рами Малек</a></td>
+					<td>Вахтенный офицер</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 209 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 65 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 303 млн.</p>

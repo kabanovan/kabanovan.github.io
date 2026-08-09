@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Hercules.htm" class="nav-arrow">←</a>
+		<a href="../Years/2014.htm" class="nav-arrow">⌂</a>
 		<a href="Teenage Mutant Ninja Turtles.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -35,84 +35,80 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Gunn">Джеймс Ганн</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Стражах Галактики (США, выходят с 2008,
 авторы – Дэн Абнетт и Арнольд Дрэйк)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#MCU">Кинематографическая Вселенная Марвел</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#C.Pratt">Крис Прэтт</a></td>
-			<td>Питер Квилл / Звёздный Лорд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/z.htm#Z.Saldana">Зои Салдана</a></td>
-			<td>Гамора</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Bautista">Дэйв Батиста</a></td>
-			<td>Дракс Разрушитель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Rooker">Майкл Рукер</a></td>
-			<td>Йонду Удонта</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Pace">Ли Пейс</a></td>
-			<td>Ронан Обвинитель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.D.Toro">Бенисио Дель Торо</a></td>
-			<td>Танелир Тиван / Коллекционер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Close">Гленн Клоуз</a></td>
-			<td>Нова Прайм Ирани Раэль</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.C.Reilly">Джон Си Райли</a></td>
-			<td>Романн Дей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Gillan">Карен Гиллан</a></td>
-			<td>Небула</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
-			<td>Корат</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Fairbank">Кристофер Фэйрбэнк</a></td>
-			<td>Брокер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Haddock">Лора Хэддок</a></td>
-			<td>Мередит Квилл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Gunn">Шон Ганн</a></td>
-			<td>Краглин Обфонтери</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Serafinowicz">Питер Серафинович</a></td>
-			<td>Денариан Гартан Саал</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Brolin">Джош Бролин</a></td>
-			<td><i><p style="margin-left:30px">Танос</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/MCU.htm">Кинематографическая Вселенная Марвел</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#C.Pratt">Крис Прэтт</a></td>
+					<td>Питер Квилл / Звёздный Лорд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/z.htm#Z.Saldana">Зои Салдана</a></td>
+					<td>Гамора</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Bautista">Дэйв Батиста</a></td>
+					<td>Дракс Разрушитель</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Rooker">Майкл Рукер</a></td>
+					<td>Йонду Удонта</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Pace">Ли Пейс</a></td>
+					<td>Ронан Обвинитель</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.D.Toro">Бенисио Дель Торо</a></td>
+					<td>Танелир Тиван / Коллекционер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Close">Гленн Клоуз</a></td>
+					<td>Нова Прайм Ирани Раэль</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.C.Reilly">Джон Си Райли</a></td>
+					<td>Романн Дей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Gillan">Карен Гиллан</a></td>
+					<td>Небула</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
+					<td>Корат</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Fairbank">Кристофер Фэйрбэнк</a></td>
+					<td>Брокер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Haddock">Лора Хэддок</a></td>
+					<td>Мередит Квилл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Gunn">Шон Ганн</a></td>
+					<td>Краглин Обфонтери</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Serafinowicz">Питер Серафинович</a></td>
+					<td>Денариан Гартан Саал</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Brolin">Джош Бролин</a></td>
+					<td>Танос</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 170 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 334 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 773 млн.</p>

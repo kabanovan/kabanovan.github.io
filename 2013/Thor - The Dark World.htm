@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Ender's Game.htm" class="nav-arrow">←</a>
+		<a href="../Years/2013.htm" class="nav-arrow">⌂</a>
 		<a href="The Hunger Games - Catching Fire.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -33,109 +33,100 @@
 чтобы не дать тьме воцариться на просторах вселенной?</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#A.Taylor">Алан Тейлор</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Торе (США, выходят с 1962, авторы – Стэн Ли, Ларри Либер и Джек Кирби)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#MCU">Кинематографическая Вселенная Марвел</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#C.Hemsworth">Крис Хемсворт</a></td>
-			<td>Тор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Portman">Натали Портман</a></td>
-			<td>Доктор Джейн Фостер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Hiddleston">Том Хиддлстон</a></td>
-			<td>Локи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Hopkins">Энтони Хопкинс</a></td>
-			<td>Один</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Dennings">Кэт Деннингс</a></td>
-			<td>Дарси Льюис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Skarsgard">Стеллан Скарсгард</a></td>
-			<td>Доктор Эрик Селвиг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Russo">Рене Руссо</a></td>
-			<td>Фригга</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.Elba">Идрис Эльба</a></td>
-			<td>Хеймдалл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Eccleston">Кристофер Экклестон</a></td>
-			<td>Малекит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.O'Dowd">Крис О'Дауд</a></td>
-			<td>Ричард</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Jon.Howard">Джонатан Ховард</a></td>
-			<td>Иэн Бутби</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Akinnuoye-Agbaje">Адевале Акиннуойе-Агбадже</a></td>
-			<td>Алгрим</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Stevenson">Рэй Стивенсон</a></td>
-			<td>Вольштагг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/z.htm#Z.Levi">Закари Ливай</a></td>
-			<td>Фандрал</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Jai.Alexander">Джейми Александр</a></td>
-			<td>Леди Сиф</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Asano">Таданобу Асано</a></td>
-			<td>Хогун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Krige">Элис Криге</a></td>
-			<td>Эйр</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Curran">Тони Карран</a></a></td>
-			<td>Бёр</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Riley">Талула Райли</a></td>
-			<td>Асгардская медсестра</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Evans">Крис Эванс</a></td>
-			<td>Стив Роджерс / Капитан Америка</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/MCU.htm">Кинематографическая Вселенная Марвел</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#C.Hemsworth">Крис Хемсворт</a></td>
+					<td>Тор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Portman">Натали Портман</a></td>
+					<td>Доктор Джейн Фостер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Hiddleston">Том Хиддлстон</a></td>
+					<td>Локи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Hopkins">Энтони Хопкинс</a></td>
+					<td>Один</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Dennings">Кэт Деннингс</a></td>
+					<td>Дарси Льюис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Skarsgard">Стеллан Скарсгард</a></td>
+					<td>Доктор Эрик Селвиг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Russo">Рене Руссо</a></td>
+					<td>Фригга</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.Elba">Идрис Эльба</a></td>
+					<td>Хеймдалл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Eccleston">Кристофер Экклестон</a></td>
+					<td>Малекит</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.O'Dowd">Крис О'Дауд</a></td>
+					<td>Ричард</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Jon.Howard">Джонатан Ховард</a></td>
+					<td>Иэн Бутби</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Akinnuoye-Agbaje">Адевале Акиннуойе-Агбадже</a></td>
+					<td>Алгрим</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Stevenson">Рэй Стивенсон</a></td>
+					<td>Вольштагг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/z.htm#Z.Levi">Закари Ливай</a></td>
+					<td>Фандрал</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Jai.Alexander">Джейми Александр</a></td>
+					<td>Леди Сиф</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Asano">Таданобу Асано</a></td>
+					<td>Хогун</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Krige">Элис Криге</a></td>
+					<td>Эйр</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Curran">Тони Карран</a></a></td>
+					<td>Бёр</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Riley">Талула Райли</a></td>
+					<td>Асгардская медсестра</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Evans">Крис Эванс</a></td>
+					<td>Стив Роджерс / Капитан Америка</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 170 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 206 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 645 млн.</p>

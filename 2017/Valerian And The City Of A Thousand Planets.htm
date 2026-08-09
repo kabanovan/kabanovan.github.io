@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Dunkirk.htm" class="nav-arrow">←</a>
+		<a href="../Years/2017.htm" class="nav-arrow">⌂</a>
 		<a href="The Dark Tower.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -31,73 +31,71 @@
 опасности, ведь под угрозой не только Альфа, но и будущее Вселенной.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#L.Besson">Люк Бессон</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Валериане (Франция, 1967-2010, авторы – Пьер Кристин и Жан-Клод Мезьер)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.DeHaan">Дэйн ДеХаан</a></td>
-			<td><i><p style="margin-left:30px">Майор Валериан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Delevingne">Кара Делевинь</a></td>
-			<td><i><p style="margin-left:30px">Сержант Лорелин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Spruell">Сэм Спруэлл</a></td>
-			<td><i><p style="margin-left:30px">Генерал Окто-Бар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#Cl.Owen">Клайв Оуэн</a></td>
-			<td><i><p style="margin-left:30px">Коммандер Арун Филитт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эмилин Валаде</td>
-			<td><i><p style="margin-left:30px">Император Хабан-Лимаи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#Rihanna">Рианна</a></td>
-			<td><i><p style="margin-left:30px">Баббл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#E.Hawke">Итан Хоук</a></td>
-			<td><i><p style="margin-left:30px">Джолли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Херби Хэнкок</td>
-			<td><i><p style="margin-left:30px">Министр обороны</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Крис Ву</td>
-			<td><i><p style="margin-left:30px">Сержант Неза</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ален Шаба</td>
-			<td><i><p style="margin-left:30px">Боб</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Willaume">Александр Виллауме</a></td>
-			<td><i><p style="margin-left:30px">Капитан Крис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Rapace">Ола Рапас</a></td>
-			<td><i><p style="margin-left:30px">Капитан Гибсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Hauer">Рутгер Хауэр</a></td>
-			<td><i><p style="margin-left:30px">Президент Федерации</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.DeHaan">Дэйн ДеХаан</a></td>
+					<td>Майор Валериан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Delevingne">Кара Делевинь</a></td>
+					<td>Сержант Лорелин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Spruell">Сэм Спруэлл</a></td>
+					<td>Генерал Окто-Бар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#Cl.Owen">Клайв Оуэн</a></td>
+					<td>Коммандер Арун Филитт</td>
+				</tr>
+				<tr>
+					<td>Эмилин Валаде</td>
+					<td>Император Хабан-Лимаи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#Rihanna">Рианна</a></td>
+					<td>Баббл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#E.Hawke">Итан Хоук</a></td>
+					<td>Джолли</td>
+				</tr>
+				<tr>
+					<td>Херби Хэнкок</td>
+					<td>Министр обороны</td>
+				</tr>
+				<tr>
+					<td>Крис Ву</td>
+					<td>Сержант Неза</td>
+				</tr>
+				<tr>
+					<td>Ален Шаба</td>
+					<td>Боб</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Willaume">Александр Виллауме</a></td>
+					<td>Капитан Крис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Rapace">Ола Рапас</a></td>
+					<td>Капитан Гибсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Hauer">Рутгер Хауэр</a></td>
+					<td>Президент Федерации</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 177 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 41 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 226 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Men In Black 3.htm" class="nav-arrow">←</a>
+		<a href="../Years/2012.htm" class="nav-arrow">⌂</a>
 		<a href="Prometheus.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,88 +30,83 @@
 		<p align=justify><b>В основе:</b> Немецкая народная сказка "Белоснежка" из сборника "Сказки
 Братьев Гримм" (1812)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#TheHuntsman">Белоснежка И Охотник</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#K.Stewart">Кристен Стюарт</a></td>
-			<td>Белоснежка</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Hemsworth">Крис Хемсворт</a></td>
-			<td>Охотник Эрик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#C.Theron">Шарлиз Терон</a></td>
-			<td>Королева Равенна</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Spruell">Сэм Спруэлл</a></td>
-			<td>Финн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Claflin">Сэм Клафлин</a></td>
-			<td>Уильям</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/y.htm#I.McShane">Йен МакШейн</a></td>
-			<td>Бит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Hoskins">Боб Хоскинс</a></td>
-			<td>Муир</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Winstone">Рэй Уинстон</a></td>
-			<td>Горт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Frost">Ник Фрост</a></td>
-			<td>Нион</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Jones">Тоби Джонс</a></td>
-			<td>Колл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Regan">Винсент Риган</a></td>
-			<td>Герцог Хаммонд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Marsan">Эдди Марсан</a></td>
-			<td>Дуир</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джонни Харрис</td>
-			<td>Кверт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#Bri.Gleeson">Брайан Глисон</a></td>
-			<td>Гас</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Cassidy">Рэффи Кэссиди</a></td>
-			<td>Юная Белоснежка</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Cole">Лили Коул</a></td>
-			<td>Грета</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#K.Stewart">Кристен Стюарт</a></td>
+					<td>Белоснежка</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Hemsworth">Крис Хемсворт</a></td>
+					<td>Охотник Эрик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#C.Theron">Шарлиз Терон</a></td>
+					<td>Королева Равенна</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Spruell">Сэм Спруэлл</a></td>
+					<td>Финн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Claflin">Сэм Клафлин</a></td>
+					<td>Уильям</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/y.htm#I.McShane">Йен МакШейн</a></td>
+					<td>Бит</td>
+				</tr>
+				<tr>
+					<td>Боб Хоскинс</td>
+					<td>Муир</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Winstone">Рэй Уинстон</a></td>
+					<td>Горт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Frost">Ник Фрост</a></td>
+					<td>Нион</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Jones">Тоби Джонс</a></td>
+					<td>Колл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Regan">Винсент Риган</a></td>
+					<td>Герцог Хаммонд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Marsan">Эдди Марсан</a></td>
+					<td>Дуир</td>
+				</tr>
+				<tr>
+					<td>Джонни Харрис</td>
+					<td>Кверт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#Bri.Gleeson">Брайан Глисон</a></td>
+					<td>Гас</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Cassidy">Рэффи Кэссиди</a></td>
+					<td>Юная Белоснежка</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Cole">Лили Коул</a></td>
+					<td>Грета</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 170 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 155 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 397 млн.</p>

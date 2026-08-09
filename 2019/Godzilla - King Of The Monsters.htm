@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Aladdin.htm" class="nav-arrow">←</a>
+		<a href="../Years/2019.htm" class="nav-arrow">⌂</a>
 		<a href="X-Men - Dark Phoenix.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,93 +25,87 @@
 		<p><b>Режиссёр:</b> Майкл Догерти</p>
 		<p align=justify><b>В основе:</b> Серия фильмов о Годзилле (Япония, выходят с 1954)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#MonsterVerse">Вселенная Монстров</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#K.Chandler">Кайл Чендлер</a></td>
-			<td>Доктор Марк Расселл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Farmiga">Вера Фармига</a></td>
-			<td>Доктор Эмма Расселл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Watanabe">Кен Ватанабе</a></td>
-			<td>Доктор Иширо Серизава</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Whitford">Брэдли Уитфорд</a></td>
-			<td>Доктор Рик Стэнтон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.B.Brown">Милли Бобби Браун</a></td>
-			<td>Мэдисон Расселл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Цзыи Чжан</td>
-			<td>Доктор Айлин Чен / Доктор Лин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Middleditch">Томас Миддлдитч</a></td>
-			<td>Сэм Коулмэн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Hinds">Аиша Хиндс</a></td>
-			<td>Полковник Дайан Фостер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Hawkins">Салли Хокинс</a></td>
-			<td>Доктор Вивьенн Грэм</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Dance">Чарльз Дэнс</a></td>
-			<td>Алан Джона</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Jackson">О'Ши Джексон мл.</a></td>
-			<td>Старший уорент-офицер Барнс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Strathairn">Дэвид Стрэтэйрн</a></td>
-			<td>Адмирал Уильям Стенц</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Ramos">Энтони Рамос</a></td>
-			<td>Штаб-сержант Мартинес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Ludlow">Элизабет Ладлоу</a></td>
-			<td>Первый лейтенант Гриффин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Jon.Howard">Джонатан Ховард</a></td>
-			<td>Эш Джона</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#C.Pounder">Си-Си-Эйч Паундер</a></td>
-			<td>Сенатор Уильямс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Morton">Джо Мортон</a></td>
-			<td>Доктор Хьюстон Брукс</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#K.Chandler">Кайл Чендлер</a></td>
+					<td>Доктор Марк Расселл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Farmiga">Вера Фармига</a></td>
+					<td>Доктор Эмма Расселл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Watanabe">Кен Ватанабе</a></td>
+					<td>Доктор Иширо Серизава</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Whitford">Брэдли Уитфорд</a></td>
+					<td>Доктор Рик Стэнтон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.B.Brown">Милли Бобби Браун</a></td>
+					<td>Мэдисон Расселл</td>
+				</tr>
+				<tr>
+					<td>Цзыи Чжан</td>
+					<td>Доктор Айлин Чен / Доктор Лин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Middleditch">Томас Миддлдитч</a></td>
+					<td>Сэм Коулмэн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Hinds">Аиша Хиндс</a></td>
+					<td>Полковник Дайан Фостер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Hawkins">Салли Хокинс</a></td>
+					<td>Доктор Вивьенн Грэм</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Dance">Чарльз Дэнс</a></td>
+					<td>Алан Джона</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Jackson">О'Ши Джексон мл.</a></td>
+					<td>Старший уорент-офицер Барнс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Strathairn">Дэвид Стрэтэйрн</a></td>
+					<td>Адмирал Уильям Стенц</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Ramos">Энтони Рамос</a></td>
+					<td>Штаб-сержант Мартинес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Ludlow">Элизабет Ладлоу</a></td>
+					<td>Первый лейтенант Гриффин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Jon.Howard">Джонатан Ховард</a></td>
+					<td>Эш Джона</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#C.Pounder">Си-Си-Эйч Паундер</a></td>
+					<td>Сенатор Уильямс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Morton">Джо Мортон</a></td>
+					<td>Доктор Хьюстон Брукс</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 160 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 111 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 387 млн.</p>

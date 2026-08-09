@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Kingsman - The Golden Circle.htm" class="nav-arrow">←</a>
+		<a href="../Years/2017.htm" class="nav-arrow">⌂</a>
 		<a href="Geostorm.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -29,88 +29,83 @@
 пропавшим без вести.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#D.Villeneuve">Дени Вильнёв</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Blade Runner.htm">Бегущий По Лезвию</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/r.htm#R.Gosling">Райан Гослинг</a></td>
-			<td><i><p style="margin-left:30px">Кей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
-			<td><i><p style="margin-left:30px">Рик Декард</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Armas">Ана де Армас</a></td>
-			<td><i><p style="margin-left:30px">Джой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Сильвия Хукс</td>
-			<td><i><p style="margin-left:30px">Лав</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Leto">Джаред Лето</a></td>
-			<td><i><p style="margin-left:30px">Ниандер Уоллес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Wright">Робин Райт</a></td>
-			<td><i><p style="margin-left:30px">Лейтенант "Мадам" Джоши</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Davis">Маккензи Дэвис</a></td>
-			<td><i><p style="margin-left:30px">Мариетта</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Карла Юри</td>
-			<td><i><p style="margin-left:30px">Доктор Ана Стеллин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Bautista">Дэйв Батиста</a></td>
-			<td><i><p style="margin-left:30px">Сэппер Мортон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#Le.James">Ленни Джеймс</a></td>
-			<td><i><p style="margin-left:30px">Мистер Коттон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Abbass">Хиам Аббасс</a></td>
-			<td><i><p style="margin-left:30px">Фрейза</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Young">Шон Янг</a></td>
-			<td><i><p style="margin-left:30px">Рейчел</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.J.Olmos">Эдвард Джеймс Олмос</a></td>
-			<td><i><p style="margin-left:30px">Гафф</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Баркхад Абди</td>
-			<td><i><p style="margin-left:30px">Доктор Бэджер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#W.Harris">Вуд Харрис</a></td>
-			<td><i><p style="margin-left:30px">Нандес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Dastmalchian">Давид Дастмалчян</a></td>
-			<td><i><p style="margin-left:30px">Коко</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/r.htm#R.Gosling">Райан Гослинг</a></td>
+					<td>Кей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
+					<td>Рик Декард</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Armas">Ана де Армас</a></td>
+					<td>Джой</td>
+				</tr>
+				<tr>
+					<td>Сильвия Хукс</td>
+					<td>Лав</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Leto">Джаред Лето</a></td>
+					<td>Ниандер Уоллес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Wright">Робин Райт</a></td>
+					<td>Лейтенант "Мадам" Джоши</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Davis">Маккензи Дэвис</a></td>
+					<td>Мариетта</td>
+				</tr>
+				<tr>
+					<td>Карла Юри</td>
+					<td>Доктор Ана Стеллин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Bautista">Дэйв Батиста</a></td>
+					<td>Сэппер Мортон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#Le.James">Ленни Джеймс</a></td>
+					<td>Мистер Коттон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Abbass">Хиам Аббасс</a></td>
+					<td>Фрейза</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Young">Шон Янг</a></td>
+					<td>Рейчел</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.J.Olmos">Эдвард Джеймс Олмос</a></td>
+					<td>Гафф</td>
+				</tr>
+				<tr>
+					<td>Баркхад Абди</td>
+					<td>Доктор Бэджер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#W.Harris">Вуд Харрис</a></td>
+					<td>Нандес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Dastmalchian">Давид Дастмалчян</a></td>
+					<td>Коко</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 150 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 92 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 278 млн.</p>

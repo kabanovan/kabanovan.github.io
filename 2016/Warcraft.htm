@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Teenage Mutant Ninja Turtles - Out Of The Shadows.htm" class="nav-arrow">←</a>
+		<a href="../Years/2016.htm" class="nav-arrow">⌂</a>
 		<a href="Independence Day - Resurgence.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -31,88 +31,83 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#D.Jones">Дункан Джонс</a></p>
 		<p align=justify><b>В основе:</b> Компьютерная игра "Варкрафт: Орки и люди" (США, 1994, издатель – "Близзард
 Энтертейнмент")</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>Трэвис Фиммел</td>
-			<td>Андуин Лотар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Бен Шнетцер</td>
-			<td>Кадгар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Foster">Бен Фостер</a></td>
-			<td>Медив</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Patton">Пола Пэттон</a></td>
-			<td>Гарона</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Cooper">Доминик Купер</a></td>
-			<td>Король Ллейн Ринн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Kebbell">Тоби Кеббелл</a></td>
-			<td>Дуротан / Антонидас</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Wu">Дэниэл Ву</a></td>
-			<td>Гул'дан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Kazinsky">Роб Казински</a></td>
-			<td>Оргрим Молот Рока</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Brown">Клэнси Браун</a></td>
-			<td>Чернорук Разрушитель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Negga">Рут Негга</a></td>
-			<td>Леди Тарья Ринн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Анна Галвин</td>
-			<td>Дрека</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.K.Rennie">Каллум Кит Ренни</a></td>
-			<td>Мороуз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Баркели Даффилд</td>
-			<td>Каллан Лотар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Robbins">Райан Роббинс</a></td>
-			<td>Карос</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Redman">Дин Редман</a></td>
-			<td>Варис / Пленный орк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Close">Гленн Клоуз</a></td>
-			<td>Алоди</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>Трэвис Фиммел</td>
+					<td>Андуин Лотар</td>
+				</tr>
+				<tr>
+					<td>Бен Шнетцер</td>
+					<td>Кадгар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Foster">Бен Фостер</a></td>
+					<td>Медив</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Patton">Пола Пэттон</a></td>
+					<td>Гарона</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Cooper">Доминик Купер</a></td>
+					<td>Король Ллейн Ринн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Kebbell">Тоби Кеббелл</a></td>
+					<td>Дуротан / Антонидас</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Wu">Дэниэл Ву</a></td>
+					<td>Гул'дан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Kazinsky">Роб Казински</a></td>
+					<td>Оргрим Молот Рока</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Brown">Клэнси Браун</a></td>
+					<td>Чернорук Разрушитель</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Negga">Рут Негга</a></td>
+					<td>Леди Тарья Ринн</td>
+				</tr>
+				<tr>
+					<td>Анна Галвин</td>
+					<td>Дрека</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.K.Rennie">Каллум Кит Ренни</a></td>
+					<td>Мороуз</td>
+				</tr>
+				<tr>
+					<td>Баркели Даффилд</td>
+					<td>Каллан Лотар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Robbins">Райан Роббинс</a></td>
+					<td>Карос</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Redman">Дин Редман</a></td>
+					<td>Варис / Пленный орк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Close">Гленн Клоуз</a></td>
+					<td>Алоди</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 160 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 47 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 439 млн.</p>

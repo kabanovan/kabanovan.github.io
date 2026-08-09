@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="6 Underground.htm" class="nav-arrow">←</a>
+		<a href="../Years/2019.htm" class="nav-arrow">⌂</a>
 		<a href="1917.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,108 +24,99 @@
 		<p align=justify><b>Сюжет:</b> Девятый эпизод космического эпоса завершает невероятную историю семьи Скайуокеров. Когда выясняется, что зловещий император Палпатин не погиб от рук Дарта Вейдера, повстанцам приходится действовать на опережение, чтобы раскрыть его убежище. Финн и По возглавляют Сопротивление, пытаясь сорвать планы Первого Ордена по созданию новой Империи, а Рей тем временем готовится к неизбежной схватке с Кайло Реном.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.J.Abrams">Джей Джей Абрамс</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Star Wars.htm">Звёздные Войны</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.Ridley">Дэйзи Ридли</a></td>
-			<td>Рей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Isaac">Оскар Айзек</a></td>
-			<td>Коммандер По Дэмерон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Boyega">Джон Бойега</a></td>
-			<td>Финн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.McDiarmid">Иэн МакДайармид</a></td>
-			<td>Шив Палпатин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Driver">Адам Драйвер</a></td>
-			<td>Верховный лидер Кайло Рен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Daniels">Энтони Дэниелс</a></td>
-			<td>C-3PO</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Наоми Аки</td>
-			<td>Джанна</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.D.Williams">Билли Ди Уильямс</a></td>
-			<td>Лэндо Калриссиан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Fisher">Кэрри Фишер</a></td>
-			<td>Генерал Лея Органа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Hamill">Марк Хэмилл</a></td>
-			<td>Магистр Люк Скайуокер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Gleeson">Донал Глисон</a></td>
-			<td>Генерал Армитаж Хакс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.E.Grant">Ричард Э. Грант</a></td>
-			<td><i><p style="margin-left:30px">Адепт-генерал Энрик Прайд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#Ke.Russell">Кери Расселл</a></td>
-			<td>Зори Блисс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.M.Tran">Келли Мари Трэн</a></td>
-			<td>Роуз Тико</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Grunberg">Грег Гранберг</a></td>
-			<td>Снап Уэксли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
-			<td>Хан Соло</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/y.htm#J.Suotamo">Йонас Суотамо</a></td>
-			<td><i><p style="margin-left:30px">Чубакка</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Lourd">Билли Лурд</a></td>
-			<td>Лейтенант Кайдел Ко Конникс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Monaghan">Доминик Монаган</a></td>
-			<td>Бомонт Кин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Comer">Джоди Комер</a></td>
-			<td><i><p style="margin-left:30px">Мать Рей</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.Ridley">Дэйзи Ридли</a></td>
+					<td>Рей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Isaac">Оскар Айзек</a></td>
+					<td>Коммандер По Дэмерон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Boyega">Джон Бойега</a></td>
+					<td>Финн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.McDiarmid">Иэн МакДайармид</a></td>
+					<td>Шив Палпатин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Driver">Адам Драйвер</a></td>
+					<td>Верховный лидер Кайло Рен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Daniels">Энтони Дэниелс</a></td>
+					<td>C-3PO</td>
+				</tr>
+				<tr>
+					<td>Наоми Аки</td>
+					<td>Джанна</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.D.Williams">Билли Ди Уильямс</a></td>
+					<td>Лэндо Калриссиан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Fisher">Кэрри Фишер</a></td>
+					<td>Генерал Лея Органа</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Hamill">Марк Хэмилл</a></td>
+					<td>Магистр Люк Скайуокер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Gleeson">Донал Глисон</a></td>
+					<td>Генерал Армитаж Хакс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.E.Grant">Ричард Э. Грант</a></td>
+					<td>Адепт-генерал Энрик Прайд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#Ke.Russell">Кери Расселл</a></td>
+					<td>Зори Блисс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.M.Tran">Келли Мари Трэн</a></td>
+					<td>Роуз Тико</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Grunberg">Грег Гранберг</a></td>
+					<td>Снап Уэксли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
+					<td>Хан Соло</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/y.htm#J.Suotamo">Йонас Суотамо</a></td>
+					<td>Чубакка</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Lourd">Билли Лурд</a></td>
+					<td>Лейтенант Кайдел Ко Конникс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Monaghan">Доминик Монаган</a></td>
+					<td>Бомонт Кин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Comer">Джоди Комер</a></td>
+					<td>Мать Рей</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 200 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 515 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 1 077 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Spider-Man - No Way Home.htm" class="nav-arrow">←</a>
+		<a href="../Years/2021.htm" class="nav-arrow">⌂</a>
 		<a href="The King's Man.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,93 +24,87 @@
 		<p align=justify><b>Сюжет:</b> Вернитесь в мир двух реальностей: в одной – обычная жизнь, в другой – то, что за её пределами. Чтобы понять, является ли его реальность физической или умственной конструкцией, и чтобы по-настоящему узнать самого себя, мистеру Андерсону, также известному как Нео, придётся снова отправиться за белым кроликом. А если он чему и научился, то тому, что выбор, хоть он и иллюзия, по-прежнему является единственным выходом из Матрицы... или входом в неё. Разумеется, Нео уже знает, что должен сделать. Но он не знает, что Матрица стала ещё сильнее, ещё стабильнее и ещё опаснее, чем раньше. Дежа вю.</p>
 		<p><b>Режиссёры:</b> <a href="../directors.htm#L.Wachowski">Лана Вачовски</a></p>
 		<p align=justify><b>Серия:</b> <a href="../franchise/The Matrix.htm">Матрица</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#K.Reeves">Киану Ривз</a></td>
-			<td>Нео / Томас Андерсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Henwick">Джессика Хенвик</a></td>
-			<td><i><p style="margin-left:30px">Капитан Багз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ya.htm#Y.Abdul-Mateen">Яхья Абдул-Матин II</a></td>
-			<td><i><p style="margin-left:30px">Морфеус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.P.Harris">Нил Патрик Харрис</a></td>
-			<td><i><p style="margin-left:30px">Аналитик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.A.Moss">Кэрри-Энн Мосс</a></td>
-			<td>Тринити / Тиффани</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.P.Smith">Джада Пинкетт Смит</a></td>
-			<td>Генерал Ниобе</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джонатан Грофф</td>
-			<td><i><p style="margin-left:30px">Смит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Тоби Онвумере</td>
-			<td><i><p style="margin-left:30px">Секвоя</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.C.Jonas">Приянка Чопра Джонас</a></td>
-			<td><i><p style="margin-left:30px">Сати</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.L.Caldwell">Эндрю Льюис Колдуэлл</a></td>
-			<td><i><p style="margin-left:30px">Джуд Галлахер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#La.Wilson">Ламберт Уилсон</a></td>
-			<td>Меровингин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Брайан Дж. Смит</td>
-			<td><i><p style="margin-left:30px">Берг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Макс Римельт</td>
-			<td><i><p style="margin-left:30px">Шеперд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эрендира Ибарра</td>
-			<td><i><p style="margin-left:30px">Лекси</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Ricci">Кристина Риччи</a></td>
-			<td><i><p style="margin-left:30px">Гвин де Вер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Тельма Хопкинс</td>
-			<td><i><p style="margin-left:30px">Фрея</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Stahelski">Чад Стахелски</a></td>
-			<td><i><p style="margin-left:30px">Чэд</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#K.Reeves">Киану Ривз</a></td>
+					<td>Нео / Томас Андерсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Henwick">Джессика Хенвик</a></td>
+					<td>Капитан Багз</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ya.htm#Y.Abdul-Mateen">Яхья Абдул-Матин II</a></td>
+					<td>Морфеус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.P.Harris">Нил Патрик Харрис</a></td>
+					<td>Аналитик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.A.Moss">Кэрри-Энн Мосс</a></td>
+					<td>Тринити / Тиффани</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.P.Smith">Джада Пинкетт Смит</a></td>
+					<td>Генерал Ниобе</td>
+				</tr>
+				<tr>
+					<td>Джонатан Грофф</td>
+					<td>Смит</td>
+				</tr>
+				<tr>
+					<td>Тоби Онвумере</td>
+					<td>Секвоя</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.C.Jonas">Приянка Чопра Джонас</a></td>
+					<td>Сати</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.L.Caldwell">Эндрю Льюис Колдуэлл</a></td>
+					<td>Джуд Галлахер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#La.Wilson">Ламберт Уилсон</a></td>
+					<td>Меровингин</td>
+				</tr>
+				<tr>
+					<td>Брайан Дж. Смит</td>
+					<td>Берг</td>
+				</tr>
+				<tr>
+					<td>Макс Римельт</td>
+					<td>Шеперд</td>
+				</tr>
+				<tr>
+					<td>Эрендира Ибарра</td>
+					<td>Лекси</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Ricci">Кристина Риччи</a></td>
+					<td>Гвин де Вер</td>
+				</tr>
+				<tr>
+					<td>Тельма Хопкинс</td>
+					<td>Фрея</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Stahelski">Чад Стахелски</a></td>
+					<td>Чэд</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 190 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 38 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 157 млн.</p>

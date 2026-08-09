@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../2021/The King's Man.htm" class="nav-arrow">←</a>
+		<a href="../Years/2022.htm" class="nav-arrow">⌂</a>
 		<a href="Uncharted.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -23,83 +23,79 @@
 		<p align=justify><b>Слоган:</b> Человечеству предстоит столкнуться с тёмной стороной Луны.</p>
 		<p align=justify><b>Сюжет:</b> Таинственные силы смещают Луну с орбиты, устремляя спутник Земли к нашей планете. Всего за несколько недель до столкновения, когда мир оказывается на грани уничтожения, бывший астронавт, а теперь одна из руководителей НАСА Джо Фаулер, обнаруживает, что у неё есть решение по спасению человечества, но верят ей лишь двое: отставной астронавт Брайан Харпер и сторонник теорий заговора Кей-Си Хаусман. Именно этим не самым очевидным героям предстоит отправиться в отчаянное космическое путешествие, чтобы узнать: наша Луна совсем не такая, как мы считаем.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#R.Emmerich">Роланд Эммерих</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/p.htm#Pa.Wilson">Патрик Уилсон</a></td>
-			<td><i><p style="margin-left:30px">Брайан Харпер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Berry">Хэлли Берри</a></td>
-			<td><i><p style="margin-left:30px">Джо Фаулер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джон Брэдли</td>
-			<td><i><p style="margin-left:30px">Кей-Си Хаусман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Чарли Пламмер</td>
-			<td><i><p style="margin-left:30px">Сонни Харпер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Pena">Майкл Пенья</a></td>
-			<td><i><p style="margin-left:30px">Том Лопес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Келли Ю</td>
-			<td><i><p style="margin-left:30px">Мишель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Bartczak">Каролина Бартчак</a></td>
-			<td><i><p style="margin-left:30px">Бренда Лопес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Ikwuakor">Эме Иквуакор</a></td>
-			<td><i><p style="margin-left:30px">Генерал Даг Дэвидсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Sutherland">Дональд Сазерленд</a></td>
-			<td><i><p style="margin-left:30px">Холденфилд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Зейн Малони</td>
-			<td><i><p style="margin-left:30px">Джимми Дэвидсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Bogaert">Стивен Богерт</a></td>
-			<td><i><p style="margin-left:30px">Директор Альберт Хатчингс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Максим Рой</td>
-			<td><i><p style="margin-left:30px">Капитан Габриелла Оклер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Азриэль Дэлман</td>
-			<td><i><p style="margin-left:30px">Юный Сонни</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ава Уайсс</td>
-			<td><i><p style="margin-left:30px">Никки Лопес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Хэйзел Наджент</td>
-			<td><i><p style="margin-left:30px">Лорен Лопес</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/p.htm#Pa.Wilson">Патрик Уилсон</a></td>
+					<td>Брайан Харпер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Berry">Хэлли Берри</a></td>
+					<td>Джо Фаулер</td>
+				</tr>
+				<tr>
+					<td>Джон Брэдли</td>
+					<td>Кей-Си Хаусман</td>
+				</tr>
+				<tr>
+					<td>Чарли Пламмер</td>
+					<td>Сонни Харпер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Pena">Майкл Пенья</a></td>
+					<td>Том Лопес</td>
+				</tr>
+				<tr>
+					<td>Келли Ю</td>
+					<td>Мишель</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Bartczak">Каролина Бартчак</a></td>
+					<td>Бренда Лопес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Ikwuakor">Эме Иквуакор</a></td>
+					<td>Генерал Даг Дэвидсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Sutherland">Дональд Сазерленд</a></td>
+					<td>Холденфилд</td>
+				</tr>
+				<tr>
+					<td>Зейн Малони</td>
+					<td>Джимми Дэвидсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Bogaert">Стивен Богерт</a></td>
+					<td>Директор Альберт Хатчингс</td>
+				</tr>
+				<tr>
+					<td>Максим Рой</td>
+					<td>Капитан Габриелла Оклер</td>
+				</tr>
+				<tr>
+					<td>Азриэль Дэлман</td>
+					<td>Юный Сонни</td>
+				</tr>
+				<tr>
+					<td>Ава Уайсс</td>
+					<td>Никки Лопес</td>
+				</tr>
+				<tr>
+					<td>Хэйзел Наджент</td>
+					<td>Лорен Лопес</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 150 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 19 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 67 млн.</p>

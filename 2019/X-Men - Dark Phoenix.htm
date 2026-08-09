@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Godzilla - King Of The Monsters.htm" class="nav-arrow">←</a>
+		<a href="../Years/2019.htm" class="nav-arrow">⌂</a>
 		<a href="Men In Black - International.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,83 +25,79 @@
 		<p><b>Режиссёр:</b> Саймон Кинберг</p>
 		<p align=justify><b>В основе:</b> Комиксы о Людях Икс (выходят с 1963, США, авторы – Стэн Ли и Джек Кирби)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/X-Men.htm">Люди Икс</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#J.McAvoy">Джеймс МакЭвой</a></td>
-			<td>Профессор Чарльз Ксавье / Профессор Икс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Turner">Софи Тёрнер</a></td>
-			<td>Джин Грей / Феникс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Fassbender">Майкл Фассбендер</a></td>
-			<td>Эрик Леншерр / Магнито</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Lawrence">Дженнифер Лоуренс</a></td>
-			<td>Рейвен Даркхолм / Мистик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Hoult">Николас Холт</a></td>
-			<td>Хэнк МакКой / Зверь</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Sheridan">Тай Шеридан</a></td>
-			<td>Скотт Саммерс / Циклоп</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Chastain">Джессика Честейн</a></td>
-			<td>Маргарет / Вук</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Shipp">Александра Шипп</a></td>
-			<td>Ороро Манро / Шторм</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Скотт Шеперд</td>
-			<td>Джон Грей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Саммер Фонтана</td>
-			<td>8-летняя Джин Грей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Peters">Эван Питерс</a></td>
-			<td>Питер Максимофф / Ртуть</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Smit-McPhee">Коди Смит-МакФи</a></td>
-			<td>Курт Вагнер / Ночной Змей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ато Эссандо</td>
-			<td>Джонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.d.James">Брайан д'Арси Джеймс</a></td>
-			<td>Президент США</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Sage">Холстон Сейдж</a></td>
-			<td>Элисон Блэр / Искра</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#J.McAvoy">Джеймс МакЭвой</a></td>
+					<td>Профессор Чарльз Ксавье / Профессор Икс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Turner">Софи Тёрнер</a></td>
+					<td>Джин Грей / Феникс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Fassbender">Майкл Фассбендер</a></td>
+					<td>Эрик Леншерр / Магнито</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Lawrence">Дженнифер Лоуренс</a></td>
+					<td>Рейвен Даркхолм / Мистик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Hoult">Николас Холт</a></td>
+					<td>Хэнк МакКой / Зверь</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Sheridan">Тай Шеридан</a></td>
+					<td>Скотт Саммерс / Циклоп</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Chastain">Джессика Честейн</a></td>
+					<td>Маргарет / Вук</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Shipp">Александра Шипп</a></td>
+					<td>Ороро Манро / Шторм</td>
+				</tr>
+				<tr>
+					<td>Скотт Шеперд</td>
+					<td>Джон Грей</td>
+				</tr>
+				<tr>
+					<td>Саммер Фонтана</td>
+					<td>8-летняя Джин Грей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Peters">Эван Питерс</a></td>
+					<td>Питер Максимофф / Ртуть</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Smit-McPhee">Коди Смит-МакФи</a></td>
+					<td>Курт Вагнер / Ночной Змей</td>
+				</tr>
+				<tr>
+					<td>Ато Эссандо</td>
+					<td>Джонс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.d.James">Брайан д'Арси Джеймс</a></td>
+					<td>Президент США</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Sage">Холстон Сейдж</a></td>
+					<td>Элисон Блэр / Искра</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 200 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 66 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 252 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Venom - Let There Be Carnage.htm" class="nav-arrow">←</a>
+		<a href="../Years/2021.htm" class="nav-arrow">⌂</a>
 		<a href="Dune.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,79 +24,76 @@
 		<p align=justify><b>Сюжет:</b> Бонд оставил оперативную службу и наслаждается спокойной жизнью на Ямайке. Но ненадолго: вскоре его давний друг из ЦРУ Феликс Лейтер обращается к нему за помощью. На этот раз миссия состоит в том, чтобы спасти похищенного учёного. Однако, всё оказалось гораздо сложнее, чем предполагалось изначально, и теперь Бонд идёт по следам загадочного злодея, овладевшего опасными новыми технологиями.</p>
 		<p><b>Режиссёр:</b> Кэри Дзёдзи Фукунага</p>
 		<p align=justify><b>В основе:</b> Серия романов и рассказов Яна Флеминга о Джеймсе Бонде (Великобритания, 1953-1966)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#JamesBond">Джеймс Бонд</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.Craig">Дэниэл Крэйг</a></td>
-			<td>Коммандер Джеймс Бонд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Seydoux">Леа Сейду</a></td>
-			<td>Доктор Мадлен Суанн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Fiennes">Рэйф Файнс</a></td>
-			<td>Гэрет Меллори / М</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Malek">Рами Малек</a></td>
-			<td>Люцифер Сафин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Lynch">Лашана Линч</a></td>
-			<td><i><p style="margin-left:30px">Номи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Whishaw">Бен Уишоу</a></td>
-			<td>Кью</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэвид Денсик</td>
-			<td>Доктор Валдо Обручев</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Waltz">Кристоф Вальц</a></td>
-			<td>Эрнст Ставро Блофельд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Wright">Джеффри Райт</a></td>
-			<td>Феликс Лейтер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Kinnear">Рори Киннир</a></td>
-			<td>Билл Тэннер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Harris">Наоми Харрис</a></td>
-			<td>Ив Манипенни</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Magnussen">Билли Магнуссен</a></td>
-			<td><i><p style="margin-left:30px">Логан Эш</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Armas">Ана де Армас</a></td>
-			<td><i><p style="margin-left:30px">Палома</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дали Бенссалах</td>
-			<td>Примо</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/James Bond.htm">Джеймс Бонд</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.Craig">Дэниэл Крэйг</a></td>
+					<td>Коммандер Джеймс Бонд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Seydoux">Леа Сейду</a></td>
+					<td>Доктор Мадлен Суанн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Fiennes">Рэйф Файнс</a></td>
+					<td>Гэрет Меллори / М</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Malek">Рами Малек</a></td>
+					<td>Люцифер Сафин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Lynch">Лашана Линч</a></td>
+					<td>Номи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Whishaw">Бен Уишоу</a></td>
+					<td>Кью</td>
+				</tr>
+				<tr>
+					<td>Дэвид Денсик</td>
+					<td>Доктор Валдо Обручев</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Waltz">Кристоф Вальц</a></td>
+					<td>Эрнст Ставро Блофельд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Wright">Джеффри Райт</a></td>
+					<td>Феликс Лейтер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Kinnear">Рори Киннир</a></td>
+					<td>Билл Тэннер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Harris">Наоми Харрис</a></td>
+					<td>Ив Манипенни</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Magnussen">Билли Магнуссен</a></td>
+					<td>Логан Эш</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Armas">Ана де Армас</a></td>
+					<td>Палома</td>
+				</tr>
+				<tr>
+					<td>Дали Бенссалах</td>
+					<td>Примо</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 250 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 161 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 774 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Captain America - The First Avenger.htm" class="nav-arrow">←</a>
+		<a href="../Years/2011.htm" class="nav-arrow">⌂</a>
 		<a href="Rise Of The Planet Of The Apes.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -32,78 +32,75 @@
 произошло, становится единственной надеждой города на спасение.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Favreau">Джон Фавро</a></p>
 		<p align=justify><b>В основе:</b> Комикс "Ковбои и пришельцы" (США, 2006, автор – Скотт Митчелл Розенберг)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.Craig">Дэниэл Крэйг</a></td>
-			<td>Джейк Лонерган</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
-			<td>Полковник Вудроу Долархайд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Wild">Оливия Уайлд</a></td>
-			<td>Элла Свенсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Rockwell">Сэм Рокуэлл</a></td>
-			<td>Док</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Beach">Адам Бич</a></td>
-			<td>Нэт Колорадо</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Dano">Пол Дано</a></td>
-			<td>Перси Долархайд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Ringer">Ноа Рингер</a></td>
-			<td>Эмметт Tаггарт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кит Кэрредин</td>
-			<td>Шериф Джон Таггарт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Brown">Клэнси Браун</a></td>
-			<td>Мичем</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Goggins">Уолтон Гоггинс</a></td>
-			<td>Хант</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Trujillo">Рауль Трухильо</a></td>
-			<td>Чёрный Нож</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.O'Hara">Дэвид О'Хара</a></td>
-			<td>Пэт Долан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Spencer">Эбигейл Спенсер</a></td>
-			<td>Элис Уиллс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Reguera">Ана де ла Регера</a></td>
-			<td>Мария</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.Craig">Дэниэл Крэйг</a></td>
+					<td>Джейк Лонерган</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
+					<td>Полковник Вудроу Долархайд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Wild">Оливия Уайлд</a></td>
+					<td>Элла Свенсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Rockwell">Сэм Рокуэлл</a></td>
+					<td>Док</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Beach">Адам Бич</a></td>
+					<td>Нэт Колорадо</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Dano">Пол Дано</a></td>
+					<td>Перси Долархайд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Ringer">Ноа Рингер</a></td>
+					<td>Эмметт Tаггарт</td>
+				</tr>
+				<tr>
+					<td>Кит Кэрредин</td>
+					<td>Шериф Джон Таггарт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Brown">Клэнси Браун</a></td>
+					<td>Мичем</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Goggins">Уолтон Гоггинс</a></td>
+					<td>Хант</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Trujillo">Рауль Трухильо</a></td>
+					<td>Чёрный Нож</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.O'Hara">Дэвид О'Хара</a></td>
+					<td>Пэт Долан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Spencer">Эбигейл Спенсер</a></td>
+					<td>Элис Уиллс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Reguera">Ана де ла Регера</a></td>
+					<td>Мария</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 163 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 100 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 175 млн.</p>

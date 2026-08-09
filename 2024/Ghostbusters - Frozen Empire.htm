@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Damsel.htm" class="nav-arrow">←</a>
+		<a href="../Years/2024.htm" class="nav-arrow">⌂</a>
 		<a href="Godzilla x Kong - The New Empire.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,83 +24,79 @@
 		<p align=justify><b>Сюжет:</b> Семейство Спенглеров возвращается туда, где всё началось – в знаменитое нью-йоркское пожарное депо. Они объединяются с первым отрядом охотников, создавших сверхсекретную исследовательскую лабораторию, которая выводит борьбу с привидениями на новый уровень. Но когда обнаружение древнего артефакта выпускает на волю злую силу, накрывающую город смертельным холодом, новым и старым охотникам за привидениями приходится объединить силы, чтобы защитить свой дом и спасти мир от второго ледникового периода.</p>
 		<p><b>Режиссёр:</b> Гил Кинан</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Ghostbusters.htm">Охотники За Привидениями</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#Mc.Grace">Маккенна Грейс</a></td>
-			<td><i><p style="margin-left:30px">Фиби Спенглер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Rudd">Пол Радд</a></td>
-			<td><i><p style="margin-left:30px">Гэри Груберсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Aykroyd">Дэн Эйкройд</a></td>
-			<td>Доктор Рэй Стэнц</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Nanjiani">Кумэйл Нанджиани</a></td>
-			<td><i><p style="margin-left:30px">Надим Размади</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Coon">Кэрри Кун</a></td>
-			<td><i><p style="margin-left:30px">Кэлли Спенглер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#F.Wolfhard">Финн Вулфхард</a></td>
-			<td><i><p style="margin-left:30px">Тревор Спенглер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эмили Элин Линд</td>
-			<td><i><p style="margin-left:30px">Мелоди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Hudson">Эрни Хадсон</a></td>
-			<td>Уинстон Зеддмор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Kim">Логан Ким</a></td>
-			<td><i><p style="margin-left:30px">Подкаст</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Murray">Билл Мюррей</a></td>
-			<td>Доктор Питер Венкман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Atherton">Уильям Этертон</a></td>
-			<td>Мэр Уолтер Пек</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Oswalt">Пэттон Освальт</a></td>
-			<td>Доктор Хьюберт Варцки</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джеймс Акастер</td>
-			<td><i><p style="margin-left:30px">Доктор Ларс Пинфилд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#C.O'Connor">Селеста О'Коннор</a></td>
-			<td><i><p style="margin-left:30px">Лаки Доминго</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Potts">Энни Поттс</a></td>
-			<td>Джанин Мельниц</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/m.htm#Mc.Grace">Маккенна Грейс</a></td>
+					<td>Фиби Спенглер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Rudd">Пол Радд</a></td>
+					<td>Гэри Груберсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Aykroyd">Дэн Эйкройд</a></td>
+					<td>Доктор Рэй Стэнц</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Nanjiani">Кумэйл Нанджиани</a></td>
+					<td>Надим Размади</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Coon">Кэрри Кун</a></td>
+					<td>Кэлли Спенглер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#F.Wolfhard">Финн Вулфхард</a></td>
+					<td>Тревор Спенглер</td>
+				</tr>
+				<tr>
+					<td>Эмили Элин Линд</td>
+					<td>Мелоди</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Hudson">Эрни Хадсон</a></td>
+					<td>Уинстон Зеддмор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Kim">Логан Ким</a></td>
+					<td>Подкаст</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Murray">Билл Мюррей</a></td>
+					<td>Доктор Питер Венкман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Atherton">Уильям Этертон</a></td>
+					<td>Мэр Уолтер Пек</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Oswalt">Пэттон Освальт</a></td>
+					<td>Доктор Хьюберт Варцки</td>
+				</tr>
+				<tr>
+					<td>Джеймс Акастер</td>
+					<td>Доктор Ларс Пинфилд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#C.O'Connor">Селеста О'Коннор</a></td>
+					<td>Лаки Доминго</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Potts">Энни Поттс</a></td>
+					<td>Джанин Мельниц</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 100 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 113 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 202 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Renfield.htm" class="nav-arrow">←</a>
+		<a href="../Years/2023.htm" class="nav-arrow">⌂</a>
 		<a href="Fast X.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,94 +24,88 @@
 		<p align=justify><b>Сюжет:</b> Питер Квилл, до сих пор не смирившийся с потерей Гаморы, вынужден сплотить вокруг себя свою команду и отправиться на очередную рискованную миссию, чтобы защитить Вселенную и спасти Ракету. Если они не справятся, это будет означать конец Стражей, какими мы их знаем.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Gunn">Джеймс Ганн</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Стражах Галактики (США, выходят с 2008, авторы – Дэн Абнетт и Арнольд Дрэйк)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#MCU">Кинематографическая Вселенная Марвел</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#C.Pratt">Крис Прэтт</a></td>
-			<td><i><p style="margin-left:30px">Питер Квилл / Звёздный Лорд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Gillan">Карен Гиллан</a></td>
-			<td><i><p style="margin-left:30px">Небула</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Чукуди Ивуджи</td>
-			<td><i><p style="margin-left:30px">Высший Эволюционер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/z.htm#Z.Saldana">Зои Салдана</a></td>
-			<td><i><p style="margin-left:30px">Гамора</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Klementieff">Пом Клементьефф</a></td>
-			<td><i><p style="margin-left:30px">Мантис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Bautista">Дэйв Батиста</a></td>
-			<td><i><p style="margin-left:30px">Дракс Разрушитель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Poulter">Уилл Поултер</a></td>
-			<td><i><p style="margin-left:30px">Адам Уорлок</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Gunn">Шон Ганн</a></td>
-			<td><i><p style="margin-left:30px">Краглин Обфонтери</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Fillion">Натан Филлион</a></td>
-			<td><i><p style="margin-left:30px">Мастер Карджа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Stallone">Сильвестр Сталлоне</a></td>
-			<td><i><p style="margin-left:30px">Стакар Огорд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Нико Сантос</td>
-			<td><i><p style="margin-left:30px">Секретарь Тил</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Shor">Мириам Шор</a></td>
-			<td><i><p style="margin-left:30px">Секретарь Вим</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Debicki">Элизабет Дебики</a></td>
-			<td><i><p style="margin-left:30px">Верховная жрица Аиша</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Melchior">Даниэла Мелшиор</a></td>
-			<td>Ура</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Rosenbaum">Майкл Розенбаум</a></td>
-			<td>Мартинекс Т'Нага</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Fairbank">Кристофер Фэйрбэнк</a></td>
-			<td>Брокер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Davidson">Пит Дэвидсон</a></td>
-			<td>Флектик</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/MCU.htm">Кинематографическая Вселенная Марвел</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#C.Pratt">Крис Прэтт</a></td>
+					<td>Питер Квилл / Звёздный Лорд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Gillan">Карен Гиллан</a></td>
+					<td>Небула</td>
+				</tr>
+				<tr>
+					<td>Чукуди Ивуджи</td>
+					<td>Высший Эволюционер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/z.htm#Z.Saldana">Зои Салдана</a></td>
+					<td>Гамора</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Klementieff">Пом Клементьефф</a></td>
+					<td>Мантис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Bautista">Дэйв Батиста</a></td>
+					<td>Дракс Разрушитель</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Poulter">Уилл Поултер</a></td>
+					<td>Адам Уорлок</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Gunn">Шон Ганн</a></td>
+					<td>Краглин Обфонтери</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Fillion">Натан Филлион</a></td>
+					<td>Мастер Карджа</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Stallone">Сильвестр Сталлоне</a></td>
+					<td>Стакар Огорд</td>
+				</tr>
+				<tr>
+					<td>Нико Сантос</td>
+					<td>Секретарь Тил</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Shor">Мириам Шор</a></td>
+					<td>Секретарь Вим</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Debicki">Элизабет Дебики</a></td>
+					<td>Верховная жрица Аиша</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Melchior">Даниэла Мелшиор</a></td>
+					<td>Ура</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Rosenbaum">Майкл Розенбаум</a></td>
+					<td>Мартинекс Т'Нага</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Fairbank">Кристофер Фэйрбэнк</a></td>
+					<td>Брокер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Davidson">Пит Дэвидсон</a></td>
+					<td>Флектик</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 250 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 359 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 846 млн.</p>

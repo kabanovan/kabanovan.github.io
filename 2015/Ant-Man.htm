@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Terminator - Genisys.htm" class="nav-arrow">←</a>
+		<a href="../Years/2015.htm" class="nav-arrow">⌂</a>
 		<a href="Mission Impossible - Rogue Nation.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -31,90 +31,85 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#P.Reed">Пейтон Рид</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Человеке-Муравье (США, выходят с 1962, авторы
 – Стэн Ли, Ларри Либер и Джек Кирби)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#MCU">Кинематографическая Вселенная Марвел</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/p.htm#P.Rudd">Пол Радд</a></td>
-			<td>Скотт Лэнг / Человек-Муравей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Douglas">Майкл Дуглас</a></td>
-			<td>Доктор Хэнк Пим</td>
-		</tr>
-		<tr>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/MCU.htm">Кинематографическая Вселенная Марвел</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/p.htm#P.Rudd">Пол Радд</a></td>
+					<td>Скотт Лэнг / Человек-Муравей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Douglas">Майкл Дуглас</a></td>
+					<td>Доктор Хэнк Пим</td>
+				</tr>
+				<tr>
 
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Lilly">Эванджелин Лилли</a></td>
-			<td>Хоуп Ван Дайн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Stoll">Кори Столл</a></td>
-			<td>Доктор Даррен Кросс / Жёлтый Шершень</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Pena">Майкл Пенья</a></td>
-			<td>Луис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Cannavale">Бобби Каннавале</a></td>
-			<td>Джим Пакстон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.I.">Тип "Ти Ай" Харрис</a></td>
-			<td>Дейв</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Mackie">Энтони Маки</a></td>
-			<td>Сэм Уилсон / Сокол</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.R.Fortson">Эбби Райдер Фортсон</a></td>
-			<td>Кэсси Лэнг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Dastmalchian">Давид Дастмалчян</a></td>
-			<td>Курт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#W.Harris">Вуд Харрис</a></td>
-			<td>Гейл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Greer">Джуди Грир</a></td>
-			<td>Мэгги Лэнг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Turkington">Грегг Тёркингтон</a></td>
-			<td>Дейл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Donovan">Мартин Донован</a></td>
-			<td>Митчелл Карсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Atwell">Хейли Этвелл</a></td>
-			<td>Агент Маргарет "Пегги" Картер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Slattery">Джон Слэттери</a></td>
-			<td>Говард Старк</td>
-		</tr>
-		</table>
+					<td><a href="../Actors/e.htm#E.Lilly">Эванджелин Лилли</a></td>
+					<td>Хоуп Ван Дайн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Stoll">Кори Столл</a></td>
+					<td>Доктор Даррен Кросс / Жёлтый Шершень</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Pena">Майкл Пенья</a></td>
+					<td>Луис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Cannavale">Бобби Каннавале</a></td>
+					<td>Джим Пакстон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.I.">Тип "Ти Ай" Харрис</a></td>
+					<td>Дейв</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Mackie">Энтони Маки</a></td>
+					<td>Сэм Уилсон / Сокол</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.R.Fortson">Эбби Райдер Фортсон</a></td>
+					<td>Кэсси Лэнг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Dastmalchian">Давид Дастмалчян</a></td>
+					<td>Курт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#W.Harris">Вуд Харрис</a></td>
+					<td>Гейл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Greer">Джуди Грир</a></td>
+					<td>Мэгги Лэнг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Turkington">Грегг Тёркингтон</a></td>
+					<td>Дейл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Donovan">Мартин Донован</a></td>
+					<td>Митчелл Карсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Atwell">Хейли Этвелл</a></td>
+					<td>Агент Маргарет "Пегги" Картер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Slattery">Джон Слэттери</a></td>
+					<td>Говард Старк</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 130 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 180 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 519 млн.</p>

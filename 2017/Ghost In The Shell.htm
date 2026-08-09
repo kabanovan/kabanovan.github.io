@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Life.htm" class="nav-arrow">←</a>
+		<a href="../Years/2017.htm" class="nav-arrow">⌂</a>
 		<a href="The Fate Of The Furious.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -32,78 +32,75 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#R.Sanders">Руперт Сандерс</a></p>
 		<p align=justify><b>В основе:</b> Комикс Сиро Масамунэ "Призрак в доспехах" (Япония, 
 1989-1990)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/s.htm#S.Johansson">Скарлетт Йоханссон</a></td>
-			<td><i><p style="margin-left:30px">Майор Мира Киллиан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Asbaek">Пилу Асбек</a></td>
-			<td><i><p style="margin-left:30px">Сержант Бато</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/zh.htm#J.Binoche">Жюльет Бинош</a></td>
-			<td><i><p style="margin-left:30px">Доктор Уэлет</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>"Бит" Такеши Китано</td>
-			<td><i><p style="margin-left:30px">Полковник Дайсуке Арамаки</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Майкл Кармен Питт</td>
-			<td><i><p style="margin-left:30px">Кудзе</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Han">Чин Хань</td>
-			<td><i><p style="margin-left:30px">Тогуса</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Ferdinando">Питер Фердинандо</td>
-			<td><i><p style="margin-left:30px">Каттер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэниэл Хеншэлл</td>
-			<td><i><p style="margin-left:30px">Ли Каннингем</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Каори Момои</td>
-			<td><i><p style="margin-left:30px">Хаири Кусанаги</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Анамария Маринка</td>
-			<td><i><p style="margin-left:30px">Доктор Далин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Wincott">Майкл Уинкотт</td>
-			<td><i><p style="margin-left:30px">Доктор Осмонд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Fukushima">Рила Фукусима</td>
-			<td><i><p style="margin-left:30px">Гейша-бот</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ютака Изумихара</td>
-			<td><i><p style="margin-left:30px">Сайто</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ласарус Ратуэре</td>
-			<td><i><p style="margin-left:30px">Карлос Иcикава</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/s.htm#S.Johansson">Скарлетт Йоханссон</a></td>
+					<td>Майор Мира Киллиан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Asbaek">Пилу Асбек</a></td>
+					<td>Сержант Бато</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/zh.htm#J.Binoche">Жюльет Бинош</a></td>
+					<td>Доктор Уэлет</td>
+				</tr>
+				<tr>
+					<td>"Бит" Такеши Китано</td>
+					<td>Полковник Дайсуке Арамаки</td>
+				</tr>
+				<tr>
+					<td>Майкл Кармен Питт</td>
+					<td>Кудзе</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Han">Чин Хань</td>
+					<td>Тогуса</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Ferdinando">Питер Фердинандо</td>
+					<td>Каттер</td>
+				</tr>
+				<tr>
+					<td>Дэниэл Хеншэлл</td>
+					<td>Ли Каннингем</td>
+				</tr>
+				<tr>
+					<td>Каори Момои</td>
+					<td>Хаири Кусанаги</td>
+				</tr>
+				<tr>
+					<td>Анамария Маринка</td>
+					<td>Доктор Далин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Wincott">Майкл Уинкотт</td>
+					<td>Доктор Осмонд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Fukushima">Рила Фукусима</td>
+					<td>Гейша-бот</td>
+				</tr>
+				<tr>
+					<td>Ютака Изумихара</td>
+					<td>Сайто</td>
+				</tr>
+				<tr>
+					<td>Ласарус Ратуэре</td>
+					<td>Карлос Иcикава</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 110 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 41 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 170 млн.</p>

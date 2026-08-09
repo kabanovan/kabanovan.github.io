@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Everest.htm" class="nav-arrow">←</a>
+		<a href="../Years/2015.htm" class="nav-arrow">⌂</a>
 		<a href="The Martian.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,53 +30,55 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#R.Zemekis">Роберт Земекис</a></p>
 		<p align=justify><b>В основе:</b> Документальная книга Филиппа Пети "Дотянуться до
 облаков" (США, 2002)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#J.Gordon-Levitt">Джозеф Гордон-Левитт</a></td>
-			<td>Филипп Пети</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Шарлотта Ле Бон</td>
-			<td>Анни Алликс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Kingsley">Бен Кингсли</a></td>
-			<td>Руди "Папа Руди" Оманковский</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.B.Dale">Джеймс Бэдж Дэйл</a></td>
-			<td>Жан-Пьерр / Джей Пи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Клеман Сибони</td>
-			<td>Жан-Луи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Сезар Домбой</td>
-			<td>Жан-Франсуа / Джефф</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Бенедикт Сэмюэл</td>
-			<td>Дэвид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Schwartz">Бен Шварц</a></td>
-			<td>Альберт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Valentine">Стив Валентайн</a></td>
-			<td>Барри Гринхаус</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#J.Gordon-Levitt">Джозеф Гордон-Левитт</a></td>
+					<td>Филипп Пети</td>
+				</tr>
+				<tr>
+					<td>Шарлотта Ле Бон</td>
+					<td>Анни Алликс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Kingsley">Бен Кингсли</a></td>
+					<td>Руди "Папа Руди" Оманковский</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.B.Dale">Джеймс Бэдж Дэйл</a></td>
+					<td>Жан-Пьерр / Джей Пи</td>
+				</tr>
+				<tr>
+					<td>Клеман Сибони</td>
+					<td>Жан-Луи</td>
+				</tr>
+				<tr>
+					<td>Сезар Домбой</td>
+					<td>Жан-Франсуа / Джефф</td>
+				</tr>
+				<tr>
+					<td>Бенедикт Сэмюэл</td>
+					<td>Дэвид</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Schwartz">Бен Шварц</a></td>
+					<td>Альберт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Valentine">Стив Валентайн</a></td>
+					<td>Барри Гринхаус</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 35 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 10 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 61 млн.</p>

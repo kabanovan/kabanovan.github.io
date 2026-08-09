@@ -9,10 +9,10 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../2024/Kraven The Hunter.htm" class="nav-arrow">←</a>
+		<a href="../Years/2025.htm" class="nav-arrow">⌂</a>
 		<a href="The Gorge.htm" class="nav-arrow">→</a>
 		
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -26,69 +26,68 @@
 		<p align=justify><b>Сюжет:</b> Официально став новым Капитаном Америка, Сэм Уилсон встречается с недавно избранным президентом США Таддеусом Россом – и вскоре оказывается втянут в международный скандал. Теперь Сэм должен успеть раскрыть глобальный заговор, пока его закулисный организатор не столкнул весь мир в пучину хаоса.</p>
 		<p><b>Режиссёр:</b> Джулиус Она</p>
 		<p align=justify><b>В основе:</b> Комиксы о Соколе (США, выходят с 1969, авторы – Стэн Ли и Джин Колан)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#MCU">Кинематографическая Вселенная Марвел</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/e.htm#A.Mackie">Энтони Маки</a></td>
-			<td>Сэм Уилсон / Капитан Америка</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
-			<td>Президент Таддеус "Громовержец" Росс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Dann.Ramirez">Дэнни Рамирес</a></td>
-			<td><i><p style="margin-left:30px">Старший лейтенант Хоакин Торрес / Сокол</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Шира Хаас</td>
-			<td>Рут Бет-Сераф</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Lumbly">Карл Ламбли</a></td>
-			<td><i><p style="margin-left:30px">Исайя Брэдли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.B.Nelson">Тим Блейк Нельсон</a></td>
-			<td>Доктор Сэмюэль Стернс / Лидер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Esposito">Джанкарло Эспозито</a></td>
-			<td><i><p style="margin-left:30px">Сет Фёлькер / Гремучник</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Зоша Рокемор</td>
-			<td>Агент Лейла Тейлор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Stan">Себастьян Стэн</a></td>
-			<td>Джеймс "Баки" Барнс / Зимний Солдат</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#Li.Tyler">Лив Тайлер</a></td>
-			<td>Доктор Бетти Росс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/y.htm#J.H.Johannesson">Йоуханнес Хёйкьюр Йоуханнессон</a></td>
-			<td><i><p style="margin-left:30px">Щитомордник</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Уильям Марк Маккалло</td>
-			<td>Коммандер Деннис Данфи</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/MCU.htm">Кинематографическая Вселенная Марвел</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/e.htm#A.Mackie">Энтони Маки</a></td>
+					<td>Сэм Уилсон / Капитан Америка</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
+					<td>Президент Таддеус "Громовержец" Росс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Dann.Ramirez">Дэнни Рамирес</a></td>
+					<td>Старший лейтенант Хоакин Торрес / Сокол</td>
+				</tr>
+				<tr>
+					<td>Шира Хаас</td>
+					<td>Рут Бет-Сераф</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Lumbly">Карл Ламбли</a></td>
+					<td>Исайя Брэдли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.B.Nelson">Тим Блейк Нельсон</a></td>
+					<td>Доктор Сэмюэль Стернс / Лидер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Esposito">Джанкарло Эспозито</a></td>
+					<td>Сет Фёлькер / Гремучник</td>
+				</tr>
+				<tr>
+					<td>Зоша Рокемор</td>
+					<td>Агент Лейла Тейлор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Stan">Себастьян Стэн</a></td>
+					<td>Джеймс "Баки" Барнс / Зимний Солдат</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#Li.Tyler">Лив Тайлер</a></td>
+					<td>Доктор Бетти Росс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/y.htm#J.H.Johannesson">Йоуханнес Хёйкьюр Йоуханнессон</a></td>
+					<td>Щитомордник</td>
+				</tr>
+				<tr>
+					<td>Уильям Марк Маккалло</td>
+					<td>Коммандер Деннис Данфи</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 180 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 201 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 415 млн.</p>

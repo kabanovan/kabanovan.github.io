@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Dumbo.htm" class="nav-arrow">←</a>
+		<a href="../Years/2019.htm" class="nav-arrow">⌂</a>
 		<a href="Hellboy.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,103 +25,95 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#D.Sandberg">Дэвид Ф. Сандберг</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Капитане Марвеле (США, выходят с 1939, авторы – Билл Паркер и Ч.К. Бек)</p></p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#DCEU">Расширенная вселенная DC</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/z.htm#Z.Levi">Закари Ливай</a></td>
-			<td><i><p style="margin-left:30px">Шазам</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.D.Grazer">Джек Дилан Грейзер</a></td>
-			<td><i><p style="margin-left:30px">Фредди Фриман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Strong">Марк Стронг</a></td>
-			<td><i><p style="margin-left:30px">Доктор Таддеус Сивана</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Angel">Эшер Энджел</a></td>
-			<td><i><p style="margin-left:30px">Билли Бэтсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Fulton">Грэйс Фултон</a></td>
-			<td><i><p style="margin-left:30px">Мэри Бромфилд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
-			<td><i><p style="margin-left:30px">Волшебник</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#F.Herman">Фэйти Херман</a></td>
-			<td><i><p style="margin-left:30px">Дарла Дадли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Milans">Марта Миланс</a></td>
-			<td><i><p style="margin-left:30px">Роза Васкес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Andrews">Купер Эндрюс</a></td>
-			<td><i><p style="margin-left:30px">Виктор Васкес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/y.htm#I.Chen">Йен Чен</a></td>
-			<td><i><p style="margin-left:30px">Юджин Чой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Адам Броди</td>
-			<td><i><p style="margin-left:30px">Фредди-супергерой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кэролайн Палмер</td>
-			<td><i><p style="margin-left:30px">Мэрилин Бэтсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Итан Пуджиотто</td>
-			<td><i><p style="margin-left:30px">Таддеус Сивана в 1974</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Jo.Glover">Джон Гловер</a></td>
-			<td><i><p style="margin-left:30px">Мистер Сивана</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/y.htm#J.Armand">Йован Арман</a></td>
-			<td><i><p style="margin-left:30px">Педро Пенья</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Good">Миган Гуд</a></td>
-			<td><i><p style="margin-left:30px">Дарла-супергерой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мишель Борт</td>
-			<td><i><p style="margin-left:30px">Мэри-супергерой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Butler">Росс Батлер</a></td>
-			<td><i><p style="margin-left:30px">Юджин-супергерой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.J.Cotrona">Ди Джей Котрона</a></td>
-			<td><i><p style="margin-left:30px">Педро-супергерой</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/z.htm#Z.Levi">Закари Ливай</a></td>
+					<td>Шазам</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.D.Grazer">Джек Дилан Грейзер</a></td>
+					<td>Фредди Фриман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Strong">Марк Стронг</a></td>
+					<td>Доктор Таддеус Сивана</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Angel">Эшер Энджел</a></td>
+					<td>Билли Бэтсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Fulton">Грэйс Фултон</a></td>
+					<td>Мэри Бромфилд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
+					<td>Волшебник</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#F.Herman">Фэйти Херман</a></td>
+					<td>Дарла Дадли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Milans">Марта Миланс</a></td>
+					<td>Роза Васкес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Andrews">Купер Эндрюс</a></td>
+					<td>Виктор Васкес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/y.htm#I.Chen">Йен Чен</a></td>
+					<td>Юджин Чой</td>
+				</tr>
+				<tr>
+					<td>Адам Броди</td>
+					<td>Фредди-супергерой</td>
+				</tr>
+				<tr>
+					<td>Кэролайн Палмер</td>
+					<td>Мэрилин Бэтсон</td>
+				</tr>
+				<tr>
+					<td>Итан Пуджиотто</td>
+					<td>Таддеус Сивана в 1974</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Jo.Glover">Джон Гловер</a></td>
+					<td>Мистер Сивана</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/y.htm#J.Armand">Йован Арман</a></td>
+					<td>Педро Пенья</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Good">Миган Гуд</a></td>
+					<td>Дарла-супергерой</td>
+				</tr>
+				<tr>
+					<td>Мишель Борт</td>
+					<td>Мэри-супергерой</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Butler">Росс Батлер</a></td>
+					<td>Юджин-супергерой</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.J.Cotrona">Ди Джей Котрона</a></td>
+					<td>Педро-супергерой</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 100 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 140 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 368 млн.</p>

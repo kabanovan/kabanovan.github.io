@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Lone Ranger.htm" class="nav-arrow">←</a>
+		<a href="../Years/2013.htm" class="nav-arrow">⌂</a>
 		<a href="R.I.P.D..htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -34,68 +34,67 @@
 похожи на героев, но перед лицом Апокалипсиса вся надежда на них.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#G.D.Toro">Гильермо Дель Торо</a></p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#PacificRim">Тихоокеанский Рубеж</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/ch.htm#C.Hunnam">Чарли Ханнэм</a></td>
-			<td>Райли Бекет</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.Elba">Идрис Эльба</a></td>
-			<td>Маршал Стекер Пентикост</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Day">Чарли Дэй</a></td>
-			<td>Доктор Ньютон Гайсзлер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Kikuchi">Ринко Кикучи</td>
-			<td>Мако Мори</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Martini">Макс Мартини</a></td>
-			<td>Геркулес "Герк" Хансен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Collins">Клифтон Коллинз мл.</a></td>
-			<td>Тендо Чои</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Perlman">Рон Пёрлман</a></td>
-			<td>Ганнибал Чау</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Kazinsky">Роб Казински</a></td>
-			<td>Чак Хансен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Gorman">Бёрн Горман</a></td>
-			<td>Доктор Германн Готтлиб</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Klattenhoff">Диего Клаттенхофф</a></td>
-			<td>Йэнси Бекет</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.J.Campbell">Ларри Джо Кэмпбелл</a></td>
-			<td>Рабочий на стройке</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.W.Henke">Брэд Уильям Хенке</a></td>
-			<td>Бригадир на стройке</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Hunnam">Чарли Ханнэм</a></td>
+					<td>Райли Бекет</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.Elba">Идрис Эльба</a></td>
+					<td>Маршал Стекер Пентикост</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Day">Чарли Дэй</a></td>
+					<td>Доктор Ньютон Гайсзлер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Kikuchi">Ринко Кикучи</td>
+					<td>Мако Мори</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Martini">Макс Мартини</a></td>
+					<td>Геркулес "Герк" Хансен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Collins">Клифтон Коллинз мл.</a></td>
+					<td>Тендо Чои</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Perlman">Рон Пёрлман</a></td>
+					<td>Ганнибал Чау</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Kazinsky">Роб Казински</a></td>
+					<td>Чак Хансен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Gorman">Бёрн Горман</a></td>
+					<td>Доктор Германн Готтлиб</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Klattenhoff">Диего Клаттенхофф</a></td>
+					<td>Йэнси Бекет</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.J.Campbell">Ларри Джо Кэмпбелл</a></td>
+					<td>Рабочий на стройке</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.W.Henke">Брэд Уильям Хенке</a></td>
+					<td>Бригадир на стройке</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 190 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 102 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 411 млн.</p>

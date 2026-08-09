@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Only The Brave.htm" class="nav-arrow">←</a>
+		<a href="../Years/2017.htm" class="nav-arrow">⌂</a>
 		<a href="Justice League.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,84 +30,80 @@
 одного из Мстителей – Невероятного Халка.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#T.Waititi">Тайка Вайтити</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Торе (США, выходят с 1962, авторы – Стэн Ли, Ларри Либер и Джек Кирби)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#MCU">Кинематографическая Вселенная Марвел</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#C.Hemsworth">Крис Хемсворт</a></td>
-			<td>Тор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Ruffalo">Марк Руффало</a></td>
-			<td>Доктор Брюс Беннер / Халк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Hiddleston">Том Хиддлстон</a></td>
-			<td>Локи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Thompson">Тесса Томпсон</a></td>
-			<td>Брунгильда / Валькирия</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Goldblum">Джефф Голдблюм</a></td>
-			<td>Эн Дви Гаст / Грандмастер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Blanchett">Кейт Бланшетт</a></td>
-			<td>Хела</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Hopkins">Энтони Хопкинс</a></td>
-			<td>Один</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Waititi">Тайка Вайтити</a></td>
-			<td>Корг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.Elba">Идрис Эльба</a></td>
-			<td>Хеймдалл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Urban">Карл Урбан</a></td>
-			<td>Скурдж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Cumberbatch">Бенедикт Камбербэтч</a></td>
-			<td>Доктор Стивен Стрэндж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Asano">Таданобу Асано</a></td>
-			<td>Хогун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Damon">Мэтт Дэймон</a></td>
-			<td>Актёр в роли Локи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Neill">Сэм Нилл</a></td>
-			<td>Актёр в роли Одина</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Stevenson">Рэй Стивенсон</a></td>
-			<td>Вольштагг</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/MCU.htm">Кинематографическая Вселенная Марвел</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#C.Hemsworth">Крис Хемсворт</a></td>
+					<td>Тор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Ruffalo">Марк Руффало</a></td>
+					<td>Доктор Брюс Беннер / Халк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Hiddleston">Том Хиддлстон</a></td>
+					<td>Локи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Thompson">Тесса Томпсон</a></td>
+					<td>Брунгильда / Валькирия</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Goldblum">Джефф Голдблюм</a></td>
+					<td>Эн Дви Гаст / Грандмастер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Blanchett">Кейт Бланшетт</a></td>
+					<td>Хела</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Hopkins">Энтони Хопкинс</a></td>
+					<td>Один</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Waititi">Тайка Вайтити</a></td>
+					<td>Корг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.Elba">Идрис Эльба</a></td>
+					<td>Хеймдалл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Urban">Карл Урбан</a></td>
+					<td>Скурдж</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Cumberbatch">Бенедикт Камбербэтч</a></td>
+					<td>Доктор Стивен Стрэндж</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Asano">Таданобу Асано</a></td>
+					<td>Хогун</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Damon">Мэтт Дэймон</a></td>
+					<td>Актёр в роли Локи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Neill">Сэм Нилл</a></td>
+					<td>Актёр в роли Одина</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Stevenson">Рэй Стивенсон</a></td>
+					<td>Вольштагг</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 180 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 315 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 855 млн.</p>

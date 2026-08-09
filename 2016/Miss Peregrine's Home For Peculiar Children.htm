@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Sully.htm" class="nav-arrow">←</a>
+		<a href="../Years/2016.htm" class="nav-arrow">⌂</a>
 		<a href="Deepwater Horizon.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -28,103 +28,95 @@
 Миллард. Но вскоре появляется нечто, угрожающее детям и их уникальному миру.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#T.Burton">Тим Бёртон</a></p>
 		<p align=justify><b>В основе:</b> Роман Ренсома Риггза "Дом странных детей" (США, 2011)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/e.htm#A.Butterfield">Эйса Баттерфилд</a></td>
-			<td>Джейк Портман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ye.htm#E.Green">Ева Грин</a></td>
-			<td>Мисс Альма Перегрин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Purnell">Элла Пернелл</a></td>
-			<td>Эмма Блум</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
-			<td>Мистер Бэррон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.O'Dowd">Крис О'Дауд</a></td>
-			<td>Фрэнклин Портман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Stamp">Теренс Стэмп</a></td>
-			<td>Эйб Портман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Финлэй МакМиллан</td>
-			<td>Енок О'Коннор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Dench">Джуди Денч</a></td>
-			<td>Мисс Эсмеральда Эвосет</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Janney">Эллисон Дженни</a></td>
-			<td>Доктор Голан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Everett">Руперт Эверетт</a></td>
-			<td>Джон Ламонт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лорен МакКрости</td>
-			<td>Оливия Элефанта</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джорджия Пембертон</td>
-			<td>Фиона Фруанфельд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Dickens">Ким Дикенс</a></td>
-			<td>Марианна Портман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>О-Лан Джонс</td>
-			<td>Шелли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Майло Паркер</td>
-			<td>Хью Апистон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Хейден Килер-Стоун</td>
-			<td>Гораций Сомнуссон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Пикси Дейвис</td>
-			<td>Бронвин Брантли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Камерон Кинг</td>
-			<td>Миллард Наллингс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Раффиелла Чепмен</td>
-			<td>Клэр Денсмор</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/e.htm#A.Butterfield">Эйса Баттерфилд</a></td>
+					<td>Джейк Портман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ye.htm#E.Green">Ева Грин</a></td>
+					<td>Мисс Альма Перегрин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Purnell">Элла Пернелл</a></td>
+					<td>Эмма Блум</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
+					<td>Мистер Бэррон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.O'Dowd">Крис О'Дауд</a></td>
+					<td>Фрэнклин Портман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Stamp">Теренс Стэмп</a></td>
+					<td>Эйб Портман</td>
+				</tr>
+				<tr>
+					<td>Финлэй МакМиллан</td>
+					<td>Енок О'Коннор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Dench">Джуди Денч</a></td>
+					<td>Мисс Эсмеральда Эвосет</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Janney">Эллисон Дженни</a></td>
+					<td>Доктор Голан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Everett">Руперт Эверетт</a></td>
+					<td>Джон Ламонт</td>
+				</tr>
+				<tr>
+					<td>Лорен МакКрости</td>
+					<td>Оливия Элефанта</td>
+				</tr>
+				<tr>
+					<td>Джорджия Пембертон</td>
+					<td>Фиона Фруанфельд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Dickens">Ким Дикенс</a></td>
+					<td>Марианна Портман</td>
+				</tr>
+				<tr>
+					<td>О-Лан Джонс</td>
+					<td>Шелли</td>
+				</tr>
+				<tr>
+					<td>Майло Паркер</td>
+					<td>Хью Апистон</td>
+				</tr>
+				<tr>
+					<td>Хейден Килер-Стоун</td>
+					<td>Гораций Сомнуссон</td>
+				</tr>
+				<tr>
+					<td>Пикси Дейвис</td>
+					<td>Бронвин Брантли</td>
+				</tr>
+				<tr>
+					<td>Камерон Кинг</td>
+					<td>Миллард Наллингс</td>
+				</tr>
+				<tr>
+					<td>Раффиелла Чепмен</td>
+					<td>Клэр Денсмор</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 110 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 87 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 296 млн.</p>

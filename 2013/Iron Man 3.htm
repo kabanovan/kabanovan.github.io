@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Oblivion.htm" class="nav-arrow">←</a>
+		<a href="../Years/2013.htm" class="nav-arrow">⌂</a>
 		<a href="Star Trek Into Darkness.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -33,79 +33,76 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#S.Black">Шейн Блэк</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Железном Человеке (США, выходят с 1963,
 авторы – Стэн Ли, Ларри Либер, Дон Хек и Джек Кирби)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#MCU">Кинематографическая Вселенная Марвел</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/r.htm#R.Downey">Роберт Дауни мл.</a></td>
-			<td>Тони Старк / Железный Человек</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Pearce">Гай Пирс</a></td>
-			<td>Олдрич Киллиан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Paltrow">Гвинет Пэлтроу</a></td>
-			<td>Вирджиния "Пеппер" Поттс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Kingsley">Бен Кингсли</a></td>
-			<td>Тревор Слэттери / Мандарин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Cheadle">Дон Чидл</a></td>
-			<td>Полковник Джеймс "Роуди" Роудс / Железный Патриот</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Hall">Ребекка Холл</a></td>
-			<td>Майя Хэнсен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Simpkins">Тай Симпкинс</a></td>
-			<td>Харли Кинер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Favreau">Джон Фавро</a></td>
-			<td><i><p style="margin-left:30px">Гарольд "Хэппи" Хоган</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Szostak">Стефани Шостак</a></td>
-			<td>Эллен Брандт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.B.Dale">Джеймс Бэдж Дэйл</a></td>
-			<td>Савин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Sadler">Уильям Сэдлер</a></td>
-			<td>Президент Эллис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Ferrer">Мигель Феррер</a></td>
-			<td>Вице-президент Родригес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Dickey">Дейл Дикки</a></td>
-			<td>Миссис Дэвис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Toub">Шон Тоуб</a></td>
-			<td>Хо Йинсен</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/MCU.htm">Кинематографическая Вселенная Марвел</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/r.htm#R.Downey">Роберт Дауни мл.</a></td>
+					<td>Тони Старк / Железный Человек</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Pearce">Гай Пирс</a></td>
+					<td>Олдрич Киллиан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Paltrow">Гвинет Пэлтроу</a></td>
+					<td>Вирджиния "Пеппер" Поттс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Kingsley">Бен Кингсли</a></td>
+					<td>Тревор Слэттери / Мандарин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Cheadle">Дон Чидл</a></td>
+					<td>Полковник Джеймс "Роуди" Роудс / Железный Патриот</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Hall">Ребекка Холл</a></td>
+					<td>Майя Хэнсен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Simpkins">Тай Симпкинс</a></td>
+					<td>Харли Кинер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Favreau">Джон Фавро</a></td>
+					<td>Гарольд "Хэппи" Хоган</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Szostak">Стефани Шостак</a></td>
+					<td>Эллен Брандт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.B.Dale">Джеймс Бэдж Дэйл</a></td>
+					<td>Савин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Sadler">Уильям Сэдлер</a></td>
+					<td>Президент Эллис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Ferrer">Мигель Феррер</a></td>
+					<td>Вице-президент Родригес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Dickey">Дейл Дикки</a></td>
+					<td>Миссис Дэвис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Toub">Шон Тоуб</a></td>
+					<td>Хо Йинсен</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 200 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 409 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 1 216 млн.</p>

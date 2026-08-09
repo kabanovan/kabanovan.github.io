@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Green Lantern.htm" class="nav-arrow">←</a>
+		<a href="../Years/2011.htm" class="nav-arrow">⌂</a>
 		<a href="Harry Potter And The Deathly Hallows - Part 2.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -29,79 +29,76 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#M.Bay">Майкл Бэй</a></p>
 		<p align=justify><b>В основе:</b> Линия игрушечных фигурок компании "Хасбро" (США, выпускаются с
 1984)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#Transformers">Трансформеры</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/sh.htm#S.LaBeouf">Шайя ЛаБаф</a></td>
-			<td>Сэм Уитуики</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Huntington-Whiteley">Рози Хантингтон-Уайтли</a></td>
-			<td>Карли Спенсер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Duhamel">Джош Дюамель</a></td>
-			<td>Полковник Уилл Леннокс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#F.McDormand">Фрэнсис МакДорманд</a></td>
-			<td>Директор Шарлотта Миринг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Turturro">Джон Туртурро</a></td>
-			<td>Сеймур Симмонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Патрик Демпси</td>
-			<td>Дилан Гоулд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Gibson">Тайриз Гибсон</a></td>
-			<td>Сержант Роб Эппс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Malkovich">Джон Малкович</a></td>
-			<td>Брюс Бразос</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Jeong">Кен Жонг</a></td>
-			<td>Джерри Вен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Dunn">Кевин Данн</a></td>
-			<td>Рон Уитуики</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.White">Джули Уайт</a></td>
-			<td>Джуди Уитуики</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Tudyk">Алан Тьюдик</a></td>
-			<td>Голландец</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лестер Спейт</td>
-			<td>Эдди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Morshower">Гленн Моршауэр</a></td>
-			<td>Генерал Моршауэр</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/Transformers.htm">Трансформеры</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/sh.htm#S.LaBeouf">Шайя ЛаБаф</a></td>
+					<td>Сэм Уитуики</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Huntington-Whiteley">Рози Хантингтон-Уайтли</a></td>
+					<td>Карли Спенсер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Duhamel">Джош Дюамель</a></td>
+					<td>Полковник Уилл Леннокс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#F.McDormand">Фрэнсис МакДорманд</a></td>
+					<td>Директор Шарлотта Миринг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Turturro">Джон Туртурро</a></td>
+					<td>Сеймур Симмонс</td>
+				</tr>
+				<tr>
+					<td>Патрик Демпси</td>
+					<td>Дилан Гоулд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Gibson">Тайриз Гибсон</a></td>
+					<td>Сержант Роб Эппс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Malkovich">Джон Малкович</a></td>
+					<td>Брюс Бразос</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Jeong">Кен Жонг</a></td>
+					<td>Джерри Вен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Dunn">Кевин Данн</a></td>
+					<td>Рон Уитуики</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.White">Джули Уайт</a></td>
+					<td>Джуди Уитуики</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Tudyk">Алан Тьюдик</a></td>
+					<td>Голландец</td>
+				</tr>
+				<tr>
+					<td>Лестер Спейт</td>
+					<td>Эдди</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Morshower">Гленн Моршауэр</a></td>
+					<td>Генерал Моршауэр</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 195 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 352 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 1 124 млн.</p>

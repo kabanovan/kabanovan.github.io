@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Pacific Rim - Uprising.htm" class="nav-arrow">←</a>
+		<a href="../Years/2018.htm" class="nav-arrow">⌂</a>
 		<a href="A Quiet Place.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,73 +24,71 @@
 		<p align=justify><b>Сюжет:</b> Год 2045. В мире царят хаос и разруха. Население планеты находит спасение в мире виртуальной реальности ОАЗИС. Создатель этой игры – эксцентричный гений Джеймс Холлидей – умирает, завещав всё своё огромное состояние тому игроку, который первым найдёт спрятанное в ОАЗИСе "пасхальное яйцо" – особый секрет. Запущенный им квест охватывает весь мир. Совершенно обычный парень Уэйд Уоттс присоединяется к отчаянной охоте за сокровищем. Его ждёт невероятное приключение, полное тайн, открытий и опасностей.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#S.Spielberg">Стивен Спилберг</a></p>
 		<p align=justify><b>В основе:</b> Роман Эрнеста Клайна "Первому игроку приготовиться" (США, 2011)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Sheridan">Тай Шеридан</a></td>
-			<td><i><p style="margin-left:30px">Уэйд Уоттс / Парсифаль</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Оливия Кук</td>
-			<td><i><p style="margin-left:30px">Саманта Кук / Арт3мида</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Mendelsohn">Бен Мендельсон</a></td>
-			<td><i><p style="margin-left:30px">Нолан Сорренто</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лина Уэйте</td>
-			<td><i><p style="margin-left:30px">Хелен Харрис / Эйч</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Rylance">Марк Райлэнс</a></td>
-			<td><i><p style="margin-left:30px">Джеймс Холлидэй / Анорак Всеведающий</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Pegg">Саймон Пегг</a></td>
-			<td><i><p style="margin-left:30px">Огден Морроу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.J.Miller">Ти Джей Миллер</a></td>
-			<td><i><p style="margin-left:30px">Я-Крут</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Филип Чжао</td>
-			<td><i><p style="margin-left:30px">Цзо / Сё</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Уин Морисаки</td>
-			<td><i><p style="margin-left:30px">Тоширо Йошиаки / Дайто</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.John-Kamen">Ханна Джон-Кэймен</a></td>
-			<td><i><p style="margin-left:30px">Фи'Нали Зандор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Ineson">Ральф Айнесон</a></td>
-			<td><i><p style="margin-left:30px">Рик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Сьюзэн Линч</td>
-			<td><i><p style="margin-left:30px">Элис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Клэр Хиггинс</td>
-			<td><i><p style="margin-left:30px">Миссис Гилмор</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Sheridan">Тай Шеридан</a></td>
+					<td>Уэйд Уоттс / Парсифаль</td>
+				</tr>
+				<tr>
+					<td>Оливия Кук</td>
+					<td>Саманта Кук / Арт3мида</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Mendelsohn">Бен Мендельсон</a></td>
+					<td>Нолан Сорренто</td>
+				</tr>
+				<tr>
+					<td>Лина Уэйте</td>
+					<td>Хелен Харрис / Эйч</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Rylance">Марк Райлэнс</a></td>
+					<td>Джеймс Холлидэй / Анорак Всеведающий</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Pegg">Саймон Пегг</a></td>
+					<td>Огден Морроу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.J.Miller">Ти Джей Миллер</a></td>
+					<td>Я-Крут</td>
+				</tr>
+				<tr>
+					<td>Филип Чжао</td>
+					<td>Цзо / Сё</td>
+				</tr>
+				<tr>
+					<td>Уин Морисаки</td>
+					<td>Тоширо Йошиаки / Дайто</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.John-Kamen">Ханна Джон-Кэймен</a></td>
+					<td>Фи'Нали Зандор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Ineson">Ральф Айнесон</a></td>
+					<td>Рик</td>
+				</tr>
+				<tr>
+					<td>Сьюзэн Линч</td>
+					<td>Элис</td>
+				</tr>
+				<tr>
+					<td>Клэр Хиггинс</td>
+					<td>Миссис Гилмор</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 175 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 138 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 608 млн.</p>

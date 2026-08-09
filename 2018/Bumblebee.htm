@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Aquaman.htm" class="nav-arrow">←</a>
+		<a href="../Years/2018.htm" class="nav-arrow">⌂</a>
 		<a href="../2019/Alita - Battle Angel.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,78 +25,75 @@
 		<p><b>Режиссёр:</b> Трэвис Найт</p>
 		<p align=justify><b>В основе:</b> Линия игрушечных фигурок компании "Хасбро" (США, выпускаются с 1984)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#Bumblebee">Бамблби</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/h.htm#H.Steinfeld">Хейли Стейнфилд</a></td>
-			<td><i><p style="margin-left:30px">Чарли Уотсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Cena">Джон Сина</a></td>
-			<td><i><p style="margin-left:30px">Агент Джек Бёрнс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#J.Lendeborg">Хорхе Лендеборг мл.</a></td>
-			<td><i><p style="margin-left:30px">Гильермо "Мемо" Гутьеррес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Памела Адлон</td>
-			<td><i><p style="margin-left:30px">Салли Уотсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Ortiz">Джон Ортис</a></td>
-			<td><i><p style="margin-left:30px">Доктор Пауэлл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джейсон Дракер</td>
-			<td><i><p style="margin-left:30px">Отис Уотсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Стивен Шнайдер</td>
-			<td><i><p style="margin-left:30px">Рон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лен Кариу</td>
-			<td><i><p style="margin-left:30px">Дядя Хэнк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Turman">Глинн Тёрмен</a></td>
-			<td><i><p style="margin-left:30px">Генерал Уолен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Грейси Дзинни</td>
-			<td><i><p style="margin-left:30px">Тина Ларк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Рикардо Хойос</td>
-			<td><i><p style="margin-left:30px">Трипп Саммерс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ленни Джейкобсон</td>
-			<td><i><p style="margin-left:30px">Рой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мегин Прайс</td>
-			<td><i><p style="margin-left:30px">Эмбер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Hodge">Эдвин Ходж</a></td>
-			<td><i><p style="margin-left:30px">Дэнни Белл</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/h.htm#H.Steinfeld">Хейли Стейнфилд</a></td>
+					<td>Чарли Уотсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Cena">Джон Сина</a></td>
+					<td>Агент Джек Бёрнс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#J.Lendeborg">Хорхе Лендеборг мл.</a></td>
+					<td>Гильермо "Мемо" Гутьеррес</td>
+				</tr>
+				<tr>
+					<td>Памела Адлон</td>
+					<td>Салли Уотсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Ortiz">Джон Ортис</a></td>
+					<td>Доктор Пауэлл</td>
+				</tr>
+				<tr>
+					<td>Джейсон Дракер</td>
+					<td>Отис Уотсон</td>
+				</tr>
+				<tr>
+					<td>Стивен Шнайдер</td>
+					<td>Рон</td>
+				</tr>
+				<tr>
+					<td>Лен Кариу</td>
+					<td>Дядя Хэнк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Turman">Глинн Тёрмен</a></td>
+					<td>Генерал Уолен</td>
+				</tr>
+				<tr>
+					<td>Грейси Дзинни</td>
+					<td>Тина Ларк</td>
+				</tr>
+				<tr>
+					<td>Рикардо Хойос</td>
+					<td>Трипп Саммерс</td>
+				</tr>
+				<tr>
+					<td>Ленни Джейкобсон</td>
+					<td>Рой</td>
+				</tr>
+				<tr>
+					<td>Мегин Прайс</td>
+					<td>Эмбер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Hodge">Эдвин Ходж</a></td>
+					<td>Дэнни Белл</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 135 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 127 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 468 млн.</p>

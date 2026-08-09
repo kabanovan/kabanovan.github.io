@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Beast.htm" class="nav-arrow">←</a>
+		<a href="../Years/2022.htm" class="nav-arrow">⌂</a>
 		<a href="Black Panther - Wakanda Forever.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,73 +25,71 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Collet-Serra">Жауме Кольет-Серра</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Чёрном Адаме (США, выходят с 1945, авторы – Отто Биндер и Ч.К. Бек)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#DCEU">Расширенная вселенная DC</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
-			<td><i><p style="margin-left:30px">Тет-Адам / Чёрный Адам</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Сара Шахи</td>
-			<td><i><p style="margin-left:30px">Адрианна Томаз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Hodge">Элдис Ходж</a></td>
-			<td><i><p style="margin-left:30px">Картер Холл / Ястреб</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Бодхи Сабонгуй</td>
-			<td><i><p style="margin-left:30px">Амон Томаз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Brosnan">Пирс Броснан</a></td>
-			<td><i><p style="margin-left:30px">Кент Нельсон / Доктор Фейт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Kenzari">Марван Кензари</a></td>
-			<td><i><p style="margin-left:30px">Измаил</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мохаммед Амер</td>
-			<td><i><p style="margin-left:30px">Карим</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ной Сентинео</td>
-			<td><i><p style="margin-left:30px">Ал Ротштейн / Атом Крушитель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Куинтесса Суинделл</td>
-			<td><i><p style="margin-left:30px">Максин Ханкл / Циклон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джеймс Кусати-Мойер</td>
-			<td><i><p style="margin-left:30px">Самир</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Davis">Виола Дэвис</a></td>
-			<td>Аманда Уоллер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Gatt">Джозеф Гатт</a></td>
-			<td><i><p style="margin-left:30px">Командир взвода Интербанды</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
-			<td><i><p style="margin-left:30px">Волшебник</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
+					<td>Тет-Адам / Чёрный Адам</td>
+				</tr>
+				<tr>
+					<td>Сара Шахи</td>
+					<td>Адрианна Томаз</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Hodge">Элдис Ходж</a></td>
+					<td>Картер Холл / Ястреб</td>
+				</tr>
+				<tr>
+					<td>Бодхи Сабонгуй</td>
+					<td>Амон Томаз</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Brosnan">Пирс Броснан</a></td>
+					<td>Кент Нельсон / Доктор Фейт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Kenzari">Марван Кензари</a></td>
+					<td>Измаил</td>
+				</tr>
+				<tr>
+					<td>Мохаммед Амер</td>
+					<td>Карим</td>
+				</tr>
+				<tr>
+					<td>Ной Сентинео</td>
+					<td>Ал Ротштейн / Атом Крушитель</td>
+				</tr>
+				<tr>
+					<td>Куинтесса Суинделл</td>
+					<td>Максин Ханкл / Циклон</td>
+				</tr>
+				<tr>
+					<td>Джеймс Кусати-Мойер</td>
+					<td>Самир</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Davis">Виола Дэвис</a></td>
+					<td>Аманда Уоллер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Gatt">Джозеф Гатт</a></td>
+					<td>Командир взвода Интербанды</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
+					<td>Волшебник</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 195 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 168 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 393 млн.</p>

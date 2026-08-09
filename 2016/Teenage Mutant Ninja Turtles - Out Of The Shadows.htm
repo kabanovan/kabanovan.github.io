@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Alice Through The Looking Glass.htm" class="nav-arrow">←</a>
+		<a href="../Years/2016.htm" class="nav-arrow">⌂</a>
 		<a href="Warcraft.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -33,73 +33,71 @@
 		<p align=justify><b>В основе:</b> Комиксы о Черепашках-Ниндзя (США, выходят с 1984,
 авторы – Кевин Истмен и Питер Лэрд) и мультсериал "Черепашки-Ниндзя" (1987-1996)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#TeenageMutantNinjaTurtles">Черепашки-Ниндзя</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/n.htm#N.Fisher">Ноэль Фишер</a></td>
-			<td>Микеланджело</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Je.Howard">Джереми Ховард</a></td>
-			<td>Донателло</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Ploszek">Пит Пложек</a></td>
-			<td>Леонардо</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Ritchson">Алан Ричсон</a></td>
-			<td>Рафаэль</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#Me.Fox">Меган Фокс</a></td>
-			<td>Эйприл О'Нил</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Стивен Амелл</td>
-			<td>Офицер Кейси Джонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Arnett">Уилл Арнетт</a></td>
-			<td>Верн "Сокол" Фенвик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Perry">Тайлер Перри</a></td>
-			<td>Доктор Бакстер Стокмен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Linney">Лора Линни</a></td>
-			<td>Шеф Ребекка Винсент</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Tee">Брайан Ти</a></td>
-			<td>Шреддер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.A.Williams">Гари Энтони Уильямс</a></td>
-			<td>Бибоп</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Шеймус</td>
-			<td>Оуэн "Рокстеди" Рокстид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.D.Badalamenti">Питер Д. Бадаламенти</a></td>
-			<td>Сплинтер</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/n.htm#N.Fisher">Ноэль Фишер</a></td>
+					<td>Микеланджело</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Je.Howard">Джереми Ховард</a></td>
+					<td>Донателло</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Ploszek">Пит Пложек</a></td>
+					<td>Леонардо</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Ritchson">Алан Ричсон</a></td>
+					<td>Рафаэль</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#Me.Fox">Меган Фокс</a></td>
+					<td>Эйприл О'Нил</td>
+				</tr>
+				<tr>
+					<td>Стивен Амелл</td>
+					<td>Офицер Кейси Джонс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Arnett">Уилл Арнетт</a></td>
+					<td>Верн "Сокол" Фенвик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Perry">Тайлер Перри</a></td>
+					<td>Доктор Бакстер Стокмен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Linney">Лора Линни</a></td>
+					<td>Шеф Ребекка Винсент</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Tee">Брайан Ти</a></td>
+					<td>Шреддер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.A.Williams">Гари Энтони Уильямс</a></td>
+					<td>Бибоп</td>
+				</tr>
+				<tr>
+					<td>Шеймус</td>
+					<td>Оуэн "Рокстеди" Рокстид</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.D.Badalamenti">Питер Д. Бадаламенти</a></td>
+					<td>Сплинтер</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 135 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 82 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 246 млн.</p>

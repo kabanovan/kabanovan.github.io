@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Arrival.htm" class="nav-arrow">←</a>
+		<a href="../Years/2016.htm" class="nav-arrow">⌂</a>
 		<a href="Rogue One - A Star Wars Story.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -34,83 +34,79 @@
 		<p align=justify><b>В основе:</b> Литературно-художественное издание Джоан К. Ролинг
 "Фантастические звери и места их обитания" (Великобритания, 2001)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Harry Potter.htm">Гарри Поттер</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/e.htm#E.Redmayne">Эдди Редмэйн</a></td>
-			<td>Ньют Саламандер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Waterston">Кэтрин Уотерстон</a></td>
-			<td>Порпентина "Тина" Голдштейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Fogler">Дэн Фоглер</a></td>
-			<td>Якоб Ковальски</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Farrell">Колин Фаррелл</td>
-			<td>Персиваль Грейвс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Sudol">Элисон Судол</a></td>
-			<td>Куини Голдштейн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Ejogo">Кармен Эджого</a></td>
-			<td>Президент Серафина Пиквери</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Miller">Эзра Миллер</a></td>
-			<td>Криденс Бэрбоун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Morton">Саманта Мортон</a></td>
-			<td>Мэри Лу Бэрбоун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Voight">Джон Войт</a></td>
-			<td>Генри Шоу ст.</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Perlman">Рон Пёрлман</a></td>
-			<td>Гнарлак</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Guthrie">Кевин Гатри</a></td>
-			<td>Абернэти</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Raftery">Ронан Рафтери</a></td>
-			<td>Лэнгдон Шоу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Depp">Джонни Депп</a></td>
-			<td>Геллерт Грин-де-Вальд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Hedaya">Дэн Хедайя</a></td>
-			<td>Рыжий</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Chan">Джемма Чан</a></td>
-			<td><i><p style="margin-left:30px">Мадам Я Жу</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/e.htm#E.Redmayne">Эдди Редмэйн</a></td>
+					<td>Ньют Саламандер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Waterston">Кэтрин Уотерстон</a></td>
+					<td>Порпентина "Тина" Голдштейн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Fogler">Дэн Фоглер</a></td>
+					<td>Якоб Ковальски</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Farrell">Колин Фаррелл</td>
+					<td>Персиваль Грейвс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Sudol">Элисон Судол</a></td>
+					<td>Куини Голдштейн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Ejogo">Кармен Эджого</a></td>
+					<td>Президент Серафина Пиквери</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Miller">Эзра Миллер</a></td>
+					<td>Криденс Бэрбоун</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Morton">Саманта Мортон</a></td>
+					<td>Мэри Лу Бэрбоун</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Voight">Джон Войт</a></td>
+					<td>Генри Шоу ст.</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Perlman">Рон Пёрлман</a></td>
+					<td>Гнарлак</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Guthrie">Кевин Гатри</a></td>
+					<td>Абернэти</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Raftery">Ронан Рафтери</a></td>
+					<td>Лэнгдон Шоу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Depp">Джонни Депп</a></td>
+					<td>Геллерт Грин-де-Вальд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Hedaya">Дэн Хедайя</a></td>
+					<td>Рыжий</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Chan">Джемма Чан</a></td>
+					<td>Мадам Я Жу</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 180 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 234 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 816 млн.</p>

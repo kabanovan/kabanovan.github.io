@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Star Trek Into Darkness.htm" class="nav-arrow">←</a>
+		<a href="../Years/2013.htm" class="nav-arrow">⌂</a>
 		<a href="After Earth.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -37,103 +37,95 @@
 круче!</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Lin">Джастин Лин</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Fast & Furious.htm">Форсаж</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/v.htm#V.Diesel">Вин Дизель</a></td>
-			<td>Доминик Торетто</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
-			<td>Люк Хоббс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#Pa.Walker">Пол Уокер</a></td>
-			<td>Брайан О'Коннер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Gibson">Тайриз Гибсон</a></td>
-			<td>Роман Пирс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#Ludacris">Крис "Лудакрис" Бриджес</a></td>
-			<td>Теж Паркер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Evans">Люк Эванс</a></td>
-			<td>Оуэн Шоу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#Mi.Rodriguez">Мишель Родригес</a></td>
-			<td>Летти Ортис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Kang">Сон Кан</a></td>
-			<td>Хан Лю</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Gadot">Галь Гадот</a></td>
-			<td>Жизель Яшар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Carano">Джина Карано</a></td>
-			<td>Райли Хикс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джейсон Торпе</td>
-			<td>Аукционист</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Brewster">Джордана Брюстер</a></td>
-			<td>Миа Торетто</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Ortiz">Джон Ортис</a></td>
-			<td>Артуро Брага</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Whigham">Ши Уигхэм</a></td>
-			<td>Майкл Стасиак</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Pataky">Эльза Патаки</a></td>
-			<td>Елена Нивес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Lindhardt">Туре Линдхардт</a></td>
-			<td>Фируз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Ajala">Дэвид Аджала</a></td>
-			<td>Айвори</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Kold">Ким Колд</a></td>
-			<td>Клаус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Taslim">Джо Таслим</a></td>
-			<td>Джа</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/v.htm#V.Diesel">Вин Дизель</a></td>
+					<td>Доминик Торетто</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
+					<td>Люк Хоббс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#Pa.Walker">Пол Уокер</a></td>
+					<td>Брайан О'Коннер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Gibson">Тайриз Гибсон</a></td>
+					<td>Роман Пирс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#Ludacris">Крис "Лудакрис" Бриджес</a></td>
+					<td>Теж Паркер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Evans">Люк Эванс</a></td>
+					<td>Оуэн Шоу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#Mi.Rodriguez">Мишель Родригес</a></td>
+					<td>Летти Ортис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Kang">Сон Кан</a></td>
+					<td>Хан Лю</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Gadot">Галь Гадот</a></td>
+					<td>Жизель Яшар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Carano">Джина Карано</a></td>
+					<td>Райли Хикс</td>
+				</tr>
+				<tr>
+					<td>Джейсон Торпе</td>
+					<td>Аукционист</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Brewster">Джордана Брюстер</a></td>
+					<td>Миа Торетто</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Ortiz">Джон Ортис</a></td>
+					<td>Артуро Брага</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Whigham">Ши Уигхэм</a></td>
+					<td>Майкл Стасиак</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Pataky">Эльза Патаки</a></td>
+					<td>Елена Нивес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Lindhardt">Туре Линдхардт</a></td>
+					<td>Фируз</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Ajala">Дэвид Аджала</a></td>
+					<td>Айвори</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Kold">Ким Колд</a></td>
+					<td>Клаус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Taslim">Джо Таслим</a></td>
+					<td>Джа</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 160 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 239 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 789 млн.</p>

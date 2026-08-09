@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Walk.htm" class="nav-arrow">←</a>
+		<a href="../Years/2015.htm" class="nav-arrow">⌂</a>
 		<a href="Goosebumps.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -31,83 +31,79 @@
 мир, затаив дыхание, следит за возвращением Уотни на родную планету.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#R.Scott">Ридли Скотт</a></p>
 		<p align=justify><b>В основе:</b> Роман Энди Вейера "Марсианин" (США, 2011)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/m.htm#M.Damon">Мэтт Дэймон</a></td>
-			<td>Марк Уотни</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Ejiofor">Чьюител Эджиофор</a></td>
-			<td>Винсент Капур</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Chastain">Джессика Честейн</a></td>
-			<td>Командир Мелисса Льюис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Daniels">Джефф Дэниелс</a></td>
-			<td>Тедди Сандерс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Pena">Майкл Пенья</a></td>
-			<td>Майор Рик Мартинес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Bean">Шон Бин</a></td>
-			<td>Митч Хендерсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Mara">Кейт Мара</a></td>
-			<td>Бет Йоханссен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Wiig">Кристен Уиг</a></td>
-			<td>Энни Монтроуз</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Wong">Бенедикт Вонг</a></td>
-			<td>Брюс Энджи</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Stan">Себастьян Стэн</a></td>
-			<td>Доктор Крис Бек</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Hennie">Аксель Хенни</a></td>
-			<td>Доктор Алекс Фогель</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Davis">Маккензи Дэвис</a></td>
-			<td>Минди Парк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Do.Glover">Дональд Гловер</a></td>
-			<td>Рич Пернелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Чень Шу</td>
-			<td>Жу Тао</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эдди Ко</td>
-			<td>Гуо Минг</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/m.htm#M.Damon">Мэтт Дэймон</a></td>
+					<td>Марк Уотни</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Ejiofor">Чьюител Эджиофор</a></td>
+					<td>Винсент Капур</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Chastain">Джессика Честейн</a></td>
+					<td>Командир Мелисса Льюис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Daniels">Джефф Дэниелс</a></td>
+					<td>Тедди Сандерс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Pena">Майкл Пенья</a></td>
+					<td>Майор Рик Мартинес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Bean">Шон Бин</a></td>
+					<td>Митч Хендерсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Mara">Кейт Мара</a></td>
+					<td>Бет Йоханссен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Wiig">Кристен Уиг</a></td>
+					<td>Энни Монтроуз</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Wong">Бенедикт Вонг</a></td>
+					<td>Брюс Энджи</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Stan">Себастьян Стэн</a></td>
+					<td>Доктор Крис Бек</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Hennie">Аксель Хенни</a></td>
+					<td>Доктор Алекс Фогель</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Davis">Маккензи Дэвис</a></td>
+					<td>Минди Парк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Do.Glover">Дональд Гловер</a></td>
+					<td>Рич Пернелл</td>
+				</tr>
+				<tr>
+					<td>Чень Шу</td>
+					<td>Жу Тао</td>
+				</tr>
+				<tr>
+					<td>Эдди Ко</td>
+					<td>Гуо Минг</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 108 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 228 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 631 млн.</p>

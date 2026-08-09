@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Noah.htm" class="nav-arrow">←</a>
+		<a href="../Years/2014.htm" class="nav-arrow">⌂</a>
 		<a href="Transcendence.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -34,104 +34,96 @@
 		<p><b>Режиссёры:</b> <a href="../directors.htm#Russo">Энтони и Джо Руссо</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Капитане Америка (США, выходят с 1941, авторы
 – Джо Саймон и Джек Кирби)</p>
-		<p align=justify><b>Серия:</b> <a href="../series.htm#MCU">Кинематографическая Вселенная Марвел</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#C.Evans">Крис Эванс</a></td>
-			<td>Стив Роджерс / Капитан Америка</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Johansson">Скарлетт Йоханссон</a></td>
-			<td>Наташа Романофф / Чёрная Вдова</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Redford">Роберт Редфорд</a></td>
-			<td>Александр Пирс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
-			<td>Директор Ник Фьюри</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Mackie">Энтони Маки</a></td>
-			<td>Сэм Уилсон / Сокол</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#F.Grillo">Фрэнк Грилло</a></td>
-			<td>Брок Рамлоу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Hernandez">Максимилиано Эрнандес</a></td>
-			<td>Агент Джеспер Ситуэлл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Stan">Себастьян Стэн</a></td>
-			<td>Джеймс "Баки" Барнс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Smulders">Коби Смалдерс</a></td>
-			<td>Агент Мария Хилл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.VanCamp">Эмили ВанКэмп</a></td>
-			<td>Кейт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Atwell">Хейли Этвелл</a></td>
-			<td>Маргарет "Пегги" Картер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Jones">Тоби Джонс</a></td>
-			<td>Доктор Арним Зола</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Agutter">Дженни Эгаттер</a></td>
-			<td>Советник Хоули</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Dale">Алан Дэйл</a></td>
-			<td>Советник Рокуэлл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/zh.htm#G.St-Pierre">Жорж Сен-Пьер</a></td>
-			<td>Жорж Батрок</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Mulvey">Каллэн Мулвей</a></td>
-			<td>Джек Роллинс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Han">Чин Хань</td>
-			<td>Советник Йен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.White">Бернард Уайт</a></td>
-			<td>Советник Сингх</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Shandling">Гарри Шендлинг</a></td>
-			<td>Сенатор Стерн</td>
-		</tr>
-		</table>
+		<p align=justify><b>Серия:</b> <a href="../Franchise/MCU.htm">Кинематографическая Вселенная Марвел</a></p>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#C.Evans">Крис Эванс</a></td>
+					<td>Стив Роджерс / Капитан Америка</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Johansson">Скарлетт Йоханссон</a></td>
+					<td>Наташа Романофф / Чёрная Вдова</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Redford">Роберт Редфорд</a></td>
+					<td>Александр Пирс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.L.Jackson">Сэмюэл Л. Джексон</a></td>
+					<td>Директор Ник Фьюри</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Mackie">Энтони Маки</a></td>
+					<td>Сэм Уилсон / Сокол</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#F.Grillo">Фрэнк Грилло</a></td>
+					<td>Брок Рамлоу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Hernandez">Максимилиано Эрнандес</a></td>
+					<td>Агент Джеспер Ситуэлл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Stan">Себастьян Стэн</a></td>
+					<td>Джеймс "Баки" Барнс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Smulders">Коби Смалдерс</a></td>
+					<td>Агент Мария Хилл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.VanCamp">Эмили ВанКэмп</a></td>
+					<td>Кейт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Atwell">Хейли Этвелл</a></td>
+					<td>Маргарет "Пегги" Картер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Jones">Тоби Джонс</a></td>
+					<td>Доктор Арним Зола</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Agutter">Дженни Эгаттер</a></td>
+					<td>Советник Хоули</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Dale">Алан Дэйл</a></td>
+					<td>Советник Рокуэлл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/zh.htm#G.St-Pierre">Жорж Сен-Пьер</a></td>
+					<td>Жорж Батрок</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Mulvey">Каллэн Мулвей</a></td>
+					<td>Джек Роллинс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Han">Чин Хань</td>
+					<td>Советник Йен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.White">Бернард Уайт</a></td>
+					<td>Советник Сингх</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Shandling">Гарри Шендлинг</a></td>
+					<td>Сенатор Стерн</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 170 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 260 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 714 млн.</p>

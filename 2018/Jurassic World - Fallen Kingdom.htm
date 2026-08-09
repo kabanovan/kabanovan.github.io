@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Upgrade.htm" class="nav-arrow">←</a>
+		<a href="../Years/2018.htm" class="nav-arrow">⌂</a>
 		<a href="Ant-Man And The Wasp.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,68 +24,67 @@
 		<p align=justify><b>Сюжет:</b> Прошло три года с тех пор, как уникальный доисторический парк "Мир юрского периода" был разрушен динозаврами, вырвавшимися на свободу. Люди покинули остров Нублар, и теперь его обитатели предоставлены сами себе. Когда спавший до этого на острове вулкан пробуждается, Оуэн и Клэр организуют экспедицию, чтобы спасти последних динозавров от неминуемой гибели. Оуэн хочет найти свою бывшую подопечную – альфа-раптора Блю, а в Клэр крепнет глубокая привязанность к этим животным. Но когда люди прибывают на сотрясаемый катаклизмом остров, тонущий в лаве, они раскрывают заговор, в результате которого вся планета может оказаться в плену нового мирового порядка, невиданного с доисторических времен.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.A.Bayona">Х.А. Байона</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Jurassic Park.htm">Парк Юрского Периода</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#C.Pratt">Крис Прэтт</a></td>
-			<td><i><p style="margin-left:30px">Оуэн Грэйди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.D.Howard">Брайс Даллас Ховард</a></td>
-			<td><i><p style="margin-left:30px">Клэр Диринг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Spall">Рейф Сполл</a></td>
-			<td><i><p style="margin-left:30px">Илай Миллс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Ju.Smith">Джастис Смит</td>
-			<td><i><p style="margin-left:30px">Франклин Вебб</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Pineda">Даниэлла Пинеда</a></td>
-			<td><i><p style="margin-left:30px">Зия Родригес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Jones">Тоби Джонс</a></td>
-			<td><i><p style="margin-left:30px">Мистер Эверсолл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Levine">Тед Левайн</a></td>
-			<td><i><p style="margin-left:30px">Кен Уитли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Cromwell">Джеймс Кромвелл</a></td>
-			<td><i><p style="margin-left:30px">Бенджамин Локвуд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.Sermon">Изабелла Сермон</a></td>
-			<td><i><p style="margin-left:30px">Мэйзи Локвуд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Goldblum">Джефф Голдблюм</a></td>
-			<td><i><p style="margin-left:30px">Доктор Йен Малкольм</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.D.Wong">Б.Д. Вонг</a></td>
-			<td><i><p style="margin-left:30px">Доктор Генри Ву</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Chaplin">Джеральдин Чаплин</a></td>
-			<td><i><p style="margin-left:30px">Айрис</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#C.Pratt">Крис Прэтт</a></td>
+					<td>Оуэн Грэйди</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.D.Howard">Брайс Даллас Ховард</a></td>
+					<td>Клэр Диринг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Spall">Рейф Сполл</a></td>
+					<td>Илай Миллс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Ju.Smith">Джастис Смит</td>
+					<td>Франклин Вебб</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Pineda">Даниэлла Пинеда</a></td>
+					<td>Зия Родригес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Jones">Тоби Джонс</a></td>
+					<td>Мистер Эверсолл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Levine">Тед Левайн</a></td>
+					<td>Кен Уитли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Cromwell">Джеймс Кромвелл</a></td>
+					<td>Бенджамин Локвуд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.Sermon">Изабелла Сермон</a></td>
+					<td>Мэйзи Локвуд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Goldblum">Джефф Голдблюм</a></td>
+					<td>Доктор Йен Малкольм</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.D.Wong">Б.Д. Вонг</a></td>
+					<td>Доктор Генри Ву</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Chaplin">Джеральдин Чаплин</a></td>
+					<td>Айрис</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 170 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 418 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 1 310 млн.</p>

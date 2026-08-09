@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Matrix Resurrections.htm" class="nav-arrow">←</a>
+		<a href="../Years/2021.htm" class="nav-arrow">⌂</a>
 		<a href="../2022/Moonfall.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,98 +25,91 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#M.Vaughn">Мэттью Вон</a></p>
 		<p align=justify><b>В основе:</b> Комикс "Секретная служба" (США, выходит с 2012, авторы – Марк Миллар и Дэйв Гиббонс)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#Kingsman">Kingsman</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/r.htm#R.Fiennes">Рэйф Файнс</a></td>
-			<td>Орландо Оксфорд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Dickinson">Харрис Дикинсон</a></td>
-			<td>Конрад Оксфорд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Ifans">Рис Иванс</a></td>
-			<td>Григорий Распутин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Arterton">Джемма Артертон</a></td>
-			<td>Полли Уоткинс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Goode">Мэттью Гуд</a></td>
-			<td>Капитан Максимилиан Мортон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Dance">Чарльз Дэнс</a></td>
-			<td>Генерал Герберт Китченер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
-			<td>Шола</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Hollander">Том Холландер</a></td>
-			<td>Король Георг / Кайзер Вильгельм / Царь Николай</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Bruhl">Даниэль Брюль</a></td>
-			<td>Эрик Ян Хануссен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.M.Lara">Александра Мария Лара</a></td>
-			<td>Эмили Оксфорд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Pachner">Валери Пахнер</a></td>
-			<td>Мата Хари</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Taylor-Johnson">Аарон Тейлор-Джонсон</a></td>
-			<td>Ефрейтор Арчи Рид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Tucci">Стэнли Туччи</a></td>
-			<td>Посол США</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Элисон Стедман</td>
-			<td>Рита</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Аугуст Диль</td>
-			<td>Владимир Ленин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Katic">Бранка Катич</a></td>
-			<td>Императрица Александра</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Aramayo">Роберт Арамайо</a></td>
-			<td>Сержант-майор Эткинс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Рон Кук</td>
-			<td>Эрцгерцог Франц Фердинанд</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/r.htm#R.Fiennes">Рэйф Файнс</a></td>
+					<td>Орландо Оксфорд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Dickinson">Харрис Дикинсон</a></td>
+					<td>Конрад Оксфорд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Ifans">Рис Иванс</a></td>
+					<td>Григорий Распутин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Arterton">Джемма Артертон</a></td>
+					<td>Полли Уоткинс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Goode">Мэттью Гуд</a></td>
+					<td>Капитан Максимилиан Мортон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Dance">Чарльз Дэнс</a></td>
+					<td>Генерал Герберт Китченер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
+					<td>Шола</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Hollander">Том Холландер</a></td>
+					<td>Король Георг / Кайзер Вильгельм / Царь Николай</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Bruhl">Даниэль Брюль</a></td>
+					<td>Эрик Ян Хануссен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.M.Lara">Александра Мария Лара</a></td>
+					<td>Эмили Оксфорд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Pachner">Валери Пахнер</a></td>
+					<td>Мата Хари</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Taylor-Johnson">Аарон Тейлор-Джонсон</a></td>
+					<td>Ефрейтор Арчи Рид</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Tucci">Стэнли Туччи</a></td>
+					<td>Посол США</td>
+				</tr>
+				<tr>
+					<td>Элисон Стедман</td>
+					<td>Рита</td>
+				</tr>
+				<tr>
+					<td>Аугуст Диль</td>
+					<td>Владимир Ленин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Katic">Бранка Катич</a></td>
+					<td>Императрица Александра</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Aramayo">Роберт Арамайо</a></td>
+					<td>Сержант-майор Эткинс</td>
+				</tr>
+				<tr>
+					<td>Рон Кук</td>
+					<td>Эрцгерцог Франц Фердинанд</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 100 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 37 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 126 млн.</p>

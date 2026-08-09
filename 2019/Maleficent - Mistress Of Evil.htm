@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Gemini Man.htm" class="nav-arrow">←</a>
+		<a href="../Years/2019.htm" class="nav-arrow">⌂</a>
 		<a href="Terminator - Dark Fate.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -23,83 +23,79 @@
 		<p align=justify><b>Слоган:</b> Откройте врата ночи.</p>
 		<p align=justify><b>Сюжет:</b> Годы были благосклонны к Малефисенте и её крёстной дочери Авроре. Их отношения, рождённые из боли и мести, но в итоге переросшие в любовь, окрепли. Однако вражда между людьми и феями по-прежнему не угасла. Предстоящая свадьба Авроры с принцем Филлипом должна стать праздником для королевства Алстед и соседних Болот – ведь этот союз объединит два мира. Но когда неожиданное событие приводит к появлению могущественного нового альянса, Малефисента и Аврора оказываются по разные стороны грядущей великой войны. Им предстоит проверить на прочность свою преданность и решить – могут ли они по-настоящему называться семьёй.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Ronning">Хоаким Роннинг</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/a.htm#A.Jolie">Анджелина Джоли</a></td>
-			<td>Малефисента</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Fanning">Эль Фаннинг</a></td>
-			<td>Аврора</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Pfeiffer">Мишель Пфайффер</a></td>
-			<td>Королева Ингрит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Dickinson">Харрис Дикинсон</a></td>
-			<td>Принц Филлип</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Ejiofor">Чьюител Эджиофор</a></td>
-			<td>Коналл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Riley">Сэм Райли</a></td>
-			<td>Диаваль</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Skrein">Эд Скрейн</a></td>
-			<td>Борра</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Роберт Линдсей</td>
-			<td>Король Джон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.Staunton">Имельда Стонтон</a></td>
-			<td>Нотграсс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Temple">Джуно Темпл</a></td>
-			<td>Фислвит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Manville">Лесли Мэнвилл</a></td>
-			<td>Флиттл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Gyasi">Дэвид Гяси</a></td>
-			<td>Генерал Персиваль</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Murray">Дженн Мюррэй</a></td>
-			<td>Герда</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Davis">Уорвик Дэвис</a></td>
-			<td><i><p style="margin-left:30px">Ликспиттл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#Miyavi">Мияви</td>
-			<td>Удо</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/a.htm#A.Jolie">Анджелина Джоли</a></td>
+					<td>Малефисента</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Fanning">Эль Фаннинг</a></td>
+					<td>Аврора</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Pfeiffer">Мишель Пфайффер</a></td>
+					<td>Королева Ингрит</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Dickinson">Харрис Дикинсон</a></td>
+					<td>Принц Филлип</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Ejiofor">Чьюител Эджиофор</a></td>
+					<td>Коналл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Riley">Сэм Райли</a></td>
+					<td>Диаваль</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Skrein">Эд Скрейн</a></td>
+					<td>Борра</td>
+				</tr>
+				<tr>
+					<td>Роберт Линдсей</td>
+					<td>Король Джон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.Staunton">Имельда Стонтон</a></td>
+					<td>Нотграсс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Temple">Джуно Темпл</a></td>
+					<td>Фислвит</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Manville">Лесли Мэнвилл</a></td>
+					<td>Флиттл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Gyasi">Дэвид Гяси</a></td>
+					<td>Генерал Персиваль</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Murray">Дженн Мюррэй</a></td>
+					<td>Герда</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Davis">Уорвик Дэвис</a></td>
+					<td>Ликспиттл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#Miyavi">Мияви</td>
+					<td>Удо</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 185 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 114 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 492 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Extraction 2.htm" class="nav-arrow">←</a>
+		<a href="../Years/2023.htm" class="nav-arrow">⌂</a>
 		<a href="Mission Impossible - Dead Reckoning.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,68 +24,67 @@
 		<p align=justify><b>Сюжет:</b> Легендарный герой-археолог Индиана Джонс снова оказывается перед испытанием, которое проверяет не только его силу, но и терпение. Он рискует всем, чтобы не дать древнему механизму, способному изменить ход истории, попасть в руки тех, кто хочет использовать его в своих корыстных целях. В сопровождении своей крестницы он вскоре сталкивается с Юргеном Фёллером, бывшим нацистом, работающим на НАСА.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Mangold">Джеймс Мэнголд</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Indiana Jones.htm">Индиана Джонс</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
-			<td>Доктор Генри "Индиана" Джонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#P.Waller-Bridge">Фиби Уоллер-Бридж</a></td>
-			<td>Хелена Шоу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Mikkelsen">Мадс Миккелсен</a></td>
-			<td>Доктор Юрген Фёллер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Итан Айсидор</td>
-			<td>Тедди Кумар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.R.Wilson">Шонетт Рене Уилсон</a></td>
-			<td>Джордж "Мак" МакХэйл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Jones">Тоби Джонс</a></td>
-			<td>Профессор Бэзил Шоу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Banderas">Антонио Бандерас</a></td>
-			<td>Ренальдо</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Rhys-Davies">Джон Рис-Дэвис</a></td>
-			<td>Саллах</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Kretschmann">Томас Кречманн</a></td>
-			<td>Полковник Вебер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Holbrook">Бойд Холбрук</a></td>
-			<td><i><p style="margin-left:30px">Клабер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Allen">Карен Аллен</a></td>
-			<td>Мэрион Рэйвенвуд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Richters">Оливье Рихтерс</a></td>
-			<td>Хаук</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/h.htm#H.Ford">Харрисон Форд</a></td>
+					<td>Доктор Генри "Индиана" Джонс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#P.Waller-Bridge">Фиби Уоллер-Бридж</a></td>
+					<td>Хелена Шоу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Mikkelsen">Мадс Миккелсен</a></td>
+					<td>Доктор Юрген Фёллер</td>
+				</tr>
+				<tr>
+					<td>Итан Айсидор</td>
+					<td>Тедди Кумар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.R.Wilson">Шонетт Рене Уилсон</a></td>
+					<td>Джордж "Мак" МакХэйл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Jones">Тоби Джонс</a></td>
+					<td>Профессор Бэзил Шоу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Banderas">Антонио Бандерас</a></td>
+					<td>Ренальдо</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Rhys-Davies">Джон Рис-Дэвис</a></td>
+					<td>Саллах</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Kretschmann">Томас Кречманн</a></td>
+					<td>Полковник Вебер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Holbrook">Бойд Холбрук</a></td>
+					<td>Клабер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Allen">Карен Аллен</a></td>
+					<td>Мэрион Рэйвенвуд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Richters">Оливье Рихтерс</a></td>
+					<td>Хаук</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 295 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 174 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 384 млн.</p>

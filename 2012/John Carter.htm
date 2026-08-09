@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Ghost Rider - Spirit Of Vengeance.htm" class="nav-arrow">←</a>
+		<a href="../Years/2012.htm" class="nav-arrow">⌂</a>
 		<a href="The Hunger Games.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,68 +30,67 @@
 Картер понимает, что только от него зависит судьба планеты Барсум и её обитателей.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#A.Stanton">Эндрю Стэнтон</a></p>
 		<p align=justify><b>В основе:</b> Роман Эдгара Р. Берроуза "Дочь тысячи джэддаков" (США, 1917)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Kitsch">Тейлор Китч</a></td>
-			<td>Капитан Джон Картер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Collins">Линн Коллинз</a></td>
-			<td>Принцесса Дея Торис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Dafoe">Уиллем Дефо</a></td>
-			<td>Джеддак Тарс Таркас</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Morton">Саманта Мортон</a></td>
-			<td>Сола</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Strong">Марк Стронг</a></td>
-			<td>Матаи Шанг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Hinds">Киаран Хайндс</a></td>
-			<td>Джеддак Тардос Морс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.West">Доминик Уэст</a></td>
-			<td>Джеддак Саб Тан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.H.Church">Томас Хейден Чёрч</a></td>
-			<td>Таль Аджас</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джеймс Пьюрфой</td>
-			<td>Адмирал Кантос Кан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Cranston">Брайан Крэнстон</a></td>
-			<td>Полковник Пауэлл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#Po.Walker">Полли Уокер</a></td>
-			<td>Саркоджа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дэрил Сабара</td>
-			<td>Эдгар Райс Берроуз</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Kitsch">Тейлор Китч</a></td>
+					<td>Капитан Джон Картер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Collins">Линн Коллинз</a></td>
+					<td>Принцесса Дея Торис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Dafoe">Уиллем Дефо</a></td>
+					<td>Джеддак Тарс Таркас</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Morton">Саманта Мортон</a></td>
+					<td>Сола</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Strong">Марк Стронг</a></td>
+					<td>Матаи Шанг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Hinds">Киаран Хайндс</a></td>
+					<td>Джеддак Тардос Морс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.West">Доминик Уэст</a></td>
+					<td>Джеддак Саб Тан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.H.Church">Томас Хейден Чёрч</a></td>
+					<td>Таль Аджас</td>
+				</tr>
+				<tr>
+					<td>Джеймс Пьюрфой</td>
+					<td>Адмирал Кантос Кан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Cranston">Брайан Крэнстон</a></td>
+					<td>Полковник Пауэлл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#Po.Walker">Полли Уокер</a></td>
+					<td>Саркоджа</td>
+				</tr>
+				<tr>
+					<td>Дэрил Сабара</td>
+					<td>Эдгар Райс Берроуз</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 250 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 73 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 284 млн.</p>

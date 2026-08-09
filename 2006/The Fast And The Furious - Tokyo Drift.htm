@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="X-Men - The Last Stand.htm" class="nav-arrow">←</a>
+		<a href="../Years/2006.htm" class="nav-arrow">⌂</a>
 		<a href="Superman Returns.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,92 +22,82 @@
 		<h2 class="original-title">The Fast And The Furious: Tokyo Drift</h2>
 		<p><b>Мировая премьера:</b> 16 июня 2006</p>
 		<p align=justify><b>Слоган:</b> На улицах Токио слово "скорость" не нуждается в переводе.</p>
-		<p align=justify><b>Сюжет:</b> Шон Босуэлл всегда был изгоем и незаконным уличным
-гонщиком. Уехав жить в Токио, родину дрифт-рейсинга – сочетающего высокие скорости
-и тактику скольжения на поворотах, Шон бросает вызов "Королю Дрифтинга" – местному
-чемпиону, связанному с Японской криминальной машиной "Якудза". Цена, которую предстоит
-заплатить Шону, становится слишком высока, когда он влюбляется в девушку "Короля
-Дрифтинга" – Нилу. Tогда серия захватывающих событий перерастает в яростное
-движение, кульминация которого – ставка на жизнь.</p>
+		<p align=justify><b>Сюжет:</b> Шон Босуэлл, осуждённый за участие в незаконных уличных гонках, пытается начать новую жизнь на другом конце света – в Токио. Но его одержимость скоростью втягивает Шона в конфликт с местной преступной организацией. Чтобы выжить, ему придётся освоить дрифтинг – новый стиль гонок, сочетающий высокие скорости и тактику скольжения на крутых поворотах.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Lin">Джастин Лин</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Fast & Furious.htm">Форсаж</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/l.htm#L.Black">Лукас Блэк</a></td>
-			<td>Шон Бозуэлл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Moss">Бау Вау</a></td>
-			<td>Твинки</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Kang">Сон Кан</a></td>
-			<td>Хан Лю</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Натали Келли</td>
-			<td>Нила</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Tee">Брайан Ти</a></td>
-			<td>Такаши / Ди Кей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Брайан Гудман</td>
-			<td>Мистер Бозуэлл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Леонардо Нам</td>
-			<td>Моримото</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джей Джей Сонни Чиба</td>
-			<td>Дядя Камата</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Закери Брайан</td>
-			<td>Клей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Никки Гриффин</td>
-			<td>Синди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Tobin">Джейсон Тобин</a></td>
-			<td>Эрл Ху</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Boyd">Линда Бойд</a></td>
-			<td>Мисс Бозуэлл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Laresca">Винсент Лареска</a></td>
-			<td>Детектив</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кейко Китагава</td>
-			<td>Рейко</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Diesel">Вин Дизель</a></td>
-			<td>Доминик Торетто</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/l.htm#L.Black">Лукас Блэк</a>, <a href="../Actors/sh.htm#S.Moss">Бау Вау</a>, Натали Келли
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/l.htm#L.Black">Лукас Блэк</a></td>
+					<td>Шон Бозуэлл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Moss">Бау Вау</a></td>
+					<td>Твинки</td>
+				</tr>
+				<tr>
+					<td>Натали Келли</td>
+					<td>Нила</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Tee">Брайан Ти</a></td>
+					<td>Такаши / Ди Кей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Kang">Сон Кан</a></td>
+					<td>Хан Лю</td>
+				</tr>
+				<tr>
+					<td>Брайан Гудман</td>
+					<td>Мистер Бозуэлл</td>
+				</tr>
+				<tr>
+					<td>Леонардо Нам</td>
+					<td>Моримото</td>
+				</tr>
+				<tr>
+					<td>Джей Джей Сонни Чиба</td>
+					<td>Дядя Камата</td>
+				</tr>
+				<tr>
+					<td>Закери Брайан</td>
+					<td>Клей</td>
+				</tr>
+				<tr>
+					<td>Никки Гриффин</td>
+					<td>Синди</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Tobin">Джейсон Тобин</a></td>
+					<td>Эрл Ху</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Boyd">Линда Бойд</a></td>
+					<td>Мисс Бозуэлл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Laresca">Винсент Лареска</a></td>
+					<td>Детектив</td>
+				</tr>
+				<tr>
+					<td>Кейко Китагава</td>
+					<td>Рейко</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Diesel">Вин Дизель</a></td>
+					<td>Доминик Торетто</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 85 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 63 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 159 млн.</p>

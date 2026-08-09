@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Madame Web.htm" class="nav-arrow">←</a>
+		<a href="../Years/2024.htm" class="nav-arrow">⌂</a>
 		<a href="Damsel.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,93 +25,87 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#D.Villeneuve">Дени Вильнёв</a></p>
 		<p align=justify><b>В основе:</b> Роман Фрэнка Герберта "Дюна" (США, 1965)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#Dune">Дюна</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Chalamet">Тимоти Шаламе</a></td>
-			<td><i><p style="margin-left:30px">Пол Атрейдес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#J.Bardem">Хавьер Бардем</a></td>
-			<td><i><p style="margin-left:30px">Стилгар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/z.htm#Zendaya">Зендая</a></td>
-			<td><i><p style="margin-left:30px">Чани</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Ferguson">Ребекка Фергюсон</a></td>
-			<td><i><p style="margin-left:30px">Джессика Атрейдес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Brolin">Джош Бролин</a></td>
-			<td><i><p style="margin-left:30px">Гарни Холлек</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Остин Батлер</td>
-			<td><i><p style="margin-left:30px">На-барон Фейд-Раута Харконнен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#C.Rampling">Шарлотта Рэмплинг</a></td>
-			<td><i><p style="margin-left:30px">Преподобная мать Гайя Елена Мохайам</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Skarsgard">Стеллан Скарсгард</a></td>
-			<td><i><p style="margin-left:30px">Барон Владимир Харконнен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#F.Pugh">Флоренс Пью</a></td>
-			<td><i><p style="margin-left:30px">Принцесса Ирулан Коррино</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Bautista">Дэйв Батиста</a></td>
-			<td><i><p style="margin-left:30px">Глоссу Раббан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Walken">Кристофер Уокен</a></td>
-			<td><i><p style="margin-left:30px">Император Шаддам IV</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Seydoux">Леа Сейду</a></td>
-			<td><i><p style="margin-left:30px">Леди Марго Фенринг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Сухейла Якуб</td>
-			<td><i><p style="margin-left:30px">Шишакли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Элисон Халстэд</td>
-			<td><i><p style="margin-left:30px">Хранительница Воды</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Yuan">Роджер Юань</a></td>
-			<td><i><p style="margin-left:30px">Лейтенант Ланвиль</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Olusanmokun">Бабс Олусанмокун</a></td>
-			<td><i><p style="margin-left:30px">Джемис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Taylor-Joy">Аня Тейлор-Джой</a></td>
-			<td><i><p style="margin-left:30px">Алия Атрейдес</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Chalamet">Тимоти Шаламе</a></td>
+					<td>Пол Атрейдес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#J.Bardem">Хавьер Бардем</a></td>
+					<td>Стилгар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/z.htm#Zendaya">Зендая</a></td>
+					<td>Чани</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Ferguson">Ребекка Фергюсон</a></td>
+					<td>Джессика Атрейдес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Brolin">Джош Бролин</a></td>
+					<td>Гарни Холлек</td>
+				</tr>
+				<tr>
+					<td>Остин Батлер</td>
+					<td>На-барон Фейд-Раута Харконнен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#C.Rampling">Шарлотта Рэмплинг</a></td>
+					<td>Преподобная мать Гайя Елена Мохайам</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Skarsgard">Стеллан Скарсгард</a></td>
+					<td>Барон Владимир Харконнен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#F.Pugh">Флоренс Пью</a></td>
+					<td>Принцесса Ирулан Коррино</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Bautista">Дэйв Батиста</a></td>
+					<td>Глоссу Раббан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Walken">Кристофер Уокен</a></td>
+					<td>Император Шаддам IV</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Seydoux">Леа Сейду</a></td>
+					<td>Леди Марго Фенринг</td>
+				</tr>
+				<tr>
+					<td>Сухейла Якуб</td>
+					<td>Шишакли</td>
+				</tr>
+				<tr>
+					<td>Элисон Халстэд</td>
+					<td>Хранительница Воды</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Yuan">Роджер Юань</a></td>
+					<td>Лейтенант Ланвиль</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Olusanmokun">Бабс Олусанмокун</a></td>
+					<td>Джемис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Taylor-Joy">Аня Тейлор-Джой</a></td>
+					<td>Алия Атрейдес</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 190 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 282 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 715 млн.</p>

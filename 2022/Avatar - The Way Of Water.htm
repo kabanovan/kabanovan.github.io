@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Black Panther - Wakanda Forever.htm" class="nav-arrow">←</a>
+		<a href="../Years/2022.htm" class="nav-arrow">⌂</a>
 		<a href="../2023/Ant-Man And The Wasp - Quantumania.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,113 +24,103 @@
 		<p align=justify><b>Сюжет:</b> События разворачиваются спустя более десяти лет после первой части. Фильм рассказывает о семье Салли – Джейке, Нейтири и их детях, об испытаниях, которые их преследуют, о том, на что они готовы, чтобы защитить друг друга, о битвах, в которых они сражаются за выживание, и трагедиях, которые они переживают. Всё это происходит на фоне захватывающих дух пейзажей Пандоры, где зрители познакомятся с новыми культурами на'ви и удивительными морскими обитателями, населяющими величественные океаны.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Cameron">Джеймс Кэмерон</a></p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#Avatar">Аватар</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/s.htm#S.Worthington">Сэм Уортингтон</a></td>
-			<td>Джейк Салли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Lang">Стивен Лэнг</a></td>
-			<td>Полковник Майлз Куоритч</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Dalton">Бритен Далтон</a></td>
-			<td>Ло'ак</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/z.htm#Z.Saldana">Зои Салдана</a></td>
-			<td>Нейтири</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a></td>
-			<td>Кири / Доктор Грейс Огустин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Champion">Джек Чемпион</a></td>
-			<td>Майлз "Паук" Сокорро</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джейми Флэттерс</td>
-			<td>Нетейам</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Брендан Коуэлл</td>
-			<td>Капитан Мик Скорсби</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Curtis">Клифф Кёртис</a></td>
-			<td><i><p style="margin-left:30px">Тоновари</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Бэйли Басс</td>
-			<td>Цирея</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Тринити Йо-Ли Блисс</td>
-			<td>Тук</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Gerald">Мэтт Джеральд</a></td>
-			<td>Капрал Лайл Уэйнфлит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Winslet">Кейт Уинслет</a></td>
-			<td>Ронал</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Иди Фалько</td>
-			<td>Генерал Фрэнсис Ардмор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Clement">Джемейн Клемент</a></td>
-			<td>Доктор Йен Гарвин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Филип Гельо</td>
-			<td>Аонун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.D.Moore">Джоэль Дэвид Мур</a></td>
-			<td>Доктор Норм Спеллман</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#C.Pounder">Си-Си-Эйч Паундер</a></td>
-			<td>Мо'ат</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Ribisi">Джованни Рибизи</a></td>
-			<td>Паркер Селфридж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Дуэйн Эванс-мл.</td>
-			<td>Рото</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Rao">Дилип Рао</a></td>
-			<td>Доктор Макс Пател</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/s.htm#S.Worthington">Сэм Уортингтон</a></td>
+					<td>Джейк Салли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Lang">Стивен Лэнг</a></td>
+					<td>Полковник Майлз Куоритч</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Dalton">Бритен Далтон</a></td>
+					<td>Ло'ак</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/z.htm#Z.Saldana">Зои Салдана</a></td>
+					<td>Нейтири</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Weaver">Сигурни Уивер</a></td>
+					<td>Кири / Доктор Грейс Огустин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Champion">Джек Чемпион</a></td>
+					<td>Майлз "Паук" Сокорро</td>
+				</tr>
+				<tr>
+					<td>Джейми Флэттерс</td>
+					<td>Нетейам</td>
+				</tr>
+				<tr>
+					<td>Брендан Коуэлл</td>
+					<td>Капитан Мик Скорсби</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Curtis">Клифф Кёртис</a></td>
+					<td>Тоновари</td>
+				</tr>
+				<tr>
+					<td>Бэйли Басс</td>
+					<td>Цирея</td>
+				</tr>
+				<tr>
+					<td>Тринити Йо-Ли Блисс</td>
+					<td>Тук</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Gerald">Мэтт Джеральд</a></td>
+					<td>Капрал Лайл Уэйнфлит</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Winslet">Кейт Уинслет</a></td>
+					<td>Ронал</td>
+				</tr>
+				<tr>
+					<td>Иди Фалько</td>
+					<td>Генерал Фрэнсис Ардмор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Clement">Джемейн Клемент</a></td>
+					<td>Доктор Йен Гарвин</td>
+				</tr>
+				<tr>
+					<td>Филип Гельо</td>
+					<td>Аонун</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.D.Moore">Джоэль Дэвид Мур</a></td>
+					<td>Доктор Норм Спеллман</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#C.Pounder">Си-Си-Эйч Паундер</a></td>
+					<td>Мо'ат</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Ribisi">Джованни Рибизи</a></td>
+					<td>Паркер Селфридж</td>
+				</tr>
+				<tr>
+					<td>Дуэйн Эванс-мл.</td>
+					<td>Рото</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Rao">Дилип Рао</a></td>
+					<td>Доктор Макс Пател</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 350 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 684 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 2 343 млн.</p>

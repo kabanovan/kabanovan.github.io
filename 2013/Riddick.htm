@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Kick-Ass 2.htm" class="nav-arrow">←</a>
+		<a href="../Years/2013.htm" class="nav-arrow">⌂</a>
 		<a href="Gravity.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -29,78 +29,75 @@
 начинает поход во имя мести, чтобы в конечном счёте вернуться на родную Фурию.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#D.Twohy">Дэвид Туи</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/The Chronicles Of Riddick.htm">Хроники Риддика</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/v.htm#V.Diesel">Вин Дизель</a></td>
-			<td>Ричард Риддик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#J.Molla">Хорди Молья</a></td>
-			<td>Сантана</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мэтт Нэйбл</td>
-			<td>Джонс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Sackhoff">Кэти Сакхофф</a></td>
-			<td>Дал</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Bautista">Дэйв Батиста</a></td>
-			<td>Диас</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Pla">Конрад Пла</a></td>
-			<td>Варгас</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Woodbine">Букем Вудбайн</a></td>
-			<td>Мосс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Trujillo">Рауль Трухильо</a></td>
-			<td>Локспер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.J.Funk">Нолан Джерард Фанк</a></td>
-			<td>Луна</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Urban">Карл Урбан</a></td>
-			<td>Командор Сибериус Вако</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Apergis">Андреас Апергис</a></td>
-			<td>Кроун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ноа Дэнби</td>
-			<td>Нуньес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Napier">Нил Напье</a></td>
-			<td>Рубио</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.B.Hall">Дэнни Бланко Холл</a></td>
-			<td>Фалко</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/v.htm#V.Diesel">Вин Дизель</a></td>
+					<td>Ричард Риддик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#J.Molla">Хорди Молья</a></td>
+					<td>Сантана</td>
+				</tr>
+				<tr>
+					<td>Мэтт Нэйбл</td>
+					<td>Джонс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Sackhoff">Кэти Сакхофф</a></td>
+					<td>Дал</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Bautista">Дэйв Батиста</a></td>
+					<td>Диас</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Pla">Конрад Пла</a></td>
+					<td>Варгас</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Woodbine">Букем Вудбайн</a></td>
+					<td>Мосс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Trujillo">Рауль Трухильо</a></td>
+					<td>Локспер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.J.Funk">Нолан Джерард Фанк</a></td>
+					<td>Луна</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Urban">Карл Урбан</a></td>
+					<td>Командор Сибериус Вако</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Apergis">Андреас Апергис</a></td>
+					<td>Кроун</td>
+				</tr>
+				<tr>
+					<td>Ноа Дэнби</td>
+					<td>Нуньес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Napier">Нил Напье</a></td>
+					<td>Рубио</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.B.Hall">Дэнни Бланко Холл</a></td>
+					<td>Фалко</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 38 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 42 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 98 млн.</p>

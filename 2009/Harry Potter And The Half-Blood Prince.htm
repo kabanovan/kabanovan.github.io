@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Transformers - Revenge Of The Fallen.htm" class="nav-arrow">←</a>
+		<a href="../Years/2009.htm" class="nav-arrow">⌂</a>
 		<a href="G.I. Joe - The Rise Of Cobra.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -40,143 +40,129 @@
 		<p align=justify><b>В основе:</b> Роман Дж. К. Ролинг "Гарри Поттер и Принц-полукровка"
 (Великобритания, 2005)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Harry Potter.htm">Гарри Поттер</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.Radcliffe">Дэниэл Рэдклифф</a></td>
-			<td>Гарри Поттер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Gambon">Майкл Гэмбон</a></td>
-			<td>Профессор Альбус Дамблдор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Broadbent">Джим Броудбент</a></td>
-			<td>Профессор Гораций Слизнорт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Grint">Руперт Гринт</a></td>
-			<td>Рон Уизли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#Emm.Watson">Эмма Уотсон</a></td>
-			<td>Гермиона Грейнджер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Rickman">Алан Рикман</a></td>
-			<td>Профессор Северус Снегг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#Mag.Smith">Мэгги Смит</a></td>
-			<td>Профессор Минерва МакГонагалл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Wright">Бонни Райт</a></td>
-			<td>Джинни Уизли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.B.Carter">Хелена Бонем Картер</a></td>
-			<td>Беллатриса Лестрейндж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Coltrane">Робби Колтрейн</a></td>
-			<td>Рубеус Хагрид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Felton">Том Фелтон</a></td>
-			<td>Драко Малфой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Walters">Джули Уолтерс</a></td>
-			<td>Молли Уизли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#Ma.Williams">Марк Уильямс</a></td>
-			<td>Артур Уизли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Lynch">Эванна Линч</a></td>
-			<td>Полумна Лавгуд</td>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.Radcliffe">Дэниэл Рэдклифф</a></td>
+					<td>Гарри Поттер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Gambon">Майкл Гэмбон</a></td>
+					<td>Профессор Альбус Дамблдор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Broadbent">Джим Броудбент</a></td>
+					<td>Профессор Гораций Слизнорт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Grint">Руперт Гринт</a></td>
+					<td>Рон Уизли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#Emm.Watson">Эмма Уотсон</a></td>
+					<td>Гермиона Грейнджер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Rickman">Алан Рикман</a></td>
+					<td>Профессор Северус Снегг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#Mag.Smith">Мэгги Смит</a></td>
+					<td>Профессор Минерва МакГонагалл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Wright">Бонни Райт</a></td>
+					<td>Джинни Уизли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.B.Carter">Хелена Бонем Картер</a></td>
+					<td>Беллатриса Лестрейндж</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Coltrane">Робби Колтрейн</a></td>
+					<td>Рубеус Хагрид</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Felton">Том Фелтон</a></td>
+					<td>Драко Малфой</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Walters">Джули Уолтерс</a></td>
+					<td>Молли Уизли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#Ma.Williams">Марк Уильямс</a></td>
+					<td>Артур Уизли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Lynch">Эванна Линч</a></td>
+					<td>Полумна Лавгуд</td>
 </tr>
 <!--<tr>
   <td></td>
-			<td><a href="../Actors/d.htm#J.Cave">Джесси Кейв</a></td>
-			<td>Лаванда Браун</td>
+					<td><a href="../Actors/d.htm#J.Cave">Джесси Кейв</a></td>
+					<td>Лаванда Браун</td>
 </tr>-->
 <tr>
   <td></td>
-			<td><a href="../Actors/f.htm#F.Dillane">Фрэнк Диллэйн</a></td>
-			<td>Том Реддл в 16 лет</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Thewlis">Дэвид Тьюлис</a></td>
-			<td>Римус Люпин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Davis">Уорвик Дэвис</a></td>
-			<td>Профессор Филиус Флитвик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Bradley">Дэвид Брэдли</a></td>
-			<td>Аргус Филч</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Tena">Наталия Тена</a></td>
-			<td>Нимфадора Тонкс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.McCrory">Хелен МакКрори</a></td>
-			<td>Нарцисса Малфой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Phelps">Джеймс Фелпс</a></td>
-			<td>Фред Уизли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Phelps">Оливер Фелпс</a></td>
-			<td>Джордж Уизли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Lewis">Мэттью Льюис</a></td>
-			<td>Невилл Долгопупс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Spall">Тимоти Сполл</a></td>
-			<td>Питер Петтигрю</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Jones">Джемма Джонс</a></td>
-			<td>Мадам Поппи Помфри</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Legeno">Дэйв Леджено</a></td>
-			<td>Фенрир Сивый</td>
-		</tr>
-		</table>
+					<td><a href="../Actors/f.htm#F.Dillane">Фрэнк Диллэйн</a></td>
+					<td>Том Реддл в 16 лет</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Thewlis">Дэвид Тьюлис</a></td>
+					<td>Римус Люпин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Davis">Уорвик Дэвис</a></td>
+					<td>Профессор Филиус Флитвик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Bradley">Дэвид Брэдли</a></td>
+					<td>Аргус Филч</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Tena">Наталия Тена</a></td>
+					<td>Нимфадора Тонкс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.McCrory">Хелен МакКрори</a></td>
+					<td>Нарцисса Малфой</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Phelps">Джеймс Фелпс</a></td>
+					<td>Фред Уизли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Phelps">Оливер Фелпс</a></td>
+					<td>Джордж Уизли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Lewis">Мэттью Льюис</a></td>
+					<td>Невилл Долгопупс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Spall">Тимоти Сполл</a></td>
+					<td>Питер Петтигрю</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Jones">Джемма Джонс</a></td>
+					<td>Мадам Поппи Помфри</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Legeno">Дэйв Леджено</a></td>
+					<td>Фенрир Сивый</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 250 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 302 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 941 млн.</p>

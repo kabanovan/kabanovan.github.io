@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Godzilla Vs. Kong.htm" class="nav-arrow">←</a>
+		<a href="../Years/2021.htm" class="nav-arrow">⌂</a>
 		<a href="Those Who Wish Me Dead.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,78 +24,75 @@
 		<p align=justify><b>Сюжет:</b> Боец смешанных единоборств Коул Янг привык проигрывать матчи за деньги. Он ничего не знает о своём наследии и даже не подозревает, что император Внешнего Мира Шанг Цунг хочет убить его, послав на это задание своего лучшего воина – криомансера Саб-Зиро. Опасаясь за жизни своей семьи, Коул отправляется искать Соню Блейд по совету майора войск специального назначения Джакса, который имеет такую же загадочную метку дракона, какая есть у Коула с рождения. Поиски приводят Коула в храм лорда Рэйдена, Старшего Бога и защитника Земного Царства, который дарует убежище всем носителям метки. Чтобы вместе с лучшими чемпионами Земли победить силы Внешнего Мира и спасти планету, Коул начинает тренироваться под руководством опытных воинов: Лю Кана, Кунг Лао и наёмника-изгоя Кано. Но сумеет ли он разбудить свою аркану – могучую силу, сокрытую в своей душе, чтобы не только спасти семью, но и навсегда покончить с угрозой Внешнего Мира?</p>
 		<p><b>Режиссёр:</b> Саймон МакКуойд</p>
 		<p align=justify><b>В основе:</b> Серия компьютерных игр "Смертельная битва" (США, выходят с 1992)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/l.htm#L.Tan">Льюис Тан</a></td>
-			<td><i><p style="margin-left:30px">Коул Янг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джош Лоусон</td>
-			<td><i><p style="margin-left:30px">Кано</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.McNamee">Джессика МакНэми</a></td>
-			<td><i><p style="margin-left:30px">Лейтенант Соня Блэйд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Lin">Луди Линь</a></td>
-			<td><i><p style="margin-left:30px">Лю Кан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Han">Чин Хань</td>
-			<td><i><p style="margin-left:30px">Шанг Цунг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Asano">Таданобу Асано</a></td>
-			<td><i><p style="margin-left:30px">Лорд Рэйден</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мехкад Брукс</td>
-			<td><i><p style="margin-left:30px">Майор Джакс Бриггс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Sanada">Хироюки Санада</a></td>
-			<td><i><p style="margin-left:30px">Ханзо Хасаши / Скорпион</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Taslim">Джо Таслим</a></td>
-			<td><i><p style="margin-left:30px">Би-Хан / Саб-Зиро</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Макс Хуан</td>
-			<td><i><p style="margin-left:30px">Кунг Лао</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Матильда Кимбер</td>
-			<td><i><p style="margin-left:30px">Эмили Янг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Brent">Лора Брент</a></td>
-			<td><i><p style="margin-left:30px">Эллисон Янг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Field">Дэвид Филд</a></td>
-			<td>Рефери</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Сиси Стрингер</td>
-			<td><i><p style="margin-left:30px">Милена</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/l.htm#L.Tan">Льюис Тан</a></td>
+					<td>Коул Янг</td>
+				</tr>
+				<tr>
+					<td>Джош Лоусон</td>
+					<td>Кано</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.McNamee">Джессика МакНэми</a></td>
+					<td>Лейтенант Соня Блэйд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Lin">Луди Линь</a></td>
+					<td>Лю Кан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Han">Чин Хань</td>
+					<td>Шанг Цунг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Asano">Таданобу Асано</a></td>
+					<td>Лорд Рэйден</td>
+				</tr>
+				<tr>
+					<td>Мехкад Брукс</td>
+					<td>Майор Джакс Бриггс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Sanada">Хироюки Санада</a></td>
+					<td>Ханзо Хасаши / Скорпион</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Taslim">Джо Таслим</a></td>
+					<td>Би-Хан / Саб-Зиро</td>
+				</tr>
+				<tr>
+					<td>Макс Хуан</td>
+					<td>Кунг Лао</td>
+				</tr>
+				<tr>
+					<td>Матильда Кимбер</td>
+					<td>Эмили Янг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Brent">Лора Брент</a></td>
+					<td>Эллисон Янг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Field">Дэвид Филд</a></td>
+					<td>Рефери</td>
+				</tr>
+				<tr>
+					<td>Сиси Стрингер</td>
+					<td>Милена</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 55 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 42 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 84 млн.</p>

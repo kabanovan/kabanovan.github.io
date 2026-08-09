@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Tenet.htm" class="nav-arrow">←</a>
+		<a href="../Years/2020.htm" class="nav-arrow">⌂</a>
 		<a href="Love And Monsters.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,88 +24,83 @@
 		<p align=justify><b>Сюжет:</b> Изданный императором Китая указ о призыве на службу в Имперской армии одного мужчины из каждой семьи для защиты страны от северных захватчиков вдохновляет Хуа Мулан, старшую дочь почётного воина, занять в войсках место своего больного отца. Маскируясь под мужчину, девушка подвергается испытаниям на каждом шагу, проявляя свои внутреннюю силу и истинный потенциал. Мулан ждёт эпичное путешествие, которое превратит её в доблестного воина, позволит заслужить уважение благодарного народа и стать гордостью отца.</p>
 		<p><b>Режиссёр:</b> Ники Каро</p>
 		<p align=justify><b>В основе:</b> Китайская народная баллада "Песнь о Мулань" (6 в.) и мультфильм "Мулан" (США, 1998)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>Ифэй Лю</td>
-			<td><i><p style="margin-left:30px">Хуа Мулан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Yen">Донни Йен</a></td>
-			<td><i><p style="margin-left:30px">Генерал Тун Юнь</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/c.htm#T.Ma">Ци Ма</a></td>
-			<td><i><p style="margin-left:30px">Хуа Чжоу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.S.Lee">Джейсон Скотт Ли</a></td>
-			<td><i><p style="margin-left:30px">Бори Хан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/y.htm#Y.An">Йосон Ан</a></td>
-			<td><i><p style="margin-left:30px">Хонхэй</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Yuan">Рон Юань</a></td>
-			<td><i><p style="margin-left:30px">Сержант Цян</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Li">Джет Ли</a></td>
-			<td>Император</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Гун Ли</td>
-			<td><i><p style="margin-left:30px">Сяньян</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Chao">Розалинд Чао</a></td>
-			<td><i><p style="margin-left:30px">Хуа Ли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Lee">Нельсон Ли</a></td>
-			<td><i><p style="margin-left:30px">Советник</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Цзюнь Юй</td>
-			<td><i><p style="margin-left:30px">Сверчок</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Чжэн Пэй-Пэй</td>
-			<td><i><p style="margin-left:30px">Сваха</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джимми Вонг</td>
-			<td><i><p style="margin-left:30px">Линь</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Чэнь Тан</td>
-			<td><i><p style="margin-left:30px">Яо</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Moua">Доа Моа</a></td>
-			<td><i><p style="margin-left:30px">По</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Wen">Минг-На Вен</a></td>
-			<td>Почётная гостья</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td>Ифэй Лю</td>
+					<td>Хуа Мулан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Yen">Донни Йен</a></td>
+					<td>Генерал Тун Юнь</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/c.htm#T.Ma">Ци Ма</a></td>
+					<td>Хуа Чжоу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.S.Lee">Джейсон Скотт Ли</a></td>
+					<td>Бори Хан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/y.htm#Y.An">Йосон Ан</a></td>
+					<td>Хонхэй</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Yuan">Рон Юань</a></td>
+					<td>Сержант Цян</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Li">Джет Ли</a></td>
+					<td>Император</td>
+				</tr>
+				<tr>
+					<td>Гун Ли</td>
+					<td>Сяньян</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Chao">Розалинд Чао</a></td>
+					<td>Хуа Ли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Lee">Нельсон Ли</a></td>
+					<td>Советник</td>
+				</tr>
+				<tr>
+					<td>Цзюнь Юй</td>
+					<td>Сверчок</td>
+				</tr>
+				<tr>
+					<td>Чжэн Пэй-Пэй</td>
+					<td>Сваха</td>
+				</tr>
+				<tr>
+					<td>Джимми Вонг</td>
+					<td>Линь</td>
+				</tr>
+				<tr>
+					<td>Чэнь Тан</td>
+					<td>Яо</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Moua">Доа Моа</a></td>
+					<td>По</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Wen">Минг-На Вен</a></td>
+					<td>Почётная гостья</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 200 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 70 млн.</p>
 		<p><b>Продолжительность:</b> 1 ч. 45 мин.<br>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Guardians Of The Galaxy - Vol. 2.htm" class="nav-arrow">←</a>
+		<a href="../Years/2017.htm" class="nav-arrow">⌂</a>
 		<a href="Alien - Covenant.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -29,108 +29,99 @@
 должен принять свою легендарную судьбу... нравится ему это или нет.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#G.Ritchie">Гай Ричи</a></p>
 		<p align=justify><b>В основе:</b> Английские легенды о короле Артуре (9 в.)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/ch.htm#C.Hunnam">Чарли Ханнэм</a></td>
-			<td><i><p style="margin-left:30px">Артур</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Law">Джуд Лоу</a></td>
-			<td><i><p style="margin-left:30px">Вортигерн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
-			<td><i><p style="margin-left:30px">Сэр Бедивер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Maskell">Нил Мэскелл</a></td>
-			<td><i><p style="margin-left:30px">Кабан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Berges-Frisbey">Астрид Берже-Фрисби</a></td>
-			<td><i><p style="margin-left:30px">Маг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Gillen">Эйдан Гиллен</a></td>
-			<td><i><p style="margin-left:30px">Сэр "Скользкий Билл" Уильям</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Ben-Adir">Кингсли Бен-Адир</a></td>
-			<td><i><p style="margin-left:30px">Тощий</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.McElhatton">Майкл МакЭлхаттон</a></td>
-			<td><i><p style="margin-left:30px">Глаз Джека</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Bana">Эрик Бана</a></td>
-			<td><i><p style="margin-left:30px">Утер Пендрагон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Ferdinando">Питер Фердинандо</td>
-			<td><i><p style="margin-left:30px">Лорд Мерсиа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Persbrandt">Микаэл Персбрандт</a></td>
-			<td><i><p style="margin-left:30px">Седобородый</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Блю Ландау</td>
-			<td><i><p style="margin-left:30px">Блу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Wallis">Аннабелль Уоллис</a></td>
-			<td><i><p style="margin-left:30px">Мэгги</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Bell">Джофф Белл</a></td>
-			<td><i><p style="margin-left:30px">Подлый Джон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#F.Fox">Фредди Фокс</a></td>
-			<td><i><p style="margin-left:30px">Рубио</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.McGrath">Кэти МакГрат</a></td>
-			<td><i><p style="margin-left:30px">Эльза</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Wu">Том Ву</a></td>
-			<td><i><p style="margin-left:30px">Джордж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лоррэйн Брюс</td>
-			<td><i><p style="margin-left:30px">Сирена</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Элайн Пауэлл</td>
-			<td><i><p style="margin-left:30px">Сирена</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#H.Corfield">Гермиона Корфилд</a></td>
-			<td><i><p style="margin-left:30px">Сирена</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Hunnam">Чарли Ханнэм</a></td>
+					<td>Артур</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Law">Джуд Лоу</a></td>
+					<td>Вортигерн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Hounsou">Джимон Хонсу</a></td>
+					<td>Сэр Бедивер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Maskell">Нил Мэскелл</a></td>
+					<td>Кабан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Berges-Frisbey">Астрид Берже-Фрисби</a></td>
+					<td>Маг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Gillen">Эйдан Гиллен</a></td>
+					<td>Сэр "Скользкий Билл" Уильям</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Ben-Adir">Кингсли Бен-Адир</a></td>
+					<td>Тощий</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.McElhatton">Майкл МакЭлхаттон</a></td>
+					<td>Глаз Джека</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Bana">Эрик Бана</a></td>
+					<td>Утер Пендрагон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Ferdinando">Питер Фердинандо</td>
+					<td>Лорд Мерсиа</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Persbrandt">Микаэл Персбрандт</a></td>
+					<td>Седобородый</td>
+				</tr>
+				<tr>
+					<td>Блю Ландау</td>
+					<td>Блу</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Wallis">Аннабелль Уоллис</a></td>
+					<td>Мэгги</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Bell">Джофф Белл</a></td>
+					<td>Подлый Джон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#F.Fox">Фредди Фокс</a></td>
+					<td>Рубио</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.McGrath">Кэти МакГрат</a></td>
+					<td>Эльза</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Wu">Том Ву</a></td>
+					<td>Джордж</td>
+				</tr>
+				<tr>
+					<td>Лоррэйн Брюс</td>
+					<td>Сирена</td>
+				</tr>
+				<tr>
+					<td>Элайн Пауэлл</td>
+					<td>Сирена</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#H.Corfield">Гермиона Корфилд</a></td>
+					<td>Сирена</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 175 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 39 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 149 млн.</p>

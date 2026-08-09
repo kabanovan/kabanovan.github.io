@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Robin Hood.htm" class="nav-arrow">←</a>
+		<a href="../Years/2018.htm" class="nav-arrow">⌂</a>
 		<a href="Aquaman.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,98 +24,91 @@
 		<p align=justify><b>Сюжет:</b> Спустя сотни лет после катастрофы, разрушившей нашу цивилизацию, возник новый мир. Таинственная молодая женщина по имени Эстер Шо возглавляет армию бунтарей, чтобы противостоять Лондону – гигантскому самоходному городу-хищнику, стремящемуся поглотить всё на своём пути. Движимая жаждой мести за смерть своей матери, Эстер объединяется с Томом Нэтсуорти, изгнанником из Лондона, и Анной Фанг – опасной преступницей, за голову которой назначена награда.</p>
 		<p><b>Режиссёр:</b> Кристиан Риверс</p>
 		<p align=justify><b>В основе:</b> Роман Филипа Рива "Смертные машины" (Великобритания, 2001)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/r.htm#R.Sheehan">Роберт Шиан</a></td>
-			<td><i><p style="margin-left:30px">Том Нэтсуорти</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Хера Хильмар</td>
-			<td><i><p style="margin-left:30px">Эстер Шо</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Weaving">Хьюго Уивинг</a></td>
-			<td><i><p style="margin-left:30px">Таддеус Валентайн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джихе</td>
-			<td><i><p style="margin-left:30px">Анна Фанг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лейла Джордж</td>
-			<td><i><p style="margin-left:30px">Кэтрин Валентайн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Lang">Стивен Лэнг</a></td>
-			<td><i><p style="margin-left:30px">Шрайк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Raftery">Ронан Рафтери</a></td>
-			<td><i><p style="margin-left:30px">Бевис Под</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Патрик Мэлахайд</td>
-			<td><i><p style="margin-left:30px">Лорд-мэр Магнус Кром</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Salmon">Колин Сэлмон</a></td>
-			<td><i><p style="margin-left:30px">Доктор Чадли Помрой</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.J.Page">Реге-Жан Пейдж</a></td>
-			<td><i><p style="margin-left:30px">Капитан Мадзимойо Кхора</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Эндрю Лис</td>
-			<td><i><p style="margin-left:30px">Герберт Меллифант</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Hadlow">Марк Хэдлоу</a></td>
-			<td><i><p style="margin-left:30px">Стигвуд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лейфур Сигурдарсон</td>
-			<td><i><p style="margin-left:30px">Нильс Линдстрём</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Mitchinson">Марк Митчинсон</a></td>
-			<td><i><p style="margin-left:30px">Доктор Вамбрейс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Gooneratne">Меник Гунератне</a></td>
-			<td><i><p style="margin-left:30px">Сатия Куранат</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Фрэнки Адамс</td>
-			<td><i><p style="margin-left:30px">Ясмина Рашид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Кан Уэст</td>
-			<td><i><p style="margin-left:30px">Тоа Хеке</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Софи Кокс</td>
-			<td><i><p style="margin-left:30px">Клития Поттс</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/r.htm#R.Sheehan">Роберт Шиан</a></td>
+					<td>Том Нэтсуорти</td>
+				</tr>
+				<tr>
+					<td>Хера Хильмар</td>
+					<td>Эстер Шо</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Weaving">Хьюго Уивинг</a></td>
+					<td>Таддеус Валентайн</td>
+				</tr>
+				<tr>
+					<td>Джихе</td>
+					<td>Анна Фанг</td>
+				</tr>
+				<tr>
+					<td>Лейла Джордж</td>
+					<td>Кэтрин Валентайн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Lang">Стивен Лэнг</a></td>
+					<td>Шрайк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Raftery">Ронан Рафтери</a></td>
+					<td>Бевис Под</td>
+				</tr>
+				<tr>
+					<td>Патрик Мэлахайд</td>
+					<td>Лорд-мэр Магнус Кром</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Salmon">Колин Сэлмон</a></td>
+					<td>Доктор Чадли Помрой</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.J.Page">Реге-Жан Пейдж</a></td>
+					<td>Капитан Мадзимойо Кхора</td>
+				</tr>
+				<tr>
+					<td>Эндрю Лис</td>
+					<td>Герберт Меллифант</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Hadlow">Марк Хэдлоу</a></td>
+					<td>Стигвуд</td>
+				</tr>
+				<tr>
+					<td>Лейфур Сигурдарсон</td>
+					<td>Нильс Линдстрём</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Mitchinson">Марк Митчинсон</a></td>
+					<td>Доктор Вамбрейс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Gooneratne">Меник Гунератне</a></td>
+					<td>Сатия Куранат</td>
+				</tr>
+				<tr>
+					<td>Фрэнки Адамс</td>
+					<td>Ясмина Рашид</td>
+				</tr>
+				<tr>
+					<td>Кан Уэст</td>
+					<td>Тоа Хеке</td>
+				</tr>
+				<tr>
+					<td>Софи Кокс</td>
+					<td>Клития Поттс</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 100 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 16 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 84 млн.</p>

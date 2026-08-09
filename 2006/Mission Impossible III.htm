@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="../2005/King Kong.htm" class="nav-arrow">←</a>
+		<a href="../Years/2006.htm" class="nav-arrow">⌂</a>
 		<a href="Poseidon.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -22,86 +22,79 @@
 		<h2 class="original-title">Mission: Impossible III</h2>
 		<p><b>Мировая премьера:</b> 5 мая 2006</p>
 		<p align=justify><b>Слоган:</b> Миссия начинается.</p>
-		<p align=justify><b>Сюжет:</b> Возвращённый на службу руководством агентства, Итан Хант
-сталкивается с самым опасным врагом – склонным к садизму торговцем оружием по имени
-Оуэн Дэвиан. При поддержке команды сверхсекретного отряда "Миссия невыполнима" Итан
-пускается в опасное приключение, отправляясь из Рима в Шанхай, чтобы спасти захваченного
-агента и не дать Дэвиану уничтожить следующую цель – девушку Итана Джулию.</p>
+		<p align=justify><b>Сюжет:</b> Вновь призванный на службу руководством агентства, Итан Хант сталкивается с самым опасным из всех его врагов – склонным к садизму торговцем оружием по имени Оуэн Дэвиан. При поддержке своей команды сверхсекретного отряда "Миссия невыполнима" Итан пускается в опасное приключение, отправляясь из Рима в Шанхай, чтобы спасти захваченного агента и не дать Дэвиану уничтожить следующую цель – невесту Итана Джулию.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.J.Abrams">Джей Джей Абрамс</a></p>
 		<p align=justify><b>В основе:</b> Телесериал "Миссия: Невыполнима" (США, 1966-1973)</p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Mission Impossible.htm">Миссия Невыполнима</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Cruise">Том Круз</a></td>
-			<td>Агент Итан Хант</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/f.htm#P.S.Hoffman">Филип Сеймур Хоффман</a></td>
-			<td>Оуэн Дэвиан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Rhames">Винг Рэймс</a></td>
-			<td>Лютер Стикелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джонатан Рис Майерс</td>
-			<td>Деклан Гормли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Fishburne">Лоренс Фишбёрн</a></td>
-			<td>Теодор Брассел</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Crudup">Билли Крудуп</a></td>
-			<td>Джон Масгрейв</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Monaghan">Мишель Монаган</a></td>
-			<td>Джулия Мид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#Ke.Russell">Кери Расселл</a></td>
-			<td>Линдси Фэррис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Q">Мэгги Кью</a></td>
-			<td>Жен Ли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Pegg">Саймон Пегг</a></td>
-			<td>Бенджи Данн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Marsan">Эдди Марсан</a></td>
-			<td>Браунуэй</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Grunberg">Грег Гранберг</a></td>
-			<td>Кевин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Paul">Аарон Пол</a></td>
-			<td>Рик Мид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#J.Zuniga">Хосе Суньига</a></td>
-			<td>Агент Пит</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> <a href="../Actors/t.htm#T.Cruise">Том Круз</a>, <a href="../Actors/f.htm#P.S.Hoffman">Филип Сеймур Хоффман</a>, <a href="../Actors/v.htm#V.Rhames">Винг Рэймс</a>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Cruise">Том Круз</a></td>
+					<td>Агент Итан Хант</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/f.htm#P.S.Hoffman">Филип Сеймур Хоффман</a></td>
+					<td>Оуэн Дэвиан</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Rhames">Винг Рэймс</a></td>
+					<td>Лютер Стикелл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Fishburne">Лоренс Фишбёрн</a></td>
+					<td>Теодор Брассел</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Crudup">Билли Крудуп</a></td>
+					<td>Джон Масгрейв</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Monaghan">Мишель Монаган</a></td>
+					<td>Джулия Мид</td>
+				</tr>
+				<tr>
+					<td>Джонатан Рис Майерс</td>
+					<td>Деклан Гормли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#Ke.Russell">Кери Расселл</a></td>
+					<td>Линдси Фэррис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Q">Мэгги Кью</a></td>
+					<td>Жен Ли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Pegg">Саймон Пегг</a></td>
+					<td>Бенджи Данн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Marsan">Эдди Марсан</a></td>
+					<td>Браунуэй</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Grunberg">Грег Гранберг</a></td>
+					<td>Кевин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Paul">Аарон Пол</a></td>
+					<td>Рик Мид</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#J.Zuniga">Хосе Суньига</a></td>
+					<td>Агент Пит</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 150 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 134 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 398 млн.</p>

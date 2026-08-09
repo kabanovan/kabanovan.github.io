@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Hobbit - The Desolation Of Smaug.htm" class="nav-arrow">←</a>
+		<a href="../Years/2013.htm" class="nav-arrow">⌂</a>
 		<a href="../2014/I, Frankenstein.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,93 +30,87 @@
 жизнь, а на смерть...</p>
 		<p><b>Режиссёр:</b> Карл Ринш</p>
 		<p align=justify><b>В основе:</b> Японское народное предание "Сорок семь ронинов" (18 в.)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/k.htm#K.Reeves">Киану Ривз</a></td>
-			<td>Кай</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Sanada">Хироюки Санада</a></td>
-			<td>Оиси</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Kikuchi">Ринко Кикучи</td>
-			<td>Ведьма</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Asano">Таданобу Асано</a></td>
-			<td>Князь Кира Йосинака</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Ко Сибасаки</td>
-			<td>Мика</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Мин Танака</td>
-			<td>Князь Асано Наганори</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.H.Tagawa">Кэри-Хироюки Тагава</a></td>
-			<td>Сёгун Токугава Цунаёси</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джин Аканиши</td>
-			<td>Тикара</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Haneda">Масаёси Ханеда</a></td>
-			<td>Ясуно</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Такато Йонемото</td>
-			<td>Басё</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Igawa">Того Игава</a></td>
-			<td>Повелитель тэнгу</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Хироси Согабэ</td>
-			<td>Хадзама</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Хироси Ямада</td>
-			<td>Хара</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Масаюки Дэай</td>
-			<td>Исогай</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Шу Накаджима</td>
-			<td>Хорибе</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Натсуки Кунимото</td>
-			<td>Рику</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Watanabe">Гедде Ватанабе</a></td>
-			<td>Лидер трупы</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/k.htm#K.Reeves">Киану Ривз</a></td>
+					<td>Кай</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Sanada">Хироюки Санада</a></td>
+					<td>Оиси</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Kikuchi">Ринко Кикучи</td>
+					<td>Ведьма</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Asano">Таданобу Асано</a></td>
+					<td>Князь Кира Йосинака</td>
+				</tr>
+				<tr>
+					<td>Ко Сибасаки</td>
+					<td>Мика</td>
+				</tr>
+				<tr>
+					<td>Мин Танака</td>
+					<td>Князь Асано Наганори</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.H.Tagawa">Кэри-Хироюки Тагава</a></td>
+					<td>Сёгун Токугава Цунаёси</td>
+				</tr>
+				<tr>
+					<td>Джин Аканиши</td>
+					<td>Тикара</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Haneda">Масаёси Ханеда</a></td>
+					<td>Ясуно</td>
+				</tr>
+				<tr>
+					<td>Такато Йонемото</td>
+					<td>Басё</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Igawa">Того Игава</a></td>
+					<td>Повелитель тэнгу</td>
+				</tr>
+				<tr>
+					<td>Хироси Согабэ</td>
+					<td>Хадзама</td>
+				</tr>
+				<tr>
+					<td>Хироси Ямада</td>
+					<td>Хара</td>
+				</tr>
+				<tr>
+					<td>Масаюки Дэай</td>
+					<td>Исогай</td>
+				</tr>
+				<tr>
+					<td>Шу Накаджима</td>
+					<td>Хорибе</td>
+				</tr>
+				<tr>
+					<td>Натсуки Кунимото</td>
+					<td>Рику</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Watanabe">Гедде Ватанабе</a></td>
+					<td>Лидер трупы</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 175 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 38 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 152 млн.</p>

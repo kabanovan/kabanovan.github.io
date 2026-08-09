@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="A Quiet Place.htm" class="nav-arrow">←</a>
+		<a href="../Years/2018.htm" class="nav-arrow">⌂</a>
 		<a href="Avengers - Infinity War.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,78 +24,75 @@
 		<p align=justify><b>Сюжет:</b> Приматолог Дэвис обожает свою работу. Он очень сдружился с Джорджем, невроятно умным самцом гориллы, которого воспитывал с младенчества. Но когда влекомая жаждой наживы корпорация запускает генетический эксперимент, всё выходит из-под контроля. Джордж и некоторые другие животные превращаются в необычайно агрессивных мутировавших сверхчудовищ, готовых крушить всё на своём пути. Невзирая на опасность, Дэвис отправляется на поиски антидота, чтобы не только предотвратить глобальную катастрофу, но и спасти ужасающего монстра, который когда-то был его другом.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#B.Peyton">Брэд Пейтон</a></p>
 		<p align=justify><b>В основе:</b> Компьютерная игра "Рэмпейдж" (США, 1986)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
-			<td><i><p style="margin-left:30px">Дэвис Окойе</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Harris">Наоми Харрис</a></td>
-			<td><i><p style="margin-left:30px">Доктор Кейт Колдвелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.D.Morgan">Джеффри Дин Морган</a></td>
-			<td><i><p style="margin-left:30px">Агент Харви Расселл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Akerman">Малин Акерман</a></td>
-			<td><i><p style="margin-left:30px">Клэр Вайден</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джейк Лэси</td>
-			<td><i><p style="margin-left:30px">Брэтт Вайден</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.J.Byrne">П.Дж. Бирн</a></td>
-			<td><i><p style="margin-left:30px">Нельсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Manganiello">Джо Манганьелло</a></td>
-			<td><i><p style="margin-left:30px">Берк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Деметриус Гросс</td>
-			<td><i><p style="margin-left:30px">Полковник Блейк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Quaid">Джек Куэйд</a></td>
-			<td><i><p style="margin-left:30px">Коннор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#Br.Hill">Бриэнн Хилл</a></td>
-			<td><i><p style="margin-left:30px">Эми</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Марли Шелтон</td>
-			<td><i><p style="margin-left:30px">Доктор Керри Аткинс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Gerald">Мэтт Джеральд</a></td>
-			<td><i><p style="margin-left:30px">Заммит</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Y.Lee">Уилл Юн Ли</a></td>
-			<td><i><p style="margin-left:30px">Агент Парк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Liles">Джейсон Лилз</a></td>
-			<td><i><p style="margin-left:30px">Джордж</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
+					<td>Дэвис Окойе</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Harris">Наоми Харрис</a></td>
+					<td>Доктор Кейт Колдвелл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.D.Morgan">Джеффри Дин Морган</a></td>
+					<td>Агент Харви Расселл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Akerman">Малин Акерман</a></td>
+					<td>Клэр Вайден</td>
+				</tr>
+				<tr>
+					<td>Джейк Лэси</td>
+					<td>Брэтт Вайден</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.J.Byrne">П.Дж. Бирн</a></td>
+					<td>Нельсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Manganiello">Джо Манганьелло</a></td>
+					<td>Берк</td>
+				</tr>
+				<tr>
+					<td>Деметриус Гросс</td>
+					<td>Полковник Блейк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Quaid">Джек Куэйд</a></td>
+					<td>Коннор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#Br.Hill">Бриэнн Хилл</a></td>
+					<td>Эми</td>
+				</tr>
+				<tr>
+					<td>Марли Шелтон</td>
+					<td>Доктор Керри Аткинс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Gerald">Мэтт Джеральд</a></td>
+					<td>Заммит</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Y.Lee">Уилл Юн Ли</a></td>
+					<td>Агент Парк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Liles">Джейсон Лилз</a></td>
+					<td>Джордж</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 120 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 101 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 428 млн.</p>

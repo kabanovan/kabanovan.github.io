@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Midway.htm" class="nav-arrow">←</a>
+		<a href="../Years/2019.htm" class="nav-arrow">⌂</a>
 		<a href="6 Underground.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,93 +24,87 @@
 		<p align=justify><b>Сюжет:</b> Чтобы спасти одного из приятелей, остальным приходится вернуться в игру. К их удивлению, правила Джуманджи изменились, и всё идёт наперекосяк. Чтобы выжить, друзьям предстоит отправиться в путешествие по самым неизведанным и таинственным уголкам игры – от засушливой пустыни до заснеженных гор.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Kasdan">Джейк Касдан</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Jumanji.htm">Джуманджи</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
-			<td><i><p style="margin-left:30px">Доктор Смолдер Брейвстоун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Black">Джек Блэк</a></td>
-			<td><i><p style="margin-left:30px">Профессор Шелдон "Шелли" Оберон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Hart">Кевин Харт</a></td>
-			<td><i><p style="margin-left:30px">Франклин "Лось" Финбар</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Gillan">Карен Гиллан</a></td>
-			<td><i><p style="margin-left:30px">Руби Раундхаус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#Awkwafina">Аквафина</a></td>
-			<td><i><p style="margin-left:30px">Минь Флитвуд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.DeVito">Дэнни ДеВито</a></td>
-			<td><i><p style="margin-left:30px">Эдди Гилпин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Jonas">Ник Джонас</a></td>
-			<td><i><p style="margin-left:30px">Джефферсон "Гидроплан" МакДона</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.McCann">Рори МакКанн</a></td>
-			<td>Йорген Жестокий</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Wolff">Алекс Вулфф</a></td>
-			<td><i><p style="margin-left:30px">Спенсер Гилпин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Blain">Сер'Дариус Блэйн</a></td>
-			<td><i><p style="margin-left:30px">Энтони "Фридж" Джонсон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Da.Glover">Дэнни Гловер</a></td>
-			<td>Майло Уокер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Turner">Морган Тёрнер</a></td>
-			<td><i><p style="margin-left:30px">Марта Кэпли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Iseman">Мэдисон Исман</a></td>
-			<td><i><p style="margin-left:30px">Бетани Уокер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Darby">Рис Дарби</a></td>
-			<td><i><p style="margin-left:30px">Найджел Биллингсли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Hinkle">Марин Хинкль</a></td>
-			<td>Дженис Гилпин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Hanks">Колин Хэнкс</a></td>
-			<td><i><p style="margin-left:30px">Алекс Врик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Neuwirth">Биби Ньювирт</a></td>
-			<td>Нора Шеперд</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
+					<td>Доктор Смолдер Брейвстоун</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Black">Джек Блэк</a></td>
+					<td>Профессор Шелдон "Шелли" Оберон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Hart">Кевин Харт</a></td>
+					<td>Франклин "Лось" Финбар</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Gillan">Карен Гиллан</a></td>
+					<td>Руби Раундхаус</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#Awkwafina">Аквафина</a></td>
+					<td>Минь Флитвуд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.DeVito">Дэнни ДеВито</a></td>
+					<td>Эдди Гилпин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Jonas">Ник Джонас</a></td>
+					<td>Джефферсон "Гидроплан" МакДона</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.McCann">Рори МакКанн</a></td>
+					<td>Йорген Жестокий</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Wolff">Алекс Вулфф</a></td>
+					<td>Спенсер Гилпин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Blain">Сер'Дариус Блэйн</a></td>
+					<td>Энтони "Фридж" Джонсон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Da.Glover">Дэнни Гловер</a></td>
+					<td>Майло Уокер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Turner">Морган Тёрнер</a></td>
+					<td>Марта Кэпли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Iseman">Мэдисон Исман</a></td>
+					<td>Бетани Уокер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Darby">Рис Дарби</a></td>
+					<td>Найджел Биллингсли</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Hinkle">Марин Хинкль</a></td>
+					<td>Дженис Гилпин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Hanks">Колин Хэнкс</a></td>
+					<td>Алекс Врик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Neuwirth">Биби Ньювирт</a></td>
+					<td>Нора Шеперд</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 125 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 317 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 802 млн.</p>

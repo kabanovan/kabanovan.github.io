@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Hunger Games.htm" class="nav-arrow">←</a>
+		<a href="../Years/2012.htm" class="nav-arrow">⌂</a>
 		<a href="The Avengers.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -33,68 +33,67 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#J.Liebesman">Джонатан Либесман</a></p>
 		<p align=justify><b>В основе:</b> Мифология Древней Греции</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#Titans">Титаны</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/s.htm#S.Worthington">Сэм Уортингтон</a></td>
-			<td>Персей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Neeson">Лиам Нисон</a></td>
-			<td>Зевс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Pike">Розамунд Пайк</a></td>
-			<td>Андромеда</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Kebbell">Тоби Кеббелл</a></td>
-			<td>Агенор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Fiennes">Рэйф Файнс</a></td>
-			<td>Аид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Nighy">Билл Най</a></td>
-			<td>Гефест</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Ramirez">Эдгар Рамирес</a></td>
-			<td>Арес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Huston">Дэнни Хьюстон</a></td>
-			<td>Посейдон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Jo.Bell">Джон Белл</a></td>
-			<td>Элей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/sh.htm#S.Cusack">Шинед Кьюсак</a></td>
-			<td>Клеа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лили Джеймс</td>
-			<td>Коррина</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Naranjo">Алехандро Нараньо</a></td>
-			<td>Мантий</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/s.htm#S.Worthington">Сэм Уортингтон</a></td>
+					<td>Персей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Neeson">Лиам Нисон</a></td>
+					<td>Зевс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Pike">Розамунд Пайк</a></td>
+					<td>Андромеда</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Kebbell">Тоби Кеббелл</a></td>
+					<td>Агенор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Fiennes">Рэйф Файнс</a></td>
+					<td>Аид</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Nighy">Билл Най</a></td>
+					<td>Гефест</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Ramirez">Эдгар Рамирес</a></td>
+					<td>Арес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Huston">Дэнни Хьюстон</a></td>
+					<td>Посейдон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Jo.Bell">Джон Белл</a></td>
+					<td>Элей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/sh.htm#S.Cusack">Шинед Кьюсак</a></td>
+					<td>Клеа</td>
+				</tr>
+				<tr>
+					<td>Лили Джеймс</td>
+					<td>Коррина</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Naranjo">Алехандро Нараньо</a></td>
+					<td>Мантий</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 150 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 84 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 302 млн.</p>

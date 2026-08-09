@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Star Trek Beyond.htm" class="nav-arrow">←</a>
+		<a href="../Years/2016.htm" class="nav-arrow">⌂</a>
 		<a href="Ben-Hur.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -32,113 +32,103 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#D.Ayer">Дэвид Эйр</a></p>
 		<p align=justify><b>В основе:</b> Комиксы об Отряде Самоубийц (США, выходят с 1987, автор – Джон Острандер)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#DCEU">Расширенная вселенная DC</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/u.htm#W.Smith">Уилл Смит</a></td>
-			<td>Флойд Лоутон / Дэдшот</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/yu.htm#J.Kinnaman">Юэль Киннаман</a></td>
-			<td>Полковник Рик Флаг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Robbie">Марго Робби</a></td>
-			<td>Доктор Харлин Квинзель / Харли Квинн</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.Davis">Виола Дэвис</a></td>
-			<td>Аманда Уоллер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Leto">Джаред Лето</a></td>
-			<td>Джокер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Courtney">Джай Кортни</a></td>
-			<td>Джордж "Диггер" Харкнесс / Капитан Бумеранг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Hernandez">Джей Эрнандес</a></td>
-			<td>Чато Сантана / Эль Дьябло</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Delevingne">Кара Делевинь</a></td>
-			<td>Доктор Джун Мун / Чародейка</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#I.Barinholtz">Айк Баринхолц</a></td>
-			<td>Григгс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Akinnuoye-Agbaje">Адевале Акиннуойе-Агбадже</a></td>
-			<td>Уэйлон Джонс / Убийца Крок</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Eastwood">Скотт Иствуд</a></td>
-			<td>Лейтенант Джи Кью Эдвардс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Тед Уиттэлл</td>
-			<td>Адмирал Маккензи Олсен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Beach">Адам Бич</a></td>
-			<td>Кристофер Вейс / Слипнот</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#Common">Коммон</a></td>
-			<td>Монстр Ти</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Fukuhara">Карен Фукухара</a></td>
-			<td>Татсу Ямаширо / Катана</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Harbour">Дэвид Харбор</a></td>
-			<td>Декстер Толливер</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Parrack">Джим Пэррак</a></td>
-			<td>Джонни Фрост</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Корина Калдерон</td>
-			<td>Грейс Сантана</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Meraz">Алекс Мераз</a></td>
-			<td>Гомес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Affleck">Бен Аффлек</a></td>
-			<td><i><p style="margin-left:30px">Брюс Уэйн / Бэтмен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Miller">Эзра Миллер</a></td>
-			<td><i><p style="margin-left:30px">Барри Аллен / Флэш</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/u.htm#W.Smith">Уилл Смит</a></td>
+					<td>Флойд Лоутон / Дэдшот</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/yu.htm#J.Kinnaman">Юэль Киннаман</a></td>
+					<td>Полковник Рик Флаг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Robbie">Марго Робби</a></td>
+					<td>Доктор Харлин Квинзель / Харли Квинн</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.Davis">Виола Дэвис</a></td>
+					<td>Аманда Уоллер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Leto">Джаред Лето</a></td>
+					<td>Джокер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Courtney">Джай Кортни</a></td>
+					<td>Джордж "Диггер" Харкнесс / Капитан Бумеранг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Hernandez">Джей Эрнандес</a></td>
+					<td>Чато Сантана / Эль Дьябло</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Delevingne">Кара Делевинь</a></td>
+					<td>Доктор Джун Мун / Чародейка</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#I.Barinholtz">Айк Баринхолц</a></td>
+					<td>Григгс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Akinnuoye-Agbaje">Адевале Акиннуойе-Агбадже</a></td>
+					<td>Уэйлон Джонс / Убийца Крок</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Eastwood">Скотт Иствуд</a></td>
+					<td>Лейтенант Джи Кью Эдвардс</td>
+				</tr>
+				<tr>
+					<td>Тед Уиттэлл</td>
+					<td>Адмирал Маккензи Олсен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Beach">Адам Бич</a></td>
+					<td>Кристофер Вейс / Слипнот</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#Common">Коммон</a></td>
+					<td>Монстр Ти</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Fukuhara">Карен Фукухара</a></td>
+					<td>Татсу Ямаширо / Катана</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Harbour">Дэвид Харбор</a></td>
+					<td>Декстер Толливер</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Parrack">Джим Пэррак</a></td>
+					<td>Джонни Фрост</td>
+				</tr>
+				<tr>
+					<td>Корина Калдерон</td>
+					<td>Грейс Сантана</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Meraz">Алекс Мераз</a></td>
+					<td>Гомес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Affleck">Бен Аффлек</a></td>
+					<td>Брюс Уэйн / Бэтмен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Miller">Эзра Миллер</a></td>
+					<td>Барри Аллен / Флэш</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 175 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 325 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 749 млн.</p>

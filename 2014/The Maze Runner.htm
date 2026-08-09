@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Giver.htm" class="nav-arrow">←</a>
+		<a href="../Years/2014.htm" class="nav-arrow">⌂</a>
 		<a href="Dracula Untold.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -31,83 +31,79 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#W.Ball">Уэс Болл</a></p>
 		<p align=justify><b>В основе:</b> Роман Джеймса Дэшнера "Бегущий по лабиринту" (США, 2009)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#MazeRunner">Бегущий В Лабиринте</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.O'Brien">Дилан О'Брайен</a></td>
-			<td>Томас</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Brodie-Sangster">Томас Броди-Сангстер</a></td>
-			<td>Ньют</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.H.Lee">Ки Хонг Ли</a></td>
-			<td>Минхо</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/u.htm#W.Poulter">Уилл Поултер</a></td>
-			<td>Галли</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Амл Амин</td>
-			<td>Алби</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Блейк Купер</td>
-			<td>Чак</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Scodelario">Кая Скоделарио</a></td>
-			<td>Тереза Агнес</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Clarkson">Патришия Кларксон</a></td>
-			<td>Доктор Ава Пейдж</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.Darden">Декстер Дарден</a></td>
-			<td>Фрайпан</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джейкоб Латимор</td>
-			<td>Джефф</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Sheffield">Крис Шеффилд</a></td>
-			<td>Бен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джо Адлер</td>
-			<td>Зарт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Рэндолл Д. Каннингэм</td>
-			<td>Клинт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Flores">Александр Флорес</a></td>
-			<td>Уинстон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#D.McManus">Дон МакМанус</a></td>
-			<td>Человек в маске</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.O'Brien">Дилан О'Брайен</a></td>
+					<td>Томас</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Brodie-Sangster">Томас Броди-Сангстер</a></td>
+					<td>Ньют</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.H.Lee">Ки Хонг Ли</a></td>
+					<td>Минхо</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/u.htm#W.Poulter">Уилл Поултер</a></td>
+					<td>Галли</td>
+				</tr>
+				<tr>
+					<td>Амл Амин</td>
+					<td>Алби</td>
+				</tr>
+				<tr>
+					<td>Блейк Купер</td>
+					<td>Чак</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Scodelario">Кая Скоделарио</a></td>
+					<td>Тереза Агнес</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Clarkson">Патришия Кларксон</a></td>
+					<td>Доктор Ава Пейдж</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.Darden">Декстер Дарден</a></td>
+					<td>Фрайпан</td>
+				</tr>
+				<tr>
+					<td>Джейкоб Латимор</td>
+					<td>Джефф</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Sheffield">Крис Шеффилд</a></td>
+					<td>Бен</td>
+				</tr>
+				<tr>
+					<td>Джо Адлер</td>
+					<td>Зарт</td>
+				</tr>
+				<tr>
+					<td>Рэндолл Д. Каннингэм</td>
+					<td>Клинт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Flores">Александр Флорес</a></td>
+					<td>Уинстон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#D.McManus">Дон МакМанус</a></td>
+					<td>Человек в маске</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 34 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 102 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 348 млн.</p>

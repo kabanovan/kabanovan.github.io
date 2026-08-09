@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Monster Hunter.htm" class="nav-arrow">←</a>
+		<a href="../Years/2020.htm" class="nav-arrow">⌂</a>
 		<a href="../2021/Chaos Walking.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -25,78 +25,75 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#P.Jenkins">Пэтти Дженкинс</a></p>
 		<p align=justify><b>В основе:</b> Комиксы о Чудо-Женщине (США, выходят с 1941, авторы – Чарльз Моултон и Гарри Г. Питер)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#DCEU">Расширенная вселенная DC</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/g.htm#G.Gadot">Галь Гадот</a></td>
-			<td><i><p style="margin-left:30px">Диана Принс / Чудо-Женщина</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Pascal">Педро Паскаль</a></td>
-			<td>Максвелл Лорд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Wiig">Кристен Уиг</a></td>
-			<td>Доктор Барбара Минерва / Гепарда</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Pine">Крис Пайн</a></td>
-			<td><i><p style="margin-left:30px">Стив Тревор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Wright">Робин Райт</a></td>
-			<td><i><p style="margin-left:30px">Генерал Антиопа</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Nielsen">Конни Нильсен</a></td>
-			<td><i><p style="margin-left:30px">Царица Ипполита</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Наташа Ротуэлл</td>
-			<td><i><p style="margin-left:30px">Кэрол</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Waked">Амр Вакед</a></td>
-			<td><i><p style="margin-left:30px">Эмир Саид Бин Абидос</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Cotton">Оливер Коттон</a></td>
-			<td><i><p style="margin-left:30px">Саймон Стагг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Milligan">Стюарт Миллиган</a></td>
-			<td><i><p style="margin-left:30px">Президент США</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Aspell">Лилли Аспелл</a></td>
-			<td><i><p style="margin-left:30px">Юная Диана</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Polaha">Кристоффер Полаха</a></td>
-			<td><i><p style="margin-left:30px">Красавчик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Patel">Рави Патель</a></td>
-			<td><i><p style="margin-left:30px">Фрэнк Патель / Бабаджид</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/g.htm#G.Wild">Габриэлла Уайлд</a></td>
-			<td>Ракель</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/g.htm#G.Gadot">Галь Гадот</a></td>
+					<td>Диана Принс / Чудо-Женщина</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Pascal">Педро Паскаль</a></td>
+					<td>Максвелл Лорд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Wiig">Кристен Уиг</a></td>
+					<td>Доктор Барбара Минерва / Гепарда</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Pine">Крис Пайн</a></td>
+					<td>Стив Тревор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Wright">Робин Райт</a></td>
+					<td>Генерал Антиопа</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Nielsen">Конни Нильсен</a></td>
+					<td>Царица Ипполита</td>
+				</tr>
+				<tr>
+					<td>Наташа Ротуэлл</td>
+					<td>Кэрол</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Waked">Амр Вакед</a></td>
+					<td>Эмир Саид Бин Абидос</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Cotton">Оливер Коттон</a></td>
+					<td>Саймон Стагг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Milligan">Стюарт Миллиган</a></td>
+					<td>Президент США</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Aspell">Лилли Аспелл</a></td>
+					<td>Юная Диана</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Polaha">Кристоффер Полаха</a></td>
+					<td>Красавчик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Patel">Рави Патель</a></td>
+					<td>Фрэнк Патель / Бабаджид</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/g.htm#G.Wild">Габриэлла Уайлд</a></td>
+					<td>Ракель</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 200 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 47 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 170 млн.</p>

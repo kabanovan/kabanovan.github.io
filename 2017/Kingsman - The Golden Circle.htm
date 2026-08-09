@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="It.htm" class="nav-arrow">←</a>
+		<a href="../Years/2017.htm" class="nav-arrow">⌂</a>
 		<a href="Blade Runner 2049.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -33,88 +33,83 @@
 		<p align=justify><b>В основе:</b> Комикс "Секретная служба" (США, выходит с 2012, авторы
 – Марк Миллар и Дэйв Гиббонс)</p>
 		<p align=justify><b>Серия:</b> <a href="../series.htm#Kingsman">Kingsman</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/t.htm#T.Egerton">Тэрон Эджертон</a></td>
-			<td>Гари "Эггси" Анвин / Агент Галахэд</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Firth">Колин Фёрт</a></td>
-			<td>Гарри Харт</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Strong">Марк Стронг</a></td>
-			<td>Мерлин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Moore">Джулианна Мур</a></td>
-			<td>Поппи Адамс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Pascal">Педро Паскаль</a></td>
-			<td>Джек / Агент Виски</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Bridges">Джефф Бриджес</a></td>
-			<td>Шампань</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Tatum">Ченнинг Татум</a></td>
-			<td>Агент Текила</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Berry">Хэлли Берри</a></td>
-			<td>Кола</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#E.Holcroft">Эдвард Холкрофт</a></td>
-			<td>Чарли Хескет</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Элтон Джон</td>
-			<td>Элтон Джон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Astrom">Ханна Альстрём</a></td>
-			<td>Принцесса Тильда</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Delevingne">Поппи Делевинь</a></td>
-			<td>Клара</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#Emi.Watson">Эмили Уотсон</a></td>
-			<td>Руководитель аппарата Фокс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Greenwood">Брюс Гринвуд</a></td>
-			<td>Президент США</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Cookson">Софи Куксон</a></td>
-			<td>Роксана "Рокси" Мортон / Агент Ланселот</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Gambon">Майкл Гэмбон</a></td>
-			<td>Артур</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/t.htm#T.Egerton">Тэрон Эджертон</a></td>
+					<td>Гари "Эггси" Анвин / Агент Галахэд</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Firth">Колин Фёрт</a></td>
+					<td>Гарри Харт</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Strong">Марк Стронг</a></td>
+					<td>Мерлин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Moore">Джулианна Мур</a></td>
+					<td>Поппи Адамс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Pascal">Педро Паскаль</a></td>
+					<td>Джек / Агент Виски</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Bridges">Джефф Бриджес</a></td>
+					<td>Шампань</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Tatum">Ченнинг Татум</a></td>
+					<td>Агент Текила</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Berry">Хэлли Берри</a></td>
+					<td>Кола</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#E.Holcroft">Эдвард Холкрофт</a></td>
+					<td>Чарли Хескет</td>
+				</tr>
+				<tr>
+					<td>Элтон Джон</td>
+					<td>Элтон Джон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Astrom">Ханна Альстрём</a></td>
+					<td>Принцесса Тильда</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Delevingne">Поппи Делевинь</a></td>
+					<td>Клара</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#Emi.Watson">Эмили Уотсон</a></td>
+					<td>Руководитель аппарата Фокс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Greenwood">Брюс Гринвуд</a></td>
+					<td>Президент США</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Cookson">Софи Куксон</a></td>
+					<td>Роксана "Рокси" Мортон / Агент Ланселот</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Gambon">Майкл Гэмбон</a></td>
+					<td>Артур</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 104 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 100 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 411 млн.</p>

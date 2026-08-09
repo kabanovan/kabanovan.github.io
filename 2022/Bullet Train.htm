@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="The Gray Man.htm" class="nav-arrow">←</a>
+		<a href="../Years/2022.htm" class="nav-arrow">⌂</a>
 		<a href="Prey.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -24,78 +24,75 @@
 		<p align=justify><b>Сюжет:</b> Незадачливый убийца с позывным "Божья Коровка" решил спокойно выполнить свою работу после того, как слишком много предыдущих дел пошло наперекосяк. Но у судьбы на него иные планы. Для осуществления последнего поручения Божья Коровка садится на борт сверхскоростного японского поезда и сталкивается там с наёмными убийцами со всего света, имеющими связанные задания. Теперь он должен придумать, как ему выбраться оттуда живым.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#D.Leitch">Дэвид Литч</a></p>
 		<p align=justify><b>В основе:</b> Роман Котаро Исаки "Поезд убийц" (Япония, 2010)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/b.htm#B.Pitt">Брэд Питт</a></td>
-			<td><i><p style="margin-left:30px">Божья Коровка</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.T.Henry">Брайан Тайри Генри</a></td>
-			<td><i><p style="margin-left:30px">Лимон</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Taylor-Johnson">Аарон Тейлор-Джонсон</a></td>
-			<td><i><p style="margin-left:30px">Мандарин</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#Jo.King">Джои Кинг</a></td>
-			<td><i><p style="margin-left:30px">Принц</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/h.htm#H.Sanada">Хироюки Санада</a></td>
-			<td><i><p style="margin-left:30px">Старший</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/e.htm#A.Koji">Эндрю Кодзи</a></td>
-			<td><i><p style="margin-left:30px">Юичи Кимура</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Shannon">Майкл Шэннон</a></td>
-			<td><i><p style="margin-left:30px">Белая Смерть</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/s.htm#S.Bullock">Сандра Буллок</a></td>
-			<td><i><p style="margin-left:30px">Мария Битл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.A.M.Ocasio">Бенито А. Мартинес Окасио</a></td>
-			<td><i><p style="margin-left:30px">Волк</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/z.htm#Z.Beetz">Зази Битц</a></td>
-			<td><i><p style="margin-left:30px">Шершень</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/l.htm#L.Lerman">Логан Лерман</a></td>
-			<td><i><p style="margin-left:30px">Сын</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/m.htm#M.Oka">Маси Ока</a></td>
-			<td><i><p style="margin-left:30px">Кондуктор</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.Fukuhara">Карен Фукухара</a></td>
-			<td><i><p style="margin-left:30px">Кайда Изуми</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/ch.htm#C.Tatum">Ченнинг Татум</a></td>
-			<td><i><p style="margin-left:30px">Пассажир</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/b.htm#B.Pitt">Брэд Питт</a></td>
+					<td>Божья Коровка</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.T.Henry">Брайан Тайри Генри</a></td>
+					<td>Лимон</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Taylor-Johnson">Аарон Тейлор-Джонсон</a></td>
+					<td>Мандарин</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#Jo.King">Джои Кинг</a></td>
+					<td>Принц</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/h.htm#H.Sanada">Хироюки Санада</a></td>
+					<td>Старший</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/e.htm#A.Koji">Эндрю Кодзи</a></td>
+					<td>Юичи Кимура</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Shannon">Майкл Шэннон</a></td>
+					<td>Белая Смерть</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/s.htm#S.Bullock">Сандра Буллок</a></td>
+					<td>Мария Битл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.A.M.Ocasio">Бенито А. Мартинес Окасио</a></td>
+					<td>Волк</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/z.htm#Z.Beetz">Зази Битц</a></td>
+					<td>Шершень</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/l.htm#L.Lerman">Логан Лерман</a></td>
+					<td>Сын</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/m.htm#M.Oka">Маси Ока</a></td>
+					<td>Кондуктор</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.Fukuhara">Карен Фукухара</a></td>
+					<td>Кайда Изуми</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/ch.htm#C.Tatum">Ченнинг Татум</a></td>
+					<td>Пассажир</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 86 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 103 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 239 млн.</p>

@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Riddick.htm" class="nav-arrow">←</a>
+		<a href="../Years/2013.htm" class="nav-arrow">⌂</a>
 		<a href="Carrie.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,18 +30,27 @@
 превращается в панику, ведь с каждым вздохом кислорода становится всё меньше и меньше.
 Чтобы вернуться домой, им нужно ещё больше углубиться в пугающую тьму космоса.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#A.Cuaron">Альфонсо Куарон</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/s.htm#S.Bullock">Сандра Буллок</a></td>
-			<td>Доктор Райан Стоун</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#G.Clooney">Джордж Клуни</a></td>
-			<td>Мэтт Ковальски</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/s.htm#S.Bullock">Сандра Буллок</a></td>
+					<td>Доктор Райан Стоун</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#G.Clooney">Джордж Клуни</a></td>
+					<td>Мэтт Ковальски</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 100 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 274 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 724 млн.</p>

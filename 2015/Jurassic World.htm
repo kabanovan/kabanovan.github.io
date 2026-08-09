@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="San Andreas.htm" class="nav-arrow">←</a>
+		<a href="../Years/2015.htm" class="nav-arrow">⌂</a>
 		<a href="Terminator - Genisys.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,78 +30,75 @@
 бороться за выживание в самом эпицентре катастрофы.</p>
 		<p><b>Режиссёр:</b> <a href="../directors.htm#C.Trevorrow">Колин Треворроу</a></p>
 		<p align=justify><b>Серия:</b> <a href="../Franchise/Jurassic Park.htm">Парк Юрского Периода</a></p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/b.htm#B.D.Howard">Брайс Даллас Ховард</a></td>
-			<td>Клэр Диринг</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Pratt">Крис Прэтт</a></td>
-			<td>Оуэн Грэйди</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/v.htm#V.D'Onofrio">Винсент Д'Онофрио</a></td>
-			<td>Вик Хоскинс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/t.htm#T.Simpkins">Тай Симпкинс</a></td>
-			<td>Грэй Митчелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/n.htm#N.Robinson">Ник Робинсон</a></td>
-			<td>Зак Митчелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.Khan">Иррфан Кхан</a></td>
-			<td>Саймон Мазрани</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Johnson">Джейк Джонсон</a></td>
-			<td>Лаури Крутерс</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/o.htm#O.Sy">Омар Си</a></td>
-			<td>Барри Самбен</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.D.Wong">Б.Д. Вонг</a></td>
-			<td>Доктор Генри Ву</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Greer">Джуди Грир</a></td>
-			<td>Карен Митчелл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Лорен Лапкус</td>
-			<td>Вивиан Крилл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#K.McGrath">Кэти МакГрат</a></td>
-			<td>Зара</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/b.htm#B.Tee">Брайан Ти</a></td>
-			<td>Каташи Хамада</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Энди Бакли</td>
-			<td>Скотт Митчелл</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/b.htm#B.D.Howard">Брайс Даллас Ховард</a></td>
+					<td>Клэр Диринг</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Pratt">Крис Прэтт</a></td>
+					<td>Оуэн Грэйди</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/v.htm#V.D'Onofrio">Винсент Д'Онофрио</a></td>
+					<td>Вик Хоскинс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/t.htm#T.Simpkins">Тай Симпкинс</a></td>
+					<td>Грэй Митчелл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/n.htm#N.Robinson">Ник Робинсон</a></td>
+					<td>Зак Митчелл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.Khan">Иррфан Кхан</a></td>
+					<td>Саймон Мазрани</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Johnson">Джейк Джонсон</a></td>
+					<td>Лаури Крутерс</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/o.htm#O.Sy">Омар Си</a></td>
+					<td>Барри Самбен</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.D.Wong">Б.Д. Вонг</a></td>
+					<td>Доктор Генри Ву</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Greer">Джуди Грир</a></td>
+					<td>Карен Митчелл</td>
+				</tr>
+				<tr>
+					<td>Лорен Лапкус</td>
+					<td>Вивиан Крилл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#K.McGrath">Кэти МакГрат</a></td>
+					<td>Зара</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/b.htm#B.Tee">Брайан Ти</a></td>
+					<td>Каташи Хамада</td>
+				</tr>
+				<tr>
+					<td>Энди Бакли</td>
+					<td>Скотт Митчелл</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 150 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 652 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 1 672 млн.</p>

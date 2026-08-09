@@ -9,9 +9,9 @@
 <div class="abs">
 	<div class="compact-navigation">
 		<a href="Lucy.htm" class="nav-arrow">←</a>
+		<a href="../Years/2014.htm" class="nav-arrow">⌂</a>
 		<a href="Guardians Of The Galaxy.htm" class="nav-arrow">→</a>
 	</div>
-<a href="../list.htm">Общий список</a>
 </div>
 
 <div class="movie-container">
@@ -30,73 +30,71 @@
 		<p><b>Режиссёр:</b> <a href="../directors.htm#B.Ratner">Бретт Рэтнер</a></p>
 		<p align=justify><b>В основе:</b> Комикс "Геркулес: Фракийские войны" (США, 2008, авторы
 – Стив Мур и Адмира Виджайя)</p>
-		<table>
-		<tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
-			<td>Геракл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/d.htm#J.Hurt">Джон Хёрт</a></td>
-			<td>Царь Котис</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Sewell">Руфус Сьюэлл</a></td>
-			<td>Автолик</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Ferguson">Ребекка Фергюсон</a></td>
-			<td>Эргения</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/y.htm#I.McShane">Йен МакШейн</a></td>
-			<td>Амфиарай</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/r.htm#R.Ritchie">Рис Ричи</a></td>
-			<td>Иолай</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.B.Berdal">Ингрид Болсай Бердал</a></td>
-			<td>Аталанта</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/p.htm#P.Mullan">Питер Муллан</a></td>
-			<td>Генерал Ситкл</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/a.htm#A.Hennie">Аксель Хенни</a></td>
-			<td>Тидей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Тобиас Зантельманн</td>
-			<td>Резус</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>Джозеф Файнс</td>
-			<td>Царь Эврисфей</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/i.htm#I.Andrews">Исаак Эндрюс</a></td>
-			<td>Арий</td>
-		</tr>
-		<tr>
-			<td></td>
-			<td><a href="../Actors/k.htm#C.Fairbank">Кристофер Фэйрбэнк</a></td>
-			<td>Гриза</td>
-		</tr>
-		</table>
+		<p><b>В ролях:</b> 
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">
+				<tr>
+					<td><a href="../Actors/d.htm#D.Johnson">Дуэйн Джонсон</a></td>
+					<td>Геракл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/d.htm#J.Hurt">Джон Хёрт</a></td>
+					<td>Царь Котис</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Sewell">Руфус Сьюэлл</a></td>
+					<td>Автолик</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Ferguson">Ребекка Фергюсон</a></td>
+					<td>Эргения</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/y.htm#I.McShane">Йен МакШейн</a></td>
+					<td>Амфиарай</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/r.htm#R.Ritchie">Рис Ричи</a></td>
+					<td>Иолай</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.B.Berdal">Ингрид Болсай Бердал</a></td>
+					<td>Аталанта</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/p.htm#P.Mullan">Питер Муллан</a></td>
+					<td>Генерал Ситкл</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/a.htm#A.Hennie">Аксель Хенни</a></td>
+					<td>Тидей</td>
+				</tr>
+				<tr>
+					<td>Тобиас Зантельманн</td>
+					<td>Резус</td>
+				</tr>
+				<tr>
+					<td>Джозеф Файнс</td>
+					<td>Царь Эврисфей</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/i.htm#I.Andrews">Исаак Эндрюс</a></td>
+					<td>Арий</td>
+				</tr>
+				<tr>
+					<td><a href="../Actors/k.htm#C.Fairbank">Кристофер Фэйрбэнк</a></td>
+					<td>Гриза</td>
+				</tr>
+			</table>
+		</div>
 		<p><b>Бюджет:</b> $ 100 млн.</p>
 		<p><b>Кассовые сборы в США:</b> $ 73 млн.</p>
 		<p><b>Кассовые сборы в мире:</b> $ 245 млн.</p>
