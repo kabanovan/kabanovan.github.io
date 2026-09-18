@@ -3,7 +3,9 @@ const showBtn = document.getElementById('showCastBtn');
 const popup = document.getElementById('castPopup');
 const overlay = document.getElementById('popupOverlay');
 const closeBtn = document.getElementById('closePopupBtn');
-
+const castList = document.getElementById('castList');
+const table = document.querySelector('.cast-full-list');
+	
 // Функция открытия попапа
 function openPopup() {
     popup.classList.add('show');
@@ -27,5 +29,21 @@ overlay.addEventListener('click', closePopup);
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && popup.classList.contains('show')) {
         closePopup();
+    }
+});
+
+// Автозаполнение списка актёров
+document.addEventListener('DOMContentLoaded', function() {
+    if (table && castList) {
+        const rows = table.querySelectorAll('tr');
+        const actors = [];
+        // Берём первые три строки (если их меньше – все доступные)
+        for (let i = 0; i < Math.min(3, rows.length); i++) {
+            const firstTd = rows[i].querySelector('td:first-child');
+            if (firstTd) {
+                actors.push(firstTd.innerHTML.trim()); // сохраняем ссылки, если они есть
+            }
+        }
+        castList.innerHTML = actors.join(', ');
     }
 });
