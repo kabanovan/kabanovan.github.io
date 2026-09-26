@@ -621,21 +621,27 @@
                 let actorsHTML = '';
                 
                 if (data.actors.length > 0) {
-                    actorsHTML = `<table><tr>
-			<td><p style="text-indent:-3px"><b>В ролях:</b></p></td>
-			<td>${data.actors[0].anchor ? `<a href="../Actors/${data.actors[0].file}#${data.actors[0].anchor}">${data.actors[0].name}</a>` : data.actors[0].name}</td>
-			<td>${data.actors[0].role}</td>
-		</tr>`;
-                    
-                    for (let i = 1; i < data.actors.length; i++) {
-                        actorsHTML += `<tr>
-			<td></td>
-			<td>${data.actors[i].anchor ? `<a href="../Actors/${data.actors[i].file}#${data.actors[i].anchor}">${data.actors[i].name}</a>` : data.actors[i].name}</td>
-			<td>${data.actors[i].role}</td>
-		</tr>`;
+                    actorsHTML = `<p><b>В ролях:</b> <span id="castList"></span>
+		<button class="show-cast-btn" id="showCastBtn">></button></p>
+		
+		<div class="popup-overlay" id="popupOverlay"></div>
+		
+		<div class="cast-popup" id="castPopup">
+			<div class="cast-popup-header">
+				<h3>Актёры и роли</h3>
+				<button class="close-popup-btn" id="closePopupBtn">&times;</button>
+			</div>
+			<table class="cast-full-list">`;
+			
+                    for (let i = 0; i < data.actors.length; i++) {
+                        actorsHTML += `				<tr>
+				<tr>
+					<td>${data.actors[0].anchor ? `<a href="../Actors/${data.actors[0].file}#${data.actors[0].anchor}">${data.actors[0].name}</a>` : data.actors[0].name}</td>
+					<td>${data.actors[0].role}</td>
+				</tr>`;
                     }
                     
-                    actorsHTML += `</table>`;
+                    actorsHTML += `			</table>`;
                 }
                 
                 const seriesLink = data.series ? `<p align=justify><b>Серия:</b> <a href="../Franchise/Series.htm">${data.series}</a></p>` : '';
@@ -661,10 +667,11 @@
 </head>
 <body>
 <div class="abs">
-    <div class="compact-navigation">
-        <a href="Previous.htm" class="nav-arrow">←</a>
-        <a href="Next.htm" class="nav-arrow">→</a>
-    </div>
+	<div class="compact-navigation">
+		<a href="Previous.htm" class="nav-arrow">←</a>
+		<a href="../Years/${year}.htm" class="nav-arrow">⌂</a>
+		<a href="Next.htm" class="nav-arrow">→</a>
+	</div>
 </div>
 
 <div class="movie-container">
